@@ -1,6 +1,6 @@
 ---
 title: Bad WordPress user names
-layout: default
+
 category: web
 published: true
 ---

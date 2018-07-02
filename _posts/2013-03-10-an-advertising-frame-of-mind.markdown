@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: An advertising frame of mind
 category: web
 ---

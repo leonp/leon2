@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Free of place and duty
 category: thinking
 review-title: The Grapes of Wrath

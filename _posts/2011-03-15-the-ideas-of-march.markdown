@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The ideas of March
 category: thinking
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: A Hero of our Time
 category: thinking
 review-title: A Hero of our Time

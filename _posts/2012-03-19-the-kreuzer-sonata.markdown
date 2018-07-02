@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The Kreuzer Sonata
 category: thinking
 review-title: The Kreuzer Sonata

@@ -1,6 +1,6 @@
 ---
 title: Using Github as a CMS
-layout: default
+
 category: web
 ---
 

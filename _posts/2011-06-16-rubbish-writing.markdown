@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Why business writing is rubbish
 category: web
 ---

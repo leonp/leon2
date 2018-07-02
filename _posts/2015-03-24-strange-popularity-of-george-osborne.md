@@ -1,6 +1,6 @@
 ---
 title: The strange popularity of Gideon Oliver Osborne
-layout: default
+
 category: politics
 ---
 

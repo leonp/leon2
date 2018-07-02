@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: My favourite book
 category: thinking
 ---

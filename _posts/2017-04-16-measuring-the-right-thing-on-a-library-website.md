@@ -1,6 +1,6 @@
 ---
 title: Measuring success on library websites
-layout: default
+
 category: web
 description: "Lots of visitors doesn't equal success. The only real measure of whether your website is doing well is if it helps people do what they want to do."
 article: true

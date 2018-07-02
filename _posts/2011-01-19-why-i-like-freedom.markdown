@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Why I like Freedom
 category: thinking
 review-title: Freedom

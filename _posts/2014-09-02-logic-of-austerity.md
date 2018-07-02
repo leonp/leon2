@@ -1,6 +1,6 @@
 ---
 title: Paying for stuff and the logic of austerity
-layout: default
+
 category: politics
 ---
 

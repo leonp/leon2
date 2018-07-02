@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Haven't found it yet
 category: politics
 ---

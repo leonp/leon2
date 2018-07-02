@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: "Polikushka – Or, the lot of a wicked court servant"
 category: thinking
 review-title: "Polikushka – Or, the lot of a wicked court servant"

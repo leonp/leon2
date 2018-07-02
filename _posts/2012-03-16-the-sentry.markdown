@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The Sentry
 category: thinking
 review-title: The Sentry

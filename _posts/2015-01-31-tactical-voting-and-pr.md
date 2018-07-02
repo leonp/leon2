@@ -1,6 +1,6 @@
 ---
 title: Voting tactically
-layout: default
+
 category: politics
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The 18th Conclusion
 category: thinking
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Understanding the Ur-Bororo
 category: thinking
 review-title: "Understanding the Ur-Bororo"

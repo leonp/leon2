@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: An aside really isn’t a sidebar
 category: web
 ---

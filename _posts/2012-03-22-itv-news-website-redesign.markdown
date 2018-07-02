@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: ITV News website redesign
 category: web
 ---

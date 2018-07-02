@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: It's 2012 and we still have pop–ups
 category: web
 ---

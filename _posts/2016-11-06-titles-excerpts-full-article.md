@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: How to display a blog listing page
 category: web
 description: "A discussion of whether to display just a title, a title and an excerpt or the whole article on a page that lists several articles or blog posts."

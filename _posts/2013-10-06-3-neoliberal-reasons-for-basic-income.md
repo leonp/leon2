@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: 3 right wing reasons for a Basic Citizens' Income
 category: politics
 ---

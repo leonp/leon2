@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: 95 percent
 category: thinking
 review-title: "Your Future, Our Clutter"

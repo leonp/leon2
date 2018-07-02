@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: This is not a novel
 category: thinking
 review-title: This is Not a Novel

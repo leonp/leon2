@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Jaki Liebezeit
 category: thinking
 img: jaki.jpg

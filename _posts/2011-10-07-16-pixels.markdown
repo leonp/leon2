@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: 16 pixels
 category: web
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Labour's marketing politics
 category: politics
 ---

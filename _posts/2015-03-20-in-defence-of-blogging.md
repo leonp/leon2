@@ -1,6 +1,6 @@
 ---
 title: In defence of blogging
-layout: default
+
 category: web
 ---
 

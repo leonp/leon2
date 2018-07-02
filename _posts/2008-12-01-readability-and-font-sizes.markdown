@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Readability and font sizes
 category: web
 ---

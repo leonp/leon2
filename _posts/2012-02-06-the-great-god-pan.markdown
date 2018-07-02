@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The Great God Pan
 category: thinking
 review-title: The Great God Pan

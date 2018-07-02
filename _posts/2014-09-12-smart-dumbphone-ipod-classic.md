@@ -1,6 +1,6 @@
 ---
 title: Smart dumbphones and classic iPods
-layout: default
+
 category: thinking
 ---
 

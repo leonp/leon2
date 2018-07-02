@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Ambiguity
 category: thinking
 ---

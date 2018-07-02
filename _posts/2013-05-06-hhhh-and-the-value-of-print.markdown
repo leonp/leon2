@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: HHhH and the value of print
 category: thinking
 review-title: HHhH

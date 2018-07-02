@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: WordPress, me and Oxmetifan 20
 category: web
 ---

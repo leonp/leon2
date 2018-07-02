@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Unintelligible business language #1
 category: web
 ---

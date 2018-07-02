@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: How the iPad makes coffee table books
 category: web
 ---

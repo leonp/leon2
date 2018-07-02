@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Edgar Allan Poe Collected Writings
 category: thinking
 review-title: Collected Writings

@@ -1,6 +1,6 @@
 ---
 title: In praise of Georgia (again)
-layout: default
+
 category: web
 ---
 

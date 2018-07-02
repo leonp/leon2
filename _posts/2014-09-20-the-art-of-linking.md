@@ -1,6 +1,6 @@
 ---
 title: The art of linking
-layout: default
+
 category: web
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Notes on (hyper)local journalism
 category: web
 published: true

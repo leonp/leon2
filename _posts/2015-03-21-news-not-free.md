@@ -1,6 +1,6 @@
 ---
 title: The news isn&#8217;t free but we act as if it is
-layout: default
+
 category: thinking
 ---
 

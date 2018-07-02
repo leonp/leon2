@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The Emigrants
 category: thinking
 review-title: The Emigrants

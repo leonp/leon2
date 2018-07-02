@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The vacant centre (part II)
 category: politics
 ---

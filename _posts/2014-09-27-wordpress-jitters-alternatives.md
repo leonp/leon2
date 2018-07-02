@@ -1,6 +1,6 @@
 ---
 title: I'd like a friendly Jekyll/Github hybrid to manage websites
-layout: default
+
 category: web
 ---
 

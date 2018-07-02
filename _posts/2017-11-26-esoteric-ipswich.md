@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Esoteric Ipswich
 category: thinking
 ---

@@ -1,6 +1,6 @@
 ---
 title: Getting to grips with Contentful and Jekyll
-layout: default
+
 category: web
 description: "Contentful is a CMS based on an API, providing a non-technical editing environment for web writers. Here's how it works with Jekyll, a static site generator."
 cache: true

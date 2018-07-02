@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: 5 web design sins from the experts
 category: web
 ---

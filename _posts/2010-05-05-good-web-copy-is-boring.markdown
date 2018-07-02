@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Good web copy is boring
 category: web
 ---

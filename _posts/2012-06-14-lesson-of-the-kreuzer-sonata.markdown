@@ -1,5 +1,5 @@
 ---
-layout: default
+
 slug: lesson-of-the-kreuzer-sonata
 title: Lesson of The Kreuzer Sonata
 category: thinking

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Ghost towns
 category: thinking
 ---

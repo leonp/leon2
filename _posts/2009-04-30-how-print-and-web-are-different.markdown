@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: How print and web are different
 category: web
 ---

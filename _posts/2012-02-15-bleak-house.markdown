@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Bleak House
 category: thinking
 review-title: Bleak House

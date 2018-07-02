@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The Wileyfox Swift phone
 category: web
 published: true

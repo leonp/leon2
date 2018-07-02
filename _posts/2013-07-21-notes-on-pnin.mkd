@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Notes on Pnin
 category: thinking
 img: nab-sig.jpg

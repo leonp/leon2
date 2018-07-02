@@ -1,6 +1,6 @@
 ---
 title: I get better as I get older
-layout: default
+
 category: thinking
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: (Un)Creatives
 category: thinking
 ---

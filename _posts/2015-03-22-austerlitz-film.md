@@ -1,6 +1,6 @@
 ---
 title: A film about Austerlitz
-layout: default
+
 category: thinking
 ---
 

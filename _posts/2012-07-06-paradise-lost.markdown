@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Paradise Lost
 category: thinking
 review-title: Paradise Lost

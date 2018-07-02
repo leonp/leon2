@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Reading newspaper articles involves looking at words
 category: web
 ---

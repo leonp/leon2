@@ -1,6 +1,6 @@
 ---
 title: Design Observer design not for us
-layout: default
+
 category: web
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Dostoevsky, calligraphy and idiocy
 category: thinking
 review-title: The Idiot

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The Rings of Saturn
 category: thinking
 review-title: The Rings of Saturn

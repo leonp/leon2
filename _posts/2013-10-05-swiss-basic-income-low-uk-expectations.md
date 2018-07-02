@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Low expectations
 category: politics
 ---

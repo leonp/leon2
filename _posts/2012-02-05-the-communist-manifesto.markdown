@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The Communist Manifesto
 category: thinking
 review-title: The Communist Manifesto

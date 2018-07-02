@@ -1,6 +1,6 @@
 ---
 title: "Lessons learned from developing library self-service software: User testing isn’t as good as user using"
-layout: default
+
 category: web
 article: true
 ---

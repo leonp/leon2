@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Comfortable reading
 category: web
 ---

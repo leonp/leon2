@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Piano Quintet in F minor (Franck)
 category: thinking
 review-title: Piano Quintet in F minor

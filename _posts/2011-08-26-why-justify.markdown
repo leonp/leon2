@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Why justify?
 category: web
 ---

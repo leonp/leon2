@@ -1,6 +1,6 @@
 ---
 title: Lowestoft
-layout: default
+
 category: politics
 ---
 

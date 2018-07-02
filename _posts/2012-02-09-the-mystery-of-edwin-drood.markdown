@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The Mystery of Edwin Drood
 category: thinking
 review-title: The Mystery of Edwin Drood

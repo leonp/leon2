@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: 'Dynamic looping in Liquid to build an advent calendar'
 category: web
 description: Liquid has some pretty powerful looping options.

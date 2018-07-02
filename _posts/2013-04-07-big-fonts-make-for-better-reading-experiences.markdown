@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Big fonts make for better reading experiences
 category: web
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Work if you want to
 category: thinking
 ---

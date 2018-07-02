@@ -1,6 +1,6 @@
 ---
 title: Basic income, realism and wasteful pessimism
-layout: default
+
 category: politics
 description: "Turns out UBI, although not without noble intentions, is a weak, pessimistic response to a depressing world of austerity and insecurity. We should think more critically and tackle longstanding, structural problems."
 ---

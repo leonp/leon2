@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: "It's easy to make fast static pages without Google AMP"
 category: web
 ---

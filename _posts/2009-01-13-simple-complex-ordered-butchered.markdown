@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Simple, complex, ordered, butchered
 category: web
 ---

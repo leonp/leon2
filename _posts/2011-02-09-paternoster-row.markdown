@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Paternoster Row
 category: thinking
 review-title: The Clerkenwell Tales

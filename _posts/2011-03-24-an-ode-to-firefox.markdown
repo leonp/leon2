@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: An ode to Firefox
 category: web
 ---

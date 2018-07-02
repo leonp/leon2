@@ -1,7 +1,7 @@
 ---
 published: true
 title: The dangers of not opposing
-layout: default
+
 category: politics
 ---
 

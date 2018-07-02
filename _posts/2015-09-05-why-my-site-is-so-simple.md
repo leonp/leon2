@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Why my website looks so plain
 category: web
 ---

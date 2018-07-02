@@ -1,6 +1,6 @@
 ---
 title: Writing to order
-layout: default
+
 category: thinking
 ---
 

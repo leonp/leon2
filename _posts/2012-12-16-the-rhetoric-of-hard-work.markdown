@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The rhetoric of hard work
 category: thinking
 ---

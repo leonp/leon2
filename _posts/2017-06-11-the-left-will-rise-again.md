@@ -1,6 +1,6 @@
 ---
 title: Labour and overcoming my pessimism (or how the left started to win Britain)
-layout: default
+
 category: politics
 img: ge2017.jpg
 alt: Theresa May projected onto BBC Broadcasting House along with the Tory exit poll estimation of 314 votes.

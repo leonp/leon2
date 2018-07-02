@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: "Your most comfortable reading colours depend on who you are (or: how accessibility is a tricky business)"
 category: web
 description: "What's the best foreground/background colour combination for reading from a screen? Unfortunately, there's no simple answer."

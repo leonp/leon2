@@ -1,6 +1,6 @@
 ---
 title: Improving where filters in Jekyll
-layout: default
+
 category: web
 description: "Use Jekyll's where_exp filter to filter for conditions such as falseness. This will speed up build times and make it easier to develop more complex, useful array filters."
 ---

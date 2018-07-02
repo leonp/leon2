@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: J. S. Bach Solo Sonata no. 3 in C Major, BWV 1005
 category: thinking
 review-title: "Solo Sonata no. 3 in C Major, BWV 1005"

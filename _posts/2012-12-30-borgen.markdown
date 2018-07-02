@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Borgen (or how the British don't do serious politics)
 category: thinking
 review-title: Borgen

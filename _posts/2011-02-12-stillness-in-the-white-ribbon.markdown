@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Stillness in The White Ribbon
 category: thinking
 review-title: The White Ribbon

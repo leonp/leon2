@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Wainright typography
 category: thinking
 ---

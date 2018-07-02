@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Okies, chavs and responsibility deficits
 category: thinking
 ---

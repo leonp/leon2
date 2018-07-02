@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: The Killing (Forbrydelsen)
 category: thinking
 review-title: The Killing

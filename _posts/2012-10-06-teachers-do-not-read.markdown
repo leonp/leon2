@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Teachers don't read
 category: thinking
 ---

@@ -1,6 +1,6 @@
 ---
 title: Photography and other
-layout: default
+
 category: thinking
 excerpt: Photographers don't just witness images; they create them as well
 ---

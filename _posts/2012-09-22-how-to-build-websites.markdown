@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: How to build websites
 category: web
 ---

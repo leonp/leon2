@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Paternoster Square
 category: thinking
 ---

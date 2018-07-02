@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Coding one off and recurrent events in Jekyll
 category: web
 article: true

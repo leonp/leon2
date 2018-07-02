@@ -12,6 +12,89 @@
     font-family: $c-sans-serif;
 }
 
+.c-plex-serif {
+    font-family: $c-plex-serif;
+}
+
+// Prose styling
+
+.c-prose-h h1,
+.c-prose-h h2,
+.c-prose-h h3,
+.c-prose-h h4,
+.c-prose-h h5,
+.c-prose-h h6,
+.c-prose-h dt {
+    margin-top: 2rem;
+    line-height: 1.25;
+    font-family: $c-sans-serif;
+}
+
+.c-prose-h h1,
+.c-prose-h h2 {
+    font-size: 1.25rem;
+}
+
+.c-prose-h h3 {
+    font-size: 1rem;
+}
+
+.c-hyphens {
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+}
+
+.vid,
+.constrain {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.vid iframe,
+.vid object,
+.vid embed,
+.constrain iframe,
+.constrain object,
+.constrain embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+// More defaults
+
+blockquote {
+    line-height: 1.25;
+    font-size: 0.875rem;
+}
+
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #CCC;
+    text-align: center;
+}
+
+hr:after {
+    content: "★";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #FFF;
+    color: #357EDD;
+}
+
 
 // Some empty media queries
 // Use these if you want to make responsive custom classes
@@ -27,3 +110,39 @@
 
 
 } // End the enclosing screen/projection media query
+
+
+// Add some locally hosted fonts
+
+// Plex Serif regular - latin
+@font-face {
+  font-family: 'Plex Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local('IBM Plex Serif Regular'), local('IBMPlexSerif-Regular-Latin1'),
+       url('/fonts/IBMPlexSerif-Regular-Latin1.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/IBMPlexSerif-Regular-Latin1.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+// Ples Serif italic - latin
+@font-face {
+  font-family: 'Plex Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: local('IBM Plex Serif Italic'), local('IBMPlexSerif-Italic-Latin1'),
+       url('/fonts/IBMPlexSerif-Italic-Latin1.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/IBMPlexSerif-Italic-Latin1.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+// Plex Serif bold - latin
+@font-face {
+  font-family: 'Plex Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: local('IBM Plex Serif Bold'), local('IBMPlexSerif-Bold-Latin1'),
+       url('/fonts/IBMPlexSerif-Bold-Latin1.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/IBMPlexSerif-Bold-Latin1.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

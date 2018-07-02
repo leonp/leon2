@@ -4,20 +4,17 @@ title: Leon Paternoster
 is_home: true
 ---
 
-Personal site of Leon Paternoster. Posts on web, libraries, politics, books, music. Desde 2008.
+This is my personal site. Since 2008 I've written about work subjects, such as simplicity, usability, accessibility, libraries and developing web products and services. I'm also interested in politics, books, music, philosophy and history. You have been warned.
 
-<h2 class="f4 mt4 mb2 lh-title">Popular articles</h2>
+<span role="img" aria-label="A pen">🖊</span> [**All posts &rarr;**](/posts/)
 
-Probably the posts you're interested in:
+<div class="pv2 pv3-ns">
 
-<ul class="list ma0 pa0">
+    <hr>
 
-{% assign posts = site.posts | where: 'featured', 'true' %}
+</div>
 
-{% for post in posts limit:10 %}
-
-    <li class="mb3"><a class="pv1" href="{{ post.url }}">{{ post.title }}</a> <time class="db f6 gray">{{ post.date | date: "%b %d, %Y" }}</time></li>
-
-{% endfor %}
-
-</ul>
+- [RSS feed](/feed/)
+- [Twitter](https://mobile.twitter.com/leonpaternoster/)
+- [micro.blog](https://micro.blog/leonp/)
+- leon.paternoster@zoho.com

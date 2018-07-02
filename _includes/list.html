@@ -1,0 +1,13 @@
+<ul class="list ma0 pa0">
+
+{% for post in posts %}
+
+{% unless post.note %}
+
+    <li class="mb3 mb4-ns"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray c-sans-serif">{{ post.date | date: "%b %d, %Y" }}</time></li>
+
+{% endunless %}
+
+{% endfor %}
+
+</ul>

@@ -13,16 +13,22 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Site title"
-description: "A site description"
+
 lang: "en" # or fr, de, es etc.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+title: 'Leon Paternoster'
+email: leon.paternoster@zoho.com
+description: "Digital manager interested in usability, accessibility and making readable websites."
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://www.leonpaternoster.com" # the base hostname & protocol for your site
+lead: "Blogging about making websites &amp; apps fast, friendly, readable and usable."
+
+# Build settings
+permalink: /posts/:title/
+
 
 # Include styles inline or link to css file?
 # This has to be set to css: inline for the theme to inline styles
 # Set it to anything else, or remove it, to link to /css/style.class
-
 css: inline
 
 

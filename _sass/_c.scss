@@ -72,8 +72,12 @@
 // More defaults
 
 blockquote {
-    line-height: 1.25;
+    line-height: 1.3;
     font-size: 0.875rem;
+}
+
+figure {
+    margin: auto 0;
 }
 
 hr {
@@ -92,7 +96,7 @@ hr:after {
     font-size: 1.5em;
     padding: 0 0.25em;
     background: #FFF;
-    color: #357EDD;
+    color: #E7040F;
 }
 
 

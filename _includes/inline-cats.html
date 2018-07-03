@@ -1,0 +1,9 @@
+<ul class="mh0 ph0 list">
+
+{% for cat in site.data.cats %}
+
+    <li class="ml0 pl0 dib mr2 mr3-ns"><a href="/posts/{{ cat.slug }}/" class="pv1">{{ cat.name }}</a></li>
+
+{% endfor %}
+
+</ul>

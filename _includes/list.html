@@ -1,3 +1,25 @@
+{% if page.category %}
+
+    {% assign posts = site.posts | where: "category", page.category %}
+
+    {% for cat in site.data.cats %}
+
+        {% if cat.slug == page.category %}
+
+            {% assign message = cat.description %}
+
+        {% endif %}
+
+    {% endfor %}
+
+{% endif %}
+
+{% if page.category %}
+
+<p class="pb3 bb b--light-gray">{{ message }} <a href="/posts/">All posts &rarr;</a></p>
+
+{% endif %}
+
 <ul class="list ma0 pa0">
 
 {% for post in posts %}

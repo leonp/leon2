@@ -1,12 +1,23 @@
 {% include header.html %}
 
+{% for cat in site.data.cats %}
+
+    {% if cat.slug == page.category %}
+
+        {% assign slug = cat.slug %}
+        {% assign category = cat.name %}
+
+    {% endif %}
+
+{% endfor %}
+
 <article>
 
     <header class="c-sans-serif">
 
         <h1 class="f3 lh-title mb2">{{ page.title }}</h1>
 
-        <p class="gray f6 mt0 mb4-ns"><time>{{ page.date | date: "%b %-d,  %Y" }}</time>  / <a href="/posts/">All posts &rarr;</a></p>
+        <p class="gray f6 mt0 mb4-ns"><time>{{ page.date | date: "%b %-d,  %Y" }}</time>  / <a href="/posts/{{ slug }}">{{ category }}</a> / <a href="/posts/">All posts &rarr;</a></p>
 
     </header>
 

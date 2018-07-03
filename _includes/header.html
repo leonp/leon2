@@ -34,14 +34,9 @@
 
     <body class="ma0 pa2 pa4-ns bg-white dark-gray c-plex-serif lh-copy">
 
-        <ul class="clip">
+        {% unless page.is_home %}
 
-            {% unless page.is_home %}<li><a href="#content">Skip to content</a></li>{% endunless %}
-            <li><a href="#nav">Skip to navigation</a></li>
-
-        </ul>
-
-        {% if page.is_home != true %}
+        <p class="clip"><a href="#content">Skip to content</a></p>
 
         <div class="measure center c-sans-serif mt2-ns mb4 mb5-l">
 
@@ -49,7 +44,7 @@
 
         </div>
 
-        {% endif %}
+        {% endunless %}
 
         <div class="measure center">
 

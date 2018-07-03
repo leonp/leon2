@@ -1,8 +1,20 @@
             </main>
 
-            <nav id="nav">
+            <footer class="mt3 mt5-ns">
 
-            </nav>
+                <ul class="f6 list ma0 pa0">
+
+                {% assign pages = site.pages | where: "footer", "true" %}
+
+                {% for page in pages %}
+
+                    <li class="dib mr2 m3-ns"><a href="{{ page.url }}" class="pv1">{{ page.title }}</a></li>
+
+                {% endfor %}
+
+                </ul>
+
+            </footer>
 
         </div>
 

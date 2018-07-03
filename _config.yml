@@ -17,7 +17,7 @@
 lang: "en" # or fr, de, es etc.
 title: 'Leon Paternoster'
 email: leon.paternoster@zoho.com
-description: "Digital manager interested in usability, accessibility and making readable websites."
+description: "My personal site. Posts on: Web, work, politics, books and libraries."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.leonpaternoster.com" # the base hostname & protocol for your site
 lead: "Blogging about making websites &amp; apps fast, friendly, readable and usable."

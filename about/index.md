@@ -18,7 +18,7 @@ footer: true
 
 <ul>
 
-<li><a href="/feed/">RSS feed</a></li>
+<li><a href="/feed/index.xml">RSS feed</a></li>
 <li><a href="https://mobile.twitter.com/leonpaternoster/">Twitter</a></li>
 <li><a href="https://micro.blog/leonp/">micro.blog</a></li>
 <li>leon.paternoster@zoho.com</li>

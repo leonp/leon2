@@ -16,7 +16,7 @@ This is my personal site. Since 2008 I've written about work subjects, such as s
 
 </div>
 
-- [RSS feed](/feed/)
+- [RSS feed](/feed/index.xml/)
 - [Twitter](https://mobile.twitter.com/leonpaternoster/)
 - [micro.blog](https://micro.blog/leonp/)
 - leon.paternoster@zoho.com

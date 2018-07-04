@@ -13,6 +13,8 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
+        {% if jekyll.environment == "development" %}
+        <meta name="robots" content="noindex, nofollow">
 
         {% if page.is_post %}
         <meta name="twitter:card" content="summary" />

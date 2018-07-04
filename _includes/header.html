@@ -67,10 +67,10 @@
 
         {% if site.css == 'inline' %}
         <style>
-            {% capture inline-styles %}
-            {% include style.scss %}
-            {% endcapture %}
-            {{ inline-styles | scssify }}
+        {% capture inline-styles %}
+        {% include style.scss %}
+        {% endcapture %}
+        {{ inline-styles | scssify }}
         </style>
         {% else %}
         <link href="/css/style.css" rel="stylesheet">

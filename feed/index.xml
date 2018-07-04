@@ -1,4 +1,5 @@
 ---
+layout: empty
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -11,7 +12,7 @@
         <name>Leon Paternoster</name>
     </author>
     <rights>Copyright (c) Leon Paternoster</rights>
-    {% for post in site.posts limit:10 %}
+    {% for post in site.posts limit:20 %}
     {% if post.layout != 'redirect' %}
     <entry>
         <title>{{ post.title }}</title>

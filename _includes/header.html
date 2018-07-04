@@ -14,6 +14,57 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
 
+        {% if page.is_post %}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@leonpaternoster" />
+        <meta name="twitter:title" content="{{ page.title }}" />
+        {% if page.description %}
+        <meta name="twitter:description" content="{{ page.description }}" />
+        {% else %}
+        <meta name="twitter:description" content="{{ page.excerpt  | strip_html }}" />
+        {% endif %}
+        {% if page.img %}
+        <meta name="twitter:image" content="https://www.leonpaternoster.com/images/{{ page.img }}" />
+        <meta name="twitter:image:alt" content="{{ page.alt }}" />
+        {% endif %}
+        {% endif %}
+
+        {% if page.is_post %}
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+        <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+        <meta name="DC.Title" content="{{ page.title}}">
+        <meta name="DC.Creator" content="Leon Paternoster">
+        <meta name="DC.Subject" content="{% if page.subject %}{{ page.subject }}{% else %}{{ page.category | capitalize }}{% endif %}">
+        {% if page.description %}<meta name="DC.Description" content="{{ page.description }}">{% endif %}
+        <meta name="DC.Publisher" content="Leon Paternoster">
+        <meta name="DC.Contributor" content="Leon Paternoster">
+        <meta name="DC.Date" content="{{ page.date | date: "%b %-d %Y" }}">
+        <link rel="DC.Identifier" href="{{ site.url }}{{ page.url }}">
+        <meta name="DC.Language" content="en-gb">
+        {% endif %}
+
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &#8211; all posts" href="{{ site.url }}/feed/index.xml">
+
+        {% if page.category == 'libraries' or page.title == 'Libraries' %}
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &#8211; posts about libraries" href="/articles/libraries/feed/index.xml">
+        {% endif %}
+
+        {% if page.category == 'politics' or page.title == 'Politics' %}
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &#8211; posts about politics" href="/journal/politics/feed/index.xml">
+        {% endif %}
+
+        {% if page.category == 'thinking' or page.title == 'Thinking' %}
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &#8211; thinking posts" href="/journal/thinking/feed/index.xml">
+        {% endif %}
+
+        {% if page.category == 'web' or page.title == 'Web' %}
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &#8211; posts about the web" href="/articles/web/feed/index.xml">
+        {% endif %}
+
+        {% if page.note == 'true' or page.title == 'Notes' %}
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &#8211; notes" href="/notes/feed/index.xml">
+        {% endif %}
+
         {% if site.css == 'inline' %}
         <style>
             {% capture inline-styles %}

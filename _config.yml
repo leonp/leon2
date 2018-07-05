@@ -25,6 +25,9 @@ lead: "Blogging about making websites &amp; apps fast, friendly, readable and us
 # Build settings
 permalink: /posts/:title/
 
+# Time
+timezone: Europe/London
+
 
 # Include styles inline or link to css file?
 # This has to be set to css: inline for the theme to inline styles

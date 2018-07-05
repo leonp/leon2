@@ -20,6 +20,8 @@ The Sherlock Holmes stories seemed just right for this. They're short (most can 
 
 Behind the scenes I'm using my normal technical stack: Jekyll, Tachyons, Github and Netlify. The stories are broken down into a chapters collection, which can be used to automatically generate a table of contents. Disappointingly, I discovered only the first story, <cite>A Scandal in Bohemia</cite>, is divided into chapters, so this wasn't really necessary. I did get to use my favourite HTML elements, `details` and `summary` (I've no idea why these aren't all over the internet).
 
+You can bookmark your place in the text by clicking on the `#` sign that appears when you hover over or tap a paragraph. Your mileage may vary on a phone: Firefox on iOS X doesn't seem to add the fragment to any bookmarks when you save them. If you're reading across devices you'll also need to use a cloud bookmarking service (ironically enough, Firefox offers a good, free cloud account). This isn't perfect, but it's keeping it no-login-required pure <span role="img" aria-label="Cheery face">☺️</span>. I'm using the excellent [anchor.js](https://www.bryanbraun.com/anchorjs/) for this.
+
 I've also been using a very simple "framework" I made a few months back. [Jekyll Tachyons](https://github.com/leonp/jekyll-tachyons) creates a basic Jekyll site complete with the Tachyons framework. Most interestingly, you can choose to place styles in the document `head` or in a separate stylesheet, and pick and choose the Tachyons modules it loads. I'm also using it on this site.
 
 There are lots of possibilities here. I could index the text with Algolia to make it searchable and somehow categorised. If only I had the time to look into the potential of plain HTML and text.

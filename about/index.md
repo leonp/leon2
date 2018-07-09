@@ -6,7 +6,7 @@ footer: true
 
 <div class="c-hyphens c-prose-h">
 
-<p>I'm Leon, head of marketing and digital at Suffolk Libraries. I'm responsible for lots of things, including our website and apps we develop. Most interestingly, we made our own library self-service system, which is a progressive web app, and is now sold by software developers Dootrix to other library services.</p>
+<p>I'm Leon, web services manager at Suffolk Libraries. I'm responsible for lots of things, including our website and apps we develop. Most interestingly, I conceived and led the development of our own <a href="/posts/managing-self-service-project/">library self-service system</a>, a progressive web app now sold by software developers Dootrix to other library services.</p>
 
 <p>I've worked in web and, to a lesser extent, IT, since 2008. Before that, I taught secondary English for a few years, and before that I worked as an <abbr title="Network Operations Centre">NOC</abbr> engineer for a telecoms company. My first jobs involved trying to flog ad space.</p>
 
@@ -27,7 +27,7 @@ footer: true
 
 <h2>Colophon</h2>
 
-<p>This site is built using <a href="https://jekyllrb.com">Jekyll</a>, a static site generator, and hosted by <a href="https://www.netlify.com">Netlify</a>, who specialise in hosting static sites. Netlify connects to Git (well, Github, Gitlab and Bitbucket), which means that when I push a change to my repo, the website is updated. This is a very good way to work. I recommend them &#8212; they also offer forms, redirects and even AWS services integration.</p>
+<p>This site is built using <a href="https://jekyllrb.com">Jekyll</a>, a <a href="https://en.wikipedia.org/wiki/Static_web_page">static site</a> generator, and hosted by <a href="https://www.netlify.com">Netlify</a>, who specialise in hosting static sites. Netlify connects to Git (well, Github, Gitlab and Bitbucket), which means that when I push a change to my repo, the website is updated. This is a very good way to work. I recommend Netlify &#8212; they also offer forms, redirects and even AWS services integration.</p>
 
 <p>I use my own Jekyll &#8220;framework&#8221; called <a href="https://github.com/leonp/jekyll-tachyons">Jekyll Tachyons</a>, as it makes building a Jekyll site on the <a href="http://tachyons.io">Tachyons CSS framework</a> quick and easy. I like <span role="img" aria-label="lightning fast">⚡️</span>.</p>
 

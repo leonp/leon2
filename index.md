@@ -4,7 +4,7 @@ title: Leon Paternoster
 is_home: true
 ---
 
-This is my personal site. Since 2008 I've written about work subjects, such as simplicity, usability, accessibility, libraries and developing web products and services. I'm also interested in politics, books, music, philosophy and history. You have been warned.
+I'm Leon, web services manager at Suffolk Libraries. Since 2008 I've written about working on the web, covering topics such as usability, accessibility, libraries (as in the real buildings, not a set of pre-written classes, scripts and data) and developing web products and services. I'm also interested in politics, books, music, philosophy and history. You have been warned.
 
 {% include inline-cats.html %}
 

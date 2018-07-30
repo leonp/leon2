@@ -18,7 +18,7 @@ category: web
 If you use Tachyons and Jekyll a lot it’ll save you time and effort setting up new projects. I’ve used it on a couple of projects (and to tidy up the work website):
 
 - [leonpaternoster.com](https://www.leonpaternoster.com)
-- [adventuresofsherlockholmes.co.uk](https://www/adventuresofsherlockholmes.co.uk)
+- [adventuresofsherlockholmes.co.uk](https://www.adventuresofsherlockholmes.co.uk)
 
 It’ll also make it easy to remove unnecessary CSS. Tachyons is small (weighing in under 14k gzipped), but it’s still worth removing any CSS you don’t need, especially if you’re not gzipping.
 

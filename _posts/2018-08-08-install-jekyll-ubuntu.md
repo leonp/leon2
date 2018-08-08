@@ -4,7 +4,7 @@ layout: post
 category: web
 ---
 
-There's more than one way to skin a cat, but this was easy and quick. My project builds and serves. I last did this about 3 years ago, and used rvm, I think. That may be a better way -- <abbr title="Your mileage may vary">YMMV</abbr>.
+There's more than one way to skin a cat, but this was easy and quick. My project builds and serves. I last did this about 3 years ago, and used rvm, I think. That may be a better way -- <abbr title="Your mileage may vary">YMMV</abbr>. Using Ubuntu 18.04.
 
 1. `sudo apt-get update`
 2. `sudo apt-get install ruby`

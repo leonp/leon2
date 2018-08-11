@@ -16,11 +16,13 @@
 
 {% if page.category %}
 
-<p class="pb3 bb b--light-gray">{{ message }} <br><a href="/posts/">All posts &rarr;</a></p>
+<p class="f3 b mt0">{{ message }}</p>
+
+<hr class="pb4">
 
 {% endif %}
 
-<ul class="list ma0 pa0">
+<ul class="list ma0 pa0 c-linky-visited">
 
 {% for post in posts %}
 

@@ -1,13 +1,11 @@
 ---
 layout: default
 title: Posts
+order: 4
 ---
 
-<div class="mb3 bb b--light-gray b c-sans-serif">
 
-    {% include inline-cats.html %}
-
-</div>
+{% include inline-cats.html %}
 
 {% assign posts = site.posts %}
 

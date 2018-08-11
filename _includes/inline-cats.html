@@ -1,4 +1,4 @@
-<ul class="mh0 ph0 list">
+<!-- <ul class="b mh0 ph0 list c-linky-visited">
 
 {% for cat in site.data.cats %}
 
@@ -7,3 +7,21 @@
 {% endfor %}
 
 </ul>
+
+<hr class="pb4"> -->
+
+<details class="mb4">
+
+    <summary class="b pointer">Categories</summary>
+
+    <ul class="ma0 pa0 list c-linky-visited bb b--light-gray">
+
+        {% for cat in site.data.cats %}
+
+        <li><a href="/posts/{{ cat.slug }}/" class="db bt b--light-gray pv1">{{ cat.name }}</a></li>
+
+        {% endfor %}
+
+    </ul>
+
+</details>

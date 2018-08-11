@@ -13,15 +13,17 @@
 
 <article>
 
-    <header class="c-sans-serif">
+    <header class="">
 
-        <h1 class="f3 lh-title mb2">{{ page.title }}</h1>
+        <p class="mt0 mb2 f6 mid-gray c-linky-underline c-linky-visited"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d,  %Y" }}</time> / {% if page.note %}<a href="/posts/notes/">Notes</a>{% else %}<a href="/posts/{{ slug }}">{{ category }}</a>{% endif %}</p>
 
-        <p class="gray f6 mt0 mb4-ns"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d,  %Y" }}</time>  / {% if page.note %}<a href="/posts/notes/">Notes</a>{% else %}<a href="/posts/{{ slug }}">{{ category }}</a>{% endif %} / <a href="/posts/">All posts &rarr;</a></p>
+        <h1 class="mt0 lh-title mb2 f3">{{ page.title }}</h1>
+
+        <span class="dib w3 mb3 bb bw3 b--orange"></span>
 
     </header>
 
-    <div class="c-prose-h c-hyphens">
+    <div class="c-prose-headings c-hyphens c-linky-visited c-linky-underline">
 
         {{ content}}
 

@@ -2,9 +2,11 @@
 layout: default
 title: About
 footer: true
+order: 2
+visited-links: true
+prose-headings: true
+underlined-links: true
 ---
-
-<div class="c-hyphens c-prose-h">
 
 <p>I'm Leon, web services manager at Suffolk Libraries. I'm responsible for lots of things, including our website and apps we develop. Most interestingly, I conceived and led the development of our own <a href="/posts/managing-self-service-project/">library self-service system</a>, a progressive web app now sold by software developers Dootrix to other library services.</p>
 
@@ -32,5 +34,3 @@ footer: true
 <p>I use my own Jekyll &#8220;framework&#8221; called <a href="https://github.com/leonp/jekyll-tachyons">Jekyll Tachyons</a>, as it makes building a Jekyll site on the <a href="http://tachyons.io">Tachyons CSS framework</a> quick and easy. I like <span role="img" aria-label="lightning fast">⚡️</span>.</p>
 
 <p>The body typeface at the time of writing is <a href="https://fonts.google.com/specimen/IBM+Plex+Serif">IBM Plex Serif</a>, hosted locally but also available from Google Fonts. It's the best Georgia replacement I've found. Headings and ancillary text are set in <a href="https://en.wikipedia.org/wiki/Avenir_(typeface)">Avenir</a> or, if you're not using an Apple product, whatever your default sans serif is.</p>
-
-</div>

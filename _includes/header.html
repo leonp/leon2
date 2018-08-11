@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="f4-ns" lang="{{ site.lang }}">
+<html class="c-font-size" lang="{{ site.lang }}">
 
     <head>
 
@@ -84,20 +84,41 @@
 
     </head>
 
-    <body class="ma0 pa2 pa4-ns bg-white dark-gray c-sans-serif lh-copy">
+    <body class="ma0 pa0 c-bg-beige dark-gray c-sans-serif c-lh-copy">
 
-        {% unless page.is_home %}
+        <ul class="clip">
 
-        <p class="clip"><a href="#content">Skip to content</a></p>
+            <li><a href="#content">Skip to content</a></li>
+            <li><a href="#nav">Skip to navigation</a></li>
 
-        <div class="measure center c-sans-serif mt2-ns mb4 mb5-l">
+        </ul>
 
-            <p class="f6 ma0 b"><a href="/" class="no-underline pv1"><span role="img" aria-label="Finger pointing up">👆</span> {{ site.title }}</a></p>
+        <header class="bg-white ph2 ph3-ns ph4-l pv2 bb b--light-gray">
 
-        </div>
+            <div class="measure center flex-ns flex-wrap-ns justify-between-ns">
 
-        {% endunless %}
+                <a href="/" class="f6 db w-40-ns no-underline pv1 db b black"><span role="img" aria-label="Lightning bolt logo" class="c-icon">⚡️</span> Leon Paternoster</a>
 
-        <div class="measure center">
+                <nav id="nav" class="w-60-ns justify-end-ns flex-ns">
 
-            <main id="content">
+                    <ul class="f6 ma0 pa0 list">
+
+                        {% assign pages = site.pages | where_exp: "page", "page.order > 0"| sort: "order" %}
+
+                        {% for nav-page in pages %}
+
+                        <li class="dib mr3 mr0-ns ml3-m ml4-l"><a href="{{ nav-page.url }}" class="{% if page.url == nav-page.url %}black {% else %}mid-gray {% endif %}hover-black no-underline pv1 db">{{ nav-page.title }}</a></li>
+
+                        {% endfor %}
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <main id="content" class="ph2 ph3-ns ph4-l pv4 pv5-l">
+
+            <div class="center measure">

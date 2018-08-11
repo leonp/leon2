@@ -1,10 +1,16 @@
 {% include header.html %}
 
-<article>
+<article class="pb4">
 
-    <h1 class="f3 lh-title c-sans-serif">{{ page.title }}</h1>
+    <h1 class="f6 ttl small-caps tracked normal mt0 mb2 lh-title">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
 
-    {{ content}}
+    <span class="dib w3 mb3 bb bw3 b--orange"></span>
+
+    <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}">
+
+        {{ content}}
+
+    </div>
 
 </article>
 

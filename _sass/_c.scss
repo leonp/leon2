@@ -12,31 +12,78 @@
     font-family: $c-sans-serif;
 }
 
-.c-plex-serif {
-    font-family: $c-plex-serif;
+.c-lh-copy {
+    line-height: $c-lh-copy;
+    @media #{$breakpoint-medium} {
+        line-height: $c-lh-copy-m;
+    }
+    @media #{$breakpoint-large} {
+        line-height: $c-lh-copy-l;
+    }
+}
+
+.c-font-size {
+    font-size: $c-font-size;
+    @media #{$breakpoint-medium} {
+        font-size: $c-font-size-m;
+    }
+    @media #{$breakpoint-large} {
+        font-size: $c-font-size-l;
+    }
+}
+
+.c-beige {
+    color: $c-beige;
+}
+
+.c-bg-beige {
+    background-color: $c-beige;
+}
+
+.c-icon {
+	color: transparent;
+	text-shadow: 0 0 $highlight;
 }
 
 // Prose styling
 
-.c-prose-h h1,
-.c-prose-h h2,
-.c-prose-h h3,
-.c-prose-h h4,
-.c-prose-h h5,
-.c-prose-h h6,
-.c-prose-h dt {
-    margin-top: 2rem;
+.c-prose-headings h1,
+.c-prose-headings h2,
+.c-prose-headings h3,
+.c-prose-headings h4,
+.c-prose-headings h5,
+.c-prose-headings h6,
+.c-prose-headings dt {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
     line-height: 1.25;
-    font-family: $c-sans-serif;
 }
 
-.c-prose-h h1,
-.c-prose-h h2 {
+.c-prose-headings h1 + *,
+.c-prose-headings h2 + *,
+.c-prose-headings h3 + *,
+.c-prose-headings h4 + *,
+.c-prose-headings h5 + *,
+.c-prose-headings h6 + *,
+.c-prose-headings dt + * {
+    margin-top: 0;
+}
+
+.c-prose-headings h1,
+.c-prose-headings h2 {
     font-size: 1.25rem;
 }
 
-.c-prose-h h3 {
+.c-prose-headings h3 {
     font-size: 1rem;
+}
+
+.c-prose-headings h4,
+.c-prose-headings h5,
+.c-prose-headings h6 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .c-hyphens {
@@ -45,8 +92,21 @@
     -webkit-hyphens: auto;
 }
 
-.c-p-mb1 p {
-    margin: 0.25rem auto;
+.c-linky-underline a {
+    text-decoration: underline;
+}
+
+.c-linky-visited a:link {
+    color: #000;
+}
+
+.c-linky-visited a:visited {
+    color: #666;
+}
+
+.c-linky-visited a:hover,
+.c-linky-visited a:active {
+    color: #357EDD;
 }
 
 .vid,
@@ -75,9 +135,15 @@
 
 // More defaults
 
+a {
+    text-decoration: none;
+}
+
 blockquote {
-    line-height: 1.3;
     font-size: 0.875rem;
+    margin-left: 1rem;
+    padding-left: 0.75rem;
+    border-left: 0.5rem solid $highlight;
 }
 
 figure {
@@ -107,8 +173,8 @@ hr:after {
     top: -0.7em;
     font-size: 1.5em;
     padding: 0 0.25em;
-    background: #FFF;
-    color: #E7040F;
+    background: $c-beige;
+    color: $highlight;
 }
 
 

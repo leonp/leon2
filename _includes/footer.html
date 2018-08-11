@@ -2,22 +2,19 @@
 
             </main>
 
-            <footer class="mt3 mt5-ns">
+            <footer class="ph2 ph3-ns ph4-l pv2 bt b--light-gray">
 
-                <ul class="f6 list ma0 pa0">
+                <div class="measure center c-linky-underline c-linky-visited">
 
-                {% assign pages = site.pages | where: "footer", "true" %}
+                    <ul class="f6 list ma0 pa0">
 
-                {% for page in pages %}
+                        <li class="dib mr2 m3-ns"><a href="/" class="pv1">Leon Paternoster</a></li>
+                        <li class="dib mr2 m3-ns"><a href="https://github.com/leonp/leon2" class="pv1">&lt;/&gt; <code>code</code></a></li>
+                        <li class="dib">Honouring the text since 2008. That&#8217;s all there is, there isn&#8217;t any more.</li>
 
-                    <li class="dib mr2 m3-ns"><a href="{{ page.url }}" class="pv1">{{ page.title }}</a></li>
+                    </ul>
 
-                {% endfor %}
-
-                    <li class="dib mr2 m3-ns"><a href="https://github.com/leonp/leon2" class="pv1">&lt;/&gt; <code>code</code></a></li>
-                    <li class="dib">That&#8217;s all there is, there isn&#8217;t any more.</li>
-
-                </ul>
+                </div>
 
             </footer>
 

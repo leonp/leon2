@@ -103,11 +103,11 @@
 
                     <ul class="f6 ma0 pa0 list">
 
-                        {% assign pages = site.pages | where_exp: "page", "page.order > 0"| sort: "order" %}
+                        {% assign pages = site.pages | where_exp: "page", "page.order > 0" | sort: "order" %}
 
                         {% for nav-page in pages %}
 
-                        <li class="dib mr3 mr0-ns ml3-m ml4-l"><a href="{{ nav-page.url }}" class="{% if page.url == nav-page.url %}black {% else %}mid-gray {% endif %}hover-black no-underline pv1 db">{{ nav-page.title }}</a></li>
+                        <li class="dib mr3 mr0-ns ml3-m ml4-l"><a href="{{ nav-page.url }}" class="{% if page.url == nav-page.url %}black {% else %}blue {% endif %}hover-black no-underline pv1 db">{{ nav-page.title }}</a></li>
 
                         {% endfor %}
 

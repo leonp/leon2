@@ -6,17 +6,23 @@ is_home: true
 order: 1
 ---
 
-I'm Leon, web services manager at Suffolk Libraries. Since 2008 I've written about working on the web, covering topics such as usability, accessibility, libraries (as in the real buildings, not a set of pre-written classes, scripts and data) and developing web products and services. I'm also interested in politics, books, music, philosophy and history. You have been warned.
+{% assign posts = site.posts %}
 
-{% include inline-cats.html %}
+<ul class="list ma0 pa0 c-linky-visited">
 
-<span role="img" aria-label="A pen">🖊</span> [**All posts &rarr;**](/posts/)
+{% for post in posts limit: 20 %}
 
-<div class="pv2 pv3-ns">
+{% unless post.note %}
 
-    <hr>
+    <li class="mb3 mb4-ns"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray c-sans-serif">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
-</div>
+{% endunless %}
+
+{% endfor %}
+
+</ul>
+
+<hr class="pb4">
 
 - [RSS feed](/feed/index.xml/)
 - [Twitter](https://mobile.twitter.com/leonpaternoster/)

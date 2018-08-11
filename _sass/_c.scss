@@ -82,8 +82,10 @@
 .c-prose-headings h5,
 .c-prose-headings h6 {
     font-size: 1rem;
-    text-transform: uppercase;
+    text-transform: lowercase;
+    font-variant: small-caps;
     letter-spacing: 0.1em;
+    font-weight: normal
 }
 
 .c-hyphens {

@@ -99,7 +99,7 @@
 }
 
 .c-linky-visited a:link {
-    color: #000;
+    color: #357EDD;
 }
 
 .c-linky-visited a:visited {
@@ -108,7 +108,7 @@
 
 .c-linky-visited a:hover,
 .c-linky-visited a:active {
-    color: #357EDD;
+    color: $highlight;
 }
 
 .vid,

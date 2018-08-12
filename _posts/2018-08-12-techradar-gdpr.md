@@ -1,5 +1,5 @@
 ---
-title: 'Getting round GDPR. A case study: Techradar'
+title: 'Getting round GDPR with dark patterns. A case study: Techradar'
 layout: post
 category: web
 ---
@@ -19,7 +19,7 @@ Of course, no-one would ever click this link because no-one has any interest in 
 
 {% include pull-quote.html text="We can share your data with advertisers so you get tailored adverts. <strong>We rely on the money we get from these adverts to pay our journalists. Please <a href='#'>share your data &rarr;</a></strong>" %}
 
-But old habits die hard. Here's the popover [Techradar](https://www.techradar.com/uk) displays when you visit the site:
+But old habits die hard. Here's the popover [Techradar](https://www.techradar.com/uk) displays when you visit the site. Note I'm absolutely sure Techradar isn't the only website doing this sort of thing:
 
 {% include figure.html url="techradar.jpg" alt="Popover with small text and confusingly labelled buttons" caption="The Techradar advertising opt-in dialogue" %}
 
@@ -56,4 +56,4 @@ Technically speaking you _could_ argue Techradar are getting explicit consent in
 - They make it seem as if you can't use the site unless you opt-in. [According to the ICO website](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-processing/consent/), you have to <q>Avoid making consent to processing a precondition of a service</q>.
 - On the same page, the ICO says you must <q>Be clear and concise</q>. Although this is a subjective requirement, I can't see how anybody could interpret this process as clear and concise in any way.
 
-Bearing in mind the murky history of online advertising, and some sites' reliance on it as a source of income, it's depressingly inevitable that organisations would find ways to get round the new regulations. The only way GDPR will achieve what it set out to do will be through prosecutions. If they don't, people will just click or tap 'Accept' and the online advertising industry will carry on as before, while claiming it's doing the right thing. I'm skeptical. If you've any interest in privacy and you'd like to keep websites fast, make sure you're using a browser that puts you in control of trackers and cookies and use an adblocker. Firefox (or, better still, [Firefox Focus](https://www.mozilla.org/en-GB/firefox/mobile/) on a mobile) is the obvious choice.
+Bearing in mind the murky history of online advertising, and some sites' reliance on it as a source of income, it's depressingly inevitable that organisations would find ways to get round the new regulations. The only way GDPR will achieve what it set out to do will be through prosecuting organisations that are in breach. If they don't, people will just click or tap 'Accept' and the online advertising industry will carry on as before, while claiming it's doing the right thing. I'm skeptical. If you've any interest in privacy and you'd like to keep websites fast, make sure you're using a browser that puts you in control of trackers and cookies and use an adblocker. Firefox (or, better still, [Firefox Focus](https://www.mozilla.org/en-GB/firefox/mobile/) on a mobile) is the obvious choice.

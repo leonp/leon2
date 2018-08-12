@@ -6,19 +6,11 @@ is_home: true
 order: 1
 ---
 
-{% assign posts = site.posts %}
+{% assign posts = site.posts | where_exp: "post", "post.note != true" %}
 
 <ul class="list ma0 pa0 c-linky-visited">
 
-{% for post in posts limit: 20 %}
-
-{% unless post.note %}
-
-    <li class="mb4 b"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray c-sans-serif">{{ post.date | date: "%b %d, %Y" }}</time></li>
-
-{% endunless %}
-
-{% endfor %}
+{% include list.html post-limit=20 %}
 
 </ul>
 

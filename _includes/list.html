@@ -12,19 +12,49 @@
 
     {% endfor %}
 
-{% endif %}
-
-{% if page.category %}
-
 <p class="f3 b mt0">{{ message }}</p>
 
 <hr class="pb4">
 
 {% endif %}
 
+{% if page.annualised %}
+
+<div class="c-prose-headings">
+
+{% for post in posts limit:include.post-limit | default:500 %}
+
+    {% assign currentdate = post.date | date: "%Y" %}
+
+    {% if currentdate != date %}
+
+        {% unless forloop.first %}</ul>{% endunless %}
+
+        <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
+
+        <ul class="list ma0 pa0 c-linky-visited">
+
+        {% assign date = currentdate %}
+
+        {% endif %}
+
+        {% unless post.note %}
+
+            <li class="mb4 b"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray c-sans-serif">{{ post.date | date: "%b %d, %Y" }}</time></li>
+
+        {% endunless %}
+
+        {% if forloop.last %}</ul>{% endif %}
+
+{% endfor %}
+
+</div>
+
+{% else %}
+
 <ul class="list ma0 pa0 c-linky-visited">
 
-{% for post in posts %}
+{% for post in posts limit:include.post-limit | default:500 %}
 
 {% unless post.note %}
 
@@ -35,3 +65,5 @@
 {% endfor %}
 
 </ul>
+
+{% endif %}

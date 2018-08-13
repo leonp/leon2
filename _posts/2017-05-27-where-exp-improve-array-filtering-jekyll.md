@@ -17,4 +17,4 @@ There are times when you might want to filter for all articles _not_ in the `web
 
 `where_exp` lets you use expressions and operators in filters, such as `or`, `and` and `!=`, so you could also use it to filter for all posts in the `web` and `libraries` categories. Here's how you filter for everything not in the `web` category:
 
-{% include gist.html gh-user="anonymous" code="cb570a8cef37c01f12d7a99c41aee7f7" %}
+{% include gist.html gh-user="leonp" code="cc546c1e83f977aca30767bc68131ded" %}

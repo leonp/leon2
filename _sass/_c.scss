@@ -227,3 +227,40 @@ hr:after {
        url('/fonts/fira-sans-v8-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('/fonts/fira-sans-v8-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+// Print styles
+
+@media print {
+
+* {
+  background-color: white !important;
+  color: black !important;
+  font-family: sans-serif;
+  line-height: 1.375;
+}
+
+.measure {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  margin-top: 2em;
+}
+
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.c-no-print {
+  display: none;
+}
+
+
+}

@@ -32,7 +32,7 @@
 
         <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
 
-        <ul class="list ma0 pa0 c-linky-visited">
+        <ul class="list mb0 mh0 mt3 pa0 c-linky-visited">
 
         {% assign date = currentdate %}
 
@@ -40,7 +40,7 @@
 
         {% unless post.note %}
 
-            <li class="mb4 b"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray c-sans-serif">{{ post.date | date: "%b %d, %Y" }}</time></li>
+            <li class="mb4 b f4-ns"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray c-sans-serif">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
         {% endunless %}
 
@@ -52,13 +52,13 @@
 
 {% else %}
 
-<ul class="list ma0 pa0 c-linky-visited">
+<ul class="list mb0 mh0 mt3 pa0 c-linky-visited">
 
 {% for post in posts limit:include.post-limit | default:500 %}
 
 {% unless post.note %}
 
-    <li class="mb4 b"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray c-sans-serif">{{ post.date | date: "%b %d, %Y" }}</time></li>
+    <li class="mb4 b f4-ns"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray c-sans-serif">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
 {% endunless %}
 

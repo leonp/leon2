@@ -32,6 +32,10 @@
     }
 }
 
+.c-wrapper {
+    max-width: $c-wrapper;
+}
+
 .c-beige {
     color: $c-beige;
 }
@@ -71,21 +75,17 @@
 
 .c-prose-headings h1,
 .c-prose-headings h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .c-prose-headings h3 {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .c-prose-headings h4,
 .c-prose-headings h5,
 .c-prose-headings h6 {
     font-size: 1rem;
-    text-transform: lowercase;
-    font-variant: small-caps;
-    letter-spacing: 0.1em;
-    font-weight: normal
 }
 
 .c-hyphens {
@@ -145,7 +145,7 @@ blockquote {
     font-size: 0.875rem;
     margin-left: 1rem;
     padding-left: 0.75rem;
-    border-left: 0.5rem solid $highlight;
+    border-left: 0.5rem solid #CCC;
 }
 
 figure {
@@ -162,20 +162,20 @@ pre {
 
 hr {
     overflow: visible; /* For IE */
-    padding: 0;
+    padding: 0 0 1.5rem 0;
     border: none;
     border-top: medium double #CCC;
     text-align: center;
 }
 
 hr:after {
-    content: "★";
+    content: "§";
     display: inline-block;
     position: relative;
     top: -0.7em;
     font-size: 1.5em;
-    padding: 0 0.25em;
-    background: $c-beige;
+    padding: 0 0.25rem 1.5rem 0.25rem;
+    background: #FFF;
     color: $highlight;
 }
 
@@ -195,38 +195,6 @@ hr:after {
 
 } // End the enclosing screen/projection media query
 
-
-// Add some locally hosted fonts
-
-/* fira-sans-regular - latin */
-@font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Fira Sans Regular'), local('FiraSans-Regular'),
-       url('/fonts/fira-sans-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/fira-sans-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* fira-sans-italic - latin */
-@font-face {
-  font-family: 'Fira Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Fira Sans Italic'), local('FiraSans-Italic'),
-       url('/fonts/fira-sans-v8-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/fira-sans-v8-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* fira-sans-700 - latin */
-@font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Fira Sans Bold'), local('FiraSans-Bold'),
-       url('/fonts/fira-sans-v8-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/fira-sans-v8-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 
 // Print styles
 

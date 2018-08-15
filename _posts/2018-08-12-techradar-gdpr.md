@@ -13,11 +13,11 @@ This is not GDPR's fault. [The guidelines are clear](https://ico.org.uk/for-orga
 
 It would be _very_ easy to design a banner that did this. Something like:
 
-{% include pull-quote.html text="We can share your data with advertisers so you get tailored adverts. <a href='#'>Share your data &rarr;</a>" %}
+{% include pull-quote.html text="We can share your anonymised browsing history with advertisers so you get tailored adverts <a href='#'>Share your browsing history &rarr;</a>" %}
 
 Of course, no-one would ever click this link because no-one _wants_ to be served adverts. As a consequence, sites that rely on tracking and identifying visitors are getting round GDPR by the way they know best: <i>obfuscation</i>. They _could_ rephrase this request to collect data by being honest about why they need it:
 
-{% include pull-quote.html text="We can share your data with advertisers so you get tailored adverts. <strong>We rely on the money we get from tailored adverts to pay our journalists. Please <a href='#'>share your data &rarr;</a></strong>" %}
+{% include pull-quote.html text="We can share your anonymised browsing history with advertisers so you get tailored adverts. <strong>We rely on the money we get from tailored adverts to pay our journalists. Please <a href='#'>share your browsing history &rarr;</a></strong>" %}
 
 But old habits die hard. [Techradar](https://www.techradar.com/uk) writes reviews of electronic things -- it's a useful resource if you're comparing products. Here's the popover they display when you visit their site. I'm sure they're not the only website doing this sort of thing:
 
@@ -43,7 +43,7 @@ I get the feeling Techradar _really_ don't want us not to opt-in. Again, the pri
 
 At least the text here is clearer, and Techradar are honest about why they don't want you to use an adblocker. Incidentally, we'd need to change our more straightforward banner:
 
-{% include pull-quote.html text="We can share your data with advertisers so you get tailored adverts. <strong>We rely on the money we get from tailored adverts to pay our journalists. Please <a href='#'>share your data &rarr;</a> and turn off your adblocker.</strong>" %}
+{% include pull-quote.html text="We can share your anonymised browsing history with advertisers so you get tailored adverts. <strong>We rely on the money we get from tailored adverts to pay our journalists. Please <a href='#'>share your data &rarr;</a> and turn off your adblocker.</strong>" %}
 
 This is an easy one. We'll continue with our Adblocker, thank you. And we're there. Of course, this being Techradar, we get a popover for our troubles:
 

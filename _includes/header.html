@@ -77,14 +77,10 @@
         <link href="/css/style.css" rel="stylesheet">
         {% endif %}
 
-        <link rel="preload" as="font" type="font/woff2" href="/fonts/fira-sans-v8-latin-regular.woff2">
-        <link rel="preload" as="font" type="font/woff2" href="/fonts/fira-sans-v8-latin-italic.woff2">
-        <link rel="preload" as="font" type="font/woff2" href="/fonts/fira-sans-v8-latin-700.woff2">
-
 
     </head>
 
-    <body class="ma0 pa0 c-bg-beige dark-gray c-sans-serif c-lh-copy">
+    <body class="ma0 pa0 bg-white dark-gray c-sans-serif c-lh-copy">
 
         <ul class="clip c-no-print">
 
@@ -95,19 +91,19 @@
 
         <header class="c-no-print bg-white ph2 ph3-ns ph4-l pv2 bb b--light-gray">
 
-            <div class="measure center flex-l flex-wrap-l justify-between-l">
+            <div class="c-wrapper center flex-l flex-wrap-l justify-between-l">
 
-                <a href="/" class="db w-third-l no-underline pv1 db b black"><span role="img" aria-label="Lightning bolt logo" class="c-icon">⚡️</span> Leon Paternoster</a>
+                <a href="/" class="f6 db w-third-l no-underline pv1 db b dark-gray hover-black"><span role="img" aria-label="Lightning bolt logo" class="c-icon">⚡️</span> Leon Paternoster</a>
 
                 <nav id="nav" class="w-two-thirds-l justify-end-l flex-l">
 
-                    <ul class="ma0 pa0 list">
+                    <ul class="f6 ma0 pa0 list">
 
                         {% assign pages = site.pages | where_exp: "page", "page.order > 0" | sort: "order" %}
 
                         {% for nav-page in pages %}
 
-                        <li class="dib mr3 mr0-l ml4-l"><a href="{{ nav-page.url }}" class="{% if page.url == nav-page.url %}black {% else %}dark-blue {% endif %}hover-black no-underline pv1 db">{{ nav-page.title }}</a></li>
+                        <li class="dib mr3 mr0-l ml4-l"><a href="{{ nav-page.url }}" class="{% if page.url == nav-page.url %}black {% else %}gray {% endif %}hover-black no-underline pv1 db">{{ nav-page.title }}</a></li>
 
                         {% endfor %}
 
@@ -121,4 +117,4 @@
 
         <main id="content" class="ph2 ph3-ns ph4-l pv4 pv5-l">
 
-            <div class="center measure">
+            <div class="center c-wrapper">

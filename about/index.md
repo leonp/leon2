@@ -6,6 +6,7 @@ order: 2
 visited-links: true
 prose-headings: true
 underlined-links: true
+hyphens: true
 ---
 
 <p>I'm Leon, web services manager at Suffolk Libraries. I'm responsible for lots of things, including our website and apps we develop. Most interestingly, I conceived and led the development of our own <a href="/posts/managing-self-service-project/">library self-service system</a>, a progressive web app now sold by software developers Dootrix to other library services.</p>

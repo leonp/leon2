@@ -4,7 +4,7 @@ layout: post
 category: work
 ---
 
-I made a website from the 1892 Sherlock Holmes collection <cite><a href="https://www.adventuresofsherlockholmes.co.uk">The Adventures of Sherlock Holmes</a></cite>. 12 stories, some of which you may well recognise, originally published in serial form in <cite>The Strand</cite> magazine.
+I made a website from the 1892 Sherlock Holmes collection <cite><a href="https://adler.netlify.com">The Adventures of Sherlock Holmes</a></cite>. 12 stories, some of which you may well recognise, originally published in serial form in <cite>The Strand</cite> magazine.
 
 I'm not a huge Holmes fan, but these stories provided a few minutes' Victorian pleasure. It can be fun reading Doyle's character between the lines; protestant, conservative, anti-royalist, a streak perhaps of non-conformism, some romanticism. They _have_ generated some excellent pastiches and adaptations: the best probably being Anthony Burgess' <cite><a href="https://en.wikipedia.org/wiki/The_Devil%27s_Mode">Murder to Music</a></cite>, along with some of the Cumberbatch and Freeman BBC episodes.
 
@@ -30,5 +30,5 @@ I've also been using a very simple "framework" I made a few months back. [Jekyll
 
 There are lots of possibilities here. I could index the text with Algolia to make it searchable and somehow categorised. If only I had the time to look into the potential of plain HTML and text.
 
-- [The Adventures of Sherlock Holmes](https://www.adventuresofsherlockholmes.co.uk)
+- [The Adventures of Sherlock Holmes](https://adler.netlify.com)
 - [Jekyll Tachyons framework](https://github.com/leonp/jekyll-tachyons)

@@ -22,8 +22,8 @@ I'm web services manager at Suffolk Libraries. I blog about working on the web, 
 <ul class="c-linky-visited">
 
     <li><a href="/feed/index.xml/">RSS feed</a></li>
-    <li><a href="https://mobile.twitter.com/leonpaternoster/">Twitter</a></li>
-    <li><a href="https://micro.blog/leonp/">micro.blog</a></li>
+    <li><a rel="me" href="https://mobile.twitter.com/leonpaternoster/">Twitter</a></li>
+    <li><a rel="me" href="https://micro.blog/leonp/">micro.blog</a></li>
     <li>leon.paternoster@zoho.com</li>
 
 </ul>

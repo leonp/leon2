@@ -73,6 +73,7 @@ defaults:
 # webmentions
 
 webmentions:
+  username: www.leonpaternoster.com
   legacy_domains:
     - http://leonpaternoster.com
     - http://www.leonpaternoster.com

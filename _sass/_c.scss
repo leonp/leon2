@@ -179,6 +179,29 @@ hr:after {
     color: $highlight;
 }
 
+table {
+    min-width: 100%;
+    overflow: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+thead {
+    text-align: left;
+}
+
+th {
+    padding: 0.25rem;
+    border-bottom: 1px solid #333;
+    margin: 0;
+}
+
+td {
+    padding: 0.25rem;
+    border-bottom: 1px solid #CCC;
+    margin: 0;
+}
+
 
 // Some empty media queries
 // Use these if you want to make responsive custom classes

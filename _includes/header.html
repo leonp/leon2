@@ -17,8 +17,9 @@
         <meta name="robots" content="noindex, nofollow">
         {% endif %}
 
-        {% if page.is_post %}
         {% webmentions_head %}
+
+        {% if page.is_post %}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@leonpaternoster" />
         <meta name="twitter:title" content="{{ page.title }}" />

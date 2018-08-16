@@ -70,6 +70,14 @@ defaults:
         is_page: true
 
 
+# webmentions
+
+webmentions:
+  legacy_domains:
+    - http://leonpaternoster.com
+    - http://www.leonpaternoster.com
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

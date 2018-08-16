@@ -18,7 +18,6 @@
         {% endif %}
 
         {% webmentions_head %}
-        <link rel="pingback" href="https://webmention.io/www.leonpaternoster.com/xmlrpc" />
 
         {% if page.is_post %}
         <meta name="twitter:card" content="summary" />
@@ -36,7 +35,7 @@
         {% endif %}
 
         {% if page.is_post %}
-        <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+        <link rel="schema.DCTERMS" href="https://purl.org/dc/terms/">
         <meta name="DC.Title" content="{{ page.title}}">
         <meta name="DC.Creator" content="Leon Paternoster">
         <meta name="DC.Subject" content="{% if page.subject %}{{ page.subject }}{% else %}{{ page.category | capitalize }}{% endif %}">

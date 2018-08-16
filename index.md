@@ -5,12 +5,15 @@ display-title: "Leon Paternoster"
 is_home: true
 order: 1
 ---
+I'm web services manager at Suffolk Libraries. I blog about working on the web, libraries and anything else that interests me. You have been warned.
+
+<h2 class="f5 ttl small-caps tracked normal mt4">Latest blog posts</h2>
 
 {% assign posts = site.posts | where_exp: "post", "post.note != true" %}
 
 <ul class="list ma0 pa0 c-linky-visited">
 
-{% include list.html post-limit=20 %}
+{% include list.html post-limit=10 %}
 
 </ul>
 

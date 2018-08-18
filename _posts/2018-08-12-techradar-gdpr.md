@@ -11,7 +11,7 @@ This is not GDPR's fault. [The guidelines are clear](https://ico.org.uk/for-orga
 - ask users to explicitly opt-in to share their data
 - not use legalese or similarly unclear language
 
-It would be _very_ easy to design a banner that did this. Something like:
+It would be _very_ easy to design an unobtrusive banner that did this. Something like:
 
 {% include pull-quote.html text="We can share your anonymised browsing history with advertisers so you get tailored adverts <a href='#'>Share your browsing history &rarr;</a>" %}
 
@@ -19,9 +19,9 @@ Of course, no-one would ever click this link because no-one _wants_ to be served
 
 {% include pull-quote.html text="We can share your anonymised browsing history with advertisers so you get tailored adverts. <strong>We rely on the money we get from tailored adverts to pay our journalists. Please <a href='#'>share your browsing history &rarr;</a></strong>" %}
 
-There are very few examples of sites doing this well. [Smashing Magazine](https://www.smashingmagazine.com) is one, although it recently moved to a part-subscription model for its income, so isn't reliant on installing tracking scripts:
+There are very few examples of sites doing this well. [Smashing Magazine](https://www.smashingmagazine.com) is one, although it recently moved to a part-subscription model for its income, so isn't reliant on installing tracking cookies. The pop up is a minor annoyance which presents a simple binary choice:
 
-{% include figure.html url="smashing-mag-consent.jpg" alt="A small pop up in the corner of the screen" caption="Smashing Magazine presents a non-obtrusive pop up with a clear choice" %}
+{% include figure.html url="smashing-mag-consent.jpg" alt="A small pop up in the corner of the screen on the Smashing Magazine website" caption="Smashing Magazine does opting in the right way" %}
 
 But old habits die hard. [Techradar](https://www.techradar.com/uk) writes reviews of electronic things -- it's a useful resource if you're comparing products. Here's the popover they display when you visit their site. I'm sure they're not the only website doing this sort of thing:
 

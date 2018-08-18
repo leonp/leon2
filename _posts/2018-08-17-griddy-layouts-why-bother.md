@@ -20,7 +20,7 @@ But that's not a good reason, and something designers should resist. You _could_
 
 > &hellip; an ad can emit a powerful signal about a brand, regardless of information content. Online ads are cheap and easy to make, but the problem is, they look it.
 
-But this is by the by. Even we accept the Don Draper logic, a simple layout doesn't have to look cheap. If your user is happier with plainer then that's a good business reason for keeping it simple. Online, the interface is the brand, and your testing and feedback should dictate the layout you implement.
+But this is by the by. Even if we accept the Don Draper logic, a simple layout doesn't have to look cheap. If your user is happier with plainer then that's a good business reason for keeping it simple. Online, the interface is the brand, and your testing and feedback should dictate the layout you implement.
 
 <hr>
 

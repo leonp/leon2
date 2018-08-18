@@ -15,9 +15,13 @@ It would be _very_ easy to design a banner that did this. Something like:
 
 {% include pull-quote.html text="We can share your anonymised browsing history with advertisers so you get tailored adverts <a href='#'>Share your browsing history &rarr;</a>" %}
 
-Of course, no-one would ever click this link because no-one _wants_ to be served adverts. As a consequence, sites that rely on tracking and identifying visitors are getting round GDPR by the way they know best: <i>obfuscation</i>. They _could_ rephrase this request to collect data by being honest about why they need it:
+Of course, no-one would ever click this link because no-one _wants_ to be served adverts, or share their data with someone they don't know. As a consequence, sites that rely on tracking and identifying visitors are getting round GDPR by the way they know best: <i>obfuscation</i>. They _could_ rephrase this request to collect data by being honest about why they need it:
 
 {% include pull-quote.html text="We can share your anonymised browsing history with advertisers so you get tailored adverts. <strong>We rely on the money we get from tailored adverts to pay our journalists. Please <a href='#'>share your browsing history &rarr;</a></strong>" %}
+
+There are very few examples of sites doing this well. [Smashing Magazine](https://www.smashingmagazine.com) is one, although it recently moved to a part-subscription model for its income, so isn't reliant on installing tracking scripts:
+
+{% include figure.html url="smashing-mag-consent.jpg" alt="A small pop up in the corner of the screen" caption="Smashing Magazine presents a non-obtrusive pop up with a clear choice" %}
 
 But old habits die hard. [Techradar](https://www.techradar.com/uk) writes reviews of electronic things -- it's a useful resource if you're comparing products. Here's the popover they display when you visit their site. I'm sure they're not the only website doing this sort of thing:
 

@@ -6,9 +6,9 @@ layout: post
 
 We don't read enough about the results of [kiosk testing](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/), maybe because people don't kiosk test enough. But Thomas wrote an excellent post on some [last minute tests on the MoMu website](https://thomasbyttebier.be/blog/usability-testing-the-new-momu-website), sharing his methodology and five findings.
 
-I can't recommend this testing enough. It'll snag your major usability problems, challenge your assumptions and help get into your users' minds. It's also relatively easy to run – you can use it on any website change, not just a new release.
+I can't recommend this testing enough. It'll snag major usability problems, challenge your assumptions and help get into users' minds. It's also relatively easy to set up, so you can use it to test any website change, not just a whole new release.
 
-It's important you test on your website's _users_ rather than random members of the public (note, this is still useful testing!), or, worse still, whoever's paying for the site. We all want to build websites usable by anyone, and your marketing department will no doubt have a new audience to target (which is probably younger than your current audience). But if you run a website, you at least need to be aware of who is using it at the moment, and whether you're going to piss them off with a change.
+You'll want to test on your website's _users_ rather than just anyone (although this is still useful in identifying universal problems), or, worse still, whoever's paying for the site. We all want to build websites usable by anyone, and your marketing department will no doubt have a new audience to target (which is probably younger than your current audience). But if you run a website, you at least need to be aware of who is using it at the moment, and whether you're going to piss them off with a change.
 
 Which is why I found Thomas's first finding interesting: <q>Hiding navigation is totally OK</q> as it contradicts lots of testing I've done. Now, kiosk testing can take some thought. On the MoMu website the navigation menu toggle button is _very_ clearly styled with a nice big drop shadow, and uses a label rather than an icon. Perhaps the results would have been different if they'd used a standard hamburger icon.
 

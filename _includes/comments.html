@@ -18,8 +18,6 @@
 
             <p class="f6 gray ma0"><time>{{ comment.date | date: "%b %-d, %Y" }}</time></p>
 
-            <p>Comment URL: *{{ comment.url }}*</p>
-
             <div class="c-no-top-margin">
 
                 {{ comment.message | markdownify | smartify }}

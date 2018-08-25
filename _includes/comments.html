@@ -1,0 +1,27 @@
+{% assign all_comments = site.data.comments.[page.slug] %}
+
+{% if all_comments.size > 0 %}
+
+    <section class="pt2">
+
+        <h2 class="f4 lh-title pb1 bb b--light-gray">Comments</h2>
+
+        {% for comments in all_comments %}
+
+        {% assign comment = comments[1] %}
+
+        <article class="pb4">
+
+            <h3 class="f5 lh-title mt0 mb1">{{ comment.name }}</h3>
+
+            <p class="f6 gray ma0">{{ comment.date }}</p>
+
+            {{ comment.message | markdownify | smartify }}
+
+        </article>
+
+        {% endfor %}
+
+    </section>
+
+{% endif %}

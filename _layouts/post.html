@@ -31,24 +31,9 @@
 
     <footer class="bt b--light-gray">
 
-        <h2 class="f4 lh-title mb2">Add a comment</h2>
+        {% include comment-form.html %}
 
-        <form method="POST" action="https://api.staticman.net/v2/entry/leonp/leon2/master/comments">
-
-            <input name="options[redirect]" hidden type="hidden" value="{{ site.url }}/comment-received/">
-            <input name="options[slug]" hidden type="hidden" value="{{ page.slug }}">
-            <label class="f6 db mb1" for="name">Name</label>
-            <input class="c-sans-serif db w-100 pa2 mb3 ba b--moon-gray" required name="fields[name]" id="name" type="text">
-
-            <label class="f6 db mb1" for="email">E-mail</label>
-            <input class="c-sans-serif db w-100 pa2 mb3 ba b--moon-gray" required name="fields[email]" id="email" type="email">
-
-            <label class="f6 db mb1" for="message">Message</label>
-            <textarea class="c-sans-serif db h5-ns w-100 pa2 mb3 ba b--moon-gray" required name="fields[message]" id="message"></textarea>
-
-            <button class="c-sans-serif pa2 bg-dark-blue hover-bg-blue white ba- b--light-gray pointer" type="submit">Add comment</button>
-
-        </form>
+        {% include comments.html %}
 
     </footer>
 

@@ -35,7 +35,7 @@
 
         <form method="POST" action="https://api.staticman.net/v2/entry/leonp/leon2/master/comments">
 
-            <input name="options[redirect]" hidden type="hidden" value="/">
+            <input name="options[redirect]" hidden type="hidden" value="{{ site.url }}">
             <input name="options[slug]" hidden type="hidden" value="{{ page.slug }}">
             <label class="f6 db mb1" for="name">Name</label>
             <input class="c-sans-serif db w-100 pa2 mb3 ba b--moon-gray" required name="fields[name]" id="name" type="text">

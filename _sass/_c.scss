@@ -111,6 +111,10 @@
     color: $highlight;
 }
 
+.c-no-top-margin * {
+    margin-top: 0 !important;
+}
+
 .vid,
 .constrain {
     position: relative;

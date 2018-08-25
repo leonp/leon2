@@ -10,7 +10,7 @@
 
         {% assign comment = comments[1] %}
 
-        {% unless comment.url == "" %}
+        {% unless comment.url != "" %}
 
         <article class="pb4">
 
@@ -20,7 +20,11 @@
 
             <p>Comment URL: *{{ comment.url }}*</p>
 
-            {{ comment.message | markdownify | smartify }}
+            <div class="c-no-top-margin">
+
+                {{ comment.message | markdownify | smartify }}
+
+            </div>
 
         </article>
 

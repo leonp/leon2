@@ -10,15 +10,21 @@
 
         {% assign comment = comments[1] %}
 
+        {% unless comment.url != "" %}
+
         <article class="pb4">
 
             <h3 class="f5 lh-title mt0 mb1">{{ comment.name }}</h3>
 
             <p class="f6 gray ma0"><time>{{ comment.date | date: "%b %-d, %Y" }}</time></p>
 
+            <p>Comment URL: *{{ comment.url }}*</p>
+
             {{ comment.message | markdownify | smartify }}
 
         </article>
+
+        {% endunless %}
 
         {% endfor %}
 

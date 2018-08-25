@@ -14,7 +14,7 @@
 
             <h3 class="f5 lh-title mt0 mb1">{{ comment.name }}</h3>
 
-            <p class="f6 gray ma0">{{ comment.date }}</p>
+            <p class="f6 gray ma0"><time>{{ comment.date | date: "%b %-d, %Y" }}</time></p>
 
             {{ comment.message | markdownify | smartify }}
 

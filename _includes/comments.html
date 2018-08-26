@@ -1,35 +1,35 @@
-{% assign all_comments = site.data.comments.[page.slug] %}
+{% if site.data.comments.[page.slug] %}
 
-{% if all_comments.size > 0 %}
+{% assign all_comments = site.data.comments.[page.slug] | sort %}
 
-    <section class="pt2">
+<section class="pt2">
 
-        <h2 class="f4 lh-title pb1 bb b--light-gray">Comments</h2>
+    <h2 class="f4 lh-title pb1 bb b--light-gray">Comments</h2>
 
-        {% for comments in all_comments %}
+    {% for comments in all_comments %}
 
-        {% assign comment = comments[1] %}
+    {% assign comment = comments[1] %}
 
-        {% unless comment.url != "" %}
+    {% unless comment.url != "" %}
 
-        <article class="pb4">
+    <article class="pb4">
 
-            <h3 class="f5 lh-title mt0 mb1">{{ comment.name }}</h3>
+        <h3 class="f5 lh-title mt0 mb1">{{ comment.name }}</h3>
 
-            <p class="f6 gray ma0"><time>{{ comment.date | date: "%b %-d, %Y,  %H:%M" }}</time></p>
+        <p class="f6 gray ma0"><time>{{ comment.date | date: "%b %-d, %Y,  %H:%M" }}</time></p>
 
-            <div class="c-no-top-margin">
+        <div class="c-no-top-margin">
 
-                {{ comment.message | markdownify | smartify }}
+            {{ comment.message | markdownify | smartify }}
 
-            </div>
+        </div>
 
-        </article>
+    </article>
 
-        {% endunless %}
+    {% endunless %}
 
-        {% endfor %}
+    {% endfor %}
 
-    </section>
+</section>
 
 {% endif %}

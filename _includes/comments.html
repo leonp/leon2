@@ -4,7 +4,7 @@
 
 <section class="pt2">
 
-    <h2 class="f4 lh-title pb1 bb b--light-gray">Comments</h2>
+    <h2 class="f4 lh-title">Comments</h2>
 
     {% for comments in all_comments %}
 
@@ -12,11 +12,11 @@
 
     {% unless comment.url != "" %}
 
-    <article class="pb4">
+    <article class="mb4 pa2 pa3-ns ba b--light-gray c-linky-visited c-linky-underline" id="{{ comment._id }}">
 
         <h3 class="f5 lh-title mt0 mb1">{{ comment.name }}</h3>
 
-        <p class="f6 gray ma0"><time>{{ comment.date | date: "%b %-d, %Y,  %H:%M" }}</time></p>
+        <p class="f6 gray ma0"><time><a href="{{ page.url }}#{{ comment._id}}">{{ comment.date | date: "%b %-d, %Y, %H:%M" }}</a></time></p>
 
         <div class="c-no-top-margin">
 

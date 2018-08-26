@@ -1,4 +1,10 @@
-<h2 class="f4 lh-title mb2" id="commentary">Add a comment</h2>
+<h2 class="f4 lh-title mb1" id="commentary">Add a comment</h2>
+
+{% unless site.data.comments.[page.slug] %}
+
+<p class="mt0 mb2 f6">Yours will be the first. Thanks 👍</p>
+
+{% endunless %}
 
 <form method="post" action="https://api.staticman.net/v2/entry/leonp/leon2/master/comments" class="c-linky-visited c-linky-underline pa2 pa3-ns bg-light-gray">
 

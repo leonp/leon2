@@ -36,6 +36,10 @@ comments:
       type: date
       options:
         format: "iso8601"
+    _ID:
+    type: date
+    options:
+      format: "timestamp-seconds"
 
   # Whether entries need to be appproved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.

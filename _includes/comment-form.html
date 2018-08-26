@@ -3,9 +3,12 @@
 <form method="POST" action="https://api.staticman.net/v2/entry/leonp/leon2/master/comments" class="pa2 pa3-ns bg-light-gray">
 
     <input name="options[redirect]" hidden type="hidden" value="{{ site.url }}/comment-received/">
+
     <input name="options[slug]" hidden type="hidden" value="{{ page.slug }}">
 
-    <input class="clip" name="fields[url]" type="text">
+    <input name="fields[ID]" hidden type="hidden" value="{{ page.date }}">
+
+    <input class="clip" hidden type="hidden" name="fields[url]" type="text">
 
     <label class="f6 db mb1" for="name">Name</label>
     <input class="c-sans-serif db w-100 pa2 mb3 ba b--moon-gray" required name="fields[name]" id="name" type="text">

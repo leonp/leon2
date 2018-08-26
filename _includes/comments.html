@@ -12,13 +12,13 @@
 
     {% unless comment.url != "" %}
 
-    <article class="mb4 pa2 pa3-ns ba b--light-gray c-linky-visited c-linky-underline" id="{{ comment._id }}">
+    <article class="mb4 pa2 pa3-ns ba b--light-gray c-linky-visited" id="{{ comment._id }}">
 
         <h3 class="f5 lh-title mt0 mb1">{{ comment.name }}</h3>
 
         <p class="f6 gray ma0"><time><a href="{{ page.url }}#{{ comment._id}}">{{ comment.date | date: "%b %-d, %Y, %H:%M" }}</a></time></p>
 
-        <div class="c-no-top-margin">
+        <div class="c-no-top-margin c-linky-underline">
 
             {{ comment.message | markdownify | smartify }}
 

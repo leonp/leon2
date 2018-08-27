@@ -13,9 +13,11 @@
 
 <article class="h-entry">
 
-    <header class="">
+    <header class="c-linky-visited">
 
-        <p class="mt0 mb2 f6 mid-gray c-linky-visited"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / {% if page.note %}<a href="/posts/notes/">Notes</a>{% else %}<a href="/posts/{{ slug }}">{{ category }}</a>{% endif %} / <a href="#commentary">✍️ Comments</a> / <a href="/" class="p-author" rel="author">Leon Paternoster</a></p>
+        <p class="mt0 mb2 f6 mid-gray"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / <a href="#commentary">✍️ Comments</a> / {% if page.note %}<a href="/posts/notes/">Notes</a>{% else %}Filed under <a href="/posts/{{ slug }}">{{ category }}</a>{% endif %}</p>
+
+        <p class="clip"> written by <a href="/" class="p-author" rel="author">Leon Paternoster</a></p>
 
         <h1 class="p-name mt0 lh-title mb3 f2 f1-l">{{ page.title }}</h1>
 
@@ -23,7 +25,7 @@
 
     </header>
 
-    <div class="e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content">
+    <div class="e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content pb2">
 
         {{ content}}
 

@@ -4,13 +4,14 @@ category: web
 layout: post
 ---
 
-When you move from a "dynamic" CMS (such as WordPress) to a static system (like Jekyll) you lose comments. You can use something like [Disqus](https://disqus.com/) instead, but hosted, javascript-powered systems have disadvantages:
+When you move from a "dynamic" CMS (such as WordPress) to a static site generator (like Jekyll) you lose comments. You can use [Disqus](https://disqus.com/) or similar instead, but hosted, javascript-powered systems have disadvantages:
 
 - You have to login to a service such as Google or Facebook (or Disqus itself) to make a comment
 - The comments don't live on your website, but on Disqus's servers. If Disqus goes, so do your comments.
-- The comments don't exist on your site until they're called by javascript, so they don't exist to search engines when they crawl your site
+- The comments don't exist on your site until they're called by javascript when the page is loaded, so they don't exist to search engines when they crawl your site
+- No javascript, no comments
 
-Now, if we're looking to move our comments from Facebook, Twitter <i>et al</i> back to our own websites (and we should be), this is a sad state of affairs. We might consider why we moved from WordPress in the first place when it does blogging so well. But there are solutions to this seemingly intractable problem. The foremost being [Staticman](https://staticman.net).
+Now, if we're looking to move our discussions from Facebook, Twitter <i>et al</i> back to our own websites (and we should be), this is a sad state of affairs. We might consider why we moved from WordPress in the first place when it does blogging so well. But there are solutions to this seemingly intractable problem. The foremost being [Staticman](https://staticman.net).
 
 In this post I'll provide an overview of what Staticman does and take you through some of the pitfalls you need to avoid in order to get it working properly. I refer you to [Michael Rose's excellent, comprehensive Staticman and Jekyll guide](https://mademistakes.com/articles/improving-jekyll-static-comments/) for more detailed instructions that'll help you get more "advanced" features working.
 
@@ -34,6 +35,76 @@ Assuming you have all these, or you're willing to copy and paste and experiment,
 
 ## Get the Staticman URL right
 
-The Staticman docs provide an incorrect URL for your comment form to submit data to. It should be `https://api.staticman.net/v2/entry/{your github name}/{the github repo}/{the branch}/comments`. The `comments` bit is important.
+The Staticman docs provide an incorrect URL for your comment form to submit data to. It should be `{% raw %}https://api.staticman.net/v2/entry/{your github name}/{the github repo}/{the branch}/comments{% endraw %}`. The `comments` bit is important.
 
 This means your `form` element would look something like `<form method="post" action="https://api.staticman.net/v2/entry/leonp/leon2/master/comments">`.
+
+## Check whether you have any comments before trying to sort them
+
+In all likelihood, you'll create a `comments.html` include to handle displaying comments (feel free to use [my comments code](https://github.com/leonp/leon2/blob/master/_includes/comments.html)). You'll then add your include to whatever layout file you're using for posts.
+
+I made a mistake which had me banging my head for several hours. My code did this:
+
+1. Created an object that contained all the page's comments and sorted it by date
+2. Checked whether there was anything in this object
+3. If there was, looped through each comment to display it
+
+While this generated a list of comments, I couldn't sort them. This is because Jekyll's templating language Liquid won't let you sort empty objects, so if the object contained no comments and you tried to add a `sort` filter, it threw an error.
+
+So your code should:
+
+1. Check whether the page has any comments
+2. If it does, create an object from the comments using `assign` and apply a `sort` filter (by default this will sort by date, oldest to newest, which is probably what you want)
+3. Loop through each comment
+
+## Use Jekyll's inbuilt text filters for formatting
+
+Jekyll comes with a few filters you can apply when it outputs text. My `comments.html` include makes use of `markdownify` and `smartify`, which means it'll recognise any markdown commenters use while converting 'dumb' quotes to smart, curly quotes. Most usefully, this will ensure paragraph breaks are retained.
+
+`{% raw %}{{ comment.message | markdownify | smartify }}{% endraw %}`
+
+## Add a fragment to comments so you can link to them
+
+Make use of each comment's automatically generated `_id` and add it to a link to the comment. I've used WordPress's convention of making the comment timestamp a link back to the comment:
+
+Generated HTML:
+
+{% highlight html %}
+<a href="/posts/evening-edition-is-boring/#b029aec0-a9fa-11e8-88c0-ef9d7cca50b9">Aug 27, 2018, 13:11</a>
+{% endhighlight %}
+
+Liquid:
+
+{% highlight html %}
+{% raw %}
+<a href="{{ page.url }}#{{ comment._id}}">{{ comment.date | date: "%b %-d, %Y, %H:%M" }}</a>
+{% endraw %}
+{% endhighlight %}
+
+## Set up anti-spam with a simple honey pot field
+
+In your `staticman.yml` file, you can specify which fields commenters are allowed to submit. If they submit a value in any other field, it'll stop processing the comment and display a `json` error.
+
+As spambots tend to complete every field in a form, this will normally stop any spam getting to your site.
+
+Often, developers hide these "honey pot" fields. It's actually simpler and arguably more accessible to display the field and attach a label that clearly discourages users from entering anything, such as <q>Only fill this in if you're trying to spam me</q>.
+
+`staticman.yml` code:
+
+{% highlight yaml %}
+
+* Make sure you don't enter your honey pot field name here!
+allowedFields: ["name", "email", "message"]
+
+{% endhighlight %}
+
+Form HTML (with classes removed):
+
+{% highlight html %}
+{% raw %}
+
+<label for="hp">Only fill this in if you're trying to spam me</label>
+<input name="fields[hp]" id="hp" type="text">
+
+{% endraw %}
+{% endhighlight %}

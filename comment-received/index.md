@@ -13,7 +13,7 @@ I appreciate you taking the time to comment.
 
 Your comment has been sent for processing. This may take _some_ time. Give it a minute or two, and refresh the page to see whether it's been done.
 
-<a id="back-link" href="#" rel="previous" onclick="document.getElementById( 'back-link' ).href = document.referrer">Back to the previous page ↩️</a>
+<a id="back-link" href="#" rel="previous" onclick="document.getElementById( 'back-link' ).href = document.referrer">Back to the previous page <span role="img" aria-label="Arrow pointing to the left">↩️</span></a>
 
 ## Commenting policy
 

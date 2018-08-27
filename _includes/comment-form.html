@@ -1,14 +1,14 @@
-<h2 class="f4 lh-title mt2 mb1" id="commentary">Add a comment</h2>
+<h2 class="f4 lh-title mv2" id="commentary">Add a comment</h2>
 
 {% unless site.data.comments.[page.slug] %}
 
-<p class="mt0 mb2 f6">Yours will be the first. Thanks 👍</p>
+<p class="mt0 mb2 f6">Yours will be the first. Thanks <span role="img" aria-label="Thumbs up">👍</span></p>
 
 {% endunless %}
 
-<form method="post" action="https://api.staticman.net/v2/entry/leonp/leon2/master/comments" class="c-linky-visited c-linky-underline pa2 pa3-ns bg-light-gray">
+<form method="post" action="https://api.staticman.net/v2/entry/leonp/leon2/master/comments" class="c-linky-visited c-linky-underline pa2 pa3-ns bg-light-gray ba b--moon-gray">
 
-    <p class="mt0">Fields marked <span class="dark-red">*</span> must be completed.</p>
+    <p class="mt0"><span class="c-icon" role="img" aria-label="Exclamation mark">❕</span>&thinsp;Fields marked <span class="dark-red">*</span> must be completed.</p>
 
     <input name="options[redirect]" hidden type="hidden" value="{{ site.url }}/comment-received/">
 
@@ -17,10 +17,7 @@
     <label class="f6 db mb1" for="name">Name <span class="dark-red">*</span></label>
     <input class="c-sans-serif db w-100 pa2 mb3 ba b--moon-gray" required name="fields[name]" id="name" type="text">
 
-    <label class="f6 db mb1" for="email">E-mail (this won't be published or shared) <span class="dark-red">*</span></label>
-    <input class="c-sans-serif db w-100 pa2 mb3 ba b--moon-gray" required name="fields[email]" id="email" type="email">
-
-    <label class="f6 db mb1" for="message">Message (use <a href="https://www.markdownguide.org/cheat-sheet">Markdown</a> for formatting) <span class="dark-red">*</span></label>
+    <label class="f6 db mb1" for="message">Comment (use <a href="https://www.markdownguide.org/cheat-sheet">Markdown</a> for formatting) <span class="dark-red">*</span></label>
     <textarea class="c-sans-serif db h5-ns w-100 pa2 mb3 ba b--moon-gray" required name="fields[message]" id="message"></textarea>
 
     <label class="f6 db mb1" for="hp">Only fill this in if you're trying to spam me</label>

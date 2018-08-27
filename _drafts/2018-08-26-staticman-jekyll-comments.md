@@ -3,6 +3,12 @@ title: "Using Staticman for comments on a Jekyll site"
 category: web
 layout: post
 ---
+Table of contents:
+
+* TOC
+{:toc}
+
+## Why use Staticman?
 
 When you move from a "dynamic" CMS (such as WordPress) to a static site generator (like Jekyll) you lose comments. You can use [Disqus](https://disqus.com/) or similar instead, but hosted, javascript-powered systems have disadvantages:
 
@@ -14,6 +20,14 @@ When you move from a "dynamic" CMS (such as WordPress) to a static site generato
 Now, if we're looking to move our discussions from Facebook, Twitter <i>et al</i> back to our own websites (and we should be), this is a sad state of affairs. We might consider why we moved from WordPress in the first place when it does blogging so well. But there are solutions to this seemingly intractable problem. The foremost being [Staticman](https://staticman.net).
 
 In this post I'll provide an overview of what Staticman does and take you through some of the pitfalls you need to avoid in order to get it working properly. I refer you to [Michael Rose's excellent, comprehensive Staticman and Jekyll guide](https://mademistakes.com/articles/improving-jekyll-static-comments/) for more detailed instructions that'll help you get more "advanced" features working.
+
+## Files/code to copy
+
+If you just want to copy some code and files:
+
+- [My comment form include](https://github.com/leonp/leon2/blob/master/_includes/comment-form.html)
+- [My comments include](https://github.com/leonp/leon2/blob/master/_includes/comments.html)
+- [My staticman config file](https://github.com/leonp/leon2/blob/master/staticman.yml)
 
 ## What you'll need
 
@@ -31,7 +45,7 @@ All these moving parts mean you'll need:
 - Automated site builds
 - The know how to handle relatively complex Liquid templates and Jekyll data files (or collections), and a Staticman config file. Again, you may be able to copy and paste something.
 
-Assuming you have all these, or you're willing to copy and paste and experiment, you should be able to get comments working fairly easily. Especially if you avoid these problems:
+Assuming you have all these, or you're willing to copy and paste and experiment, you should be able to get comments working well fairly easily. Especially if you follow these tips:
 
 ## Get the Staticman URL right
 
@@ -41,7 +55,7 @@ This means your `form` element would look something like `<form method="post" ac
 
 ## Check whether you have any comments before trying to sort them
 
-In all likelihood, you'll create a `comments.html` include to handle displaying comments (feel free to use [my comments code](https://github.com/leonp/leon2/blob/master/_includes/comments.html)). You'll then add your include to whatever layout file you're using for posts.
+In all likelihood, you'll create a `comments.html` include to handle displaying comments. You'll then add your include to whatever layout file you're using for posts.
 
 I made a mistake which had me banging my head for several hours. My code did this:
 
@@ -54,12 +68,12 @@ While this generated a list of comments, I couldn't sort them. This is because J
 So your code should:
 
 1. Check whether the page has any comments
-2. If it does, create an object from the comments using `assign` and apply a `sort` filter (by default this will sort by date, oldest to newest, which is probably what you want)
+2. If it does, create an object from the comments using `assign` and apply a `sort` filter. By default this will sort by filename, which, if you're following my code, will consist of a timestamp. In effect, you'll be sorting by date and time, which is probably what you want.
 3. Loop through each comment
 
 ## Use Jekyll's inbuilt text filters for formatting
 
-Jekyll comes with a few filters you can apply when it outputs text. My `comments.html` include makes use of `markdownify` and `smartify`, which means it'll recognise any markdown commenters use while converting 'dumb' quotes to smart, curly quotes. Most usefully, this will ensure paragraph breaks are retained.
+Jekyll comes with a few filters you can apply when it outputs text. My `comments.html` include makes use of `markdownify` and `smartify`, which means it'll convert any markdown commenters use to HTML and make 'dumb' quotes smart, curly quotes. Most usefully, this will ensure paragraph breaks are retained.
 
 `{% raw %}{{ comment.message | markdownify | smartify }}{% endraw %}`
 
@@ -87,7 +101,7 @@ In your `staticman.yml` file, you can specify which fields commenters are allowe
 
 As spambots tend to complete every field in a form, this will normally stop any spam getting to your site.
 
-Often, developers hide these "honey pot" fields. It's actually simpler and arguably more accessible to display the field and attach a label that clearly discourages users from entering anything, such as <q>Only fill this in if you're trying to spam me</q>.
+Often, developers hide these "honey pot" fields. It's actually simpler and [arguably more accessible to display the field](https://ux.stackexchange.com/questions/52916/what-is-the-best-way-to-hide-a-honeypot-captcha) and attach a label that clearly discourages users from entering anything, such as <q>Only fill this in if you're trying to spam me</q>.
 
 `staticman.yml` code:
 
@@ -108,3 +122,9 @@ Form HTML (with classes removed):
 
 {% endraw %}
 {% endhighlight %}
+
+## Conclusion
+
+This should give you the code to set up a robust, simple commenting system on your Jekyll-generated site. You can also add more advanced features like email notifications and threaded comments, but I'm saving that for another piece of work.
+
+And feel free to leave a comment ✍️

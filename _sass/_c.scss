@@ -152,17 +152,30 @@ blockquote {
     border-left: 0.5rem solid #CCC;
 }
 
+abbr {
+    cursor: help;
+}
+
 figure {
     margin: auto 0;
 }
 
 code {
     font-size: 0.875em;
-    color: #D5008F;
+    padding: 0.1em 0.25em;
+    background-color: #EFEFEF;
 }
 
 pre {
     overflow: auto;
+    padding: 1em;
+    background-color: #000;
+    color: #EFEFEF;
+}
+
+pre code {
+    padding: 0;
+    background-color: inherit;
 }
 
 hr {

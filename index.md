@@ -23,7 +23,7 @@ I'm web services manager at Suffolk Libraries. I blog about working on the web, 
 
     <li><a href="/feed/index.xml/">RSS feed</a></li>
     <li><a rel="me" href="https://twitter.com/leonpaternoster/">Twitter</a></li>
-    <li><a rel="me" href="https://micro.blog/leonp/">micro.blog</a></li>
+    <li><a href="https://micro.blog/leonp/" rel="me">micro.blog</a></li>
     <li><a rel="me" href="https://github.com/leonp">Github</a></li>
     <li>leon.paternoster@zoho.com</li>
 

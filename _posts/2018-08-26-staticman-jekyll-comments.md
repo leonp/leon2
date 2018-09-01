@@ -51,7 +51,13 @@ Assuming you have all these, or you're willing to copy and paste and experiment,
 
 The Staticman docs provide an incorrect URL for your comment form to submit data to. It should be `{% raw %}https://api.staticman.net/v2/entry/{your github name}/{the github repo}/{the branch}/comments{% endraw %}`. The `comments` bit is important.
 
-This means your `form` element would look something like `<form method="post" action="https://api.staticman.net/v2/entry/leonp/leon2/master/comments">`.
+This means your `form` element would look something like:
+
+{% highlight html %}
+<form method="post" action="https://api.staticman.net/v2/entry/leonp/leon2/master/comments">
+{% endhighlight %}
+
+(Obviously, you've entered your Github username, repo and branch, right?)
 
 ## Check whether you have any comments before trying to sort them
 

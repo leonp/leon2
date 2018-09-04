@@ -81,7 +81,7 @@ So your code should:
 
 Jekyll comes with a few filters you can apply when it outputs text. My `comments.html` include makes use of `markdownify` and `smartify`, which means it'll convert any markdown commenters use to HTML and make 'dumb' quotes smart, curly quotes. Most usefully, this will ensure paragraph breaks are rendered.
 
-Also bear in mind Staticman doesn't sanitise form inputs, which means visitors could hotlink to javascript from your comments form. The simplest way mitigate this threat is to strip any html from comments _and_ the name field using the §=`strip_html` filter. This does mean commenters won't be able to enter HTML, even if it's wrapped in Markdown back ticks. Markdown formatting is retained though:
+Also bear in mind Staticman doesn't sanitise form inputs, which means visitors could hotlink to javascript from your comments form. The simplest way mitigate this threat is to strip any html from comments _and_ the name field using the `strip_html` filter. This does mean commenters won't be able to enter HTML, even if it's wrapped in Markdown back ticks. Markdown formatting is retained though:
 
 `{% raw %}{{ comment.message strip_html | markdownify | smartify }}{% endraw %}`
 

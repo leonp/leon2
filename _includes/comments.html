@@ -24,7 +24,7 @@
 
         <div class="c-no-top-margin c-linky-underline">
 
-            {{ comment.message | markdownify | smartify }}
+            {{ comment.message | strip_html | markdownify | smartify }}
 
         </div>
 

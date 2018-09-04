@@ -77,11 +77,15 @@ So your code should:
 2. If it does, create an object from the comments using `assign` and apply a `sort` filter. By default this will sort by filename, which, if you're following my code, will consist of a timestamp. In effect, you'll be sorting by date and time, which is probably what you want.
 3. Loop through each comment
 
-## Use Jekyll's inbuilt text filters for formatting
+## Use Jekyll's inbuilt text filters for formatting and sanitising
 
-Jekyll comes with a few filters you can apply when it outputs text. My `comments.html` include makes use of `markdownify` and `smartify`, which means it'll convert any markdown commenters use to HTML and make 'dumb' quotes smart, curly quotes. Most usefully, this will ensure paragraph breaks are retained.
+Jekyll comes with a few filters you can apply when it outputs text. My `comments.html` include makes use of `markdownify` and `smartify`, which means it'll convert any markdown commenters use to HTML and make 'dumb' quotes smart, curly quotes. Most usefully, this will ensure paragraph breaks are rendered.
 
-`{% raw %}{{ comment.message | markdownify | smartify }}{% endraw %}`
+Also bear in mind Staticman doesn't sanitise form inputs, which means visitors could hotlink to javascript from your comments form. The simplest way mitigate this threat is to strip any html from comments _and_ the name field using the §=`strip_html` filter. This does mean commenters won't be able to enter HTML, even if it's wrapped in Markdown back ticks. Markdown formatting is retained though:
+
+`{% raw %}{{ comment.message strip_html | markdownify | smartify }}{% endraw %}`
+
+`{% raw %}<h3 class="f5 lh-title mt0 mb1">{{ comment.name | strip_html }}</h3>{% endraw %}`
 
 ## Add a fragment to comments so you can link to them
 

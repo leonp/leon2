@@ -16,7 +16,7 @@
 
         <header class="pb1 bb b--light-gray mb2">
 
-            <h3 class="f5 lh-title mt0 mb1">{{ comment.name }}</h3>
+            <h3 class="f5 lh-title mt0 mb1">{{ comment.name | strip_html }}</h3>
 
             <p class="f6 gray ma0"><time><a href="{{ page.url }}#{{ comment._id}}">{{ comment.date | date: "%b %-d, %Y, %H:%M" }}</a></time></p>
 

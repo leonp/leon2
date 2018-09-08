@@ -8,19 +8,17 @@
 
 <form method="post" action="https://api.staticman.net/v2/entry/leonp/leon2/master/comments" class="c-linky-visited c-linky-underline pa2 pa3-ns bg-light-gray ba b--moon-gray">
 
-    <p class="mt0">Fields marked <span class="dark-red">*</span> must be completed.</p>
-
     <input name="options[redirect]" hidden type="hidden" value="{{ site.url }}/comment-received/">
 
     <input name="options[slug]" hidden type="hidden" value="{{ page.slug }}">
 
-    <label class="f6 db mb1" for="name">Name <span class="dark-red">*</span></label>
+    <label class="f6 db mb1" for="name">Name</label>
     <input class="c-sans-serif db w-100 pa2 mb3 ba b--moon-gray" required name="fields[name]" id="name" type="text">
 
-    <label class="f6 db mb1" for="message">Comment (use <a href="https://www.markdownguide.org/cheat-sheet">Markdown</a> for formatting, <abbr title="HyperText Markup Language">HTML</abbr> will be removed) <span class="dark-red">*</span></label>
+    <label class="f6 db mb1" for="message">Comment (use <a href="https://www.markdownguide.org/cheat-sheet">Markdown</a> for formatting, <abbr title="HyperText Markup Language">HTML</abbr> will be removed)</label>
     <textarea class="c-sans-serif db vh-50 w-100 pa2 mb3 ba b--moon-gray" required name="fields[message]" id="message"></textarea>
 
-    <label class="f6 db mb1" for="hp">Only fill this in if you're trying to spam me</label>
+    <label class="f6 db mb1" for="hp">Fill this in if you <b>don’t want to publish your comment</b></label>
     <input class="c-sans-serif db w-100 pa2 mb3 ba b--moon-gray" name="fields[hp]" id="hp" type="text">
 
     <button class="c-sans-serif pa2 bg-dark-blue hover-bg-blue white ba- b--light-gray pointer" type="submit">Add comment</button>

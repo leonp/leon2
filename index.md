@@ -7,7 +7,7 @@ order: 1
 ---
 I'm web services manager at Suffolk Libraries. I blog about working on the web, libraries and anything else that interests me. You have been warned.
 
-<h2 class="f5 normal mt4 gray pb1 bb b--light-gray">Latest blog posts</h2>
+<h2 class="f5 normal mt4 gray pb1 bb b--light-gray c-sans-serif">Latest blog posts</h2>
 
 {% assign posts = site.posts | where_exp: "post", "post.note != true" %}
 

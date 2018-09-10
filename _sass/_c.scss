@@ -46,7 +46,7 @@
 
 .c-icon {
 	color: transparent;
-	text-shadow: 0 0 $highlight;
+	text-shadow: 0 0 #FF6300;
 }
 
 // Prose styling
@@ -61,6 +61,7 @@
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
     line-height: 1.25;
+    font-family: $c-sans-serif;
 }
 
 .c-prose-headings h1 + *,

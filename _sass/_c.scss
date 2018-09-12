@@ -238,6 +238,34 @@ td {
 } // End the enclosing screen/projection media query
 
 
+
+// Fonts
+
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("/fonts/plex-sans/IBMPlexSans-Regular-Latin1.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter UI";
+  font-style: italic;
+  font-weight: normal;
+  font-display: auto;
+  src: url("/fonts/plex-sans/IBMPlexSans-Regular-Italic1.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: bold;
+  font-display: auto;
+  src: url("/fonts/plex-sans/IBMPlexSans-Regular-Bold1.woff2") format("woff2");
+}
+
+
 // Print styles
 
 @media print {
@@ -245,7 +273,7 @@ td {
 * {
   background-color: white !important;
   color: black !important;
-  font-family: sans-serif;
+  font-family: $c-sans-serif;
   line-height: 1.375;
 }
 

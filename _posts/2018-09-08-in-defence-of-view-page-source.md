@@ -13,7 +13,7 @@ While this is true, I think <i>View page source</i> offers a quick glimpse into 
 
 {% include figure.html url="skinny-minified.jpg" alt="The source code from the Skinny Guardian website" caption="Skinny Guardian, inlined and minified. You can maybe make out a canonical link in the document head." %}
 
-This is not information you'll get quite as readily from dev tools, which focuses on the page's granular, technical foundations rather than the way it's been authored. When you <i>View page source</i> you can figure out the auhtor's "style" – how they indent their <abbr title="HyperText Markup Language">HTML</abbr>, any comments they've added, how keen they are on `divs`, whether they use classes, whether they overuse IDs and what approach (if any) they take to CSS. That's a lot of information from skimming a page:
+This is not information you'll get quite as readily from dev tools, which focuses on the page's granular, technical foundations rather than the way it's been authored. When you <i>View page source</i> you can figure out the author's "style" – how they indent their <abbr title="HyperText Markup Language">HTML</abbr>, any comments they've added, how keen they are on `divs`, whether they use classes, whether they overuse IDs and what approach (if any) they take to CSS. That's a lot of information from skimming a page:
 
 {% include figure.html url="lp-source.jpg" alt="The source code from leonpaternoster.com" caption="Is that an unnecessary closing <code>div</code> I can spy?" %}
 

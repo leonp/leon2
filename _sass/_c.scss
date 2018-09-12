@@ -32,6 +32,10 @@
     }
 }
 
+.c-lh-title {
+    line-height: $c-lh-title;
+}
+
 .c-wrapper {
     max-width: $c-wrapper;
 }
@@ -46,7 +50,7 @@
 
 .c-icon {
 	color: transparent;
-	text-shadow: 0 0 #FF6300;
+	text-shadow: 0 0 $highlight;
 }
 
 // Prose styling
@@ -60,7 +64,7 @@
 .c-prose-headings dt {
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    line-height: 1.25;
+    line-height: $c-lh-title;
     font-family: $c-sans-serif;
 }
 
@@ -150,7 +154,7 @@ blockquote {
     font-size: 0.875rem;
     margin-left: 1rem;
     padding-left: 0.75rem;
-    border-left: 0.5rem solid #CCC;
+    border-left: 0.25rem solid $highlight;
 }
 
 abbr {
@@ -246,7 +250,7 @@ td {
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url("/fonts/plex-sans/IBMPlexSans-Regular-Latin1.woff2") format("woff2");
+  src: url("fonts/plex-sans/IBMPlexSans-Regular-Latin1.woff2") format("woff2");
 }
 
 @font-face {
@@ -254,7 +258,7 @@ td {
   font-style: italic;
   font-weight: normal;
   font-display: auto;
-  src: url("/fonts/plex-sans/IBMPlexSans-Italic-Latin1.woff2") format("woff2");
+  src: url("fonts/plex-sans/IBMPlexSans-Italic-Latin1.woff2") format("woff2");
 }
 
 @font-face {
@@ -262,7 +266,7 @@ td {
   font-style: normal;
   font-weight: bold;
   font-display: auto;
-  src: url("/fonts/plex-sans/IBMPlexSans-Bold-Latin1.woff2") format("woff2");
+  src: url("fonts/plex-sans/IBMPlexSans-Bold-Latin1.woff2") format("woff2");
 }
 
 

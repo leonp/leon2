@@ -250,7 +250,7 @@ td {
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url("fonts/plex-sans/IBMPlexSans-Regular-Latin1.woff2") format("woff2");
+  src: url("/fonts/plex-sans/IBMPlexSans-Regular-Latin1.woff2") format("woff2");
 }
 
 @font-face {
@@ -258,7 +258,7 @@ td {
   font-style: italic;
   font-weight: normal;
   font-display: auto;
-  src: url("fonts/plex-sans/IBMPlexSans-Italic-Latin1.woff2") format("woff2");
+  src: url("/fonts/plex-sans/IBMPlexSans-Italic-Latin1.woff2") format("woff2");
 }
 
 @font-face {
@@ -266,7 +266,7 @@ td {
   font-style: normal;
   font-weight: bold;
   font-display: auto;
-  src: url("fonts/plex-sans/IBMPlexSans-Bold-Latin1.woff2") format("woff2");
+  src: url("/fonts/plex-sans/IBMPlexSans-Bold-Latin1.woff2") format("woff2");
 }
 
 

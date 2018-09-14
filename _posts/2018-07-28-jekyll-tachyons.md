@@ -1,7 +1,7 @@
 ---
 title: 'Jekyll Tachyons starter theme for Jekyll'
 layout: post
-category: web
+category: work
 ---
 
 [Jekyll Tachyons](https://github.com/leonp/jekyll-tachyons) is a starter theme for Jekyll that makes it easy to:

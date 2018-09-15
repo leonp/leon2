@@ -40,7 +40,7 @@
 
         {% unless post.note %}
 
-            <li class="mb4 b f4-ns c-sans-serif lh-title"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
+            <li class="mb4 b f4-ns c-sans-serif c-lh-title"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
         {% endunless %}
 
@@ -58,7 +58,7 @@
 
 {% unless post.note %}
 
-    <li class="mb4 b f4-ns c-sans-serif"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray c-sans-serif">{{ post.date | date: "%b %d, %Y" }}</time></li>
+    <li class="mb4 b f4-ns c-sans-serif c-lh-title"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray c-sans-serif">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
 {% endunless %}
 

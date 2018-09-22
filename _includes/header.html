@@ -84,9 +84,11 @@
         <link href="/css/style.css" rel="stylesheet">
         {% endif %}
 
+        {% if site.font %}
         <link rel="preload" as="font" type="font/woff2" href="fonts/plex-sans/IBMPlexSans-Regular-Latin1.woff2">
         <link rel="preload" as="font" type="font/woff2" href="fonts/plex-sans/IBMPlexSans-Italic-Latin1.woff2">
         <link rel="preload" as="font" type="font/woff2" href="fonts/plex-sans/IBMPlexSans-Bold-Latin1.woff2">
+        {% endif %}
 
     </head>
 
@@ -94,7 +96,7 @@
 
         <div class="ph2 ph3-ns bg-near-white bb b--light-gray">
 
-            <div class="c-wrapper center c-no-print tr"><a class="dib pv2 f6 f7-ns blue hover-dark-gray" href="#content">Skip to main content</a></div>
+            <div class="c-wrapper center c-no-print tr"><a class="dib pv2 f6 f7-ns blue hover-dark-red" href="#content">Skip to main content</a></div>
 
         </div>
 
@@ -102,7 +104,7 @@
 
             <div class="c-wrapper center flex-l flex-wrap-l justify-between-l">
 
-                <a href="/" class="f4 f6-l b db w-third-l no-underline pv1 db dark-gray hover-black"><span role="img" aria-label="Lightning bolt logo" class="c-icon">⚡️</span> Leon Paternoster</a>
+                <a href="/" class="f4 f6-l b db w-third-l no-underline pv1 db dark-gray hover-dark-red"><span role="img" aria-label="Lightning bolt logo" class="c-icon">⚡️</span> Leon Paternoster</a>
 
                 <nav id="nav" class="w-two-thirds-l justify-end-l flex-l">
 
@@ -112,7 +114,7 @@
 
                         {% for nav-page in pages %}
 
-                        <li class="dib mr3 mr0-l ml4-l"><a href="{{ nav-page.url }}" class="{% if page.url == nav-page.url %}black {% else %}gray {% endif %}hover-black no-underline pv1 db">{{ nav-page.title }}</a></li>
+                        <li class="dib mr3 mr0-l ml4-l"><a href="{{ nav-page.url }}" class="{% if page.url == nav-page.url %}black {% else %}gray {% endif %}hover-dark-red no-underline pv1 db">{{ nav-page.title }}</a></li>
 
                         {% endfor %}
 

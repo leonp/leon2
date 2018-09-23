@@ -7,11 +7,13 @@ underlined-links: true
 hyphens: true
 ---
 
-I appreciate you taking the time to comment.
+Thanks, I appreciate you taking the time to comment.
 
 ## What happens now?
 
-Your comment has been sent for processing. This may take _some_ time. Give it a minute or two, and refresh the page to see whether it's been done.
+I've received a notification and will review your comment. Assuming all's OK, you've kept to the commenting policy and you're not some dullard robot or unfortunate human trying to spam me, I'll publish it.
+
+I'm working on setting up automated notifications so that when I approve your comment, you'll get an email. However, at the moment you'll just have to check back. Sorry about that. I aim to approve comments as soon as possible.
 
 <a id="back-link" href="#" rel="previous" onclick="document.getElementById( 'back-link' ).href = document.referrer">Back to the previous page <span role="img" aria-label="Arrow pointing to the left">↩️</span></a>
 

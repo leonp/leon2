@@ -7,7 +7,7 @@ comments:
   #
   # Names of the fields the form is allowed to submit. If a field that is
   # not here is part of the request, an error will be thrown.
-  allowedFields: ["name", "message"]
+  allowedFields: ["name", "email", "message"]
 
   # (*) REQUIRED
   #
@@ -48,21 +48,21 @@ comments:
   # Notification settings. When enabled, users can choose to receive notifications
   # via email when someone adds a reply or a new comment. This requires an account
   # with Mailgun, which you can get for free at http://mailgun.com.
-  # notifications:
+  notifications:
     # Enable notifications
-    # enabled: true
+    enabled: true
 
     # (!) ENCRYPTED
     #
     # Mailgun API key
-    # apiKey: "856461d1515431e601342c788fb20538-0e6e8cad-57702697"
+    apiKey: "856461d1515431e601342c788fb20538-0e6e8cad-57702697"
 
     # (!) ENCRYPTED
     #
     # Mailgun domain (encrypted)
-    # domain: "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZnT5PQA1o8Y7L0KfeD74TFSTL2pEe8iK0PwhYCXost/phI5wFWBzeKkn+qZmrIqYU0EKcOBeFK3oiDhVZXSu9I6v4TpTgv9I+d/tRS+i9Gqr9EDS0Soj0faKNSDqcbsL+ermZybr+xIGxMZr2FGiXdHw9fcB7ijYJZwDsOPtRYwIDAQAB"
+    domain: "https://app.mailgun.com/app/domains/sandbox2c458dfd78ed4878afe47ae0d1b8a491.mailgun.org"
 
-    # allowedOrigins: ["localhost", "leonpaternoster.com"]
+    allowedOrigins: ["localhost", "leonpaternoster.com"]
 
   # (*) REQUIRED
   #

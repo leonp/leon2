@@ -48,21 +48,21 @@ comments:
   # Notification settings. When enabled, users can choose to receive notifications
   # via email when someone adds a reply or a new comment. This requires an account
   # with Mailgun, which you can get for free at http://mailgun.com.
-  notifications:
+  # notifications:
     # Enable notifications
-    enabled: true
+    # enabled: true
 
     # (!) ENCRYPTED
     #
     # Mailgun API key
-    apiKey: "856461d1515431e601342c788fb20538-0e6e8cad-57702697"
+    # apiKey: "856461d1515431e601342c788fb20538-0e6e8cad-57702697"
 
     # (!) ENCRYPTED
     #
     # Mailgun domain (encrypted)
-    domain: "https://app.mailgun.com/app/domains/sandbox2c458dfd78ed4878afe47ae0d1b8a491.mailgun.org"
+    # domain: "https://app.mailgun.com/app/domains/sandbox2c458dfd78ed4878afe47ae0d1b8a491.mailgun.org"
 
-    allowedOrigins: ["localhost", "leonpaternoster.com"]
+    # allowedOrigins: ["localhost", "leonpaternoster.com"]
 
   # (*) REQUIRED
   #

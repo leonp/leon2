@@ -32,7 +32,7 @@
 
   <label class="db mb1 f6" for="source">Response URL</label>
   <input type="url" name="source" id="source" class="c-sans-serif db w-100 pa2 mb2 ba b--moon-gray" required>
-  <input hidden type="hidden" name="target" value="{{ page.url }}">
+  <input hidden type="hidden" name="target" value="{{ site.url }}{{ page.url }}">
 
   <button class="c-sans-serif pa2 bg-dark-blue hover-bg-blue white ba- b--light-gray pointer" type="submit">Send URL</button>
 

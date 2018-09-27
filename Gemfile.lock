@@ -9,9 +9,13 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
+    execjs (2.7.0)
     ffi (1.9.25)
     forwardable-extended (2.6.0)
+    htmlbeautifier (1.3.1)
     http_parser.rb (0.6.0)
+    httparty (0.15.7)
+      multi_xml (>= 0.5.2)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jekyll (3.8.4)
@@ -33,19 +37,36 @@ GEM
       sass (~> 3.4)
     jekyll-watch (2.0.0)
       listen (~> 3.0)
+    jekyll-webmention_io (3.2.0)
+      htmlbeautifier (~> 1.1)
+      jekyll (>= 3.2.0, < 4.0)
+      json (~> 2.0)
+      openssl (~> 2.0)
+      string_inflection (~> 0.1)
+      uglifier (~> 4.1)
+      webmention (~> 0.1.6)
+    json (2.1.0)
     kramdown (1.17.0)
+    libv8 (3.16.14.19)
+    link_header (0.0.8)
     liquid (4.0.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
+    mini_portile2 (2.3.0)
+    multi_xml (0.6.0)
+    nokogiri (1.8.4)
+      mini_portile2 (~> 2.3.0)
+    openssl (2.1.1)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    ref (2.0.0)
     rouge (3.2.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
@@ -54,6 +75,17 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    string_inflection (0.1.2)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
+    uglifier (4.1.19)
+      execjs (>= 0.3.0, < 3)
+    webmention (0.1.6)
+      httparty (~> 0.15.5)
+      json
+      link_header (~> 0.0.8)
+      nokogiri
 
 PLATFORMS
   ruby
@@ -61,6 +93,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-feed (~> 0.6)
+  jekyll-webmention_io
+  therubyracer
 
 BUNDLED WITH
    1.16.4

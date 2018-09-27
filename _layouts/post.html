@@ -33,9 +33,17 @@
 
     <footer class="bt b--light-gray">
 
-        {% include comment-form.html %}
+        <section class="pb3">
 
-        {% include comments.html %}
+          {% include comment-form.html %}
+
+          {% include comments.html %}
+
+        <section class="pb3">
+
+          {% include webmentions.html %}
+
+        </section>
 
     </footer>
 

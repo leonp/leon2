@@ -73,8 +73,8 @@ defaults:
 # webmentions
 
 webmentions:
-  pause_lookups: true
   username: www.leonpaternoster.com
+  cache_folder: _data/webmentions
   legacy_domains:
     - http://leonpaternoster.com
     - http://www.leonpaternoster.com

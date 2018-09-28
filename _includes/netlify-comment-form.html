@@ -1,0 +1,23 @@
+<h2 class="f4 c-lh-title mt2 mb1" id="response">Send a response</h2>
+
+<p class="mt0 mb2 f6">Send me a response and I'll include it in the article.</p>
+
+<form method="post" action="/comment-received/" netlify netlify-honeypot="bot-field" class="c-linky-visited c-linky-underline pa2 pa3-ns bg-light-gray ba b--moon-gray">
+
+    <label class="db mb1 f6" for="name">Name</label>
+    <input class="c-sans-serif db w-100 pa2 mb3 ba b--moon-gray" required name="name" id="name" type="text">
+
+    <label class="db mb1 f6" for="email">Email (just so I can get back to you)</label>
+    <input class="c-sans-serif db w-100 pa2 mb3 ba b--moon-gray" required name="email" id="email" type="email">
+
+    <label class="db mb1 f6" for="message">Comment</label>
+    <textarea class="c-sans-serif db vh-50 w-100 pa2 mb3 ba b--moon-gray" required name="message" id="message"></textarea>
+
+    <label class="db mb1 f6" for="hp">If you're a robot or spamming me, fill this in</label>
+    <input class="c-sans-serif db w-100 pa2 mb3 ba b--moon-gray" name="bot-field" id="hp" type="text">
+
+    <button class="c-sans-serif pa2 bg-dark-blue hover-bg-blue white ba- b--light-gray pointer" type="submit">Add comment</button>
+
+    <p class="mb0 mt2 f6"><strong>Privacy note:</strong> I won't share your email with anyone else and I'll only use it to get back in touch with you.</p>
+
+</form>

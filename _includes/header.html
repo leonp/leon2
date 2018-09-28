@@ -47,7 +47,8 @@
         <meta name="DC.Language" content="en-gb">
         {% endif %}
 
-        {% webmentions_head %}
+        <link rel="pingback" href="https://webmention.io/www.leonpaternoster.com/xmlrpc">
+        <link rel="webmention" href="https://webmention.io/www.leonpaternoster.com/webmention">
         <link href="https://micro.blog/leonp" rel="me" />
 
         <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &#8211; all posts" href="{{ site.url }}/feed/index.xml">

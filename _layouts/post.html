@@ -15,7 +15,7 @@
 
     <header class="c-linky-visited">
 
-        <p class="mt0 mb2 f6 mid-gray"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / <a href="#commentary"><span role="img" aria-label="A pen in hand">✍️</span> Comments</a> / {% if page.note %}<a href="/posts/notes/">Notes</a>{% else %}Filed under <a href="/posts/{{ slug }}">{{ category }}</a>{% endif %}</p>
+        <p class="mt0 mb2 f6 mid-gray"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / {% if page.note %}<a href="/posts/notes/">Notes</a>{% else %}Filed under <a href="/posts/{{ slug }}">{{ category }}</a>{% endif %}</p>
 
         <h1 class="p-name mt0 c-lh-title mb3 f2 f1-l">{{ page.title }}</h1>
 
@@ -30,22 +30,6 @@
         <p class="f6 mid-gray mt4 c-sans-serif">— <a href="/" class="p-author" rel="author">Leon Paternoster</a></p>
 
     </div>
-
-    <footer class="bt b--light-gray">
-
-        <section class="pb3">
-
-          {% include comment-form.html %}
-
-          {% include comments.html %}
-
-        <section class="pb3">
-
-          {% include webmentions.html %}
-
-        </section>
-
-    </footer>
 
 </article>
 

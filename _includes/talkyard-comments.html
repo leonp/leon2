@@ -1,0 +1,24 @@
+{% if site.talkyard_server_url %}
+
+  {% capture script_url %}
+
+    {% if site.talkyard_script_url %}
+
+      {{ site.talkyard_script_url }}
+
+    {% else %}{{ 'https://cdn.talkyard.net/-/talkyard-comments.min.js' }}
+
+    {% endif %}
+
+  {% endcapture %}
+
+  <script>talkyardServerUrl='{{ site.talkyard_server_url }}';</script>
+
+  <script async defer src="{{ script_url }}"></script>
+
+  <div class="talkyard-comments" data-discussion-id="{{ page.discussion_id }}">
+
+  <noscript>Please enable Javascript to view comments.</noscript>
+
+  </div>
+{% endif %}

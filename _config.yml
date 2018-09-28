@@ -72,12 +72,12 @@ defaults:
 
 # webmentions
 
-webmentions:
-  username: www.leonpaternoster.com
-  cache_folder: _data/webmentions
-  legacy_domains:
-    - http://leonpaternoster.com
-    - http://www.leonpaternoster.com
+# webmentions:
+  # username: www.leonpaternoster.com
+  # cache_folder: _data/webmentions
+  # legacy_domains:
+    # - http://leonpaternoster.com
+    # - http://www.leonpaternoster.com
 
 
 # Exclude from processing.

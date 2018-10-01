@@ -9,7 +9,7 @@ underlined-links: true
 hyphens: true
 ---
 
-<p>I'm Leon, web services manager at Suffolk Libraries. I'm responsible for lots of things, including our website and apps we develop. Most interestingly, I conceived and led the development of our own <a href="/posts/managing-self-service-project/">library self-service system</a>, a progressive web app now sold by software developers Dootrix to other library services.</p>
+<p>I'm Leon, head of digital and marketing at Suffolk Libraries. I'm responsible for lots of things, including our website and apps we develop. Most interestingly, I conceived and led the development of our own <a href="/posts/managing-self-service-project/">library self-service system</a>, a progressive web app now sold by software developers Dootrix to other library services.</p>
 
 <p>I've worked in web and, to a lesser extent, IT, since 2008. Before that, I taught secondary English for a few years, and before that I worked as an <abbr title="Network Operations Centre">NOC</abbr> engineer for a telecoms company. My first jobs involved trying to flog ad space.</p>
 

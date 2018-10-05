@@ -5,7 +5,7 @@ display-title: "Leon Paternoster"
 is_home: true
 order: 1
 ---
-I'm web services manager at Suffolk Libraries. I blog about working on the web, libraries and anything else that interests me. You have been warned.
+I'm head of digital and marketing at Suffolk Libraries. I blog about working on the web, libraries and anything else that interests me. You have been warned.
 
 <h2 class="f5 normal mt4 gray pb1 bb b--light-gray c-sans-serif">Latest blog posts</h2>
 

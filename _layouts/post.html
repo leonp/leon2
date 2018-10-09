@@ -13,29 +13,25 @@
 
 <article class="h-entry">
 
-    <header class="c-linky-visited">
+    <header class="pa2 pv4-ns ph5-ns bb b--light-gray">
 
-        <p class="mt0 mb2 f6 mid-gray"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / <a href="#response"><span role="img" aria-label="A pen">✍️</span> Responses</a> / {% if page.note %}<a href="/posts/notes/">Notes</a>{% else %}Filed under <a href="/posts/{{ slug }}">{{ category }}</a>{% endif %}</p>
+        <h1 class="f2 lh-title measure mt0 mb2 p-name">{{ page.title }}</h1>
 
-        <h1 class="p-name mt0 c-lh-title mb3 f2 f1-l">{{ page.title }}</h1>
-
-        <span class="dib w3 mb3 bb bw3 b--dark-red"></span>
+        <p class="gray f6"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / {% if page.note %}<a href="/posts/notes/" class="dark-pink no-underline">Notes</a>{% else %}<a href="/posts/" class="dark-pink no-underline">See all posts &rarr;</a>{% endif %}</p>
 
     </header>
 
-    <div class="e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content pb3">
+    <div class="pa2 pv4-ns ph5-ns bb b--light-gray">
 
-        {{ content}}
+        <div class="measure e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content">
 
-        <p class="f6 mid-gray mt4 c-sans-serif">— <a href="/" class="p-author" rel="author">Leon Paternoster</a></p>
+            {{ content}}
+
+        </div>
+
+        <p class="f6 gray mt4 c-sans-serif">— <a href="/" class="p-author dark-pink no-underline" rel="author">Leon Paternoster</a></p>
 
     </div>
-
-    <footer>
-
-      {% include netlify-comment-form.html %}
-
-    </footer>
 
 </article>
 

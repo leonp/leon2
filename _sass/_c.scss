@@ -100,7 +100,7 @@
 }
 
 .c-linky-underline a {
-    text-decoration: underline;
+    border-bottom: 2px solid;
 }
 
 .c-linky-visited a:link {
@@ -152,9 +152,7 @@ a {
 
 blockquote {
     font-size: 0.875rem;
-    margin-left: 1rem;
-    padding-left: 0.75rem;
-    border-left: 0.25rem solid $highlight;
+    margin-left: 2rem;
 }
 
 abbr {

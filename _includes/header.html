@@ -94,38 +94,18 @@
 
     <body class="ma0 pa0 bg-white dark-gray c-sans-serif c-lh-copy">
 
-        <div class="ph2 ph3-ns bg-near-white bb b--light-gray">
+        <div class="clip ph2 ph3-ns bg-near-white bb b--light-gray">
 
             <div class="c-wrapper center c-no-print"><a class="dib pv2 f6 f7-ns blue hover-dark-red" href="#content">Skip to main content</a></div>
 
         </div>
 
-        <header class="c-no-print bg-white ph2 ph3-ns ph4-l pv2 bb b--light-gray">
+        <header class="c-no-print pa2 pv4-ns ph5-ns bb b--light-gray">
 
-            <div class="c-wrapper center flex-l flex-wrap-l justify-between-l">
+            <h1 class="f4 lh-title ttl small-caps tracked mb1"><a href="/" class="dark-gray no-underline hover-dark-pink">{{ site.title }}</a></h1>
 
-                <a href="/" class="f4 f6-l b db w-third-l no-underline pv1 db dark-gray hover-dark-red"><span role="img" aria-label="Lightning bolt logo" class="c-icon">⚡️</span> Leon Paternoster</a>
-
-                <nav id="nav" class="w-two-thirds-l justify-end-l flex-l">
-
-                    <ul class="ma0 pa0 list f6-l">
-
-                        {% assign pages = site.pages | where_exp: "page", "page.order > 0" | sort: "order" %}
-
-                        {% for nav-page in pages %}
-
-                        <li class="dib mr3 mr0-l ml4-l"><a href="{{ nav-page.url }}" class="{% if page.url == nav-page.url %}black {% else %}gray {% endif %}hover-dark-red no-underline pv1 db">{{ nav-page.title }}</a></li>
-
-                        {% endfor %}
-
-                    </ul>
-
-                </nav>
-
-            </div>
+            <p class="mt0 f6">{{ site.byline }}</p>
 
         </header>
 
-        <main id="content" class="ph2 ph3-ns ph4-l pv4 pv5-l">
-
-            <div class="center c-wrapper">
+        <main id="content">

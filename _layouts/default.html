@@ -1,14 +1,20 @@
 {% include header.html %}
 
-<article class="pb4">
+<article>
 
-    <h1 class="mt0 c-lh-title mb3 f2 f1-l">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+    <header class="pa2 pv4-ns ph5-ns bb b--light-gray">
 
-    <span class="dib w3 mb3 bb bw3 b--dark-red"></span>
+        <h1 class="f2 lh-title measure mt0 mb2">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
 
-    <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}">
+    </header>
 
-        {{ content}}
+    <div class="pa2 pv4-ns ph5-ns bb b--light-gray {% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}">
+
+        <div class="measure">
+
+            {{ content}}
+
+        </div>
 
     </div>
 

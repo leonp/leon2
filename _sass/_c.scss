@@ -223,6 +223,10 @@ td {
     margin: 0;
 }
 
+*:focus {
+    outline: 3px solid #FFB700;
+}
+
 
 // Some empty media queries
 // Use these if you want to make responsive custom classes

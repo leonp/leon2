@@ -10,11 +10,11 @@
 
     <div class="pa2 pv4-ns ph5-ns bb b--light-gray {% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}">
 
-        <div class="measure">
+        {% unless page.title == 'Posts' %}<div class="measure">{% endunless %}
 
             {{ content}}
 
-        </div>
+        {% unless page.title == 'Posts' %}</div>{% endunless %}
 
     </div>
 

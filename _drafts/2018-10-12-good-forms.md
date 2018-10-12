@@ -49,6 +49,10 @@ Sighted users can (usually) figure out which labels apply to which form fields. 
 {% endraw %}
 {% endhighlight %}
 
+Sighted users also benefit from marking up labels with a `for` attribute. Clicking on the label focuses on the field, meaning you get a larger hit area for a mouse:
+
+
+
 
 
 

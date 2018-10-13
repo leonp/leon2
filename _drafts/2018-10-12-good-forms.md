@@ -24,11 +24,11 @@ A good starting point for building forms is acknowledging they are difficult for
 
 ## Request the minimum amount of information and no more
 
-Each move between fields, each letter typed, each label to interpret is an extra piece of work for the user. Therefore, only ask for the information you need. Where possible, merge related fields into one. For example, unless you need to specifically address a user with a surname or forename, use a `Name` field rather than separate `First name` and `Surname fields` (this will also make it easier for people whose names don't fit into this format).
+Each move between fields, each letter typed, each label to interpret is an extra piece of work for the user. Therefore, only ask for the information you need. Where possible, merge related fields into one. For example, unless you need to specifically address a user with a surname or forename, use a `Name` field rather than separate `First name` and `Surname fields` (this will also make it easier for people whose names don't fit into this format). Better still, think about whether you need a name at all, and don't ask for it unless you really do.
 
 ## Avoid compulsory/optional fields if possible
 
-In theory, if you're requesting the minumum amount of information all fields will be complulsory by definition. You'll save your users having to work out whether they should enter information in optional fields. Even if they are filling in every field because they haven't interpreted your optional/compulsory UI, you're saving them work.
+In theory, if you're requesting the minimum amount of information all fields will be compulsory. You'll save your users having to work out whether they should enter information in optional fields. Even if they are filling in every field because they haven't interpreted your optional/compulsory UI, you're saving them work.
 
 ## Make fields optional rather than compulsory
 
@@ -36,7 +36,7 @@ I was testing some forms yesterday and was surprised to see one user struggle wi
 
 You might argue some explanatory text at the top of the form would help here. It might, but you're relying on the user spotting this text and interpreting it correctly. The first rule of all web design is users don't read.
 
-Red stars and words like <i>compulsory</i> are all very imperative. Make your tone more polite by reversing the approach. Instead of marking compulsory fields with a red asterix, add the word <i>optional</i> to non-compulsory field labels.
+Red stars and words like <i>compulsory</i> are all very imperative, or even suggest something is wrong. Make your tone more polite and unthreatening by reversing the approach. Instead of marking compulsory fields with a red asterix, add the word <i>optional</i> to non-compulsory field labels.
 
 ## Use label fors and associated input IDs
 
@@ -49,7 +49,12 @@ Sighted users can (usually) figure out which labels apply to which form fields. 
 {% endraw %}
 {% endhighlight %}
 
-Sighted users also benefit from marking up labels with a `for` attribute. Clicking on the label focuses on the field, meaning you get a larger hit area for a mouse:
+Sighted users also benefit from marking up labels with a `for` attribute. [Clicking on the label focuses on the field](https://www.suffolklibraries.co.uk/newsletter/), meaning you get a larger hit area for a mouse:
+
+{% include figure.html url="focus-form.png" alt="A newsletter signup form" caption="Clicking on the email label text places the focus on the field itself" %}
+
+## Use proximity to reinforce the relationship between labels and input fields
+
 
 
 

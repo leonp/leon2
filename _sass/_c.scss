@@ -40,14 +40,6 @@
     max-width: $c-wrapper;
 }
 
-.c-beige {
-    color: $c-beige;
-}
-
-.c-bg-beige {
-    background-color: $c-beige;
-}
-
 .c-icon {
 	color: transparent;
 	text-shadow: 0 0 $highlight;
@@ -118,6 +110,27 @@
 
 .c-no-top-margin * {
     margin-top: 0 !important;
+}
+
+// Class to constrain parents' children to max-width
+// Then add exceptions for elements you want to expand
+// to 100% of the available page
+
+.c-constrain-kids * {
+    max-width: $c-mw;
+}
+
+.c-constrain-kids figure,
+.c-constrain-kids img,
+.c-constrain-kids .vid,
+.c-constrain-kids .constrain,
+.c-constrain-kids .vid iframe,
+.c-constrain-kids .vid object,
+.c-constrain-kids .vid embed,
+.c-constrain-kids .constrain iframe,
+.c-constrain-kids .constrain object,
+.c-constrain-kids .constrain embed {
+    max-width: 100%;
 }
 
 .vid,

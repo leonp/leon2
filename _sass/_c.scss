@@ -117,7 +117,7 @@
 // to 100% of the available page
 
 .c-constrain-kids * {
-    max-width: $c-mw;
+    max-width: $c-mw !important;
 }
 
 .c-constrain-kids figure,
@@ -131,7 +131,7 @@
 .c-constrain-kids .constrain iframe,
 .c-constrain-kids .constrain object,
 .c-constrain-kids .constrain embed {
-    max-width: 100%;
+    max-width: 100% !important;
 }
 
 .vid,

@@ -6,25 +6,13 @@ category: politics
 
 Impermanent, cheap housing isn't new. Prefabs sprouted up around the country after the second world war, and some of them are still standing today, decades beyond their estimated 10 year lifespan.
 
-<figure class="figure">
-
-<img src="/images/prefabs.jpg" alt="Prefabs in Ipswich">
-
-<figcaption class="figcaption">A &pound;160,000 prefab in Ipswich</p></figcaption>
-
-</figure>
+{% include figure.html url="prefabs.jpg" alt="A single story prefab set back from a road" caption="A &pound;160,000 prefab in Ipswich" %}
 
 Of course, we're living in austere times again, albeit self-inflicted. Whereas there may have been some logic in building prefabs after the war, there's no reason not to [build proper houses now](http://www.hbf.co.uk/media-centre/facts-statistics/), beyond inertia, nimbyism and ideology.
 
 The 2015 version of the prefab is a converted container. I imagine these may be an appropriate response to a very specific, short term need, such as ultra-cheap housing for homeless single people, or even students. I also suspect they appeal to urban designer types as they're an inventive example of reuse. They're also modular.
 
-<figure class="figure">
-
-<img src="/images/containers.jpg" alt="Converted container block">
-
-<figcaption class="figcaption"><p>Converted containers in Brighton</p></figcaption>
-
-</figure>
+{% include figure.html url="containers.jpg" alt="Containers stacked on top of each other with windows built into them" caption="Converted containers in Brighton" %}
 
 Yet in Brighton, they're merely [adding to the stock of expensive rented accommodation](http://www.theguardian.com/cities/2015/oct/09/living-steel-box-shipping-containers-future-housing):
 

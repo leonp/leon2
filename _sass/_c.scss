@@ -124,6 +124,12 @@
     max-width: $c-mw !important;
 }
 
+.c-constrain-kids blockquote {
+    max-width: 28rem !important;
+    margin: 2rem 0 2rem 2rem;
+    font-size: 0.875em;
+}
+
 .c-constrain-kids figure,
 .c-constrain-kids img,
 .c-constrain-kids pre,
@@ -166,11 +172,6 @@
 
 a {
     text-decoration: none;
-}
-
-blockquote {
-    font-size: 0.875rem;
-    margin-left: 2rem;
 }
 
 abbr {

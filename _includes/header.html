@@ -85,26 +85,28 @@
         {% endif %}
 
         {% if site.font %}
-        <link rel="preload" as="font" type="font/woff2" href="fonts/plex-sans/IBMPlexSans-Regular-Latin1.woff2">
-        <link rel="preload" as="font" type="font/woff2" href="fonts/plex-sans/IBMPlexSans-Italic-Latin1.woff2">
-        <link rel="preload" as="font" type="font/woff2" href="fonts/plex-sans/IBMPlexSans-Bold-Latin1.woff2">
+        <link rel="preload" as="font" type="font/woff2" href="/fonts/fira-sans/fira-sans-v8-latin-regular.woff2">
+        <link rel="preload" as="font" type="font/woff2" href="/fonts/fira-sans/fira-sans-v8-latin-italic.woff2">
+        <link rel="preload" as="font" type="font/woff2" href="/fonts/fira-sans/fira-sans-v8-latin-700.woff2">
         {% endif %}
 
     </head>
 
     <body class="ma0 pa0 bg-white dark-gray c-sans-serif c-lh-copy">
 
-        <div class="c-no-print tr ph2 ph5-ns bb b--light-gray">
+        <header class="c-no-print pv2 ph2 ph5-ns bb b--light-gray flex">
 
-            <a class="dib pv2 f6 f7-ns dark-blue no-underline" href="#content">Skip to main content &rarr;</a></div>
+            <div class="w-50 pr2">
 
-        </div>
+                <a class="dib dark-gray b no-underline pv2 f6" href="/">{{ site.title }}</a>
 
-        <header class="c-no-print pa2 pv4-ns ph5-ns bb b--light-gray">
+            </div>
 
-            <h1 class="f4 lh-title ttl small-caps tracked mb1"><a href="/" class="dark-blue no-underline">{{ site.title }}</a></h1>
+            <div class="w-50 pl2 flex justify-end">
 
-            <p class="mt0 f6">{{ site.byline }}</p>
+                <a class="dib pv2 f6 gray no-underline hover-dark-gray" href="#content">Skip to main content</a></div>
+
+            </div>
 
         </header>
 

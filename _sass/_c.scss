@@ -243,9 +243,11 @@ td {
     margin: 0;
 }
 
-*:focus {
+*:focus,
+:target {
     outline: 3px solid #FFB700;
 }
+
 
 
 // Some empty media queries

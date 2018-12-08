@@ -1,20 +1,24 @@
 {% include header.html %}
 
-<article>
+<article class="flex-l">
 
-    <header class="pa2 pv4-ns ph5-ns bb b--light-gray">
+    <header class="w-third-l ph2 pv3 ph5-ns bg-navy light-gray bb b--light-gray">
 
-        <h1 class="f2 lh-title measure-narrow mt0 mb2">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+        <h1 class="f2 f3-l lh-title measure-narrow mt0 mt3-l mb2">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
 
     </header>
 
-    <div class="pa2 pv4-ns ph5-ns bb b--light-gray bg-washed-yellow {% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}">
+    <div class="w-two-thirds-l ph2 pv3 ph5-ns bb b--light-gray bg-washed-yellow">
 
-        {% unless page.title == 'Posts' %}<div class="c-constrain-kids">{% endunless %}
+         <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}measure-wide">
 
-            {{ content}}
+            {% unless page.title == 'Posts' %}<div class="c-constrain-kids">{% endunless %}
 
-        {% unless page.title == 'Posts' %}</div>{% endunless %}
+                {{ content}}
+
+            {% unless page.title == 'Posts' %}</div>{% endunless %}
+
+        </div>
 
     </div>
 

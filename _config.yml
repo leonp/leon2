@@ -22,7 +22,7 @@ description: "Head of digital and marketing at Suffolk Libraries. Developer of l
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.leonpaternoster.com" # the base hostname & protocol for your site
 lead: "Blogging about making websites &amp; apps fast, friendly, readable and usable."
-font: "Fira Sans"
+# font: "Fira Sans"
 
 # Build settings
 permalink: /posts/:title/

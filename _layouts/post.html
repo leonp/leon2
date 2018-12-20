@@ -13,21 +13,21 @@
 
 <article class="h-entry flex-l">
 
-    <header class="w-third-l ph2 pv3 ph5-ns bg-navy light-gray bb b--light-gray">
+    <header class="w-third-l ph2 pv3 ph5-ns">
 
         <div class="flex flex-column flex-column-reverse items-start">
 
             <h1 class="f2 f3-l lh-title measure-narrow mt0 p-name">{{ page.title }}</h1>
 
-            <p class="light-gray f6 mb2"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / {% if page.note %}<a href="/posts/notes/" class="dark-blue no-underline hover-dark-gray">Notes</a>{% else %}<a href="/posts/" class="light-blue no-underline hover-washed-blue">See all posts &rarr;</a>{% endif %}</p>
+            <p class="gray f6 mb2"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / {% if page.note %}<a href="/posts/notes/" class="dark-blue no-underline hover-dark-gray">Notes</a>{% else %}<a href="/posts/" class="dark-blue no-underline hover-dark-gray">See all posts &rarr;</a>{% endif %}</p>
 
         </div>
 
     </header>
 
-    <div class="w-two-thirds-l ph2 pv3 ph5-ns bb b--light-gray bg-washed-yellow">
+    <div class="w-two-thirds-l ph2 pv3 ph5-ns bl-l b--light-gray">
 
-        <div class="c-constrain-kids e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content measure-wide">
+        <div class="c-constrain-kids e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content measure-wide georgia">
 
             {{ content }}
 

@@ -1,7 +1,6 @@
 ---
 title: "The town with no centre"
 category: thinking
-article: true
 ---
 
 Noted: <cite>[Apocalypse now for Britain’s retailers as low wages and the web cause ruin](https://www.theguardian.com/business/2018/feb/17/uk-retail-industry--gloom-high-street-shift-consumers)</cite>:

@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Posts
+title: Archive
 order: 4
 annualised: true
 ---
 
-{% assign posts = site.posts | where: "article", "true" %}
+{% assign posts = site.posts %}
 
 {% include list.html %}

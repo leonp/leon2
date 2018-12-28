@@ -3,6 +3,7 @@ title: "In defence of view page source"
 category: web
 img: lp-source.jpg
 alt: The source code of leonpaternoster.com shown in the Firefox browser
+article: true
 ---
 
 Ever late to the web discussion party, I read [CSS Tricks’ hardline stance on <i>View Source</i>](https://css-tricks.com/view-source/), where Chris argues he’d be happy to get rid of it because you can glean more info about a page from dev tools.

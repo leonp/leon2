@@ -99,7 +99,7 @@
 }
 
 .c-linky-underline a {
-    border-bottom: 2px solid;
+    border-bottom: 1px dotted;
 }
 
 .c-linky-visited a:link {
@@ -165,6 +165,10 @@
 .c-constrain-kids .constrain object,
 .c-constrain-kids .constrain embed {
     max-width: 100% !important;
+}
+
+.c-constrain-kids img {
+    margin: 0.5rem auto;
 }
 
 .vid,

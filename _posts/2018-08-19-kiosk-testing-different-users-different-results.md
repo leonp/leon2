@@ -2,6 +2,7 @@
 title: "Kiosk testing: Different users, different results"
 category: web
 layout: post
+article: true
 ---
 
 We don't read enough about the results of [kiosk testing](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/), maybe because people don't kiosk test enough. But Thomas wrote an excellent post on some [last minute tests on the MoMu website](https://thomasbyttebier.be/blog/usability-testing-the-new-momu-website), sharing his methodology and five findings.

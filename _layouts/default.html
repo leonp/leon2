@@ -1,22 +1,18 @@
 {% include header.html %}
 
-<article class="flex-l">
+<article class="h-entry">
 
-    <header class="w-third-l ph2 pv3 ph5-ns">
+    <div class="pb2 pt3 pt4-ns pt5-l mh2 mh5-ns mh6-l tc">
 
-        <h1 class="f2 f3-l lh-title measure-narrow mt0 mt3-l mb2">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+        <h1 class="f3 c-lh-title normal dark-pink i p-name">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
 
-    </header>
+    </div>
 
-    <div class="w-two-thirds-l ph2 pv3 ph5-ns bl-l b--light-gray">
+    <div class="pv3">
 
-         <div class="georgia {% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}measure-wide">
+         <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}c-constrain-kids">
 
-            {% unless page.title == 'Posts' %}<div class="c-constrain-kids">{% endunless %}
-
-                {{ content}}
-
-            {% unless page.title == 'Posts' %}</div>{% endunless %}
+            {{ content}}
 
         </div>
 

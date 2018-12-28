@@ -5,19 +5,19 @@
 // We'll refer to this variable in _c.scss
 $c-sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
 
+$c-serif: 'Libre Baskerville', baskerville, georgia, serif;
+
 $c-font-size: 100%;
-$c-font-size-m: 112.5%;
-$c-font-size-l: 143.75%;
+$c-font-size-m: 100%;
+$c-font-size-l: 100%;
 
 $c-lh-title: 1.2;
 
-$c-lh-copy: 1.35;
-$c-lh-copy-m: 1.45;
-$c-lh-copy-l: 1.5;
+$c-lh-copy: 1.4;
+$c-lh-copy-m: 1.5;
+$c-lh-copy-l: 1.6;
 
-$c-wrapper: 40em;
+$c-wrapper: 48rem;
 $c-mw: 30rem;
 
-$c-plex-serif: 'IBM Plex Serif', georgia, serif;
-
-$highlight: #00449E;
+$highlight: #D5008F;

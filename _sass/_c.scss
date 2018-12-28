@@ -12,8 +12,8 @@
     font-family: $c-sans-serif;
 }
 
-.c-plex-serif {
-    font-family: $c-plex-serif;
+.c-serif {
+    font-family: $c-serif;
 }
 
 .c-lh-copy {
@@ -61,7 +61,10 @@
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
     line-height: $c-lh-title;
-    font-family: $c-sans-serif;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    color: $highlight;
 }
 
 .c-prose-headings h1 + *,
@@ -76,17 +79,17 @@
 
 .c-prose-headings h1,
 .c-prose-headings h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .c-prose-headings h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .c-prose-headings h4,
 .c-prose-headings h5,
 .c-prose-headings h6 {
-    font-size: 1rem;
+    font-size: 0.875rem;
 }
 
 .c-hyphens {
@@ -120,13 +123,33 @@
 // Then add exceptions for elements you want to expand
 // to 100% of the available page
 
-.c-constrain-kids * {
-    max-width: $c-mw !important;
+.c-constrain-kids p,
+.c-constrain-kids ul,
+.c-constrain-kids ol,
+.c-constrain-kids pre,
+.c-constrain-kids h1,
+.c-constrain-kids h2,
+.c-constrain-kids h3,
+.c-constrain-kids h4,
+.c-constrain-kids h5,
+.c-constrain-kids h6,
+.c-constrain-kids dt,
+.c-constrain-kids dd {
+    max-width: $c-wrapper !important;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    @media #{$breakpoint-medium} {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    @media #{$breakpoint-large} {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
 }
 
 .c-constrain-kids blockquote {
-    max-width: 28rem !important;
-    margin: 2rem 0 2rem 2rem;
+    padding: 0 1rem;
     font-size: 0.875em;
 }
 
@@ -202,22 +225,9 @@ pre code {
 
 hr {
     overflow: visible; /* For IE */
-    padding: 0 0 1.5rem 0;
-    margin: 0;
     border: none;
     border-top: medium double #CCC;
     text-align: center;
-}
-
-hr:after {
-    content: "§";
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25rem 1.5rem 0.25rem;
-    background: #FFFCEB;
-    color: $highlight;
 }
 
 table {
@@ -264,34 +274,6 @@ td {
 
 
 } // End the enclosing screen/projection media query
-
-
-
-// Fonts
-
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: normal;
-  font-display: auto;
-  src: url("/fonts/plex-sans/IBMPlexSans-Regular-Latin1.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: italic;
-  font-weight: normal;
-  font-display: auto;
-  src: url("/fonts/plex-sans/IBMPlexSans-Italic-Latin1.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-display: auto;
-  src: url("/fonts/plex-sans/IBMPlexSans-Bold-Latin1.woff2") format("woff2");
-}
 
 
 // Print styles

@@ -11,29 +11,23 @@
 
 {% endfor %}
 
-<article class="h-entry flex-l">
+<article class="h-entry">
 
-    <header class="w-third-l ph2 pv3 ph5-ns">
+    <header class="pb2 pt3 pt4-ns pt5-l mh2 mh5-ns mh6-l tc">
 
-        <div class="flex flex-column flex-column-reverse items-start">
+        <h1 class="f3 c-lh-title normal dark-pink i p-name">{{ page.title }}</h1>
 
-            <h1 class="f2 f3-l lh-title measure-narrow mt0 p-name">{{ page.title }}</h1>
-
-            <p class="gray f6 mb2"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / {% if page.note %}<a href="/posts/notes/" class="dark-blue no-underline hover-dark-gray">Notes</a>{% else %}<a href="/posts/" class="dark-blue no-underline hover-dark-gray">See all posts &rarr;</a>{% endif %}</p>
-
-        </div>
+        <p class="gray f6 mb2"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / by <a href="/" class="p-author dark-blue hover-dark-pink no-underline" rel="author">Leon Paternoster</a> / {% if page.note %}<a href="/posts/notes/" class="dark-blue no-underline hover-dark-pink">Notes</a>{% else %}<a href="/posts/" class="dark-blue no-underline hover-dark-pink">All posts &rarr;</a>{% endif %}</p>
 
     </header>
 
-    <div class="w-two-thirds-l ph2 pv3 ph5-ns bl-l b--light-gray">
+    <div class="pv3">
 
-        <div class="c-constrain-kids e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content measure-wide georgia">
+        <div class="c-constrain-kids e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content">
 
             {{ content }}
 
         </div>
-
-        <p class="f6 gray mt4 c-sans-serif">— <a href="/" class="p-author dark-blue no-underline" rel="author">Leon Paternoster</a></p>
 
     </div>
 

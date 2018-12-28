@@ -85,29 +85,30 @@
         {% endif %}
 
         {% if site.font %}
-        <link rel="preload" as="font" type="font/woff2" href="/fonts/fira-sans/fira-sans-v8-latin-regular.woff2">
-        <link rel="preload" as="font" type="font/woff2" href="/fonts/fira-sans/fira-sans-v8-latin-italic.woff2">
-        <link rel="preload" as="font" type="font/woff2" href="/fonts/fira-sans/fira-sans-v8-latin-700.woff2">
+        <link rel="preload" as="font" type="font/woff2" href="/fonts/libre-baskerville/libre-baskerville-regular.woff2">
+        <link rel="preload" as="font" type="font/woff2" href="/fonts/libre-baskerville/libre-baskerville-italic.woff2">
+        <link rel="preload" as="font" type="font/woff2" href="/fonts/libre-baskerville/libre-baskerville-bold.woff2">
         {% endif %}
 
     </head>
 
-    <body class="ma0 pa0 bg-white dark-gray c-sans-serif c-lh-copy">
+    <body class="ma0 pa0 bg-light-gray dark-gray c-serif c-lh-copy">
 
-        <header class="c-no-print pv2 ph2 ph5-ns bb b--light-gray flex">
+        <header class="c-no-print bg-near-white f7 bb b--white tc">
 
-            <div class="w-50 pr2">
+            <a class="dib mh2 dark-blue hover-dark-pink no-underline pv1" href="/">{{ site.title }}</a>
 
-                <a class="dib dark-gray b no-underline pv2 f6" href="/">{{ site.title }}</a>
+            <nav class="dib">
 
-            </div>
+                <ul class="dib ma0 pa0 list">
 
-            <div class="w-50 pl2 flex justify-end">
+                    <li class="dib"><a href="/about" class="pv1 mh2 dark-blue hover-dark-pink no-underline">About</a></li>
+                    <li class="dib"><a href="/posts" class="pv1 mh2 dark-blue hover-dark-pink no-underline">Posts</a></li>
 
-                <a class="dib pv2 f6 dark-blue hover-dark-gray" href="#nav">Skip to navigation</a></div>
+                </ul>
 
-            </div>
+            </nav>
 
         </header>
 
-        <main id="content">
+        <main id="content" class="mv2 mv4-ns mv5-l bg-white c-wrapper center br2-l">

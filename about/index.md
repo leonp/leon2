@@ -13,9 +13,7 @@ hyphens: true
 
 <p>I've worked in web and, to a lesser extent, IT, since 2008. Before that, I taught secondary English for a few years, and before that I worked as an <abbr title="Network Operations Centre">NOC</abbr> engineer for a telecoms company. My first jobs involved trying to flog ad space.</p>
 
-<div class="pt3"><hr></div>
-
-<p>I've written a blog since 2008. Unsurprisingly, over the years what I've written about has changed, reflecting whatever I've been interested in at the time. I don't just write about work. When I commuted, I was lucky enough to have the time to read, and logged the books here. Since 2010 I've been a Labour party member and fretted about the future of the party, until Jeremy Corbyn became its leader. For a few years I was particularly interested in the idea of a <a href="https://en.wikipedia.org/wiki/Basic_income">Universal Basic Income</a>. Sometimes I'll write about something that just grabs my attention. It's all here.</p>
+<p>I wrote a blog between 2008 and 2018. Unsurprisingly, over the years what I wrote about changed, reflecting whatever I was interested in at the time. I didn't just write about work. When I commuted, I was lucky enough to have the time to read, and logged the books here. Since 2010 I've been a Labour party member and fretted about the future of the party, until Jeremy Corbyn became its leader. For a few years I was particularly interested in the idea of a <a href="https://en.wikipedia.org/wiki/Basic_income">Universal Basic Income</a>. Sometimes I wrote about something that just grabbed my attention. It's all here.</p>
 
 <p>Subscribe/contact me if you have any questions:</p>
 

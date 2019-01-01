@@ -86,22 +86,20 @@
 
     </head>
 
-    <body class="ma0 pa0 bg-light-gray dark-gray c-serif c-lh-copy">
+    <body class="ma0 pa2 pa4-ns bg-dark-gray light-silver c-sans-serif c-lh-copy">
 
-        <header class="c-no-print bg-near-white f7 bb b--white tc">
+        <div class="c-wrapper center">
 
-            <a class="dib mh2 dark-blue hover-dark-pink no-underline pv1" href="/">{{ site.title }}</a>
+            {% if page.is_home %}
 
-            <nav class="dib">
+                <article>
 
-                <ul class="dib ma0 pa0 list">
+                    <h1 class="f4 c-lh-copy c-no-print ma0"><a rel="index" class="c-highlight hover-white no-underline pv1" href="/">{{ site.title }}<span class="white">.</span></a></h1>
 
-                    <li class="dib"><a href="/about" class="pv1 mh2 dark-blue hover-dark-pink no-underline">About</a></li>
+            {% else %}
 
-                </ul>
+                <a rel="index" class="b c-no-print db f4 c-highlight hover-white no-underline pv1" href="/">{{ site.title }}<span class="white">.</span></a>
 
-            </nav>
+            {% endif %}
 
-        </header>
-
-        <main id="content" class="mv2 mv4-ns mv5-l bg-white c-wrapper center br2-l">
+            {% unless page.is_home %}<main id="content">{% endunless %}

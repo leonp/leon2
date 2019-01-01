@@ -49,6 +49,10 @@
 	text-shadow: 0 0 $highlight;
 }
 
+.c-highlight {
+    color: $highlight;
+}
+
 // Prose styling
 
 .c-prose-headings h1,
@@ -61,10 +65,7 @@
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
     line-height: $c-lh-title;
-    text-align: center;
-    font-weight: normal;
-    font-style: italic;
-    color: $highlight;
+    color: #FFF;
 }
 
 .c-prose-headings h1 + *,
@@ -79,17 +80,17 @@
 
 .c-prose-headings h1,
 .c-prose-headings h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .c-prose-headings h3 {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .c-prose-headings h4,
 .c-prose-headings h5,
 .c-prose-headings h6 {
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .c-hyphens {
@@ -103,11 +104,11 @@
 }
 
 .c-linky-visited a:link {
-    color: #00449E;
+    color: #EEE;
 }
 
 .c-linky-visited a:visited {
-    color: #357EDD;
+    color: #CCC;
 }
 
 .c-linky-visited a:hover,
@@ -123,7 +124,7 @@
 // Then add exceptions for elements you want to expand
 // to 100% of the available page
 
-.c-constrain-kids p,
+/* .c-constrain-kids p,
 .c-constrain-kids ul,
 .c-constrain-kids ol,
 .c-constrain-kids pre,
@@ -165,6 +166,11 @@
 .c-constrain-kids .constrain object,
 .c-constrain-kids .constrain embed {
     max-width: 100% !important;
+} */
+
+.c-constrain-kids blockquote {
+    padding: 1rem;
+    font-size: 0.875em;
 }
 
 .c-constrain-kids img {
@@ -212,19 +218,21 @@ figure {
 code {
     font-size: 0.875em;
     padding: 0.1em 0.25em;
-    background-color: #EFEFEF;
+    background-color: #EEE;
+    color: #333;
 }
 
 pre {
     overflow: auto;
     padding: 1em;
     background-color: #000;
-    color: #EFEFEF;
+    color: $highlight;
 }
 
 pre code {
     padding: 0;
     background-color: inherit;
+    color: $highlight;
 }
 
 hr {

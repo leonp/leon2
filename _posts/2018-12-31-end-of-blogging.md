@@ -3,7 +3,7 @@ title: "Taking a break from blogging as I know it"
 category: thinking
 ---
 
-My job changed in October and I haven't felt the urge to blog anything since. I've been writing less over the last couple of years or so anyway as the coding part of my job has got smaller, mainly because I led a project to develop and productise a new library self-service system. This generated a few blog posts, but writing about procurement and budgets isn't as interesting as [writing about atomic CSS](/posts/modular-css-vs-semantic-class-names-an-example/) or [how Uniqlo designed a terrible website header](/posts/uniqlo-fixed-header/).
+My job changed in October and I haven't felt the urge to blog anything since. I've been writing less over the last couple of years or so anyway, mainly because I led a project to develop and productise a new library self-service system. This generated a few blog posts, but writing about procurement and budgets isn't as interesting as [writing about atomic CSS](/posts/modular-css-vs-semantic-class-names-an-example/) or [how Uniqlo designed a terrible website header](/posts/uniqlo-fixed-header/).
 
 My new role formalises the switch from IT and development to (ahem) strategy and includes a hefty element of (cough) marketing. It's a challenge. Soon, the Suffolk Libraries web presence will probably be developed by people other than me, which is a good thing -- providing we choose the right people, and we develop the right stuff. I also now have to think about library signage, planning events etc. and, to be honest, I have next to zero interest in posting about these things at the moment.
 

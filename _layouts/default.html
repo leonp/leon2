@@ -1,20 +1,20 @@
 {% include header.html %}
 
-<article class="h-entry">
+{% unless page.is_home %}<article class="h-entry">{% endunless %}
 
-    <div class="pb2 pt3 pt4-ns pt5-l mh2 mh5-ns mh6-l tc">
+    <div class="white">
 
-        <h1 class="f3 c-lh-title normal dark-pink i p-name">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+        {% unless page.hide-title %}
+
+            <h1 class="f2 c-lh-title p-name mb2">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+
+        {% endunless %}
 
     </div>
 
-    <div class="pv3">
+     <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}c-constrain-kids">
 
-         <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}c-constrain-kids">
-
-            {{ content}}
-
-        </div>
+        {{ content}}
 
     </div>
 

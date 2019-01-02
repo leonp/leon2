@@ -21,6 +21,7 @@ hyphens: true
 
 <li><a href="https://mobile.twitter.com/leonpaternoster/">Twitter</a></li>
 <li><a href="https://micro.blog/leonp/">micro.blog</a></li>
+<li><a href="https://uk.linkedin.com/in/leonpaternoster">LinkedIn</a></li>
 <li>leon.paternoster@zoho.com</li>
 
 </ul>

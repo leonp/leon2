@@ -11,6 +11,8 @@ So there you have it; the Ipswich Jan Tschichold link.
 
 I guess this is an example of what iA refer to as *Fingerspitzengefühl*; the fine knowledge of detail that helps produce good design. (Go ahead and read [Learning to See][1]—you won’t be disappointed.)
 
+{% include figure.html url="tschichold-cover.jpg" alt="Design plans for the Highland Dress book cover" caption="Tschichold's book cover designs were precise" %}
+
 When we talk about design it’s very easy to adopt a reverential, exclusive tone. Design can be used as a means to up the price of a product. But it’s worth bearing in mind that many of the things we think of as examples of great design serve a democratic purpose. Tschischold invented a template for cheap, massproduced books that sold millions of copies.
 Tschischold is an interesting man. He escaped the Nazis in 1933 having published <cite lang="de">Die neue Typographie</cite>, where he claimed sans serifs were the “basic form from which the typeface of the future will grow”. By 1952 he’d performed a *volte face*:
 

@@ -220,21 +220,20 @@ figure {
 code {
     font-size: 0.875em;
     padding: 0.1em 0.25em;
-    background-color: #EEE;
-    color: #333;
+    color: #9EEBCF;
 }
 
 pre {
     overflow: auto;
     padding: 1em;
     background-color: #000;
-    color: $highlight;
+    color: #9EEBCF;
 }
 
 pre code {
     padding: 0;
     background-color: inherit;
-    color: $highlight;
+    color: #9EEBCF;
 }
 
 hr {

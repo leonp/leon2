@@ -22,4 +22,5 @@ I've got ten years' experience of building and managing digital teams in the not
 
 - [Twitter](https://mobile.twitter.com/leonpaternoster/)
 - [micro.blog](https://micro.blog/leonp/)
-- email: leon.paternoster@zoho.com
+- [LinkedIn](https://uk.linkedin.com/in/leonpaternoster)
+- leon.paternoster@zoho.com

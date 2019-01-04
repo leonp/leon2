@@ -3,10 +3,14 @@ title: "Leon Paternoster"
 author: "Leon Paternoster" # for blog post attribution
 description: "Head of digital and marketing at Suffolk Libraries. Developer of library self-service systems and simple, fast and friendly websites."
 email: leon.paternoster@zoho.com
-# linkedin:
-# twitter:
-# github-handle:
-# github-url:
+linkedin: https://uk.linkedin.com/in/leonpaternoster
+twitter: https://mobile.twitter.com/leonpaternoster
+github: https://github.com/leonp/
+microblog: https://micro.blog/leonp/
+webmention-pingback: https://webmention.io/www.leonpaternoster.com/xmlrpc
+webmention-mention: https://webmention.io/www.leonpaternoster.com/webmention
+me: https://micro.blog/leonp/
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.leonpaternoster.com" # the base hostname & protocol for your site
 

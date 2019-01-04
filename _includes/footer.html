@@ -2,7 +2,16 @@
 
                 <footer class="pv3">
 
-                    <p class="f6"><a href="/" class="near-white no-underline hover-gold">Leon Paternoster</a> | <span class="normal">leon.paternoster@zoho.com</span> | <a href="https://mobile.twitter.com/leonpaternoster/" class="near-white no-underline hover-gold">Twitter</a>.</p>
+                    <ul class="f6 ma0 pa0 list c-linky-visited">
+
+                        <li class="dib-ns mr3-ns"><a href="/" rel="index" class="pv1 dib">{{ site.title }}</a></li>
+                        {% if site.twitter %}<li class="dib-ns mr3-ns"><a href="{{ site.twitter }}" class="pv1 dib">Twitter</a></li>{% endif %}
+                        {% if site.github %}<li class="dib-ns mr3-ns"><a href="{{ site.github }}" class="pv1 dib">Github</a></li>{% endif %}
+                        {% if site.microblog %}<li class="dib-ns mr3-ns"><a href="{{ site.microblog }}" class="pv1 dib">microblog</a></li>{% endif %}
+                        {% if site.linkedin %}<li class="dib-ns mr3-ns"><a href="{{ site.linkedin }}" class="pv1 dib">LinkedIn</a></li>{% endif %}
+                        {% if site.email %}<li class="dib-ns pv1">{{ site.email }}</li>{% endif %}
+
+                    </ul>
 
                 </footer>
 

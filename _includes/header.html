@@ -106,9 +106,21 @@
 
                         <ul class="ma0 pa0 list f6">
 
-                            <li class="di mr2 mr3-ns v-mid"><a href="/" class="pv1 near-white no-underline hover-gold{% if page.title=='Home' %} bb bw2 b--gold{% endif %}">Home</a></li>
-                            <li class="di mr2 mr3-ns v-mid"><a href="/about/" class="pv1 near-white no-underline hover-gold{% if page.title=='About' %} bb bw2 b--gold{% endif %}">About</a></li>
-                            <li class="di v-mid"><a href="/posts/" class="pv1 near-white no-underline hover-gold{% if page.title=='Posts' %} bb bw2 b--gold{% endif %}">Archive</a></li>
+                            {% assign pagios = site.pages | sort: "order" %}
+
+                            {% for pagio in pagios %}
+
+                                {% unless pagio.hide %}
+
+                                    {% if pagio.title.size %}
+
+                                        <li class="di mh1 mh2-ns v-mid"><a href="{{ pagio.url }}" class="pv1 near-white no-underline hover-gold{% if page.title == pagio.title %} bb bw2 b--gold{% endif %}">{{ pagio.title }}</a></li>
+
+                                    {% endif %}
+
+                                {% endunless %}
+
+                            {% endfor %}
 
                         </ul>
 

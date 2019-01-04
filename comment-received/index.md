@@ -5,6 +5,7 @@ visited-links: true
 prose-headings: true
 underlined-links: true
 hyphens: true
+hide: true
 ---
 
 Thanks, I appreciate you taking the time to respond.

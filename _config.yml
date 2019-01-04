@@ -1,28 +1,14 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-lang: "en" # or fr, de, es etc.
+lang: "en"
 title: "Leon Paternoster"
-byline: "Head of digital and marketing at Suffolk Libraries"
-email: leon.paternoster@zoho.com
+author: "Leon Paternoster" # for blog post attribution
 description: "Head of digital and marketing at Suffolk Libraries. Developer of library self-service systems and simple, fast and friendly websites."
+email: leon.paternoster@zoho.com
+# linkedin:
+# twitter:
+# github-handle:
+# github-url:
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.leonpaternoster.com" # the base hostname & protocol for your site
-lead: "Blogging about making websites &amp; apps fast, friendly, readable and usable."
-# font: "Libre Baskerville"
 
 # Build settings
 permalink: /posts/:title/
@@ -39,7 +25,6 @@ css: external
 
 # Build settings
 markdown: kramdown
-
 sass:
   style: compressed
 
@@ -94,4 +79,5 @@ exclude:
 - vendor/gems/
 - vendor/ruby/
 
+# This is a Netlify file, feel free to delete unless you need it
 include: [_redirects]

@@ -100,7 +100,7 @@
 }
 
 .c-linky-underline a {
-    border-bottom: 1px dotted;
+    text-decoration: underline;
 }
 
 .c-linky-visited a:link {
@@ -169,9 +169,9 @@
 } */
 
 .c-constrain-kids blockquote {
-    margin: 2.25rem 0;
+    margin: 2.25rem 0 2.25rem 1rem;
     padding-left: 1rem;
-    border-left: 0.25rem solid #FFF;
+    border-left: 0.25rem solid #EEE;
     font-size: 0.875em;
 }
 
@@ -323,7 +323,7 @@ img {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline dotted;
     border-bottom: 1px dotted #AAA;
 }
 

@@ -20,7 +20,7 @@ Of course, no-one would ever click this link because no-one _wants_ to be served
 
 {% include pull-quote.html text="We can share your anonymised browsing history with advertisers so you get tailored adverts. <strong>We rely on the money we get from tailored adverts to pay our journalists. Please <a href='#'>share your browsing history &rarr;</a></strong>" %}
 
-There are very few examples of sites doing this well. [Smashing Magazine](https://www.smashingmagazine.com) is one, although it recently moved to a part-subscription model for its income, so isn't reliant on installing tracking cookies. The pop up is a minor annoyance which presents a simple binary choice:
+There are very few examples of sites doing this well. [Smashing Magazine](https://www.smashingmagazine.com) is one, although it recently moved to a part-subscription model for its income, so isn't reliant on installing tracking cookies. The pop up is a minor annoyance which presents a simple binary choice (although you are nudged to accept cookies through the placement, colour and attached image of the <i>Okay</i> option, and the button labels could describe the actions more explicitly):
 
 {% include figure.html url="smashing-mag-consent.jpg" alt="A small pop up in the corner of the screen on the Smashing Magazine website" caption="Smashing Magazine does opting in the right way" %}
 

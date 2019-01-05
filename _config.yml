@@ -14,7 +14,7 @@ me: https://micro.blog/leonp/
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.leonpaternoster.com" # the base hostname & protocol for your site
 
-# hide-skip-link: true
+hide-skip-link: true
 
 # Build settings
 permalink: /posts/:title/

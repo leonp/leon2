@@ -88,6 +88,16 @@
 
     <body class="ma0 pa0 bg-dark-gray light-silver c-sans-serif c-lh-copy">
 
+        <div class="flex">
+
+            {% for colour in site.data.colours %}
+
+            <div class="bg-{{ colour.colour }} w-10 h1"></div>
+
+            {% endfor %}
+
+        </div>
+
         {% unless site.hide-skip-link %}<div class="tr mb3 mb0-ns pr3"><a href="#content" class="f7 underline light-silver pv1 c-no-print">Skip to main content</a></div>{% endunless %}
 
         <div class="pa2 pa4-ns pt5-ns">

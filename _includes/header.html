@@ -100,7 +100,7 @@
 
         </div>
 
-        <div class="pa2 pa4-ns pt5-ns">
+        <div class="pa2 pt3 pa4-ns pt5-ns">
 
             <div class="c-wrapper center">
 
@@ -114,7 +114,9 @@
 
                     <nav id="nav" class="dib">
 
-                        <ul class="ma0 pa0 list f6">
+                        <!-- Did you know: When you remove list markers or display list items inline most screenreaders don't announce them as lists. You can "fix" this by adding ARIA roles, as below --> 
+
+                        <ul role="list" class="ma0 pa0 list f6">
 
                             {% assign pagios = site.pages | sort: "order" %}
 
@@ -124,7 +126,7 @@
 
                                     {% if pagio.title.size %}
 
-                                        <li class="di mh1 mh2-ns v-mid"><a href="{{ pagio.url }}" class="pv1 lightest-blue no-underline hover-gold{% if page.title == pagio.title %} bb bw2 b--gold{% endif %}">{{ pagio.title }}</a></li>
+                                        <li role="listitem" class="di mh1 mh2-ns v-mid"><a href="{{ pagio.url }}" class="pv1 lightest-blue no-underline hover-gold{% if page.title == pagio.title %} bb bw2 b--gold{% endif %}">{{ pagio.title }}</a></li>
 
                                     {% endif %}
 

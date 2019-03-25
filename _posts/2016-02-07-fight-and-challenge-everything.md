@@ -18,6 +18,6 @@ The only hope perhaps lies in Wise's article:
 
 > I visited the Bridge Community Centre in Liverpool&hellip; where an outfit called Face (Fight And Challenge Everything) operates. Mark Ray and his friends work for nothing, trying to help people who pitch up to the centre, often suicidal, after receiving a letter from HMRC saying they have been overpaid working tax credits and now owe tens of thousands&hellip; So they come to Mark and other volunteers, who fight for them. And, by the way, to date, they have a 100% win record.
 
-In another irony, it's the largely discarded Tory notion of a big society, a patronising spin on presbetyrian, working class self-sufficiency, which offers an escape route. Not [vaguely fascistic calls to clean for the queen](http://www.cleanforthequeen.co.uk/home/2365), but things like free, local legal advice and union activism. It means doing stuff and organising.
+In another irony, it's the largely discarded Tory notion of a big society, a patronising spin on presbyterian, working class self-sufficiency, which offers an escape route. Not patronising, vaguely fascistic calls to [clean for the queen](https://www.facebook.com/cleanforthequeen), but things like free, local legal advice and union activism. It means doing stuff and organising.
 
 The question is, how willing are people to take this on themselves? How much _fight_ do they have?

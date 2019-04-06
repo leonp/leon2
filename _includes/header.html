@@ -108,21 +108,17 @@
 
                 <ul role="list" class="dib-ns ma0 pa0 list">
 
-                    {% assign pagios = site.pages | sort: "order" %}
+                    {% assign pagios = site.pages | where: "in_nav", "true" | sort: "order" %}
 
                     {% for pagio in pagios %}
 
-                        {% unless pagio.hide %}
-
-                            {% if pagio.title.size %}
-
-                                <li role="listitem" class="dib mr2 mr0-ns ml3-ns"><a href="{{ pagio.url }}" class="gray no-underline hover-black pv1{% if page.title == pagio.title %} bb b--black{% endif %}">{{ pagio.title }}</a></li>
-
-                            {% endif %}
-
-                        {% endunless %}
+                    <li role="listitem" class="dib mr2 mr0-ns ml3-ns"><a href="{{ pagio.url }}" class="gray no-underline hover-black pv1{% if page.title == pagio.title %} bb b--black{% endif %}">{{ pagio.title }}</a></li>
 
                     {% endfor %}
+
+                    <li role="listitem" class="dib mr2 mr0-ns ml3-ns"><a href="/posts/" class="gray no-underline hover-black pv1{% if page.is_pagination %} bb b--black{% endif %}">Posts</a></li>
+
+                    <li role="listitem" class="dib mr2 mr0-ns ml3-ns"><a href="/feed/index.xml" class="gray no-underline hover-black pv1">RSS</a></li>
 
                 </ul>
 

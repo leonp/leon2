@@ -3,6 +3,7 @@ layout: default
 title: Home
 display-title: "Leon Paternoster"
 is_home: true
+in_nav: true
 order: 1
 visited-links: true
 prose-headings: true

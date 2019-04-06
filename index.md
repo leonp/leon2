@@ -3,6 +3,7 @@ layout: default
 title: Home
 display-title: "Leon Paternoster"
 is_home: true
+in_nav: true
 order: 1
 visited-links: true
 prose-headings: true
@@ -10,10 +11,6 @@ underlined-links: true
 hyphens: true
 ---
 
-{% include figure.html url="sprint3.jpg" alt="Empty coffee cups, tablets, books and barcode scanners on a table" %}
-
 I'm head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). I developed [Verso](https://dootrix.com/verso/), a new, lightweight self-service system for libraries.
 
 I've got ten years' experience of building and managing digital teams in the not-for-profit sector. I also make fast and friendly websites for small organisations.
-
-[Find out more](/about/).

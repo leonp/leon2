@@ -2,15 +2,15 @@
 
 <article class="h-entry">
 
-    <div class="white">
+    {% unless page.hide-title %}
 
-        {% unless page.hide-title %}
+        <div class="measure-wide center">
 
-            <h1 class="f2 c-lh-title p-name mb2">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+            <h1 class="f2 c-lh-title p-name mb4">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
 
-        {% endunless %}
+        </div>
 
-    </div>
+    {% endunless %}
 
      <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}c-constrain-kids">
 

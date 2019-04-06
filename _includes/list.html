@@ -38,11 +38,17 @@
 
         {% endif %}
 
-        {% unless post.note %}
+            {% unless post.note %}
 
-            <li class="mb4"><a class="f4 pv1 no-underline b" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 light-silver lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
+            <li class="mb4"><a class="f4 pv1 no-underline b" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
-        {% endunless %}
+            {% endunless %}
+
+            {% if post.note %}
+
+            <li class="mb4 f6">{{ post.content | strip_html | truncate: 200 }} <a class="db f7 pv1 no-underline" href="{{ post.url }}"><time class="mt1 normal f6 lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></a></li>
+
+            {% endif %}
 
         {% if forloop.last %}</ul>{% endif %}
 

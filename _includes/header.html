@@ -106,19 +106,19 @@
 
                 <!-- Did you know: When you remove list markers or display list items inline most screenreaders don't announce them as lists. You can "fix" this by adding ARIA roles, as below -->
 
-                <ul role="list" class="di ma0 pa0 list">
+                <ul class="di ma0 pa0 list">
 
                     {% assign pagios = site.pages | where: "in_nav", "true" | sort: "order" %}
 
                     {% for pagio in pagios %}
 
-                    <li role="listitem" class="dib"><a href="{{ pagio.url }}" class="dib ph2 pv2 pv3-ns gray no-underline hover-dark-red{% if page.title == pagio.title %} bg-white{% endif %}">{{ pagio.title }}</a></li>
+                    <li class="dib"><a href="{{ pagio.url }}" class="dib ph2 pv2 pv3-ns gray no-underline hover-dark-red{% if page.title == pagio.title %} bg-white{% endif %}">{{ pagio.title }}</a></li>
 
                     {% endfor %}
 
-                    <li role="listitem" class="dib"><a href="/posts/" class="dib ph2 pv2 pv3-ns gray no-underline hover-dark-red{% if page.is_pagination %} bg-white{% endif %}">Posts</a></li>
+                    <li class="dib"><a href="/posts/" class="dib ph2 pv2 pv3-ns gray no-underline hover-dark-red{% if page.is_pagination %} bg-white{% endif %}">Posts</a></li>
 
-                    <li role="listitem" class="dib"><a href="/feed/index.xml" class="dib ph2 pv2 pv3-ns gray no-underline hover-dark-red">RSS</a></li>
+                    <li class="dib"><a href="/feed/index.xml" class="dib ph2 pv2 pv3-ns gray no-underline hover-dark-red">RSS</a></li>
 
                 </ul>
 

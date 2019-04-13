@@ -1,12 +1,12 @@
-<div class="mb4 bb b--moon-gray c-sans-serif">
+<div class="measure-wide center mb4 bb b--light-gray">
 
-    <p class="mt0 mb1 f7">Filter posts by category:</p>
+    <p class="mt0 mb2 f7">Filter posts by category:</p>
 
-    <ul class="mh0 mb2 ph0 mt0 list c-linky-visited">
+    <ul class="mh0 mb3 ph0 mt0 list">
 
     {% for cat in site.data.cats %}
 
-        <li class="ml0 pl0 dib mr2 mr3-ns"><a href="/posts/{{ cat.slug }}/" class="pv1">{{ cat.name }}</a></li>
+        <li class="ml0 pl0 dib-ns mb3 mb0-ns mr3-ns"><a href="/posts/{{ cat.slug }}/" class="f7 pa2 bg-light-gray dark-blue hover-bg-red hover-white">{{ cat.name }}</a></li>
 
     {% endfor %}
 

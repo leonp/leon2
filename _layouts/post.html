@@ -15,11 +15,13 @@
 
     <header>
 
-        <div class="measure-wide center">
+        <div class="measure-wide center mb4">
 
             <h1 class="f2 c-lh-title p-name mb3">{{ page.title }}</h1>
 
-            <p class="f6 mt0 mb4 c-linky-underline c-linky-visited"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if site.author %} by <a href="/" class="p-author" rel="author">{{ site.author }}</a>{% endif %}{% if page.note %} / <a href="/posts/notes/">Notes</a>{% endif %}</p>
+            <p class="f6 ma0 c-linky-underline c-linky-visited"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if site.author %} by <a href="/" class="p-author" rel="author">{{ site.author }}</a>{% endif %}{% if page.note %} / <a href="/posts/notes/">Notes</a>{% endif %}</p>
+
+            {% if page.category %}<p class="f6 ma0 c-linky-underline c-linky-visited">Filed under <a href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a></p>{% endif %}
 
         </div>
 

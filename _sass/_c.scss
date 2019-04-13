@@ -53,6 +53,10 @@
     color: $highlight;
 }
 
+.c-clip-path {
+    clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 30px 100%, 0 50%);
+}
+
 // Prose styling
 
 .c-prose-headings h1,

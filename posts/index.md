@@ -7,60 +7,86 @@ pagination:
   enabled: true
 ---
 
-<section class="c-constrain-kids c-linky-visited c-linky-underline">
-
-    <p>I blogged about the web, politics, books and other bits and pieces between 2008 and 2018. I publish <em>everything</em> here, and syndicate elsewhere (or <a href="https://indieweb.org/POSSE"><abbr title="Publish on your own site Syndicate Elsewhere">POSSE</abbr></a>).</p>
-
-</section>
+{% include inline-cats.html %}
 
 {% for post in paginator.posts %}
 
-<section class="c-prose-headings">
+    <section class="c-prose-headings">
 
-    <ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
+        <ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
 
-    {% unless post.note %}
+        {% unless post.note %}
 
-    <li class="mb4"><a class="f4 pv1 no-underline b" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
+        <li class="mb4"><a class="f4 pv1 no-underline b" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
-    {% endunless %}
+        {% endunless %}
 
-    {% if post.note %}
+        {% if post.note %}
 
-    <li class="mb4 f6"><span class="ttl small-caps tracked">Note: </span>{{ post.content | strip_html | truncate: 200 }} <a class="db f7 pv1 no-underline" href="{{ post.url }}"><time class="mt1 normal f6 lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></a></li>
+        <li class="mb4 f6"><span class="ttl small-caps tracked">Note: </span>{{ post.content | strip_html | truncate: 200 }} <a class="db f7 pv1 no-underline" href="{{ post.url }}"><time class="mt1 normal f6 lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></a></li>
 
-    {% endif %}
+        {% endif %}
 
-    </ul>
+        </ul>
 
-</section>
+    </section>
 
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
 
-<footer class="cf c-linky-visited">
+    <footer class="measure-wide center pt2 bt b--light-gray">
 
-  {% if paginator.previous_page %}
+        <div class="cf mb3">
 
-  <div class="fl">
+          {% if paginator.previous_page %}
 
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer posts</a>
+              <div class="fl">
 
-  </div>
+                <a class="b dark-blue hover-dark-red" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer posts</a>
 
-  {% endif %}
+              </div>
 
-  {% if paginator.next_page %}
+          {% endif %}
 
-  <div class="fr tr">
+          {% if paginator.next_page %}
 
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older posts &rarr;</a>
+              <div class="fr tr">
 
-  </div>
+                <a class="b dark-blue hover-dark-red" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older posts &rarr;</a>
 
-  {% endif %}
+              </div>
 
-</footer>
+          {% endif %}
+
+        </div>
+
+      {% if paginator.page_trail %}
+
+          <ul class="list mb0 mh0 mt3 pa0 flex flex-wrap justify-start">
+
+          {% for trail in paginator.page_trail %}
+
+            {% capture destination %}
+            {{ trail.path | replace: '.html', '' }}
+            {% endcapture %}
+
+            {% capture current %}
+            {{ page.url | replace: '.html', '' }}
+            {% endcapture %}
+
+            <li class="w-20 w-10-ns ph1 mb1">
+
+                <a href="{{ trail.path | prepend: site.baseurl }}" class="f6 db tc ph3 pv2 bg-light-gray dark-blue hover-bg-red hover-white{% if current == destination %} bb bw2 b--dark-gray{% endif %}">{{ trail.num }}</a>
+
+            </li>
+
+          {% endfor %}
+
+          </ul>
+
+      {% endif %}
+
+    </footer>
 
 {% endif %}

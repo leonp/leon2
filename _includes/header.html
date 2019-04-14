@@ -98,9 +98,9 @@
 
             <div class="flex-ns flex-wrap-ns">
 
-                <div class="w-third-ns bg-dark-red">
+                <div class="w-third-ns">
 
-                    <a href="/" class="db f6 b near-white no-underline hover-white ph2 ph3-ns ph4-l pv2 pv3-ns"><span role="img" class="red b" aria-label="Lightning bolt logo">⚡️</span> Leon Paternoster</a>
+                    <a href="/" class="db f6 b near-white no-underline hover-white ph2 ph3-ns ph4-l pv3 bg-dark-blue hover-bg-dark-pink"><span role="img" aria-label="Lightning bolt logo">⚡️</span> Leon Paternoster</a>
 
                 </div>
 
@@ -114,13 +114,13 @@
 
                         {% for pagio in pagios %}
 
-                        <li class="di f6 ma0 pa0"><a href="{{ pagio.url }}" class="dib ph2 pv2 pv3-ns gray no-underline hover-dark-red{% if page.title == pagio.title %} bg-white{% endif %}">{{ pagio.title }}</a></li>
+                        <li class="di f6 ma0 pa0"><a href="{{ pagio.url }}" class="dib ph2 pv3 dark-blue no-underline hover-dark-pink{% if page.title == pagio.title %} bg-white{% endif %}">{{ pagio.title }}</a></li>
 
                         {% endfor %}
 
-                        <li class="di f6 ma0 pa0"><a href="/posts/" class="dib ph2 pv2 pv3-ns gray no-underline hover-dark-red{% if page.is_pagination %} bg-white{% endif %}">Posts</a></li>
+                        <li class="di f6 ma0 pa0"><a href="/posts/" class="dib ph2 pv3 dark-blue no-underline hover-dark-pink{% if page.is_pagination or page.is_post or page.annualised %} bg-white{% endif %}">Posts</a></li>
 
-                        <li class="di f6 ma0 pa0"><a href="/feed/index.xml" class="dib ph2 pv2 pv3-ns gray no-underline hover-dark-red">RSS</a></li>
+                        <li class="di f6 ma0 pa0"><a href="/feed/index.xml" class="dib ph2 pv3 dark-blue no-underline hover-dark-pink">RSS</a></li>
 
                     </ul>
 

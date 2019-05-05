@@ -21,7 +21,7 @@
 
             <p class="gray f6 ma0 c-linky-underline c-linky-visited"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if site.author %} by <a href="/" class="pv1 p-author" rel="author">{{ site.author }}</a>{% endif %}{% if page.note %} / <a href="/posts/notes/">Notes</a>{% endif %}</p>
 
-            {% if page.category %}<p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a></p>{% endif %}
+            <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p>
 
         </div>
 
@@ -33,15 +33,25 @@
 
     </div>
 
+    {% unless page.disable_comments %}
+
     <footer>
 
         <div class="measure-wide center mb4">
 
             {% include comment-form.html %}
 
+            {% if site.data.comments[page.slug] %}
+
+            {% include comments.html %}
+
+            {% endif %}
+
         </div>
 
     </footer>
+
+    {% endunless %}
 
 </article>
 

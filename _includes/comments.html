@@ -1,6 +1,4 @@
-{% if site.data.comments.[page.slug] %}
-
-{% assign all_comments = site.data.comments.[page.slug] | sort %}
+{% assign all_comments = site.data.comments[page.slug] | sort %}
 
 <section class="pt2">
 
@@ -35,5 +33,3 @@
     {% endfor %}
 
 </section>
-
-{% endif %}

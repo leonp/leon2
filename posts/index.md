@@ -9,11 +9,11 @@ pagination:
 
 {% include inline-cats.html %}
 
-{% for post in paginator.posts %}
+<section class="c-prose-headings">
 
-    <section class="c-prose-headings">
+    <ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
 
-        <ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
+    {% for post in paginator.posts %}
 
         {% unless post.note %}
 
@@ -21,17 +21,11 @@ pagination:
 
         {% endunless %}
 
-        {% if post.note %}
+    {% endfor %}
 
-        <li class="mb4 f6"><span class="ttl small-caps tracked">Note: </span>{{ post.content | strip_html | truncate: 200 }} <a class="db f7 pv1 no-underline" href="{{ post.url }}"><time class="mt1 normal f6 lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></a></li>
+    </ul>
 
-        {% endif %}
-
-        </ul>
-
-    </section>
-
-{% endfor %}
+</section>
 
 {% if paginator.total_pages > 1 %}
 

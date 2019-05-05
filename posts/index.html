@@ -17,7 +17,7 @@ pagination:
 
         {% if post.note %}
 
-        <li class="mb4 f7">{{ post.content | strip_html | truncate: 75 }} <a class="pv1 no-underline" href="{{ post.url }}"><time>{{ post.date | date: "%b %d, %Y" }}</time></a></li>
+        <li class="mb4 f6">{{ post.content | strip_html | truncate: 75 }} <a class="pv1 no-underline" href="{{ post.url }}"><time>{{ post.date | date: "%b %d, %Y" }}</time></a></li>
 
         {% else %}
 

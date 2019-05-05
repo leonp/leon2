@@ -1,0 +1,29 @@
+<section class="pa2 pa3-ns bg-light-gray ba b--light-silver" id="comment-form">
+
+    <h2 class="f4 c-lh-title mt0 mb2">Add a comment</h2>
+
+    <p class="mt0 c-lh-title"><small>Only fill in the final field if you’re spamming me. I won’t share your email details with anyone else.</small></p>
+
+    <form method="post" action="https://api.staticman.net/v2/entry/leonp/leon2/master/comments">
+
+        <input name="options[redirect]" class="dn" type="hidden" value="/comment-received/">
+
+        <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+
+        <label for="name" class="db f7 c-lh-title mb1">Name (<span class="dark-red">required</span>)</label>
+        <input name="fields[name]" id="name" type="text" class="mb3 pa1 ba b--light-silver border-box w-100 w-50-l" required>
+
+        <label for="email" class="db f7 c-lh-title mb1">Email (<span class="dark-red">required</span>)</label>
+        <input name="fields[email]" id="email" type="email" class="mb3 pa1 ba b--light-silver border-box w-100 w-50-l" required>
+
+        <label for="message" class="db f7 c-lh-title mb1">Comment (<span class="dark-red">required</span>)</label>
+        <textarea class="mb3 vh-25 pa1 ba b--light-silver border-box w-100" name="fields[message]" id="message" required></textarea>
+
+        <label for="hp" class="db f7 c-lh-title mb1">Fill this in if you're evil</label>
+        <input name="fields[hp]" id="hp" type="text" class="mb3 pa1 ba b--light-silver border-box w-100 w-50-l">
+
+        <button class="db pa2 ba b--light-silver br1 bg-dark-blue hover-bg-dark-pink  white pointer" type="submit">Submit comment</button>
+
+    </form>
+
+</section>

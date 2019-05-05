@@ -15,11 +15,15 @@ pagination:
 
     {% for post in paginator.posts %}
 
-        {% unless post.note %}
+        {% if post.note %}
+
+        <li class="mb4 f7">{{ post.content | strip_html | truncate: 75 }} <a class="pv1 no-underline" href="{{ post.url }}"><time>{{ post.date | date: "%b %d, %Y" }}</time></a></li>
+
+        {% else %}
 
         <li class="mb4"><a class="f4 pv1 no-underline b" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
-        {% endunless %}
+        {% endif %}
 
     {% endfor %}
 

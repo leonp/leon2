@@ -94,19 +94,17 @@
 
         <div class="clip"><a href="#content" class="c-no-print">Skip to main content</a></div>
 
-        <nav class="mb3 mb4-ns mb5-l bg-light-gray">
+        <nav class="mb3 mb4-ns mb5-l ph2 ph3-ns ph4-l bb b--light-gray">
 
-            <div class="flex-ns flex-wrap-ns">
+            <div class="measure-wide center flex-ns flex-wrap-ns">
 
                 <div class="w-third-ns">
 
-                    <a href="/" class="db f6 b near-white no-underline hover-white ph2 ph3-ns ph4-l pv3 bg-dark-blue hover-bg-dark-pink"><span role="img" aria-label="Lightning bolt logo">⚡️</span> Leon Paternoster</a>
+                    <a href="/" class="dib f7 b dark-gray no-underline hover-dark-pink pv1 pv3-ns"><span role="img" aria-label="Lightning bolt logo">⚡️</span> Leon Paternoster</a>
 
                 </div>
 
-                <div class="w-two-thirds-ns bg-light-gray pr2 pr3-ns pr4-l flex-ns justify-end-ns">
-
-                    <!-- Did you know: When you remove list markers or display list items inline most screenreaders don't announce them as lists. You can "fix" this by adding ARIA roles, as below -->
+                <div class="w-two-thirds-ns flex-ns justify-end-ns">
 
                     <ul class="ma0 pa0 list">
 
@@ -114,13 +112,13 @@
 
                         {% for pagio in pagios %}
 
-                        <li class="di f6 ma0 pa0"><a href="{{ pagio.url }}" class="dib ph2 pv3 dark-blue no-underline hover-dark-pink{% if page.title == pagio.title %} bg-white{% endif %}">{{ pagio.title }}</a></li>
+                        <li class="di f7 ma0 pa0"><a href="{{ pagio.url }}" class="dib mr2 mr3-ns pv1 pv3-ns dark-blue no-underline hover-dark-pink{% if page.title == pagio.title %} bg-white{% endif %}">{{ pagio.title }}</a></li>
 
                         {% endfor %}
 
-                        <li class="di f6 ma0 pa0"><a href="/posts/" class="dib ph2 pv3 dark-blue no-underline hover-dark-pink{% if page.is_pagination or page.is_post or page.annualised %} bg-white{% endif %}">Posts</a></li>
+                        <li class="di f7 ma0 pa0"><a href="/posts/" class="dib mr2 mr3-ns pv1 pv3-ns dark-blue no-underline hover-dark-pink{% if page.is_pagination or page.is_post or page.annualised %} bg-white{% endif %}">Posts</a></li>
 
-                        <li class="di f6 ma0 pa0"><a href="/feed/index.xml" class="dib ph2 pv3 dark-blue no-underline hover-dark-pink">RSS</a></li>
+                        <li class="di f7 ma0 pa0"><a href="/feed/index.xml" class="dib pv1 pv3-ns dark-blue no-underline hover-dark-pink">RSS</a></li>
 
                     </ul>
 
@@ -130,4 +128,4 @@
 
         </nav>
 
-        <main id="content" class="ph2 ph3-ns ph4-l">
+        <main id="content" class="ph2 ph3-ns ph4-l bg-near-white">

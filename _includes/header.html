@@ -112,11 +112,11 @@
 
                         {% for pagio in pagios %}
 
-                        <li class="di f7 ma0 pa0"><a href="{{ pagio.url }}" class="dib mr2 mr3-ns pv1 pv3-ns dark-blue no-underline hover-dark-pink{% if page.title == pagio.title %} bg-white{% endif %}">{{ pagio.title }}</a></li>
+                        <li class="di f7 ma0 pa0"><a href="{{ pagio.url }}" class="dib mr2 mr3-ns pv1 pv3-ns dark-blue no-underline hover-dark-pink{% if page.title == pagio.title %} bb bw2{% endif %}">{{ pagio.title }}</a></li>
 
                         {% endfor %}
 
-                        <li class="di f7 ma0 pa0"><a href="/posts/" class="dib mr2 mr3-ns pv1 pv3-ns dark-blue no-underline hover-dark-pink{% if page.is_pagination or page.is_post or page.annualised %} bg-white{% endif %}">Posts</a></li>
+                        <li class="di f7 ma0 pa0"><a href="/posts/" class="dib mr2 mr3-ns pv1 pv3-ns dark-blue no-underline hover-dark-pink{% if page.is_pagination or page.is_post or page.annualised %} bb bw2{% endif %}">Posts</a></li>
 
                         <li class="di f7 ma0 pa0"><a href="/feed/index.xml" class="dib pv1 pv3-ns dark-blue no-underline hover-dark-pink">RSS</a></li>
 
@@ -128,4 +128,4 @@
 
         </nav>
 
-        <main id="content" class="ph2 ph3-ns ph4-l bg-near-white">
+        <main id="content" class="ph2 ph3-ns ph4-l">

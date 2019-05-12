@@ -90,42 +90,40 @@
 
     </head>
 
-    <body class="ma0 pa0 bg-white dark-gray c-sans-serif c-lh-copy">
+    <body class="c-lh-copy ma0 ph0 pv3 pv4-ns bg-white dark-gray c-sans-serif lh-copy c-bg-morocco">
 
         <div class="clip"><a href="#content" class="c-no-print">Skip to main content</a></div>
 
-        <nav class="mb3 mb4-ns mb5-l ph2 ph3-ns ph4-l bb b--light-gray">
+        <div class="flex-l flex-row-reverse center c-wrapper bt bw3 b--gold">
 
-            <div class="measure-wide center flex-ns flex-wrap-ns">
+            <header class="min-vh-100-l w-third-l bl-l b--moon-gray pv3 pv4-ns pv5-l ph2 ph3-ns ph4-l bg-white white">
 
-                <div class="w-third-ns">
+                <div class="measure-wide center">
 
-                    <a href="/" class="dib f7 b dark-gray no-underline hover-dark-pink pv1 pv3-ns"><span role="img" aria-label="Lightning bolt logo">⚡️</span> Leon Paternoster</a>
+                    <a href="/" class="db f6 b pv1 mb3-l ttl small-caps tracked no-underline dark-gray hover-black">Leon Paternoster</a>
 
-                </div>
+                    <nav class="f6 bt b--moon-gray bn-l">
 
-                <div class="w-two-thirds-ns flex-ns justify-end-ns">
-
-                    <ul class="ma0 pa0 list">
+                        <ul class="ma0 pa0 list bb-l b--moon-gray">
 
                         {% assign pagios = site.pages | where: "in_nav", "true" | sort: "order" %}
 
                         {% for pagio in pagios %}
 
-                        <li class="di f7 ma0 pa0"><a href="{{ pagio.url }}" class="dib mr2 mr3-ns pv1 pv3-ns dark-blue no-underline hover-dark-pink{% if page.title == pagio.title %} bb bw2{% endif %}">{{ pagio.title }}</a></li>
+                            <li class="dib db-l mr2 mr3-ns mr0-l"><a href="{{ pagio.url }}" class="dib db-l pv1 bt-l b--moon-gray no-underline hover-black{% if page.title == pagio.title %} black{% else %} gray{% endif %}">{{ pagio.title }}</a></li>
 
                         {% endfor %}
 
-                        <li class="di f7 ma0 pa0"><a href="/posts/" class="dib mr2 mr3-ns pv1 pv3-ns dark-blue no-underline hover-dark-pink{% if page.is_pagination or page.is_post or page.annualised %} bb bw2{% endif %}">Posts</a></li>
+                            <li class="dib db-l mr2 mr3-ns mr0-l"><a href="/posts/" class="dib db-l pv1 bt-l b--moon-gray no-underline hover-black{% if page.is_pagination or page.is_post or page.annualised %} black{% else %} gray{% endif %}">Posts</a></li>
 
-                        <li class="di f7 ma0 pa0"><a href="/feed/index.xml" class="dib pv1 pv3-ns dark-blue no-underline hover-dark-pink">RSS</a></li>
+                            <li class="dib db-l"><a href="/feed/index.xml" class="dib db-l pv1 bt-l b--moon-gray no-underline gray hover-black">RSS</a></li>
 
-                    </ul>
+                        </ul>
+
+                    </nav>
 
                 </div>
 
-            </div>
+            </header>
 
-        </nav>
-
-        <main id="content" class="ph2 ph3-ns ph4-l">
+            <main id="content" class="min-vh-100-l w-two-thirds-l pv3 pv4-ns pv5-l ph2 ph3-ns ph4-l bg-white">

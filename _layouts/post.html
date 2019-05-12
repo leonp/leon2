@@ -11,23 +11,19 @@
 
 {% endfor %}
 
-<article class="h-entry">
+<article class="measure-wide center h-entry">
 
-    <header>
+    <header class="mb3 mb4-ns pb3 bb b--moon-gray">
 
-        <div class="measure-wide center mb4">
+        <h1 class="mt0 mb2 f3 f2-l lh-title p-name">{{ page.title }}</h1>
 
-            <h1 class="f2 c-lh-title p-name mb3">{{ page.title }}</h1>
+        <p class="gray f6 ma0 c-linky-underline c-linky-visited"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if site.author %} by <a href="/" class="pv1 p-author" rel="author">{{ site.author }}</a>{% endif %}{% if page.note %} / <a href="/posts/notes/">Notes</a>{% endif %}</p>
 
-            <p class="gray f6 ma0 c-linky-underline c-linky-visited"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if site.author %} by <a href="/" class="pv1 p-author" rel="author">{{ site.author }}</a>{% endif %}{% if page.note %} / <a href="/posts/notes/">Notes</a>{% endif %}</p>
-
-            <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p>
-
-        </div>
+        <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p>
 
     </header>
 
-    <div class="c-constrain-kids e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content">
+    <div class="e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content">
 
         {{ content }}
 
@@ -37,7 +33,7 @@
 
     <footer class="pt3">
 
-        <div class="measure-wide center mb4">
+        <div class="mb4">
 
             {% include comment-form.html %}
 

@@ -14,3 +14,5 @@ hyphens: true
 I'm head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). I developed [Verso](https://dootrix.com/verso/), a new, lightweight self-service system for libraries.
 
 I've got ten years' experience of building and managing digital teams in the not-for-profit sector. I also make fast and friendly websites for small organisations.
+
+{% include figure.html url="shingle-street.jpg" alt="Picture of Orford taken from Shingle Street" caption="Shingle Street, Suffolk, looking along the coast towards Orford" %}

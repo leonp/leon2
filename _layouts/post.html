@@ -37,7 +37,9 @@
 
             {% include comment-form.html %}
 
-            {% if site.data.comments[page.slug] %}
+            {% assign all_comments = site.data.comments | where: "slug", page.slug %}
+
+            {% if all_comments.size > 0 %}
 
             {% include comments.html %}
 

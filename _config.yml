@@ -62,6 +62,13 @@ defaults:
     values:
         is_page: true
 
+collections_dir: my_collections
+
+collections:
+  notes:
+    output: true
+    permalink: /:collection/:name/
+
 
 # webmentions
 

@@ -62,10 +62,16 @@ defaults:
     values:
         is_page: true
 
-collections_dir: my_collections
+-
+    scope:
+      path: ''
+      type: 'notes'
+    values:
+      layout: 'note'
+
 
 collections:
-  notes:
+    notes:
     output: true
     permalink: /:collection/:name/
 

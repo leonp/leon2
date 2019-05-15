@@ -15,7 +15,6 @@ hide: true
     <rights>Copyright (c) Leon Paternoster</rights>
     {% for post in site.posts limit:20 %}
     {% if post.layout != 'redirect' %}
-    {% unless post.note %}
     <entry>
         <title>{{ post.title }}</title>
         <link href="http://www.leonpaternoster.com{{ post.url }}"/>
@@ -23,7 +22,6 @@ hide: true
         <id>http://www.leonpaternoster.com{{ post.url }}/</id>
         <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
-    {% endunless %}
     {% endif %}
     {% endfor %}
 </feed>

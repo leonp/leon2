@@ -2,7 +2,7 @@
 title: "Inclusive web design is web design for everyone, including you"
 category: web
 article: true
-excerpt: "There&#8217;s always something making it difficult for us to access content on the web &#8211; accessibility is an obviously necessary part of good design."
+excerpt: "There&#8217;s always something making it difficult for us to access information on the web. Not making accessibility central to design makes content difficult to access for everyone; in other words, good design is accessible design."
 featured: true
 
 ---

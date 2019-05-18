@@ -12,13 +12,13 @@
 
     {% endfor %}
 
-<p class="mt0">{{ message }}</p>
+<p class="f4 mv4-ns">{{ message }}</p>
 
 {% endif %}
 
 {% if page.annualised %}
 
-<div class="c-prose-headings">
+<div class="c-prose-headings c-sans-serif">
 
 {% for post in posts limit:include.post-limit | default:500 %}
 
@@ -36,7 +36,7 @@
 
         {% endif %}
 
-            <li class="mb4"><a class="f4 pv1 no-underline b" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
+            <li class="mb4"><a class="db c-lh-title no-underline b" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 db normal f6 gray lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
         {% if forloop.last %}</ul>{% endif %}
 

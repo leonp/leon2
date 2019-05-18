@@ -3,7 +3,7 @@ layout: default
 title: Notes
 ---
 
-<ul class="ma0 pa0 list c-linky-visited">
+<ul class="ma0 pa0 list c-linky-visited c-sans-serif">
 
 {% assign notes = site.notes | reverse %}
 

@@ -7,15 +7,15 @@ pagination:
   enabled: true
 ---
 
-{% include inline-cats.html %}
+<!-- {% include inline-cats.html %} -->
 
-<section class="c-prose-headings">
+<section>
 
     <ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
 
     {% for post in paginator.posts %}
 
-        <li class="mb4"><a class="f4 pv1 no-underline b" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
+        <li class="mb4 c-sans-serif"><a class="f4 pv1 no-underline b" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
     {% endfor %}
 
@@ -25,7 +25,7 @@ pagination:
 
 {% if paginator.total_pages > 1 %}
 
-    <footer class="measure-wide center pt2 bt b--light-gray">
+    <footer class="measure-wide center pt2 c-sans-serif">
 
         <div class="cf mb3">
 
@@ -53,7 +53,7 @@ pagination:
 
       {% if paginator.page_trail %}
 
-          <ul class="list mb0 mh0 mt3 pa0 flex flex-wrap justify-start">
+          <ul class="list mb0 mh0 mt3 pa0 flex flex-wrap justify-start c-sans-serif">
 
           {% for trail in paginator.page_trail %}
 

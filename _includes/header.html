@@ -90,7 +90,7 @@
 
     </head>
 
-    <body class="ma0 pa2 bg-white dark-gray sans-serif c-lh-copy">
+    <body class="ma0 pa2 ph3-ns ph4-l bg-white dark-gray sans-serif c-lh-copy">
 
         <ul class="clip c-no-print">
 
@@ -99,13 +99,13 @@
 
         </ul>
 
-        <header class="f6 mb4 mb5-l mt2 bl bw3 b--gold c-lh-title">
+        <header class="f6 mb4 mb5-ns mb6-l mt2 pl1 bl bw3 b--gold c-lh-title">
 
             <div class="flex-ns">
 
-                <div class="w-third-ns pl2-ns">
+                <div class="w-third-ns">
 
-                    <a href="/" class="db b no-underline dark-gray hover-dark-blue pv1 pv0-ns">{{ site.title }}</a>
+                    <a href="/" class="db b pb1 pb0-ns no-underline dark-gray hover-dark-blue">{{ site.title }}</a>
 
                     <!-- <p class="i ma0 gray c-serif">{{ site.tagline }}</p> -->
 
@@ -119,13 +119,13 @@
 
                     {% for pagio in pagios %}
 
-                        <li class="dib-ns mr2 mr3-ns"><a href="{{ pagio.url }}" class="db dib-ns pv1 pv0-ns no-underline hover-dark-blue{% if page.title == pagio.title %} dark-gray{% else %} gray{% endif %}">{{ pagio.title }}</a></li>
+                        <li class="dib-ns mr2 mr3-ns"><a href="{{ pagio.url }}" class="db dib-ns pt1 pv0-ns no-underline hover-dark-blue{% if page.title == pagio.title %} dark-gray{% else %} gray{% endif %}">{{ pagio.title }}</a></li>
 
                     {% endfor %}
 
-                        <li class="dib-ns mr2 mr3-ns"><a href="/posts/" class="db dib-ns pv1 pv0-ns no-underline hover-dark-blue{% if page.is_pagination or page.is_post or page.annualised %} dark-gray{% else %} gray{% endif %}">Posts</a></li>
+                        <li class="dib-ns mr2 mr3-ns"><a href="/posts/" class="db dib-ns pt1 pv0-ns no-underline hover-dark-blue{% if page.is_pagination or page.is_post or page.annualised %} dark-gray{% else %} gray{% endif %}">Posts</a></li>
 
-                        <li class="dib-ns"><a href="/feed/index.xml" class="db dib-ns pv1 pv0-ns gray no-underline hover-dark-blue">RSS</a></li>
+                        <li class="dib-ns"><a href="/feed/index.xml" class="db dib-ns pt1 pv0-ns gray no-underline hover-dark-blue">RSS</a></li>
 
                     </ul>
 
@@ -135,6 +135,6 @@
 
         </header>
 
-        <main id="content" class="bg-white">
+        <div class="center c-wrapper">
 
-            <div class="center c-wrapper">
+            <main id="content" class="bg-white">

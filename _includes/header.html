@@ -99,14 +99,42 @@
 
         </ul>
 
-        <div class="center c-wrapper">
+        <header class="f6 mb4 mb5-l mt2 bl bw3 b--gold c-lh-title">
 
-            <header class="f6 mt3 mb4 mv4-ns mv5-l pl2 bl bw3 b--gold c-lh-title">
+            <div class="flex-ns">
 
-                <a href="/" class="db b no-underline dark-gray hover-dark-blue">{{ site.title }}</a>
+                <div class="w-third-ns pl2-ns">
 
-                <p class="i ma0 gray c-serif">{{ site.tagline }}</p>
+                    <a href="/" class="db b no-underline dark-gray hover-dark-blue pv1 pv0-ns">{{ site.title }}</a>
 
-            </header>
+                    <!-- <p class="i ma0 gray c-serif">{{ site.tagline }}</p> -->
 
-            <main id="content">
+                </div>
+
+                <nav id="nav" class="w-two-thirds-ns">
+
+                    <ul class="ma0 pa0 list f6 flex justify-end-ns tr-ns">
+
+                    {% assign pagios = site.pages | where: "in_nav", "true" | sort: "order" %}
+
+                    {% for pagio in pagios %}
+
+                        <li class="dib-ns mr2 mr3-ns"><a href="{{ pagio.url }}" class="db dib-ns pv1 pv0-ns no-underline hover-dark-blue{% if page.title == pagio.title %} dark-gray{% else %} gray{% endif %}">{{ pagio.title }}</a></li>
+
+                    {% endfor %}
+
+                        <li class="dib-ns mr2 mr3-ns"><a href="/posts/" class="db dib-ns pv1 pv0-ns no-underline hover-dark-blue{% if page.is_pagination or page.is_post or page.annualised %} dark-gray{% else %} gray{% endif %}">Posts</a></li>
+
+                        <li class="dib-ns"><a href="/feed/index.xml" class="db dib-ns pv1 pv0-ns gray no-underline hover-dark-blue">RSS</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <main id="content" class="bg-white">
+
+            <div class="center c-wrapper">

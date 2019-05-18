@@ -1,39 +1,21 @@
-            </main>
+            </div>
 
-            <footer class="mb3 mt4 c-no-print">
+        </main>
 
-                <nav id="nav">
+        <footer class="mb3 mt4 ph1 c-no-print">
 
-                    <ul class="ma0 pa0 list f6">
+            <ul class="ma0 pa0 list f6">
 
-                    {% assign pagios = site.pages | where: "in_nav", "true" | sort: "order" %}
+                <li class="dib-ns mr3-ns"><a href="/" rel="index" class="pv1 pv0-ns dib gray hover-dark-gray">Home</a></li>
+                {% if site.twitter %}<li class="dib-ns mr3-ns"><a href="{{ site.twitter }}" class="pv1 pv0-ns dib gray hover-dark-gray">Twitter</a></li>{% endif %}
+                {% if site.github %}<li class="dib-ns mr3-ns"><a href="{{ site.github }}" class="pv1 pv0-ns dib gray hover-dark-gray">Github</a></li>{% endif %}
+                {% if site.microblog %}<li class="dib-ns mr3-ns"><a href="{{ site.microblog }}" class="pv1 pv0-ns dib gray hover-dark-gray">microblog</a></li>{% endif %}
+                {% if site.linkedin %}<li class="dib-ns mr3-ns"><a href="{{ site.linkedin }}" class="pv1 pv0-ns dib gray hover-dark-gray">LinkedIn</a></li>{% endif %}
+                {% if site.email %}<li class="dib-ns"><span class="pv1 pv0-ns dib gray hover-dark-gray">{{ site.email }}</span></li>{% endif %}
 
-                    {% for pagio in pagios %}
+            </ul>
 
-                        <li class="dib-ns mr3-ns"><a href="{{ pagio.url }}" class="db dib-ns pv1 no-underline hover-dark-blue{% if page.title == pagio.title %} dark-gray{% else %} gray{% endif %}">{{ pagio.title }}</a></li>
-
-                    {% endfor %}
-
-                        <li class="dib-ns mr3-ns"><a href="/posts/" class="db dib-ns pv1 no-underline hover-dark-blue{% if page.is_pagination or page.is_post or page.annualised %} dark-gray{% else %} gray{% endif %}">Posts</a></li>
-
-                        <li class="dib-ns"><a href="/feed/index.xml" class="db dib-ns pv1 gray no-underline hover-dark-blue">RSS</a></li>
-
-                    </ul>
-
-                <!-- <ul>
-
-                    <li class="dib-ns mr3-ns"><a href="/" rel="index" class="pv1 pv0-ns dib">{{ site.title }}</a></li>
-                    {% if site.twitter %}<li class="dib-ns mr3-ns"><a href="{{ site.twitter }}" class="pv1 pv0-ns dib">Twitter</a></li>{% endif %}
-                    {% if site.github %}<li class="dib-ns mr3-ns"><a href="{{ site.github }}" class="pv1 pv0-ns dib">Github</a></li>{% endif %}
-                    {% if site.microblog %}<li class="dib-ns mr3-ns"><a href="{{ site.microblog }}" class="pv1 pv0-ns dib">microblog</a></li>{% endif %}
-                    {% if site.linkedin %}<li class="dib-ns mr3-ns"><a href="{{ site.linkedin }}" class="pv1 pv0-ns dib">LinkedIn</a></li>{% endif %}
-                    {% if site.email %}<li class="dib-ns"><span class="pv1 pv0-ns dib">{{ site.email }}</span></li>{% endif %}
-
-                </ul> -->
-
-            </footer>
-
-        </div>
+        </footer>
 
     </body>
 

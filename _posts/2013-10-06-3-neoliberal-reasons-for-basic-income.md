@@ -2,6 +2,8 @@
 
 title: 3 right wing reasons for a Basic Citizens' Income
 category: politics
+featured: true
+excerpt: "You may think the right would dislike the idea of giving people money for nothing. But there are some solid reasons for them welcoming a UBI."
 ---
 
 A Basic Citizens' Income (BCI) is one of those subjects that's fun to think about (if you're philosophically or politically inclined &#8211; I guess other people find it mortally dull, for which I apologise).

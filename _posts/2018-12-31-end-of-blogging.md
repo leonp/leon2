@@ -1,6 +1,7 @@
 ---
 title: "Taking a break from blogging as I know it"
 category: thinking
+featured: true
 ---
 
 My job changed in October and I haven't felt the urge to blog anything since. I've been writing less over the last couple of years or so anyway, mainly because I led a project to develop and productise (sorry) a new library self-service system. This generated a few blog posts, but writing about procurement and budgets isn't as interesting as [writing about atomic CSS](/posts/modular-css-vs-semantic-class-names-an-example/) or [how Uniqlo designed a terrible website header](/posts/uniqlo-fixed-header/).

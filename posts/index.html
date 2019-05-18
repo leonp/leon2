@@ -4,26 +4,34 @@ title: Posts
 order: 4
 is_pagination: true
 pagination:
-  enabled: true
+  enabled: false
 ---
 
 <!-- {% include inline-cats.html %} -->
 
+<p class="f4">I wrote a blog between 2008&#8211;2018, posting at least twice a month on the web and anything else that interested me. These are the posts the gathered the most interest in that time.</p>
+
 <section>
 
-    <ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
+    {% assign posts = site.posts | where: "featured", "true" %}
 
-    {% for post in paginator.posts %}
+    {% for post in posts %}
 
-        <li class="mb4 c-sans-serif"><a class="f4 pv1 no-underline b" href="{{ post.url }}">{{ post.title }}</a> <time class="mt1 db normal f6 gray lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
+    <article class="mb4 c-sans-serif c-linky-visited">
+
+        <h2 class="f4 c-lh-title mt0 ma0"><a class="no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
+
+        <p class="mv1 f6 gray"<time>{{ post.date | date: "%b %d, %Y" }}</time></p>
+
+        <p class="ma0 c-serif">{{ post.excerpt | strip_html }}</p>
+
+    </article>
 
     {% endfor %}
 
-    </ul>
-
 </section>
 
-{% if paginator.total_pages > 1 %}
+<!-- {% if paginator.total_pages > 1 %}
 
     <footer class="measure-wide center pt2 c-sans-serif">
 
@@ -79,4 +87,4 @@ pagination:
 
     </footer>
 
-{% endif %}
+{% endif %} -->

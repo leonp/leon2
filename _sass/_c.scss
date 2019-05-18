@@ -8,6 +8,8 @@
 // Define $c-sans-serif in _variables.scss
 // Then create a c-sans-serif class here
 // Like so:
+
+
 .c-sans-serif {
     font-family: $c-sans-serif;
 }
@@ -66,9 +68,10 @@
 .c-prose-headings h5,
 .c-prose-headings h6,
 .c-prose-headings dt {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 0.75rem;
     line-height: $c-lh-title;
+    font-family: $c-sans-serif;
 }
 
 .c-prose-headings h1 + *,
@@ -83,17 +86,21 @@
 
 .c-prose-headings h1,
 .c-prose-headings h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .c-prose-headings h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .c-prose-headings h4,
 .c-prose-headings h5,
 .c-prose-headings h6 {
     font-size: 1rem;
+    font-weight: normal;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
 }
 
 .c-hyphens {

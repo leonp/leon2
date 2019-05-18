@@ -1,18 +1,18 @@
 {% include header.html %}
 
-<article class="measure-wide center h-entry">
+<article class="h-entry">
 
     {% unless page.hide-title %}
 
-        <div class="mb3 mb4-ns pb3 bb b--moon-gray">
+        <div class="mb4">
 
-            <h1 class="ma0 f3 f2-l lh-title p-name">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+            <h1 class="mt0 mb2 f3 f2-ns lh-title p-name">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
 
         </div>
 
     {% endunless %}
 
-     <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}c-constrain-kids">
+     <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}c-serif">
 
         {{ content}}
 

@@ -1,35 +1,39 @@
-                </main>
+            </main>
 
-            </div>
+            <footer class="mb3 mt4 c-no-print">
+
+                <nav id="nav">
+
+                    <ul class="ma0 pa0 list f6">
+
+                    {% assign pagios = site.pages | where: "in_nav", "true" | sort: "order" %}
+
+                    {% for pagio in pagios %}
+
+                        <li class="dib-ns mr3-ns"><a href="{{ pagio.url }}" class="db dib-ns pv1 no-underline hover-dark-blue{% if page.title == pagio.title %} dark-gray{% else %} gray{% endif %}">{{ pagio.title }}</a></li>
+
+                    {% endfor %}
+
+                        <li class="dib-ns mr3-ns"><a href="/posts/" class="db dib-ns pv1 no-underline hover-dark-blue{% if page.is_pagination or page.is_post or page.annualised %} dark-gray{% else %} gray{% endif %}">Posts</a></li>
+
+                        <li class="dib-ns"><a href="/feed/index.xml" class="db dib-ns pv1 gray no-underline hover-dark-blue">RSS</a></li>
+
+                    </ul>
+
+                <!-- <ul>
+
+                    <li class="dib-ns mr3-ns"><a href="/" rel="index" class="pv1 pv0-ns dib">{{ site.title }}</a></li>
+                    {% if site.twitter %}<li class="dib-ns mr3-ns"><a href="{{ site.twitter }}" class="pv1 pv0-ns dib">Twitter</a></li>{% endif %}
+                    {% if site.github %}<li class="dib-ns mr3-ns"><a href="{{ site.github }}" class="pv1 pv0-ns dib">Github</a></li>{% endif %}
+                    {% if site.microblog %}<li class="dib-ns mr3-ns"><a href="{{ site.microblog }}" class="pv1 pv0-ns dib">microblog</a></li>{% endif %}
+                    {% if site.linkedin %}<li class="dib-ns mr3-ns"><a href="{{ site.linkedin }}" class="pv1 pv0-ns dib">LinkedIn</a></li>{% endif %}
+                    {% if site.email %}<li class="dib-ns"><span class="pv1 pv0-ns dib">{{ site.email }}</span></li>{% endif %}
+
+                </ul> -->
+
+            </footer>
 
         </div>
-
-        <footer class="bg-white bt b--moon-gray">
-
-            <div class="c-wrapper center">
-
-                <div class="w-two-thirds-l ph2 ph3-ns ph4-l pv3">
-
-                    <div class="measure-wide center">
-
-                        <ul class="f6 ma0 pa0 list c-linky-visited">
-
-                            <li class="dib-ns mr3-ns"><a href="/" rel="index" class="pv1 pv0-ns dib">{{ site.title }}</a></li>
-                            {% if site.twitter %}<li class="dib-ns mr3-ns"><a href="{{ site.twitter }}" class="pv1 pv0-ns dib">Twitter</a></li>{% endif %}
-                            {% if site.github %}<li class="dib-ns mr3-ns"><a href="{{ site.github }}" class="pv1 pv0-ns dib">Github</a></li>{% endif %}
-                            {% if site.microblog %}<li class="dib-ns mr3-ns"><a href="{{ site.microblog }}" class="pv1 pv0-ns dib">microblog</a></li>{% endif %}
-                            {% if site.linkedin %}<li class="dib-ns mr3-ns"><a href="{{ site.linkedin }}" class="pv1 pv0-ns dib">LinkedIn</a></li>{% endif %}
-                            {% if site.email %}<li class="dib-ns"><span class="pv1 pv0-ns dib">{{ site.email }}</span></li>{% endif %}
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </footer>
 
     </body>
 

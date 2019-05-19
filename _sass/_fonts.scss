@@ -1,26 +1,26 @@
 @font-face {
-  font-family: "Public Sans";
+  font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url("/fonts/public-sans/PublicSans-Regular.woff2") format("woff2"),
-    url("/fonts/public-sans/PublicSans-Regular.woff") format("woff");
+  src: url("/fonts/plex-serif/IBMPlexSerif-Regular-Latin1.woff2") format("woff2"),
+    url("/fonts/plex-serif/IBMPlexSerif-Regular-Latin1.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Public Sans";
+  font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 400;
   font-display: auto;
-  src: url("/fonts/public-sans/PublicSans-Italic.woff2") format("woff2"),
-    url("/fonts/public-sans/PublicSans-Italic.woff") format("woff");
+  src: url("/fonts/plex-serif/IBMPlexSerif-Italic-Latin1.woff2") format("woff2"),
+    url("/fonts/plex-serif/IBMPlexSerif-Italic-Latin1.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Public Sans";
+  font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: bold;
   font-display: auto;
-  src: url("/fonts/public-sans/PublicSans-Bold.woff2") format("woff2"),
-    url("/fonts/public-sans/PublicSans-Bold.woff") format("woff");
+  src: url("/fonts/plex-serif/IBMPlexSerif-Bold-Latin1.woff2") format("woff2"),
+    url("/fonts/plex-serif/IBMPlexSerif-Bold-Latin1.woff") format("woff");
 }

@@ -158,5 +158,17 @@ pagination:
   # Without file extension
   indexpage: 'index'
 
+webmentions:
+  username: https://www.leonpaternoster.com
+  # Use my own cache folder
+  cache_folder: .cache
+  # skip bad URLs for 5 days
+  cache_bad_uris_for: 5
+  # I moved to www and then to https, so…
+  legacy_domains:
+    - http://leonpaternoster.com
+    - http://www.leonpaternoster.com
+
+
 # This is a Netlify file, feel free to delete unless you need it
 include: [_redirects]

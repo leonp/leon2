@@ -7,7 +7,7 @@
         {% if page.is_home %}
         <title>{{ site.title }}</title>
         <meta name="description" content="{{ site.description }}">
-        {% elsif page.note %}
+        {% elsif page.is_note %}
         <title>{{ page.excerpt | strip_html | truncatewords: 10 }}&hellip; &#8211; {{ site.title }}</title>
         {% else %}
         <title>{{ page.title }} &#8211; {{ site.title }}</title>

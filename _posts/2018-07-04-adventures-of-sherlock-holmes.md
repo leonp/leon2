@@ -2,6 +2,8 @@
 title: 'The Adventures of Sherlock Holmes in HTML'
 layout: post
 category: work
+featured: true
+excerpt: "I translated the classic 12 story collection to easy-to-read, mobile-friendly HTML."
 ---
 
 I made a website from the 1892 Sherlock Holmes collection <cite><a href="https://adler.netlify.com">The Adventures of Sherlock Holmes</a></cite>. 12 stories, some of which you may well recognise, originally published in serial form in <cite>The Strand</cite> magazine.

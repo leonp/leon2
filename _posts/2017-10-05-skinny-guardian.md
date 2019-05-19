@@ -4,6 +4,7 @@ excerpt: "Skinny Guardian displays the last 50 Guardian articles in a plain, eas
 summary: "Skinny Guardian displays the last 50 Guardian articles in a plain, easy to scan and read format. No javascript, no database and a smattering of CSS make it ideal for when you just want something to read on your phone."
 category: work
 description: "Skinny Guardian displays the last 50 Guardian articles in a plain, easy to scan and read format. No javascript, no database and a smattering of CSS make it ideal for when you just want something to read on your phone."
+featured: true
 ---
 
 [Skinny Guardian](https://www.skinnyguardian.xyz) was inspired by sites like [CNN Lite](http://lite.cnn.io/en) and [Thin NPR](http://thin.npr.org/) -- news served with next to no styling. While this may sound (and look) unexciting I find a simple list of headlines an excellent way to get something to read quickly, and because they're just HTML and CSS, articles load instantly. Perfect on a train or bus journey into work with a poor mobile connection, or when you want something quick to read during your lunch.

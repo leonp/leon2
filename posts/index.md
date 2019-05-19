@@ -8,9 +8,9 @@ pagination:
   enabled: false
 ---
 
-<!-- {% include inline-cats.html %} -->
+<p class="f4 mt4-ns">I wrote a blog between 2008&#8211;2018, posting at least twice a month, mainly about the web but sometimes about anything else that interested me. These posts give a general idea of what I was interested in.</p>
 
-<p class="f4 mv4-ns">I wrote a blog between 2008&#8211;2018, posting at least twice a month on the web and anything else that interested me. These are the posts that gathered the most interest in that time.</p>
+<p class="mb4-ns c-linky-visited c-linky-underline">See <a href="/posts/archive/">the archive &rarr;</a> for a list of all posts.</p>
 
 <section>
 

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Posts
-order: 4
+in_nav: true
+order: 3
 is_pagination: true
 pagination:
   enabled: false
@@ -21,7 +22,7 @@ pagination:
 
         <h2 class="f4 c-lh-title ma0"><a class="no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
 
-        <p class="mv1 f6 gray"<time>{{ post.date | date: "%b %d, %Y" }}</time></p>
+        <p class="mv1 f6 gray"><time>{{ post.date | date: "%b %d, %Y" }}</time></p>
 
         <p class="ma0 c-serif">{{ post.excerpt | strip_html }}</p>
 

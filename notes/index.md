@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Notes
+order: 4
+in_nav: true
 ---
 
 <ul class="ma0 pa0 list c-linky-visited c-sans-serif">

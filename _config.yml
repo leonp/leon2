@@ -71,11 +71,25 @@ defaults:
       layout: 'note'
       is_note: 'true'
 
+-
+    scope:
+      path: ''
+      type: 'links'
+    values:
+      layout: 'link'
+      is_link: 'true'
+
 
 collections:
     notes:
       output: true
       permalink: /:collection/:name
+
+    links:
+        output: true
+        permalink: /:collection/:name
+
+
 
 
 # webmentions

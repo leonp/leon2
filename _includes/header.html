@@ -73,6 +73,10 @@
         <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &#8211; notes" href="/notes/feed/index.xml">
         {% endif %}
 
+        {% if page.is_link == 'true' or page.title == 'Links' %}
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &#8211; links" href="/links/feed/index.xml">
+        {% endif %}
+
         {% if site.css == 'inline' %}
         <style>
         {% capture inline-styles %}

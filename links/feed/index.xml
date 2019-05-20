@@ -18,10 +18,10 @@ hide: true
 
           <entry>
               <title>{{ link.title }}</title>
-              <link href="https://www.leonpaternoster.com{{ link.url }}"/>
+              <link href="{{ link.link-url }}"/>
               <updated>{{ link.date | date_to_xmlschema }}</updated>
               <id>https://www.leonpaternoster.com{{ link.url }}/</id>
-              <content type="html">{{ link.content | xml_escape }}</content>
+              <content type="html">{{ link.content | xml_escape | truncate: 200 }}</content>
           </entry>
 
     {% endfor %}

@@ -11,7 +11,7 @@ in_nav: true
 
 {% for note in notes %}
 
-    <li class="pt1 pb2 f6">{{ note.content | strip_html | truncate: 75 }} <a class="db" href="{{ note.url }}"><time class="dt-published" datetime="{{ note.date | date: "%Y-%m-%d" }}">{{ note.date | date: "%b %-d, %Y" }}</time></a></li>
+    <li class="pt1 pb2">{{ note.content | strip_html | truncate: 75 }} <a class="db" href="{{ note.url }}"><time class="f6 dt-published" datetime="{{ note.date | date: "%Y-%m-%d" }}">{{ note.date | date: "%b %-d, %Y" }}</time></a></li>
 
 {% endfor %}
 

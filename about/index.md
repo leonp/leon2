@@ -14,6 +14,8 @@ hyphens: true
 
 <p>I've worked in web and, to a lesser extent, IT, since 2008. Before that, I taught secondary English for a few years, and before that I worked as an <abbr title="Network Operations Centre">NOC</abbr> engineer for a telecoms company. My first jobs involved trying to flog ad space.</p>
 
+{% include figure.html url="leon-zone.jpg" alt="Leon Paternoster looking to the right underneath a sign saying zone" caption="Me on my good side" %}
+
 <p>I wrote a blog between 2008 and 2018. Unsurprisingly, over the years what I wrote about changed, reflecting whatever I was interested in at the time. I didn't just write about work. When I commuted, I was lucky enough to have the time to read, and logged the books here. Since 2010 I've been a Labour party member and fretted about the future of the party, until Jeremy Corbyn became its leader. For a few years I was particularly interested in the idea of a <a href="https://en.wikipedia.org/wiki/Basic_income">Universal Basic Income</a>. Sometimes I wrote about something that just grabbed my attention. <a href="/posts/">It's all here</a>.</p>
 
 <p>Contact me if you have any questions:</p>

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Now
-order: 5
+order: 6
 in_nav: true
 visited-links: true
 prose-headings: true

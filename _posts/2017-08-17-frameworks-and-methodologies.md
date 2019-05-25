@@ -1,6 +1,5 @@
 ---
 title: "Using a sound CSS methodology (you might call it a framework) is a good thing"
-
 category: web
 article: true
 description: "There are different types of web development frameworks. Overly opinionated frameworks like Bootstrap and Foundation can prove inflexible, &#8220;uncreative&#8221; and inefficient, but modular efforts such as Tachyons make writing manageable code a lot easier &#8212; and they don&#8217;t stifle creativity."

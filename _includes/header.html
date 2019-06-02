@@ -123,7 +123,11 @@
 
                     {% for pagio in pagios %}
 
+                        {% unless pagio.title contains 'page' %}
+
                         <li class="dib-ns mr2 mr3-ns"><a href="{{ pagio.url }}" class="db dib-ns pt1 pv0-ns no-underline hover-dark-blue{% if page.title == pagio.title %} dark-gray{% else %} gray{% endif %}">{{ pagio.title }}</a></li>
+
+                        {% endunless %}
 
                     {% endfor %}
 

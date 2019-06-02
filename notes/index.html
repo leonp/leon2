@@ -1,0 +1,55 @@
+---
+layout: default
+title: Notes
+order: 4
+in_nav: true
+pagination:
+  enabled: true
+  collection: notes
+---
+
+<ul class="ma0 pa0 list c-linky-visited c-sans-serif">
+
+{% assign notes = paginator.posts %}
+
+{% for note in notes %}
+
+    <!-- <li class="pt1 pb2">{{ note.content | strip_html | truncate: 75 }} <a class="db" href="{{ note.url }}"><time class="f6 dt-published" datetime="{{ note.date | date: "%Y-%m-%d" }}">{{ note.date | date: "%b %-d, %Y" }}</time></a></li> -->
+
+    <li class="pt1 pb2"><a class="db b" href="{{ note.url }}">{{ note.title }}</a><time class="db f6 gray dt-published" datetime="{{ note.date | date: "%Y-%m-%d" }}">{{ note.date | date: "%b %-d, %Y" }}</time></li>
+
+{% endfor %}
+
+</ul>
+
+{% if paginator.total_pages > 1 %}
+
+    <footer class="pt3 c-sans-serif">
+
+        <div class="cf mb3">
+
+            {% if paginator.next_page %}
+
+                <div class="w-50 pl3 fr tr">
+
+                  <a class="dark-blue hover-dark-red" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older notes &rarr;</a>
+
+                </div>
+
+            {% endif %}
+
+          {% if paginator.previous_page %}
+
+              <div class="fl w-50 pr3">
+
+                <a class="dark-blue hover-dark-red" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer notes</a>
+
+              </div>
+
+          {% endif %}
+
+        </div>
+
+    </footer>
+
+{% endif %}

@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'New puritan'
 date: "2018-08-17 08:00"
 note: true
 ---

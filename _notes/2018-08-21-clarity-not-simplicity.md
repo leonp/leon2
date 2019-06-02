@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'Clarity'
 date: "2018-08-21 16:00"
 note: true
 ---

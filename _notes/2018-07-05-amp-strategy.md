@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'Amp strategy'
 date: "2018-07-05 20:00"
 note: true
 ---

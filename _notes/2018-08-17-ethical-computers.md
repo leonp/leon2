@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'Ethical computers'
 date: "2018-08-17 09:00"
 note: true
 ---

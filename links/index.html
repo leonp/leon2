@@ -1,0 +1,53 @@
+---
+layout: default
+title: Links
+order: 5
+in_nav: true
+pagination:
+  enabled: true
+  collection: links
+---
+
+<ul class="ma0 pa0 list c-linky-visited c-sans-serif">
+
+{% assign links = paginator.posts %}
+
+{% for link in links %}
+
+    <li class="pt1 pb2"><a class="db b" href="{{ link.url }}">{{ link.title }}</a><time class="db f6 gray dt-published" datetime="{{ link.date | date: "%Y-%m-%d" }}">{{ link.date | date: "%b %-d, %Y" }}</time></li>
+
+{% endfor %}
+
+</ul>
+
+{% if paginator.total_pages > 1 %}
+
+    <footer class="pt3 c-sans-serif">
+
+        <div class="cf mb3">
+
+            {% if paginator.next_page %}
+
+                <div class="w-50 pl3 fr tr">
+
+                  <a class="dark-blue hover-dark-red" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older links &rarr;</a>
+
+                </div>
+
+            {% endif %}
+
+          {% if paginator.previous_page %}
+
+              <div class="fl w-50 pr3">
+
+                <a class="dark-blue hover-dark-red" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer links</a>
+
+              </div>
+
+          {% endif %}
+
+        </div>
+
+    </footer>
+
+{% endif %}

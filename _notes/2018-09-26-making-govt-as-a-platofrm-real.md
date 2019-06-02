@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'Govt as a platform'
 date: "2018-09-26 10:00"
 note: true
 ---

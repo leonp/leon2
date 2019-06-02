@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'Hiding accessible features'
 date: "2018-09-01 14:00"
 note: true
 ---

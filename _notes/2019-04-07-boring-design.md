@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'Boring design'
 date: "2019-04-07 14:30"
 note: true
 ---

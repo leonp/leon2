@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'Get rich quick in silicon valley'
 date: "2018-04-25 20:00"
 note: true
 ---

@@ -22,7 +22,7 @@ pagination:
 
 {% if paginator.total_pages > 1 %}
 
-    <footer class="pt3 c-sans-serif">
+    <footer class="pt3 c-linky-visited c-sans-serif">
 
         <div class="cf mb3">
 
@@ -30,7 +30,7 @@ pagination:
 
                 <div class="w-50 pl3 fr tr">
 
-                  <a class="dark-blue hover-dark-red" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older links &rarr;</a>
+                  <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older links &rarr;</a>
 
                 </div>
 
@@ -40,7 +40,7 @@ pagination:
 
               <div class="fl w-50 pr3">
 
-                <a class="dark-blue hover-dark-red" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer links</a>
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer links</a>
 
               </div>
 

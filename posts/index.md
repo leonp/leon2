@@ -24,7 +24,7 @@ pagination:
 
         <p class="mv1 f6 gray"><time>{{ post.date | date: "%b %d, %Y" }}</time></p>
 
-        <p class="ma0 c-serif">{{ post.excerpt | strip_html }}</p>
+        <p class="ma0">{{ post.excerpt | strip_html }}</p>
 
     </article>
 

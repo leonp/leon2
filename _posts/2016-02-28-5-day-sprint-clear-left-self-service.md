@@ -5,7 +5,7 @@ category: work
 description: An account of running a design sprint in order to plan a web product, in this case library self-service software. Includes a timetable, techniques and overview of the outcomes. The sprint was run by Leon Paternoster and Clearleft for Suffolk Libraries.
 subject: Design in libraries
 article: true
-excerpt: We're building our own self-service software. The first stage was organising a five day design sprint with design agency Clear Left. Here's what we did and what we got from the week.
+excerpt: "An account of running a design sprint in order to plan a web product, in this case library self-service software for use across Suffolk’s libraries – and beyond. Includes a timetable, techniques and overview of the outcomes."
 cache: true
 img: first-wall-poster.jpg
 alt: A large poster of a plan on a wall

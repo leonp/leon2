@@ -6,4 +6,4 @@ link-published: 2019-06-14T11:09:53.426Z
 link-url: 'https://www.petelambert.com/journal/html-is-the-web/'
 link-author: Pete Lambert
 ---
-Totally agree with this sentiment. As someone whose web skills really lie in HTML and CSS, I find it very hard to understand that web developers struggle with a language that allows you to type p {color: red;}
+Totally agree with this sentiment. As someone whose web skills really lie in HTML and CSS, I find it very hard to understand how web developers struggle with languages that allows you to type \`p {color: red;}\` or `<button>Submit</button>` to create a button.

@@ -10,7 +10,7 @@ underlined-links: true
 hyphens: true
 ---
 
-I'm Leon, head of digital and marketing at Suffolk Libraries, based in Ipswich, Suffolk in the UK. I'm responsible for lots of things, including our website and apps we develop. Most interestingly, I conceived and led the development of our own <a href="/posts/managing-self-service-project/">library self-service system</a>, a progressive web app now sold by software developers Dootrix to other library services.
+I'm Leon, head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). I live and work in [Ipswich](https://en.wikipedia.org/wiki/Ipswich), Suffolk in the UK. I'm responsible for lots of things, including our website and apps we develop. Most interestingly, I conceived and led the development of our own <a href="/posts/managing-self-service-project/">library self-service system</a>, a progressive web app now sold by software developers Dootrix to other library services.
 
 I've worked in web and, to a lesser extent, IT, since 2008. Before that, I taught secondary English for a few years, and before that I worked as an <abbr title="Network Operations Centre">NOC</abbr> engineer for a telecoms company. My first jobs involved trying to flog ad space.
 
@@ -25,8 +25,8 @@ My background is in planning, building and running websites, apps and online mar
 I've got some technical experience. I'd say I specialise in:
 
 - Simple, accessible web design that uses javascript defensively
-- Focusing on performance, mainly through using static websites
-- Building websites using the [Jekyll](https://jekyllrb.com) static site generator
+- Focusing on performance and security, mainly through using [static websites](https://en.wikipedia.org/wiki/Static_web_page). I developed the Suffolk Libraries website using this method -- it was probably the first non-profit/governmental website of its type in the UK.
+- Developing websites using the [Jekyll](https://jekyllrb.com) static site generator
 - Using the [Liquid](https://shopify.github.io/liquid/) templating language
 - Using [Netlify](https://netlify.com) for fast and safe hosting, forms and automated site builds
 - Using [Git](https://git-scm.com/) for easy deployment and back-ups

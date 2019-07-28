@@ -223,7 +223,9 @@ figure {
 code {
     font-size: 0.875em;
     padding: 0.1em 0.25em;
-    color: $highlight;
+    color: #001B44; // Tachyons navy
+    font-size: 87.5%;
+    font-family: "Fira Mono", "IBM Plex Mono", Consolas, Menlo, "Courier New", monospace;
 }
 
 pre {

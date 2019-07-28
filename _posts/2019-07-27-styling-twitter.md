@@ -3,7 +3,7 @@ title: "Styling Twitter, and HTML with soul"
 category: web
 ---
 
-I’ve been using the mobile Twitter site instead of the OS X app on my laptop for years. So when I got the “new” Twitter it wasn’t anything out of the blue. The main annoyance is the three column, straight-from-2001 layout, and the stupid fixed sidebars and headers; the HTML itself has been a labyrinth of nested divs and esoteric class names for years. For example:
+I’ve been using the mobile Twitter site instead of the OS X app on my laptop for years. So when I got [the “new” Twitter](https://www.ghacks.net/2019/06/26/how-to-disable-twitters-new-interface-design/) it wasn’t anything out of the blue. The main annoyance is the three column, straight-from-2001 layout, and the stupid fixed sidebars and headers; the HTML itself has been a labyrinth of nested divs and esoteric class names for years. For example:
 
 `<div class="css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0">`
 

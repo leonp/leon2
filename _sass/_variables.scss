@@ -3,9 +3,9 @@
 
 // Better sans-serif stack putting Segoe before Arial on Windows
 // We'll refer to this variable in _c.scss
-$c-sans-serif: "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+$c-sans-serif: "Avenir Next", Avenir, "Public Sans", "IBM Plex Sans", "Fira Sans", "Source Sans Pro", -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
 
-$c-serif: "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif, 'IBM Plex Serif', georgia, serif;
+$c-serif: "Avenir Next", Avenir, "Public Sans", "IBM Plex Sans", "Fira Sans", "Source Sans Pro", -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif, 'IBM Plex Serif', georgia, serif;
 
 $c-font-size: 112.5%;
 $c-font-size-m: 125%;

@@ -2,7 +2,7 @@
 layout: default
 title: Now
 order: 6
-in_nav: true
+in_nav: false
 visited-links: true
 prose-headings: true
 underlined-links: true

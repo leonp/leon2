@@ -15,7 +15,7 @@
 
     <header class="mb4-ns">
 
-        <h1 class="mt0 mb2 f3 f2-ns lh-title p-name">{{ page.title }}</h1>
+        <h1 class="fw9 mt0 mb2 f3 f2-ns lh-title p-name">{{ page.title }}</h1>
 
         <p class="mt0 f6 gray c-linky-underline c-linky-visited"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if site.author %} by <a href="/" class="pv1 p-author" rel="author">{{ site.author }}</a>{% endif %}{% if page.category %} / Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>{% endif %}</p>
 

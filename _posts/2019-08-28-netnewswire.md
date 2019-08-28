@@ -12,4 +12,4 @@ NetNewsWire is quick, stable and looks and behaves like a _proper_, working-with
 
 It comes with 20 or so feeds, all from the tech/Mac/web world and mostly interesting. A lot of the authors weren't white, straight men. This is thoughtful software.
 
-So, if you're looking for a high quality, free RSS reader for your Mac, NetNewsWire is an excellent choice. And if you want to break free of Facebook, checking out self-published websites and RSS will make things easier. There's a whole world out there.
+So, if you're looking for a high quality, free RSS reader for your Mac, NetNewsWire is an excellent choice. And if you want to break free of Facebook, reading self-published websites via RSS will make things easier. There's a whole world out there.

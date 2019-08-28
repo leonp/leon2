@@ -8,29 +8,21 @@ pagination:
   enabled: false
 ---
 
-<p class="f4 mt4-ns">I wrote a blog between 2008&#8211;2018, posting at least twice a month, mainly about the web but sometimes about anything else that interested me. These posts give a general idea of what I was interested in.</p>
+<p class="f4 mt4-ns">I’ve blogged more or less continuously since 2008 (apart from a break at the start of 2019), posting roughly twice a month, mainly about the web but sometimes about anything else that interested me.</p>
 
-<p class="mb4-ns c-linky-visited c-linky-underline">See <a href="/posts/archive/">the archive &rarr;</a> for a list of all posts.</p>
+{% assign posts = site.posts %}
 
-<section>
+{% for post in posts %}
 
-    {% assign posts = site.posts | where: "featured", "true" %}
+<div class="mb4 c-linky-visited">
 
-    {% for post in posts %}
+    <h2 class="f5 c-lh-title ma0"><a class="no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
 
-    <article class="mb4 c-sans-serif c-linky-visited">
+    <p class="mv1 f6 gray"><time>{{ post.date | date: "%b %d, %Y" }}</time></p>
 
-        <h2 class="f4 c-lh-title ma0"><a class="no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
+</div>
 
-        <p class="mv1 f6 gray"><time>{{ post.date | date: "%b %d, %Y" }}</time></p>
-
-        <p class="ma0 c-serif">{{ post.excerpt | strip_html }}</p>
-
-    </article>
-
-    {% endfor %}
-
-</section>
+{% endfor %}
 
 <!-- {% if paginator.total_pages > 1 %}
 

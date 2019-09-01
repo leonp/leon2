@@ -13,7 +13,7 @@ order: 1
 
     <div class="c-linky-underline c-linky-visited c-prose-headings c-hyphens">
 
-        <p>I'm Leon, head of digital and marketing at <a href="https://www.suffolklibraries.co.uk">Suffolk Libraries</a>. I developed <a href="https://dootrix.com/verso/">Verso</a>, a new, lightweight self-service system for libraries. Between 2008 and 2018 I blogged about the web, working and anything else I was interested in.</p>
+        <p>I’m Leon, head of digital and marketing at <a href="https://www.suffolklibraries.co.uk">Suffolk Libraries</a>. I developed <a href="https://dootrix.com/verso/">Verso</a>, a new, lightweight self-service system for libraries. I also blog about the web, work and anything else I’m interested in.</p>
 
     </div>
 

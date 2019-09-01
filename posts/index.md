@@ -8,8 +8,6 @@ pagination:
   enabled: false
 ---
 
-<p class="f4 mt4-ns">I’ve blogged more or less continuously since 2008 (apart from a break at the start of 2019), posting roughly twice a month, mainly about the web but sometimes about anything else that interested me.</p>
-
 {% assign posts = site.posts %}
 
 {% for post in posts %}

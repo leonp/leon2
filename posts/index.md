@@ -12,7 +12,7 @@ pagination:
 
 {% for post in posts %}
 
-<div class="mb4 c-linky-visited">
+<div class="mb4 c-linky-visited c-sans-serif">
 
     <h2 class="f5 c-lh-title ma0"><a class="no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
 

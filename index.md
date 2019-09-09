@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-display-title: 'Simple things<span class="dark-pink">.</span>'
+display-title: 'Hello<span class="dark-pink">.</span>'
 is_home: true
 in_nav: true
 order: 1

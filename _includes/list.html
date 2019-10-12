@@ -10,23 +10,27 @@
 
     {% endif %}
 
-    {% for cat in site.data.cats %}
+    {% unless page.category == "all" %}
 
-        {% if cat.slug == page.category %}
+        {% for cat in site.data.cats %}
 
-            {% assign message = cat.description %}
+            {% if cat.slug == page.category %}
 
-        {% endif %}
+                {% assign message = cat.description %}
 
-    {% endfor %}
+            {% endif %}
 
-<p class="f4 mv4-ns">{{ message }}</p>
+        {% endfor %}
+
+        <p class="f4 mv4-ns">{{ message }}</p>
+
+    {% endunless %}
 
 {% endif %}
 
 {% if page.annualised %}
 
-<div class="c-prose-headings c-sans-serif">
+<div class="c-prose-headings">
 
 {% for post in posts limit:include.post-limit | default:500 %}
 
@@ -44,7 +48,7 @@
 
         {% endif %}
 
-            <li class="mb4"><a class="db c-lh-title no-underline b" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 db normal f6 gray lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
+            <li class="pb3"><a class="db c-lh-title no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 f6 gray c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
         {% if forloop.last %}</ul>{% endif %}
 
@@ -54,11 +58,11 @@
 
 {% else %}
 
-<ul class="list mb0 mh0 mt3 pa0 c-linky-visited tc">
+<ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
 
 {% for post in posts limit:include.post-limit | default:500 %}
 
-    <li class="mb4"><a class="pv1 no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="i mt1 db normal f6 gray c-sans-serif">{{ post.date | date: "%b %d, %Y" }}</time></li>
+    <li class="pb3"><a class="db c-lh-title no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 f6 gray c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
 {% endfor %}
 

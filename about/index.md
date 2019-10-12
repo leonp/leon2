@@ -16,7 +16,7 @@ I've worked in web and, to a lesser extent, IT, since 2008. Before that, I taugh
 
 {% include figure.html url="leon-zone.jpg" alt="Leon Paternoster looking to the right underneath a sign saying zone" caption="Me on my good side" %}
 
-I wrote a blog between 2008 and 2018. Unsurprisingly, over the years what I wrote about changed, reflecting whatever I was interested in at the time. I didn't just write about work. When I commuted, I was lucky enough to have the time to read, and logged the books here. Since 2010 I've been a Labour party member and fretted about the future of the party, until Jeremy Corbyn became its leader. For a few years I was particularly interested in the idea of a <a href="https://en.wikipedia.org/wiki/Basic_income">Universal Basic Income</a>. Sometimes I wrote about something that just grabbed my attention. <a href="/posts/">It's all here</a>.
+I’ve written a blog since 2008, although I write less these days. Unsurprisingly, over the years what I blogged about changed, reflecting whatever I was interested in at the time. I didn't just discuss work. When I commuted, I was lucky enough to have the time to read, and logged the books here. Since 2010 I've been a Labour party member and fretted about the future of the party, until Jeremy Corbyn became its leader. For a few years I was particularly interested in the idea of a <a href="https://en.wikipedia.org/wiki/Basic_income">Universal Basic Income</a>. Sometimes I wrote about something that just grabbed my attention. <a href="/posts/">It's all here</a>.
 
 ## What I do
 
@@ -24,7 +24,7 @@ My background is in planning, building and running websites, apps and online mar
 
 I've got some technical experience. I'd say I specialise in:
 
-- Simple, accessible web design that uses javascript defensively
+- Simple, accessible web design that uses javascript defensively (I still use jQuery)
 - Focusing on performance and security, mainly through using [static websites](https://en.wikipedia.org/wiki/Static_web_page). I developed the Suffolk Libraries website using this method -- it was probably the first non-profit/governmental website of its type in the UK.
 - Developing websites using the [Jekyll](https://jekyllrb.com) static site generator
 - Using the [Liquid](https://shopify.github.io/liquid/) templating language

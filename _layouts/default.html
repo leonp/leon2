@@ -4,15 +4,15 @@
 
     {% unless page.hide-title %}
 
-        <div class="mb4-ns">
+        <div class="mb4-ns c-wrapper center">
 
-            <h1 class="mt0 mb2 f2 lh-title p-name">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+            <h1 class="mt0 mb2 f3 c-lh-title p-name">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
 
         </div>
 
     {% endunless %}
 
-     <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}c-serif">
+     <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}c-body-text">
 
         {{ content}}
 

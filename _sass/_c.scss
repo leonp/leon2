@@ -59,6 +59,51 @@
     clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 30px 100%, 0 50%);
 }
 
+
+// Body text
+
+.c-body-text * {
+    max-width: $c-wrapper;
+    margin: auto;
+}
+
+.c-body-text p,
+.c-body-text ul,
+.c-body-text ol {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.c-body-text li {
+    margin-left: 0;
+}
+
+.c-body-text blockquote {
+    font-size: 0.875em;
+    padding-left: 2rem;
+}
+
+.c-body-text blockquote * {
+    max-width: 100%;
+}
+
+.c-body-text figure,
+.c-body-text img {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.c-body-text img {
+    margin-bottom: 0;
+}
+
+.c-body-text figcaption {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.875em;
+}
+
+
 // Prose styling
 
 .c-prose-headings h1,
@@ -109,6 +154,10 @@
     -webkit-hyphens: auto;
 }
 
+.c-box-decoration-break-clone {
+    box-decoration-break: clone;
+}
+
 .c-linky-underline a {
     text-decoration: underline;
 }
@@ -128,58 +177,6 @@
 
 .c-no-top-margin * {
     margin-top: 0 !important;
-}
-
-// Class to constrain parents' children to max-width
-// Then add exceptions for elements you want to expand
-// to 100% of the available page
-
-.c-constrain-kids p,
-.c-constrain-kids ul,
-.c-constrain-kids ol,
-.c-constrain-kids pre,
-.c-constrain-kids h1,
-.c-constrain-kids h2,
-.c-constrain-kids h3,
-.c-constrain-kids h4,
-.c-constrain-kids h5,
-.c-constrain-kids h6,
-.c-constrain-kids dt,
-.c-constrain-kids dd,
-.c-constrain-kids blockquote {
-    max-width: 34rem !important;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.c-constrain-kids figure,
-.c-constrain-kids img,
-.c-constrain-kids pre,
-.c-constrain-kids .vid,
-.c-constrain-kids .constrain,
-.c-constrain-kids .vid iframe,
-.c-constrain-kids .vid object,
-.c-constrain-kids .vid embed,
-.c-constrain-kids .constrain iframe,
-.c-constrain-kids .constrain object,
-.c-constrain-kids .constrain embed {
-    max-width: 100% !important;
-}
-
-.c-constrain-kids blockquote {
-    margin: 0 auto;
-    padding-left: 1.5rem;
-    font-size: 0.875em;
-    border-left: 0.5rem solid $highlight;
-    background-color: #FFF;
-    box-sizing: border-box;
-}
-
-.c-constrain-kids img {
-    display: block;
-    margin: 0.5rem auto;
-    border: 0.5rem solid #EEE;
-    box-sizing: border-box;
 }
 
 .vid,

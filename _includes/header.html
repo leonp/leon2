@@ -94,7 +94,7 @@
 
     </head>
 
-    <body class="ma0 pa0 bg-white dark-gray c-sans-serif c-lh-copy">
+    <body class="ma0 pv0 ph2 ph4-ns bg-white dark-gray c-sans-serif c-lh-copy">
 
         <ul class="clip c-no-print">
 
@@ -103,42 +103,24 @@
 
         </ul>
 
-        <header class="f6 mb4 mb5-ns pa2 pv3-ns ph3-ns ph4-l c-lh-title bg-near-white bb b--light-gray">
+        <nav class="pt3 pt4-ns c-wrapper center">
 
-            <div class="flex-l center c-wrapper">
+            <ul class="ma0 pa0 list f6">
 
-                <div class="w-30-l bb bn-l b--moon-gray">
+                {% assign pagios = site.pages | where: "in_nav", "true" | sort: "order" %}
 
-                    <a href="/" class="db b pv2 pv0-l no-underline dark-blue hover-dark-gray">{{ site.title }}<span class="dark-pink">.</span></a>
+                {% for pagio in pagios %}
 
-                </div>
+                    {% unless pagio.title contains 'page' %}
 
-                <nav id="nav" class="c-no-print w-70-l">
+                    <li class="dib mr2 mr3-ns"><a href="{{ pagio.url }}" class="db dib-ns dark-blue hover-dark-pink{% if page.title == pagio.title %} bb bw2 b--black{% endif %}">{{ pagio.title }}</a></li>
 
-                    <ul class="ma0 pa0 list flex justify-end-l tr-l">
+                    {% endunless %}
 
-                    {% assign pagios = site.pages | where: "in_nav", "true" | sort: "order" %}
+                {% endfor %}
 
-                    {% for pagio in pagios %}
+            </ul>
 
-                        {% unless pagio.title contains 'page' %}
+        </nav>
 
-                        <li class="dib-ns mr3"><a href="{{ pagio.url }}" class="db dib-ns pv2 pv0-l no-underline hover-dark-gray{% if page.title == pagio.title %} dark-gray{% else %} dark-blue{% endif %}">{{ pagio.title }}</a></li>
-
-                        {% endunless %}
-
-                    {% endfor %}
-
-                        <li class="dib-ns"><a href="/feed/index.xml" class="db dib-ns pv2 pv0-l dark-blue no-underline hover-dark-gray">RSS</a></li>
-
-                    </ul>
-
-                </nav>
-
-            </div>
-
-        </header>
-
-        <main id="content" class="ph2 ph3-ns ph4-l bg-white">
-
-            <div class="center c-wrapper">
+        <main id="content" class="pt4 pt5-ns">

@@ -3,12 +3,16 @@ layout: default
 title: Notes
 order: 4
 in_nav: false
+visited-links: true
+prose-headings: true
+underlined-links: true
+hyphens: true
 pagination:
   enabled: true
   collection: notes
 ---
 
-<ul class="ma0 pa0 list c-linky-visited c-sans-serif">
+<ul class="list mb0 mh0 mt4 pa0">
 
 {% assign notes = paginator.posts %}
 
@@ -16,7 +20,7 @@ pagination:
 
     <!-- <li class="pt1 pb2">{{ note.content | strip_html | truncate: 75 }} <a class="db" href="{{ note.url }}"><time class="f6 dt-published" datetime="{{ note.date | date: "%Y-%m-%d" }}">{{ note.date | date: "%b %-d, %Y" }}</time></a></li> -->
 
-    <li class="pt1 pb2"><a class="db b" href="{{ note.url }}">{{ note.title }}</a><time class="db f6 gray dt-published" datetime="{{ note.date | date: "%Y-%m-%d" }}">{{ note.date | date: "%b %-d, %Y" }}</time></li>
+    <li class="pb3"><a class="db c-lh-title" href="{{ note.url }}">{{ note.title }}</a><time class="mv1 f6 gray c-lh-copy dt-published" datetime="{{ note.date | date: "%Y-%m-%d" }}">{{ note.date | date: "%b %-d, %Y" }}</time></li>
 
 {% endfor %}
 
@@ -24,7 +28,7 @@ pagination:
 
 {% if paginator.total_pages > 1 %}
 
-    <footer class="pt3 c-sans-serif c-linky-visited">
+    <footer class="pt3">
 
         <div class="cf mb3">
 
@@ -32,7 +36,7 @@ pagination:
 
                 <div class="w-50 pl3 fr tr">
 
-                  <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older notes &rarr;</a>
+                  <a class="f6" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older notes &rarr;</a>
 
                 </div>
 
@@ -42,7 +46,7 @@ pagination:
 
               <div class="fl w-50 pr3">
 
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer notes</a>
+                <a class="f6" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer notes</a>
 
               </div>
 

@@ -22,8 +22,6 @@
 
         {% endfor %}
 
-        <p class="f4 mv4-ns">{{ message }}</p>
-
     {% endunless %}
 
 {% endif %}
@@ -42,13 +40,13 @@
 
         <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
 
-        <ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
+        <ul class="list mb0 mh0 mt4 pa0">
 
         {% assign date = currentdate %}
 
         {% endif %}
 
-            <li class="pb3"><a class="db c-lh-title no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 f6 gray c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
+            <li class="pb3"><a class="db c-lh-title" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 f6 gray c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
         {% if forloop.last %}</ul>{% endif %}
 

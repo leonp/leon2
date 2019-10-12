@@ -3,24 +3,15 @@ layout: default
 title: Posts
 in_nav: true
 order: 3
-is_pagination: true
-pagination:
-  enabled: false
+category: all
+annualised: true
+visited-links: true
+prose-headings: true
+underlined-links: true
+hyphens: true
 ---
 
-{% assign posts = site.posts %}
-
-{% for post in posts %}
-
-<div class="mb4 c-linky-visited c-sans-serif">
-
-    <h2 class="f5 c-lh-title ma0"><a class="no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
-
-    <p class="mv1 f6 gray"><time>{{ post.date | date: "%b %d, %Y" }}</time></p>
-
-</div>
-
-{% endfor %}
+{% include list.html %}
 
 <!-- {% if paginator.total_pages > 1 %}
 

@@ -9,14 +9,20 @@
                     <ul class="ma0 pa0 list f7">
 
                         <li class="dib mr2 mr3-ns"><a href="/" rel="index" class="pv1 dib dark-blue hover-dark-pink">Home</a></li>
+                        <li class="dib mr2 mr3-ns"><a href="/about/" rel="index" class="pv1 dib dark-blue hover-dark-pink">About</a></li>
                         <li class="dib mr2 mr3-ns"><a href="/links/" class="pv1 dib dark-blue hover-dark-pink">Links</a></li>
                         <li class="dib mr2 mr3-ns"><a href="/notes/" class="pv1 dib dark-blue hover-dark-pink">Notes</a></li>
+                        <li class="dib"><a href="/api/" class="pv1 dib dark-blue hover-dark-pink">API</a></li>
+
+                    </ul>
+
+                    <ul class="ma0 pa0 list f7">
+
                         {% if site.twitter %}<li class="dib mr2 mr3-ns"><a href="{{ site.twitter }}" class="pv1 dib dark-blue hover-dark-pink">Twitter</a></li>{% endif %}
                         {% if site.github %}<li class="dib mr2 mr3-ns"><a href="{{ site.github }}" rel="me" class="pv1 dib dark-blue hover-dark-pink">Github</a></li>{% endif %}
                         {% if site.microblog %}<li class="dib mr2 mr3-ns"><a href="{{ site.microblog }}" class="pv1 dib dark-blue hover-dark-pink">microblog</a></li>{% endif %}
                         {% if site.linkedin %}<li class="dib mr2 mr3-ns"><a href="{{ site.linkedin }}" class="pv1 dib dark-blue hover-dark-pink">LinkedIn</a></li>{% endif %}
-                        {% if site.email %}<li class="dib mr2 mr3-ns"><a href="mailto:leon.paternoster@zoho.com" rel="me" class="pv1 dib dark-blue hover-dark-pink">{{ site.email }}</a></li>{% endif %}
-                        <li class="dib"><a href="/api" class="pv1 dib dark-blue hover-dark-pink">API</a></li>
+                        {% if site.email %}<li class="dib"><a href="mailto:leon.paternoster@zoho.com" rel="me" class="pv1 dib dark-blue hover-dark-pink">{{ site.email }}</a></li>{% endif %}
 
                     </ul>
 

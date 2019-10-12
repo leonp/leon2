@@ -3,18 +3,22 @@ layout: default
 title: Links
 order: 5
 in_nav: false
+visited-links: true
+prose-headings: true
+underlined-links: true
+hyphens: true
 pagination:
   enabled: true
   collection: links
 ---
 
-<ul class="ma0 pa0 list c-linky-visited c-sans-serif">
+<ul class="list mb0 mh0 mt4 pa0">
 
 {% assign links = paginator.posts %}
 
 {% for link in links %}
 
-    <li class="pt1 pb2"><a class="db b" href="{{ link.url }}">{{ link.title }}</a><time class="db f6 gray dt-published" datetime="{{ link.date | date: "%Y-%m-%d" }}">{{ link.date | date: "%b %-d, %Y" }}</time></li>
+    <li class="pb3"><a class="db c-lh-title" href="{{ link.url }}">{{ link.title }}</a><time class="mv1 f6 gray c-lh-copy dt-published" datetime="{{ link.date | date: "%Y-%m-%d" }}">{{ link.date | date: "%b %-d, %Y" }}</time></li>
 
 {% endfor %}
 
@@ -22,32 +26,32 @@ pagination:
 
 {% if paginator.total_pages > 1 %}
 
-    <footer class="pt3 c-linky-visited c-sans-serif">
+<footer class="pt3">
 
-        <div class="cf mb3">
+    <div class="cf mb3">
 
-            {% if paginator.next_page %}
+        {% if paginator.next_page %}
 
-                <div class="w-50 pl3 fr tr">
+            <div class="w-50 pl3 fr tr">
 
-                  <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older links &rarr;</a>
+              <a class="f6" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older links &rarr;</a>
 
-                </div>
+            </div>
 
-            {% endif %}
+        {% endif %}
 
-          {% if paginator.previous_page %}
+      {% if paginator.previous_page %}
 
-              <div class="fl w-50 pr3">
+          <div class="fl w-50 pr3">
 
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer links</a>
+            <a class="f6" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer links</a>
 
-              </div>
+          </div>
 
-          {% endif %}
+      {% endif %}
 
-        </div>
+    </div>
 
-    </footer>
+</footer>
 
 {% endif %}

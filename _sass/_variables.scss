@@ -4,7 +4,7 @@
 // Better sans-serif stack putting Segoe before Arial on Windows
 // We'll refer to this variable in _c.scss
 
-$c-sans-serif: "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+$c-sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
 
 $c-serif: "IBM Plex Serif", georgia, serif;
 
@@ -18,6 +18,6 @@ $c-lh-copy: 1.5;
 $c-lh-copy-m: 1.5;
 $c-lh-copy-l: 1.5;
 
-$c-wrapper: 30rem;
+$c-wrapper: 28rem;
 
 $highlight: #D5008F; //dark pink

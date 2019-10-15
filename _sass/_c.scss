@@ -64,10 +64,9 @@
 
 .c-body-text * {
     max-width: $c-wrapper;
-    margin: auto;
 }
 
-.c-body-text p,
+/* .c-body-text p,
 .c-body-text ul,
 .c-body-text ol {
     margin-top: 1rem;
@@ -76,11 +75,12 @@
 
 .c-body-text li {
     margin-left: 0;
-}
+} */
 
 .c-body-text blockquote {
     font-size: 0.875em;
-    padding-left: 2rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
 }
 
 .c-body-text blockquote * {
@@ -94,8 +94,8 @@
 }
 
 .c-body-text img {
-    margin: 0 auto;
     display: block;
+    margin: 0.5rem 0;
 }
 
 .c-body-text figcaption {
@@ -117,7 +117,9 @@
     margin-top: 2rem;
     margin-bottom: 0.75rem;
     line-height: $c-lh-title;
-    font-family: $c-sans-serif;
+    font-family: $c-serif;
+    font-weight: normal;
+    font-style: italic;
 }
 
 .c-prose-headings h1 + *,
@@ -132,11 +134,11 @@
 
 .c-prose-headings h1,
 .c-prose-headings h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .c-prose-headings h3 {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .c-prose-headings h4,
@@ -144,6 +146,7 @@
 .c-prose-headings h6 {
     font-size: 1rem;
     font-weight: normal;
+    font-style: normal;
     text-transform: lowercase;
     font-variant: small-caps;
     letter-spacing: 0.1em;

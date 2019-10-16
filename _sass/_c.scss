@@ -120,6 +120,7 @@
     font-family: $c-serif;
     font-weight: normal;
     font-style: italic;
+    color: #000;
 }
 
 .c-prose-headings h1 + *,
@@ -134,11 +135,19 @@
 
 .c-prose-headings h1,
 .c-prose-headings h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+}
+
+@media #{$breakpoint-not-small} {
+  font-size: 1.5rem;
 }
 
 .c-prose-headings h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
+}
+
+@media #{$breakpoint-not-small} {
+  font-size: 1.25rem;
 }
 
 .c-prose-headings h4,

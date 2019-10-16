@@ -4,7 +4,7 @@
 
     <header class="mb4-ns c-wrapper c-linky-visited">
 
-        <h1 class="f2 normal c-lh-title mb2 black p-name"><a href="{{ page.link-url }}" class="db">{{ page.title }}</a></h1>
+        <h1 class="f3 f2-ns normal c-lh-title mb2 black p-name"><a href="{{ page.link-url }}" class="db">{{ page.title }}</a></h1>
 
         <p class="mt0 c-linky-underline i">{% if page.link-published %}Originally published <time class="dt-published" datetime="{{ page.link-published | date: "%Y-%m-%d" }}">{{ page.link-published | date: "%b %-d, %Y" }}</time>{% endif %}{% if page.link-author %} by {{ page.link-author }}{% endif %} / <a href="/links/">Links</a></p>
 

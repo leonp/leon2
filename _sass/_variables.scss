@@ -4,13 +4,13 @@
 // Better sans-serif stack putting Segoe before Arial on Windows
 // We'll refer to this variable in _c.scss
 
-$c-sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+$c-sans-serif: "Public Sans", -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
 
 $c-serif: "ET Book", "Palatino Linotype", palatino, georgia, serif;
 
-$c-font-size: 137.5%;
-$c-font-size-m: 150%;
-$c-font-size-l: 175%;
+$c-font-size: 118.75%;
+$c-font-size-m: 125%;
+$c-font-size-l: 137.5%;
 
 $c-lh-title: 1.25;
 
@@ -18,6 +18,8 @@ $c-lh-copy: 1.375;
 $c-lh-copy-m: 1.5;
 $c-lh-copy-l: 1.5;
 
-$c-wrapper: 26rem;
+$c-wrapper: 36rem;
 
-$highlight: #D5008F; //dark pink
+$highlight: #FFB700; // gold
+$link: #FFF; // white
+$visited: #EEE; //light gray

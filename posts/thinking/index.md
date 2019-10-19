@@ -6,7 +6,6 @@ annualised: true
 hide: true
 visited-links: true
 prose-headings: true
-underlined-links: true
 hyphens: true
 ---
 

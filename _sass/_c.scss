@@ -117,10 +117,7 @@
     margin-top: 2rem;
     margin-bottom: 0.75rem;
     line-height: $c-lh-title;
-    font-family: $c-serif;
-    font-weight: normal;
-    font-style: italic;
-    color: #000;
+    color: #FFF;
 }
 
 .c-prose-headings h1 + *,
@@ -176,11 +173,11 @@
 }
 
 .c-linky-visited a:link {
-    color: #00449E; // Tachyons dark blue
+    color: $link;
 }
 
 .c-linky-visited a:visited {
-    color: #357EDD; // Tachyons blue
+    color: $visited;
 }
 
 .c-linky-visited a:hover,

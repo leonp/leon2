@@ -94,7 +94,7 @@
 
     </head>
 
-    <body class="ma0 pv0 ph2 ph4-ns ph5-l bg-white dark-gray c-serif c-lh-copy">
+    <body class="ma0 pv0 ph2 ph4-ns ph5-l bg-dark-gray moon-gray c-sans-serif c-lh-copy">
 
         <ul class="clip c-no-print">
 
@@ -113,7 +113,7 @@
 
                     {% unless pagio.title contains 'page' %}
 
-                    <li class="dib mr2 mr3-ns"><a href="{{ pagio.url }}" class="db dib-ns dark-blue hover-dark-pink{% if page.title == pagio.title %} bb bw2 b--black{% endif %}">{{ pagio.title }}</a></li>
+                    <li class="dib mr2 mr3-ns"><a href="{{ pagio.url }}" class="db dib-ns white hover-gold{% if page.title == pagio.title %} bb bw2 b--white{% endif %}">{{ pagio.title }}</a></li>
 
                     {% endunless %}
 

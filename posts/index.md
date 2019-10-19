@@ -7,7 +7,6 @@ category: all
 annualised: true
 visited-links: true
 prose-headings: true
-underlined-links: true
 hyphens: true
 ---
 

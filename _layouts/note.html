@@ -4,9 +4,9 @@
 
     <div class="mb4-ns c-wrapper c-linky-visited c-linky-underline">
 
-        <p class="mt0"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / <a href="/notes/">Notes</a></p>
+        <p class="mt0 f6"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / <a href="/notes/">Notes</a></p>
 
-        <p class="mb0 mt1 i">{% if page.category %}Filed under <a href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}<!--{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>{% endunless %}--></p>
+        <p class="mb0 mt1 f6">{% if page.category %}Filed under <a href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}<!--{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>{% endunless %}--></p>
 
     </div>
 

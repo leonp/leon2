@@ -17,7 +17,7 @@
 
         <h1 class="f3 f2-ns c-lh-title mb2 white p-name">{{ page.title }}</h1>
 
-        <p class="mt0 c-linky-underline c-linky-visited">{% if site.author %}<a href="/" class="p-author" rel="author">{{ site.author }}</a>, {% endif %}<time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.category %}. Filed under <a href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>.{% endif %}</p>
+        <p class="mt0 c-linky-underline c-linky-visited f6">{% if site.author %}<a href="/" class="p-author" rel="author">{{ site.author }}</a>, {% endif %}<time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.category %}. Filed under <a href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>.{% endif %}</p>
 
         <!-- <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p> -->
 

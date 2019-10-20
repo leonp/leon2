@@ -22,7 +22,7 @@ The Sherlock Holmes stories seemed just right for this. They're short (most can 
 
 ## The technical challenge
 
-Behind the scenes I'm using my normal technical stack: Jekyll, Tachyons, Github and Netlify. The stories are broken down into a chapters collection, which can be used to automatically generate a table of contents, and to split the stories into separate pages. Disappointingly, I discovered only the first story, <cite>A Scandal in Bohemia</cite>, is divided into chapters, so this wasn't really necessary, and reading is actually easier if you _don't_ split the text up into separate pages. Who knew -- scrolling is better on a screen the flipping, although this may not apply if you were HTMLifyimg <cite>War and Peace</cite>.
+Behind the scenes I'm using my normal technical stack: Jekyll, Tachyons, Github and Netlify. The stories are broken down into a chapters collection, which can be used to automatically generate a table of contents, and to split the stories into separate pages. Disappointingly, I discovered only the first story, <cite>A Scandal in Bohemia</cite>, is divided into chapters, so this wasn't really necessary, and reading is actually easier if you _don't_ split the text up into separate pages. Who knew -- scrolling is better on a screen than flipping, although this may not apply if you were HTMLifyimg <cite>War and Peace</cite>.
 
 (The table of contents did mean I got to use my favourite HTML elements, `details` and `summary`: semantic and accessible toggable content in pure HTML, I've no idea why these aren't all over the internet.)
 

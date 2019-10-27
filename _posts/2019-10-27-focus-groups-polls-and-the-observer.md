@@ -15,7 +15,7 @@ Once again, the company responsible for the findings - an an "international insi
 
 The article doesn't simply attack Jeremy Corbyn. Instead, it "frames" the election around voter disatisfaction with both main parties, and the whole political process. I was trying to figure out if - and how - this supports <cite>The Observer</cite>'s agenda. But then a Sunday article on a [Lib Dem attempt to force an early election](https://www.theguardian.com/politics/2019/oct/26/boris-johnson-no-brexit-until-january-block-christmas-general-election) made sense. According to this narrative, Labour and the Tories will do badly in an election, which will leave an opportunity for centrist parties such as the Liberal Democrats and SNP. As a bonus, Jeremy Corbyn will probably resign. It's a win win. Add a 16pt lead for the Tories opinion poll and a (particularly patronising) [Rawnsley piece on Labour and Tory fears of an election](https://www.theguardian.com/commentisfree/2019/oct/27/turkeys-wont-vote-for-christmas-when-the-polls-are-telling-them-theyll-be-stuffed) and you have a Lib Dem-shaped strategy taking shape.
 
-
+_Do these tactics work?_ As a means of signalling intention to different parts of the PLP, maybe so. To the outside world? I'm unsure. Corbyn's support has remained stubbornly strong among party members despite the stream of negative stories, polling and briefings. Perhaps we distrust this reporting so much we don't see real failings. Perhaps it has the opposite effect it intends. 
 
 
 

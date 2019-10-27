@@ -17,7 +17,7 @@ The article doesn't simply attack Jeremy Corbyn. Instead, it "frames" the electi
 
 According to the narrative suggested by the research, both Labour and the Tories will do badly in an election. This leaves an opportunity for centrist parties such as the Liberal Democrats and SNP, and Jeremy Corbyn vulnerable in light of a poor electoral showing. From a centrist point of view, this would be an ideal outcome: a hung parliament with the revoke article 50 Lib Dems holding the balance of power, and a chance to regain control of the Labour party.
 
-Meanwhile, The Observer's Opinium opinio  a 16pt lead for the Tories opinion poll and a (particularly patronising) [Rawnsley piece on Labour and Tory fears of an election](https://www.theguardian.com/commentisfree/2019/oct/27/turkeys-wont-vote-for-christmas-when-the-polls-are-telling-them-theyll-be-stuffed) and you have a Lib Dem-shaped strategy taking shape.
+Meanwhile, The Observer's Opinium opinion poll gives the Tories a 16pt lead over Labour, and Andrew Rawnsley publishes a (particularly patronising) [piece on Labour and Tory fears of an election](https://www.theguardian.com/commentisfree/2019/oct/27/turkeys-wont-vote-for-christmas-when-the-polls-are-telling-them-theyll-be-stuffed). A Lib Dem shaped strategy is forming.
 
 _Do these tactics work?_ As a means of signalling intention to different parts of the PLP, maybe so. To the outside world? I'm unsure. Corbyn's support has remained stubbornly strong among party members despite the stream of negative stories, polling and briefings. Perhaps we distrust this reporting so much we don't see real failings. Perhaps it has the opposite effect it intends. 
 

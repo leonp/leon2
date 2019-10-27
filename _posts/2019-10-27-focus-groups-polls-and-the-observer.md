@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Focus groups, polls and The Observer'
+title: The Observer and forming political opnion
 date: 2019-10-27T11:50:28.615Z
 category: politics
 featured: false

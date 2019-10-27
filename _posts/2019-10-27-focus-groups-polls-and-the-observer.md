@@ -11,7 +11,7 @@ Occasionally, I like to play amateur politics sleuth and, as they say, follow th
 
 Unsurprisingly, the prefered tactics of a centrist publication trying to _form_ the opinion of its readers include focus group findings and opinion polls. When I read on Saturday that [Voters' disillusionment renders expected election tough to call](https://www.theguardian.com/uk-news/2019/oct/26/voters-disillusionment-renders-expected-election-tough-to-call) (a finding based on the opinions of 16 people in Watford, incidentally) I donned my deerstalker and went Googling. Who was behind the "research" that led to this conclusion?
 
-
+Once again the company behind the findings - [BritainThinks](https://britainthinks.com/) - isn't really a research company. It's an "international insight and strategy consultancy"
 
 
 

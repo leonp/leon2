@@ -55,16 +55,21 @@
     color: $highlight;
 }
 
+.c-link {
+    color: $link;
+}
+
 .c-clip-path {
     clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 30px 100%, 0 50%);
 }
 
+.c-hover-turn:hover {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
 
 // Body text
-
-.c-body-text * {
-    max-width: $c-wrapper;
-}
 
 /* .c-body-text p,
 .c-body-text ul,
@@ -81,10 +86,6 @@
     font-size: 0.875em;
     padding: 1rem 0;
     margin: 1rem 0;
-}
-
-.c-body-text blockquote * {
-    max-width: 100%;
 }
 
 .c-body-text figure,
@@ -117,7 +118,7 @@
     margin-top: 2rem;
     margin-bottom: 0.75rem;
     line-height: $c-lh-title;
-    color: #FFF;
+    color: $link;
 }
 
 .c-prose-headings h1 + *,
@@ -170,6 +171,7 @@
 
 .c-linky-underline a {
     text-decoration: underline;
+    text-decoration: solid underline $highlight 2px;
 }
 
 .c-linky-visited a:link {

@@ -94,33 +94,38 @@
 
     </head>
 
-    <body class="ma0 pv0 ph2 ph4-ns ph5-l bg-dark-gray moon-gray c-sans-serif c-lh-copy">
+    <body class="min-vh-100-l ma0 pa0 bg-white dark-gray c-sans-serif c-lh-copy">
 
-        <ul class="clip c-no-print">
+        <div class="pv1 ph2 f7 c-linky-visited c-linky-underline bb b--light-gray c-no-print"><a href="#content">Skip to content</a></div>
 
-            <li><a href="#content">Skip to main content</a></li>
-            <li><a href="#nav">Skip to navigation</a></li>
+            <div class="flex-l flex-row-reverse-l min-vh-100-l">
 
-        </ul>
+                <div class="min-vh-100-l w-20-l w-third-l pv2 pv3-ns pv4-l ph2 ph3-ns ph4-l bb b--light-gray bn-l">
 
-        <nav class="pt3 pt4-ns c-wrapper">
+                    <a class="c-hover-turn dib grow no-underline f1 blue mb1 mb3-l mr2 mr3-ns mr0-l b lh-title v-mid" href="#">⚈</a>
 
-            <ul class="ma0 pa0 list f6">
+                    <nav class="dib db-l v-mid b">
 
-                {% assign pagios = site.pages | where: "in_nav", "true" | sort: "order" %}
+                        <ul class="lh-title dib db-l list ma0 pa0 f6">
 
-                {% for pagio in pagios %}
+                            {% assign pagios = site.pages | where: "in_nav", "true" | sort: "order" %}
 
-                    {% unless pagio.title contains 'page' %}
+                            {% for pagio in pagios %}
 
-                    <li class="dib mr2 mr3-ns"><a href="{{ pagio.url }}" class="db dib-ns white hover-gold{% if page.title == pagio.title %} bb bw2 b--white{% endif %}">{{ pagio.title }}</a></li>
+                            {% unless pagio.title contains 'page' %}
 
-                    {% endunless %}
+                            <li class="dib db-l mr2 mr3-ns mr0-l"><a href="{{ pagio.url }}" class="dno-underline dark-gray hover-blue dib db-l pv1-l{% if page.title == pagio.title %} {% endif %}">{{ pagio.title }}</a></li>
 
-                {% endfor %}
+                            {% endunless %}
 
-            </ul>
+                            {% endfor %}
 
-        </nav>
+                        </ul>
 
-        <main id="content" class="pt4 pt5-ns">
+                    </nav>
+
+                </div>
+
+                <main id="content" class="min-vh-100-l w-80-l t-two-thirds-l pv2 pv3-ns pv4-l ph2 ph3-ns ph4-l flex-l justify-center-l br-l b--light-gray">
+
+                    <div class="measure">

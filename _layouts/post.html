@@ -13,9 +13,9 @@
 
 <article class="h-entry">
 
-    <header class="mb4-ns c-wrapper">
+    <header class="mb4">
 
-        <h1 class="f3 c-lh-title c-link p-name">{{ page.title }}</h1>
+        <h1 class="f3 f2-ns c-lh-title c-link p-name">{{ page.title }}</h1>
 
         <p class="mid-gray c-linky-underline c-linky-visited f6">{% if site.author %}<a href="/" class="p-author" rel="author">{{ site.author }}</a>, {% endif %}<time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.category %}. Filed under <a href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>.{% endif %}</p>
 

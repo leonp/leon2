@@ -231,15 +231,12 @@ figure {
 
 code {
     font-size: 0.875em;
-    padding: 0.1em 0.25em;
-    color: #FFF;
-    font-size: 87.5%;
     font-family: "Fira Mono", "IBM Plex Mono", Consolas, Menlo, "Courier New", monospace;
 }
 
 pre {
     overflow: auto;
-    padding: 1em;
+    padding: 0.25em;
     background-color: #000;
     color: #FFA3D7; // Tachyons light-pink
 }

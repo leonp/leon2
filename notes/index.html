@@ -17,8 +17,6 @@ pagination:
 
 {% for note in notes %}
 
-    <!-- <li class="pt1 pb2">{{ note.content | strip_html | truncate: 75 }} <a class="db" href="{{ note.url }}"><time class="f6 dt-published" datetime="{{ note.date | date: "%Y-%m-%d" }}">{{ note.date | date: "%b %-d, %Y" }}</time></a></li> -->
-
     <li class="pb3"><a class="db c-lh-title" href="{{ note.url }}">{{ note.title }}</a><time class="mv1 f6 gray c-lh-copy dt-published" datetime="{{ note.date | date: "%Y-%m-%d" }}">{{ note.date | date: "%b %-d, %Y" }}</time></li>
 
 {% endfor %}

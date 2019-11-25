@@ -84,8 +84,9 @@
 
 .c-body-text blockquote {
     font-size: 0.875em;
-    padding: 1rem 0;
-    margin: 1rem 0;
+    margin: 0 0 0 2rem;
+    padding-left: 1rem;
+    border-left: 0.25rem solid #EEE;
 }
 
 .c-body-text figure,

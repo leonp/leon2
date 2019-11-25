@@ -4,10 +4,12 @@ title: Posts
 in_nav: true
 order: 3
 category: all
-annualised: true
 visited-links: true
 prose-headings: true
 hyphens: true
+pagination:
+  enabled: true
+
 ---
 
 {% include list.html %}

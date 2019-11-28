@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: archive
 title: Notes
 order: 5
 in_nav: true
@@ -10,47 +10,3 @@ pagination:
   enabled: true
   collection: notes
 ---
-
-<ul class="list mb0 mh0 mt4 pa0">
-
-{% assign notes = paginator.posts %}
-
-{% for note in notes %}
-
-    <li class="pb3"><a class="db c-lh-title" href="{{ note.url }}">{{ note.title }}</a><time class="mv1 f6 gray c-lh-copy dt-published" datetime="{{ note.date | date: "%Y-%m-%d" }}">{{ note.date | date: "%b %-d, %Y" }}</time></li>
-
-{% endfor %}
-
-</ul>
-
-{% if paginator.total_pages > 1 %}
-
-    <footer class="pt3">
-
-        <div class="cf mb3">
-
-            {% if paginator.next_page %}
-
-                <div class="w-50 pl3 fr tr">
-
-                  <a class="f6" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older notes &rarr;</a>
-
-                </div>
-
-            {% endif %}
-
-          {% if paginator.previous_page %}
-
-              <div class="fl w-50 pr3">
-
-                <a class="f6" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer notes</a>
-
-              </div>
-
-          {% endif %}
-
-        </div>
-
-    </footer>
-
-{% endif %}

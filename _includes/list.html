@@ -10,60 +10,42 @@
 
     {% endif %}
 
-    {% unless page.category == "all" %}
-
-        {% for cat in site.data.cats %}
-
-            {% if cat.slug == page.category %}
-
-                {% assign message = cat.description %}
-
-            {% endif %}
-
-        {% endfor %}
-
-    {% endunless %}
-
 {% endif %}
 
 {% if page.annualised %}
 
-<div class="c-prose-headings">
+    {% for post in posts limit:include.post-limit | default:500 %}
 
-{% for post in posts limit:include.post-limit | default:500 %}
+        {% assign currentdate = post.date | date: "%Y" %}
 
-    {% assign currentdate = post.date | date: "%Y" %}
+        {% if currentdate != date %}
 
-    {% if currentdate != date %}
+            {% unless forloop.first %}</ul>{% endunless %}
 
-        {% unless forloop.first %}</ul>{% endunless %}
+            <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
 
-        <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
+            <ul class="list mb0 mh0 mt4 pa0">
 
-        <ul class="list mb0 mh0 mt4 pa0">
-
-        {% assign date = currentdate %}
+            {% assign date = currentdate %}
 
         {% endif %}
 
-            <li class="pb3"><a class="db c-lh-title" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
+                <li class="pb3"><a class="db c-lh-title" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
         {% if forloop.last %}</ul>{% endif %}
 
-{% endfor %}
-
-</div>
+    {% endfor %}
 
 {% else %}
 
-<ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
+    <ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
 
-{% for post in posts limit:include.post-limit | default:500 %}
+    {% for post in posts limit:include.post-limit | default:500 %}
 
-    <li class="pb3"><a class="db c-lh-title no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
+        <li class="pb3"><a class="db c-lh-title no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
-{% endfor %}
+    {% endfor %}
 
-</ul>
+    </ul>
 
 {% endif %}

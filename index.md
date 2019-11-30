@@ -10,8 +10,38 @@ prose-headings: true
 hyphens: true
 ---
 
-<p class="c-linky-visited c-linky-underline">I’m head of digital and marketing at <a href="https://www.suffolklibraries.co.uk">Suffolk Libraries</a>, an independent, not-for-profit that runs Suffolk’s library service. I also conceived and developed <a href="https://dootrix.com/verso/">Verso</a>, a lightweight, modern self-service system for libraries.</p>
+## Posts
 
-## Work
+<ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
 
-{% include list.html %}
+{% for post in site.posts limit:3 %}
+
+    <li class="pb3"><a class="b db c-lh-title no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
+
+{% endfor %}
+
+</ul>
+
+## Links
+
+<ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
+
+{% for link in site.links limit:3 %}
+
+    <li class="pb3"><a class="b db c-lh-title no-underline" href="{{ link.url }}">{{ link.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ link.date | date: "%b %d, %Y" }}</time></li>
+
+{% endfor %}
+
+</ul>
+
+## Notes
+
+<ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
+
+{% for note in site.notes limit:3 %}
+
+    <li class="pb3"><a class="b db c-lh-title no-underline" href="{{ note.url }}">{{ note.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ note.date | date: "%b %d, %Y" }}</time></li>
+
+{% endfor %}
+
+</ul>

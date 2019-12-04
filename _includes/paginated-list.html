@@ -4,7 +4,7 @@
 
 {% for item in items %}
 
-    <li class="pb3"><a class="b db c-lh-title" href="{{ item.url }}">{{ item.title }}</a><time class="mv1 f6 gray c-lh-copy dt-published" datetime="{{ item.date | date: "%Y-%m-%d" }}">{{ item.date | date: "%b %-d, %Y" }}</time></li>
+    <li class="pb3"><a class="db c-lh-title" href="{{ item.url }}">{{ item.title }}</a><time class="mv1 f6 gray c-lh-copy dt-published" datetime="{{ item.date | date: "%Y-%m-%d" }}">{{ item.date | date: "%b %-d, %Y" }}</time></li>
 
 {% endfor %}
 
@@ -20,7 +20,7 @@
 
             <div class="w-50 pl3 fr tr">
 
-              <a class="f6" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older &rarr;</a>
+              <a class="f6 b" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older &rarr;</a>
 
             </div>
 
@@ -30,7 +30,7 @@
 
           <div class="fl w-50 pr3">
 
-            <a class="f6" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer</a>
+            <a class="f6 b" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer</a>
 
           </div>
 

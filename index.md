@@ -16,13 +16,13 @@ hyphens: true
 
 {% for post in site.posts limit:3 %}
 
-    <li class="pb3"><a class="b db c-lh-title no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
+    <li class="pb3"><a class="db c-lh-title no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
 
 {% endfor %}
 
 </ul>
 
-<p class="c-linky-underline c-linky-visited"><a href="/posts/">All posts &rarr;</a></p>
+<p class="b c-linky-underline c-linky-visited mt0"><a href="/posts/">All posts &rarr;</a></p>
 
 ## Links
 
@@ -32,13 +32,13 @@ hyphens: true
 
 {% for link in links limit:3 %}
 
-    <li class="pb3"><a class="b db c-lh-title no-underline" href="{{ link.url }}">{{ link.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ link.date | date: "%b %d, %Y" }}</time></li>
+    <li class="pb3"><a class="db c-lh-title no-underline" href="{{ link.url }}">{{ link.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ link.date | date: "%b %d, %Y" }}</time></li>
 
 {% endfor %}
 
 </ul>
 
-<p class="c-linky-underline c-linky-visited"><a href="/links/">All links &rarr;</a></p>
+<p class="b c-linky-underline c-linky-visited mt0"><a href="/links/">All links &rarr;</a></p>
 
 ## Notes
 
@@ -48,10 +48,10 @@ hyphens: true
 
 {% for note in notes limit:3 %}
 
-    <li class="pb3"><a class="b db c-lh-title no-underline" href="{{ note.url }}">{{ note.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ note.date | date: "%b %d, %Y" }}</time></li>
+    <li class="pb3"><a class="db c-lh-title no-underline" href="{{ note.url }}">{{ note.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ note.date | date: "%b %d, %Y" }}</time></li>
 
 {% endfor %}
 
 </ul>
 
-<p class="c-linky-underline c-linky-visited"><a href="/notes/">All notes &rarr;</a></p>
+<p class="b c-linky-underline c-linky-visited mt0"><a href="/notes/">All notes &rarr;</a></p>

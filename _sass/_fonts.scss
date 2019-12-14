@@ -1,29 +1,29 @@
 /* rubik-regular - latin */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Public Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Rubik'), local('Rubik-Regular'),
-       url('../fonts/rubik/rubik-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/rubik/rubik-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local('Public Sans'), local('PublicSans-Regular'),
+       url('../fonts/public-sans/PublicSans-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/public-sans/PublicSans-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* rubik-italic - latin */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Public Sans';
   font-style: italic;
   font-weight: 400;
-  src: local('Rubik Italic'), local('Rubik-Italic'),
-       url('../fonts/rubik/rubik-v9-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/rubik/rubik-v9-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local('Public Sans Italic'), local('PublicSans-Italic'),
+       url('../fonts/public-sans/PublicSans-Italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/public-sans/PublicSans-Italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* rubik-700 - latin */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Public Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Rubik Bold'), local('Rubik-Bold'),
-       url('../fonts/rubik/rubik-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/rubik/rubik-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local('Public Sans Bold'), local('PublicSans-Bold'),
+       url('../fonts/public-sans/PublicSans-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/public-sans/PublicSans-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

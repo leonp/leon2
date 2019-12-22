@@ -104,6 +104,7 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 0.875em;
+    font-family: $c-sans-serif;
 }
 
 
@@ -120,6 +121,7 @@
     margin-bottom: 0.75rem;
     line-height: $c-lh-title;
     color: $link;
+    font-family: $c-sans-serif;
 }
 
 .c-prose-headings h1 + *,

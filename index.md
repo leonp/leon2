@@ -12,7 +12,7 @@ hyphens: true
 
 ## Posts
 
-<ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
+<ul class="list mb0 mh0 mt4 pa0 c-linky-visited c-sans-serif">
 
 {% for post in site.posts limit:3 %}
 
@@ -22,13 +22,13 @@ hyphens: true
 
 </ul>
 
-<p class="b c-linky-underline c-linky-visited mt0"><a href="/posts/">All posts &rarr;</a></p>
+<p class="b c-linky-underline c-linky-visited mt0 c-sans-serif"><a href="/posts/">All posts &rarr;</a></p>
 
 ## Links
 
 {% assign links = site.links | sort: "date" | reverse %}
 
-<ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
+<ul class="list mb0 mh0 mt4 pa0 c-linky-visited c-sans-serif">
 
 {% for link in links limit:3 %}
 
@@ -38,13 +38,13 @@ hyphens: true
 
 </ul>
 
-<p class="b c-linky-underline c-linky-visited mt0"><a href="/links/">All links &rarr;</a></p>
+<p class="b c-linky-underline c-linky-visited mt0 c-sans-serif"><a href="/links/">All links &rarr;</a></p>
 
 ## Notes
 
 {% assign notes = site.notes | sort: "date" | reverse %}
 
-<ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
+<ul class="list mb0 mh0 mt4 pa0 c-linky-visited c-sans-serif">
 
 {% for note in notes limit:3 %}
 
@@ -54,4 +54,4 @@ hyphens: true
 
 </ul>
 
-<p class="b c-linky-underline c-linky-visited mt0"><a href="/notes/">All notes &rarr;</a></p>
+<p class="b c-linky-underline c-linky-visited mt0 c-sans-serif"><a href="/notes/">All notes &rarr;</a></p>

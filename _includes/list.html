@@ -24,7 +24,7 @@
 
             <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
 
-            <ul class="list mb0 mh0 mt4 pa0">
+            <ul class="list mb0 mh0 mt4 pa0 c-sans-serif">
 
             {% assign date = currentdate %}
 
@@ -38,7 +38,7 @@
 
 {% else %}
 
-    <ul class="list mb0 mh0 mt4 pa0 c-linky-visited">
+    <ul class="list mb0 mh0 mt4 pa0 c-linky-visited c-sans-serif">
 
     {% for post in posts limit:include.post-limit | default:500 %}
 

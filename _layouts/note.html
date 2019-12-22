@@ -2,19 +2,15 @@
 
 <article class="h-entry">
 
-    <header class="mb4 c-wrapper c-linky-visited c-sans-serif">
+    <h1 class="f2 normal mb4 c-lh-title p-name">{{ page.title }}</h1>
 
-        <h1 class="f3 c-lh-title c-lh-title c-link p-name">{{ page.title }}</h1>
-
-        <p class="mid-gray c-linky-underline c-linky-visited f6"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / <a href="/notes/">Notes</a></p>
-
-        <p class="mb0 mt1 f6">{% if page.category %}Filed under <a href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}<!--{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>{% endunless %}--></p>
-
-    </header>
+    <!--{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>{% endunless %}</p>-->
 
     <div class="e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content c-body-text">
 
         {{ content }}
+
+        <p class="mt4 f6 i c-linky-underline c-linky-visited">— <time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time> / <a href="/notes/">Notes</a></p>
 
     </div>
 

@@ -1,22 +1,16 @@
 {% include header.html %}
 
-<article class="h-entry pb3">
+<article class="h-entry">
 
     {% unless page.hide-title %}
 
-        <div class="mb4 c-sans-serif">
-
-            <h1 class="f3 c-lh-title p-name c-link">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
-
-        </div>
+    <h1 class="f2 normal mb4 c-lh-title p-name">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
 
     {% endunless %}
 
      <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}c-body-text">
 
         {{ content}}
-
-    </div>
 
     {% if page.pagination %}
 
@@ -27,6 +21,8 @@
         {% include list.html %}
 
     {% endif %}
+
+    </div>
 
 </article>
 

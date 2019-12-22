@@ -2,21 +2,17 @@
 
 <article class="h-entry">
 
-    <header class="mb4 c-wrapper c-linky-visited c-sans-serif">
+    <h1 class="f2 normal mb4 c-lh-title p-name c-linky-visited"><a href="{{ page.link-url }}" class="db">{{ page.title }}</a></h1>
 
-        <h1 class="f3 c-lh-title c-lh-title c-link p-name"><a href="{{ page.link-url }}" class="db">{{ page.title }}</a></h1>
+    <p class="mb4 c-linky-underline c-linky-visited">Link: <a href="{{ page.link-url }}"><cite>{{ page.title }}</cite> &rarr;</a></p>
 
-        <p class="mid-gray c-linky-underline c-linky-visited f6">{% if page.link-published %}Originally published <time class="dt-published" datetime="{{ page.link-published | date: "%Y-%m-%d" }}">{{ page.link-published | date: "%b %-d, %Y" }}</time>{% endif %}{% if page.link-author %} by {{ page.link-author }}{% endif %} / <a href="/links/">Links</a></p>
-
-        <!-- <p class="mb0 mt1 c-linky-underline f6">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>{% endunless %}--></p>
-
-    </header>
+    <!-- <p class="mb0 mt1 c-linky-underline f6">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>{% endunless %}</p>-->
 
     <div class="e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content c-body-text">
 
         {{ content }}
 
-        <p class="mt4">Link: <a href="{{ page.link-url }}"><cite>{{ page.title }}</cite> &rarr;</a></p>
+        <p class="mt4 f6 i c-linky-underline c-linky-visited">— {% if page.link-published %}Originally published <time class="dt-published" datetime="{{ page.link-published | date: "%Y-%m-%d" }}">{{ page.link-published | date: "%b %-d, %Y" }}</time>{% endif %}{% if page.link-author %} by {{ page.link-author }}{% endif %} / <a href="/links/">Links</a></p>
 
     </div>
 

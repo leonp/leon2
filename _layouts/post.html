@@ -13,19 +13,15 @@
 
 <article class="h-entry">
 
-    <header class="mb4 c-sans-serif">
+    <h1 class="f2 normal mb4 c-lh-title p-name">{{ page.title }}</h1>
 
-        <h1 class="f3 c-lh-title c-link p-name">{{ page.title }}</h1>
-
-        <p class="mid-gray c-linky-underline c-linky-visited f6">{% if site.author %}<a href="/" class="p-author" rel="author">{{ site.author }}</a>, {% endif %}<time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.category %}. Filed under <a href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>.{% endif %}</p>
-
-        <!-- <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p> -->
-
-    </header>
+    <!-- <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p> -->
 
     <div class="e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content c-body-text">
 
         {{ content }}
+
+        <p class="mt4 f6 i c-linky-underline c-linky-visited">— {% if site.author %}<a href="/" class="p-author" rel="author">{{ site.author }}</a>, {% endif %}<time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.category %}. A <a href="/posts/">post</a> filed under <a href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>.{% endif %}</p>
 
     </div>
 

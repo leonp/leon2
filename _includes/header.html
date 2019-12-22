@@ -94,38 +94,20 @@
 
     </head>
 
-    <body class="min-vh-100-l ma0 pa0 bg-white dark-gray c-serif c-lh-copy">
+    <body class="ma0 pa0 bg-white dark-gray c-serif c-lh-copy">
 
         <div class="clip pv1 ph2 f7 c-linky-visited c-linky-underline bb b--light-gray c-no-print"><a href="#content">Skip to content</a></div>
 
-            <div class="flex-l flex-row-reverse-l min-vh-100-l">
+        <div class="pa2 ph4-ns pv3-ns c-sticky bg-white">
 
-                <div class="min-vh-100-l w-third-l pv2 pv3-ns pv4-l ph2 ph3-ns ph4-l bb b--light-gray bn-l c-sans-serif">
+            <div class="center c-wrapper">
 
-                    <a class="dib no-underline f3 blue mb1 mv3-l mr2 mr3-ns mr0-l b lh-title v-mid" href="/"><span role="img" aria-label="Lightning bolt">⚡️</span></a>
+                <a class="db dark-gray hover-blue i f7 no-underline" href="/">Leon Paternoster</a>
 
-                    <nav class="dib db-l v-mid b">
+            </div>
 
-                        <ul class="lh-title dib db-l list ma0 pa0 f6">
+        </div>
 
-                            {% assign pagios = site.pages | where: "in_nav", "true" | sort: "order" %}
+        <main id="content" class="pa2 ph4-ns pv4-ns pt5-l">
 
-                            {% for pagio in pagios %}
-
-                            {% unless pagio.title contains 'page' %}
-
-                            <li class="dib db-l mr2 mr3-ns mr0-l"><a href="{{ pagio.url }}" class="dno-underline dark-gray hover-blue dib db-l pv1-l{% if page.title == pagio.title %} {% endif %}">{{ pagio.title }}</a></li>
-
-                            {% endunless %}
-
-                            {% endfor %}
-
-                        </ul>
-
-                    </nav>
-
-                </div>
-
-                <main id="content" class="min-vh-100-l w-80-l t-two-thirds-l pv2 pv3-ns pv4-l ph2 ph3-ns ph4-l br-l b--light-gray">
-
-                    <div class="measure center-l">
+            <div class="c-wrapper center">

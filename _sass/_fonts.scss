@@ -1,29 +1,29 @@
 /* rubik-regular - latin */
 @font-face {
-  font-family: 'Literata';
+  font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 400;
-  src: local('Literata'), local('literata-v14-latin-regular'),
-       url('../fonts/literata/literata-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/literata/literata-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local('Libre Baskerville'), local('libre-baskerville-regular'),
+       url('../fonts/libre-baskerville/libre-baskerville-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/libre-baskerville/libre-baskerville-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* rubik-italic - latin */
 @font-face {
-  font-family: 'Literata';
+  font-family: 'Libre Baskerville';
   font-style: italic;
   font-weight: 400;
-  src: local('Literata Italic'), local('literata-v14-latin-italic'),
-       url('../fonts/literata/literata-v14-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/literata/literata-v14-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local('Libre Baskerville Italic'), local('libre-baskerville-italic'),
+       url('../fonts/libre-baskerville/libre-baskerville-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/libre-baskerville/libre-baskerville-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* rubik-700 - latin */
 @font-face {
-  font-family: 'Literata';
+  font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 700;
-  src: local('Literata Bold'), local('literata-v14-latin-700'),
-       url('../fonts/literata/literata-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/literata/literata-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local('Libre Baskerville Bold'), local('libre-baskerville-bold'),
+       url('../fonts/libre-baskerville/libre-baskerville-bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/libre-baskerville/libre-baskerville-bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

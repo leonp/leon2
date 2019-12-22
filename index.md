@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Leon Paternoster
 display-title: 'Leon Paternoster'
 is_home: true
 in_nav: true
@@ -8,50 +8,15 @@ order: 1
 category: work
 prose-headings: true
 hyphens: true
+hide-title: true
+visited-links: true
 ---
 
-## Posts
+<ul class="ma0 pa0 list">
 
-<ul class="list mb0 mh0 mt4 pa0 c-linky-visited c-sans-serif">
-
-{% for post in site.posts limit:3 %}
-
-    <li class="pb3"><a class="db c-lh-title no-underline" href="{{ post.url }}">{{ post.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time></li>
-
-{% endfor %}
+    <li><a class="pv2 db" href="/about/">About</a></li>
+    <li><a class="pv2 db" href="/posts/">Posts</a></li>
+    <li><a class="pv2 db" href="/links/">Links</a></li>
+    <li><a class="pv2 db" href="/notes/">Notes</a></li>
 
 </ul>
-
-<p class="b c-linky-underline c-linky-visited mt0 c-sans-serif"><a href="/posts/">All posts &rarr;</a></p>
-
-## Links
-
-{% assign links = site.links | sort: "date" | reverse %}
-
-<ul class="list mb0 mh0 mt4 pa0 c-linky-visited c-sans-serif">
-
-{% for link in links limit:3 %}
-
-    <li class="pb3"><a class="db c-lh-title no-underline" href="{{ link.url }}">{{ link.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ link.date | date: "%b %d, %Y" }}</time></li>
-
-{% endfor %}
-
-</ul>
-
-<p class="b c-linky-underline c-linky-visited mt0 c-sans-serif"><a href="/links/">All links &rarr;</a></p>
-
-## Notes
-
-{% assign notes = site.notes | sort: "date" | reverse %}
-
-<ul class="list mb0 mh0 mt4 pa0 c-linky-visited c-sans-serif">
-
-{% for note in notes limit:3 %}
-
-    <li class="pb3"><a class="db c-lh-title no-underline" href="{{ note.url }}">{{ note.title }}</a> <time class="mv1 f6 silver c-lh-copy">{{ note.date | date: "%b %d, %Y" }}</time></li>
-
-{% endfor %}
-
-</ul>
-
-<p class="b c-linky-underline c-linky-visited mt0 c-sans-serif"><a href="/notes/">All notes &rarr;</a></p>

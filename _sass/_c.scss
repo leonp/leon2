@@ -68,6 +68,12 @@
     transform: rotate(20deg);
 }
 
+.c-sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
 
 // Body text
 
@@ -84,9 +90,7 @@
 
 .c-body-text blockquote {
     font-size: 0.875em;
-    margin: 0 0 0 2rem;
-    padding-left: 1rem;
-    border-left: 0.25rem solid #EEE;
+    margin: 2rem 0 2rem 2rem;
 }
 
 .c-body-text figure,
@@ -104,7 +108,6 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 0.875em;
-    font-family: $c-sans-serif;
 }
 
 
@@ -121,7 +124,9 @@
     margin-bottom: 0.75rem;
     line-height: $c-lh-title;
     color: $link;
-    font-family: $c-sans-serif;
+    font-family: $c-serif;
+    font-weight: normal;
+    font-style: italic;
 }
 
 .c-prose-headings h1 + *,
@@ -314,7 +319,7 @@ blockquote {
 * {
   background-color: white !important;
   color: black !important;
-  font-family: $c-sans-serif;
+  font-family: $c-serif;
   line-height: 1.375;
 }
 

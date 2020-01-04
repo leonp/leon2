@@ -74,6 +74,18 @@
     left: 0;
 }
 
+li.c-li-dash::before,
+.c-li-dash li::before {
+    content: '— ';
+}
+
+@media #{$breakpoint-not-small} {
+    li.c-li-dash::before,
+    .c-li-dash li::before {
+        margin-left: -1.5rem;
+    }
+}
+
 
 // Body text
 

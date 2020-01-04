@@ -16,8 +16,8 @@ underlined-links: true
 
 <ul class="list pl0 c-li-dash">
 
-    <li class="mb3">I conceived and led the development of <a href="https://dootrix.com/verso">our own self-service system</a>, a portable, flexible, device-agnostic progressive web app.</li>
-    <li class="mb3">I moved our website from a WordPress install to a Jekyll-based, static site run on Netlify’s hosting. We were the first local government service to do this in the country, resulting in fast, secure and affordable hosting.</li>
+    <li class="mb3">I conceived and led the development of <a href="https://dootrix.com/verso">our own self-service system</a>, a portable, flexible, device-agnostic <a href="https://developers.google.com/web/progressive-web-apps/">progressive web app</a>.</li>
+    <li class="mb3">I moved <a href="https://www.suffolklibraries.co.uk">our website</a> from a WordPress install to a <a href="https://jekyllrb.com">Jekyll</a>-based, static site run on <a href="https://www.netlify.com">Netlify</a>’s hosting. We were the first local government service to do this in the country, resulting in <a href="https://tools.pingdom.com/#5bdcac622ac00000">fast</a>, secure and affordable hosting.</li>
 
 </ul>
 

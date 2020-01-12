@@ -2,25 +2,21 @@
 
         </main>
 
-        <nav id="nav" class="pb3 pt4 ph3 ph4-ns">
+        <script>
+            var searchToggleElement = document.querySelector(".has-toggle-button");
+            searchToggleElement.addEventListener('click', function() {
+            let expanded = this.getAttribute('aria-expanded') === 'true' || false;
+            this.setAttribute('aria-expanded', !expanded);
+            let thingToToggle = document.querySelector(".toggle-this");
+            thingToToggle.hidden = !thingToToggle.hidden;
+            });
+        </script>
 
-            <div class="c-wrapper center">
 
-                <ul class="f7 list ma0 pa0">
-
-                    {% assign nav_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
-
-                    {% for current_page in nav_pages %}
-
-                    <li class="dib mr2"><a href="{{ current_page.url }}" class="pv1 black no-underline">{{ current_page.title }}</a></li>
-
-                    {% endfor %}
-
-                </ul>
-
-            </div>
-
-        </nav>
+        <script>
+            $(document).ready(function() {
+            });
+        </script>
 
         <script>
             if (window.netlifyIdentity) {

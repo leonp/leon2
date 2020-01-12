@@ -136,9 +136,8 @@ li.c-li-dash::before,
     margin-bottom: 0.75rem;
     line-height: $c-lh-title;
     color: $link;
-    font-family: $c-serif;
-    font-weight: normal;
-    font-style: italic;
+    font-family: $c-sans-serif;
+    text-align: center;
 }
 
 .c-prose-headings h1 + *,

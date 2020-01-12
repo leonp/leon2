@@ -98,15 +98,48 @@
 
         <div class="clip pv1 ph2 f7 c-linky-visited c-linky-underline bb b--light-gray c-no-print">Skip to: <a href="#content">content</a>, <a href="#nav">navigation</a></div>
 
-        <div class="ph3 ph4-ns">
+        <header class="ph3 ph4-ns pv2 pv3-ns c-sans-serif">
 
-            <div class="center c-wrapper">
+            <div class="cf">
 
-                <a class="db dark-gray hover-blue f7 no-underline pv3 i" href="/" title="Go to home page">Leon Paternoster</a>
+                <button class="f6 normal ttl tracked small-caps db fl w-10 has-toggle-button pa0 bn bg-washed-yellow pointer tl" type="button" aria-expanded="false" aria-label="Open/close table of contents">
+
+                    <svg version="1.1" width="24" height="24" stroke="#333" fill="#333" viewBox="0 0 36 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                        <rect x="2" y="8" width="2" height="2"></rect>
+                        <path d="M7,10H31a1,1,0,0,0,0-2H7a1,1,0,0,0,0,2Z"></path>
+                        <rect x="2" y="14" width="2" height="2"></rect>
+                        <path d="M31,14H7a1,1,0,0,0,0,2H31a1,1,0,0,0,0-2Z"></path>
+                        <rect x="2" y="20" width="2" height="2"></rect>
+                        <path d="M31,20H7a1,1,0,0,0,0,2H31a1,1,0,0,0,0-2Z"></path>
+                        <rect x="2" y="26" width="2" height="2"></rect>
+                        <path d="M31,26H7a1,1,0,0,0,0,2H31a1,1,0,0,0,0-2Z"></path>
+
+                    </svg>
+
+                </button>
+
+                <div class="lh-title fr tr f6 ma0 w-90"><a href="/" class="dark-gray no-underline">{{ site.title }}</a></div>
 
             </div>
 
-        </div>
+            <nav class="toggle-this pt3" hidden>
+
+                <ul class="ma0 mb4 pa0 f6 f7-ns list bb b--light-gray">
+
+                    {% assign site_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
+
+                    {% for this_page in site_pages %}
+
+                    <li><a href="{{ this_page.url }}" class="dark-gray hover-blue no-underline db pv2 bt b--light-gray">{{ this_page.title }}</a></li>
+
+                    {% endfor %}
+
+                </ul>
+
+            </nav>
+
+        </header>
 
         <main id="content" class="pa3 ph4-ns pv4-ns pt5-l">
 

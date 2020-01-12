@@ -21,7 +21,7 @@
 
         {{ content }}
 
-        <p class="mt4 f6 c-sans-serif c-linky-underline c-linky-visited">— {% if site.author %}<a href="/" class="p-author" rel="author">{{ site.author }}</a>, {% endif %}<time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.category %}. A <a href="/posts/">post</a> filed under <a href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>.{% endif %}</p>
+        <p class="mt4 f6 tc c-sans-serif c-linky-underline c-linky-visited">{% if site.author %}<a href="/" class="p-author" rel="author">{{ site.author }}</a>, {% endif %}<time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d %Y" }}</time>{% if page.category %}, a <a href="/posts/">post</a> filed under <a href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>{% endif %}</p>
 
     </div>
 

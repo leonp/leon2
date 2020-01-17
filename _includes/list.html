@@ -33,7 +33,7 @@
 
         {% endif %}
 
-            <li><a class="db pv1" href="{{ post.url }}">{{ post.title }}</a><!-- <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time> --></li>
+            <li><a class="db pv2 bt b--moon-gray" href="{{ post.url }}">{{ post.title }}</a><!-- <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time> --></li>
 
         {% if forloop.last %}
 
@@ -61,7 +61,7 @@
 
     {% for post in posts limit:include.post-limit | default:500 %}
 
-        <li><a class="db pv1" href="{{ post.url }}">{{ post.title }}</a><!-- <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time>--></li>
+        <li><a class="db pv2 bt b--moon-gray" href="{{ post.url }}">{{ post.title }}</a><!-- <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time>--></li>
 
     {% endfor %}
 

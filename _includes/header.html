@@ -94,11 +94,11 @@
 
     </head>
 
-    <body class="ma0 pa0 bg-washed-yellow dark-gray c-serif c-lh-copy">
+    <body class="ma0 pa0 bg-white dark-gray c-serif c-lh-copy">
 
         <div class="clip pv1 ph2 f7 c-linky-visited c-linky-underline bb b--light-gray c-no-print">Skip to: <a href="#content">content</a>, <a href="#nav">navigation</a></div>
 
-        <header class="bg-washed-yellow ph3 ph4-ns bg-white c-sans-serif c-sticky z-1">
+        <header class="bg-white ph3 ph4-ns bg-white c-sans-serif c-sticky z-1">
 
             <div class="flex items-center">
 
@@ -106,7 +106,7 @@
 
                 <div class="w-25 tr">
 
-                    <button class="c-sans-serif f4 has-toggle-button ph2 pv1 bn bg-washed-yellow black br2 pointer tl" type="button" aria-expanded="false" aria-label="Open/close navigation menu" title="Open/close navigation menu">
+                    <button class="c-sans-serif f4 has-toggle-button ph2 pv1 bn bg-white black br2 pointer tl" type="button" aria-expanded="false" aria-label="Open/close navigation menu" title="Open/close navigation menu">
 
                         <svg class="v-mid" version="1.1" stroke="#000" fill="#000" height="1em" width="1em" viewBox="0 0 36 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -147,4 +147,8 @@
 
         <main id="content" class="pa3 ph4-ns pv4-ns pt5-l">
 
+            {% unless page.wide %}
+
             <div class="c-wrapper center">
+
+            {% endunless %}

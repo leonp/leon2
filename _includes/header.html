@@ -129,7 +129,7 @@
 
             <nav class="toggle-this pt3" hidden>
 
-                <ul class="b ma0 mb4 pa0 f6 f5-ns list bb b--light-gray">
+                <ul class="b ma0 mb2 pa0 f6 f5-ns list bb b--light-gray">
 
                     {% assign site_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
 
@@ -140,6 +140,23 @@
                     {% endfor %}
 
                 </ul>
+
+                <form class="mb4" method="get" id="ddgSearch" action="https://duckduckgo.com/">
+
+                    <input hidden type="hidden" name="sites" value="https://leonpaternoster.com">
+                    <input hidden type="hidden" name="k7" value="#FFFFFF"/>
+                    <input hidden type="hidden" name="k8" value="#222222"/>
+                    <input hidden type="hidden" name="k9" value="#00278E"/>
+                    <input hidden type="hidden" name="kx" value="#20692B"/>
+                    <input hidden type="hidden" name="kj" value="#FAFAFA"/>
+                    <input hidden type="hidden" name="kt" value="p">
+
+                    <label for="searchterm" class="db f7 f6-ns custom-lh-title">Search site with duckduckgo:</label>
+                    <input id="searchterm" class="ph1 pv2 f4-ns border-box w-100 db ba b--moon-gray mb1 custom-sans-serif" type="search" name="q">
+
+                    <button class="c-webkit-app-none custom-sans-serif pointer pa2 bg-light-gray hover-bg-near-white dark-gray ba b--moon-gray br2" type="submit">Search</button>
+
+                </form>
 
             </nav>
 

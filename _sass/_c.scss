@@ -74,6 +74,10 @@
     left: 0;
 }
 
+.c-webkit-app-none {
+    -webkit-appearance: none;
+}
+
 li.c-li-dash::before,
 .c-li-dash li::before {
     content: '— ';

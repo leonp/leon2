@@ -1,6 +1,6 @@
 ---
 layout: note
-title: Web development and marketing
+title: Front end development is marketing
 date: 2020-01-18T07:37:20.263Z
 ---
 > ... web performance will suffer if you don't say no to the marketing department because you'll suddenly find yourself with eighteen different analytics scripts on your website. <cite><a href="https://css-tricks.com/no-absolutely-not/">No, Absolutely Not</a></cite>

@@ -102,11 +102,11 @@
 
             <div class="flex items-center f4">
 
-                <div class="w-75"><a title="Go to home page" href="/" class="ttl small-caps b dib pv1 black no-underline"><span class="v-mid" role="img" aria-label="Up arrow">⇧</span></a></div>
+                <div class="w-75"><a title="Go to home page" href="/" class="no-underline dib pv2"><img class="dib v-mid ma0 pa0 br-100 mw1 mw2-ns ba b--blue bw2" src="/images/leon-cupboard.jpg"></a></div>
 
                 <div class="w-25 tr">
 
-                    <button class="c-sans-serif has-toggle-button pv1 bn bg-white black pointer tl" type="button" aria-expanded="false" aria-label="Open/close navigation menu" title="Open/close navigation menu">
+                    <button class="c-sans-serif has-toggle-button pv2 bn bg-white black pointer tl" type="button" aria-expanded="false" aria-label="Open/close navigation menu" title="Open/close navigation menu">
 
                         <svg class="v-mid" version="1.1" stroke="#000" fill="#000" height="1em" width="1em" viewBox="0 0 36 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -129,7 +129,7 @@
 
             <nav class="toggle-this pt3" hidden>
 
-                <ul class="b ma0 mb2 pa0 f6 f5-ns list bb b--light-gray">
+                <ul class="b ma0 mb2 pa0 f7 f5-ns list bb b--light-gray">
 
                     {% assign site_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
 
@@ -141,7 +141,7 @@
 
                 </ul>
 
-                <form class="mb4" method="get" id="ddgSearch" action="https://duckduckgo.com/">
+                <form class="mb4 border-box" method="get" id="ddgSearch" action="https://duckduckgo.com/">
 
                     <input hidden type="hidden" name="sites" value="https://leonpaternoster.com">
                     <input hidden type="hidden" name="k7" value="#FFFFFF"/>
@@ -151,10 +151,23 @@
                     <input hidden type="hidden" name="kj" value="#FAFAFA"/>
                     <input hidden type="hidden" name="kt" value="p">
 
-                    <label for="searchterm" class="db f7 f6-ns custom-lh-title">Search site with duckduckgo:</label>
-                    <input id="searchterm" class="ph1 pv2 f4-ns border-box w-100 db ba b--moon-gray mb1 custom-sans-serif" type="search" name="q">
+                    <label for="searchterm" class="db c-lh-title mb1 f7 f6-ns">Search site with duckduckgo</label>
 
-                    <button class="c-webkit-app-none custom-sans-serif pointer pa2 bg-light-gray hover-bg-near-white dark-gray ba b--moon-gray br2" type="submit">Search</button>
+                    <div class="flex">
+
+                        <div class="w-75 pr1">
+
+                            <input id="searchterm" class="pa1 pv2-ns f6 f4-ns border-box w-100 db ba b--moon-gray mb1 custom-sans-serif" type="search" name="q">
+
+                        </div>
+
+                        <div class="w-25 pl1">
+
+                            <button class="c-webkit-app-none custom-sans-serif pointer pa1 pv2-ns f6 f4-ns bg-light-gray hover-bg-near-white dark-gray ba b--moon-gray br2" type="submit">Search</button>
+
+                        </div>
+
+                    </div>
 
                 </form>
 

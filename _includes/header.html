@@ -102,13 +102,13 @@
 
             <div class="flex items-center">
 
-                <div class="f7 w-50"><a href="/" class="b dib pv2 dark-gray no-underline">{{ site.title }}</a></div>
+                <div class="f6 w-75"><a href="/" class="ttl small-caps b dib pv2 black no-underline"><span class="v-mid" role="img" aria-label="Right pointing finger">☞</span> LP</a></div>
 
-                <div class="w-50 tr">
+                <div class="w-25 tr">
 
-                    <button class="c-sans-serif f7 has-toggle-button ph2 pv1 ba b--moon-gray bg-blue hover-bg-dark-blue white br2 pointer tl" type="button" aria-expanded="false" aria-label="Open/close navigation menu">
+                    <button class="c-sans-serif f6 has-toggle-button ph2 pv1 bn bg-white black br2 pointer tl" type="button" aria-expanded="false" aria-label="Open/close navigation menu">
 
-                        <svg class="v-mid" version="1.1" stroke="#FFF" fill="#FFF" height="1.3em" width="1.3em" viewBox="0 0 36 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="v-mid" version="1.1" stroke="#000" fill="#000" height="1.5em" width="1.5em" viewBox="0 0 36 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
                             <rect x="2" y="8" width="2" height="2"></rect>
                             <path d="M7,10H31a1,1,0,0,0,0-2H7a1,1,0,0,0,0,2Z"></path>
@@ -121,8 +121,6 @@
 
                         </svg>
 
-                        <span class="v-mid">Menu</span>
-
                     </button>
 
                 </div>
@@ -131,13 +129,13 @@
 
             <nav class="toggle-this pt3" hidden>
 
-                <ul class="ma0 mb4 pa0 f6 f7-ns list bb b--light-gray">
+                <ul class="b ma0 mb4 pa0 f6 f7-ns list bb b--light-gray">
 
                     {% assign site_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
 
                     {% for this_page in site_pages %}
 
-                    <li><a href="{{ this_page.url }}" class="dark-gray hover-blue no-underline db pv2 bt b--light-gray">{{ this_page.title }}</a></li>
+                    <li><a href="{{ this_page.url }}" class="dark-gray hover-blue no-underline db pv2 bt b--light-gray">{% if this_page.nav-title %}{{ this_page.nav-title %}}{% else %}{{ this_page.title }}{% endif %}</a></li>
 
                     {% endfor %}
 

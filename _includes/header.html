@@ -179,8 +179,4 @@
 
         <main id="content" class="pa3 ph4-ns pv4-ns pt5-l">
 
-            {% unless page.wide %}
-
-            <div class="c-wrapper center">
-
-            {% endunless %}
+            <div class="{% if page.wide %}c-wrapper-wide{% else %}c-wrapper{% endif %} center">

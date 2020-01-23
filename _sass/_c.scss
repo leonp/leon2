@@ -46,6 +46,10 @@
     max-width: $c-wrapper;
 }
 
+.c-wrapper-wide {
+    max-width: $c-wrapper-wide;
+}
+
 .c-icon {
 	color: transparent;
 	text-shadow: 0 0 $highlight;

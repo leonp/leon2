@@ -1,8 +1,8 @@
 ---
 title: "Lessons learned from developing library self-service software: User testing isn’t as good as user using"
-
 category: web
 article: true
+featured: true
 ---
 
 Between December 2016 and May this year we developed a [library self-service progressive web app](/2016/12/managing-self-service-project/). At the time of writing, it's been deployed in 35 of 44 of our libraries, so it's a good time to start thinking about what went right and wrong, and what I could have done better.

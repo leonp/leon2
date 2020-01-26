@@ -1,9 +1,9 @@
 ---
-
 title: 'Design habits: Being a CSS API user rather than an API author'
 category: web
 description: Good design habits and CSS APIs allow us to work more efficiently, predictably and faster. Choosing the right API and establishing good design habits is the key to working well. Become an API user rather than an API author.
 published: true
+featured: true
 ---
 
 I first built a proper website in 2007-ish, a three page effort for a poet and author who'd just finished his first novel. I got drunk on the heady power of being able to mould text and pictures into something anyone could find by simply typing a proper web address into a browser. It had a sidebar and was set in 16 pixel Georgia, which looked huge on an 800x600 monitor. Ahead of the curve, as ever &#8211; in 2006, most websites used 11px Arial.

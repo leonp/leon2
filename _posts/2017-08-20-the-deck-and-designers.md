@@ -1,5 +1,4 @@
 ---
-
 title: The end of The Deck
 category: web
 ---

@@ -3,7 +3,7 @@ layout: post
 title: Building a web that lasts
 date: 2019-12-28T15:35:58.562Z
 category: web
-featured: false
+featured: true
 ---
 <q>How do we make web content that can last and be maintained for at least 10 years?</q> asks Jeff Huang.
 

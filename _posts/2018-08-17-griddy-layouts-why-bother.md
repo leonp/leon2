@@ -3,6 +3,7 @@ title: "If users aren’t bothered about griddy layouts, why are we?"
 category: web
 layout: post
 article: true
+featured: true
 ---
 
 Hidde de Vries posted some excellent thoughts on [not bothering with complex CSS fallbacks for older browsers](https://hiddedevries.nl/en/blog/2018-08-11-lets-serve-everyone-good-looking-content) (in this case when using CSS grid):

@@ -3,7 +3,6 @@ title: Basic income, realism and wasteful pessimism
 category: politics
 description: "Turns out UBI, although not without noble intentions, is a weak, pessimistic response to a depressing world of austerity and insecurity. We should think more critically and tackle longstanding, structural problems."
 excerpt: "Turns out UBI, although not without noble intentions, is a weak, pessimistic response to a depressing world of austerity and insecurity. We should think more critically and tackle longstanding, structural problems."
-featured: true
 ---
 
 Just over four years ago -- and we should pause to reflect on _how the time passes_ -- I wrote a few (very enthusiastic) posts on a political idea that was gaining traction on the left and in web/tech circles; namely, [Univeral Basic Income](/2013/09/basic-income-examples/) (UBI).

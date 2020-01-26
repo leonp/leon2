@@ -3,6 +3,7 @@ title: 'Getting round GDPR with dark patterns. A case study: Techradar'
 layout: post
 category: web
 article: true
+featured: true
 ---
 
 Many news and big blog sites have introduced onerous and confusing popovers since the introduction of [GDPR](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/) in May. Unfortunately, this will no doubt result in GDPR [banner blindness](https://www.nngroup.com/articles/banner-blindness-old-and-new-findings/), where users will simply click 'Accept', thereby allowing websites to install tracking javascript, just as they did before 25 May 2018.

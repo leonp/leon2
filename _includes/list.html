@@ -1,4 +1,8 @@
-{% if page.category %}
+{% if page.filter %}
+
+    {% assign posts = site.posts | where: page.filter, "true" %}
+
+{% else %}
 
     {% if page.category == "all" %}
 

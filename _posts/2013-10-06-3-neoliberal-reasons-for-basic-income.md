@@ -1,8 +1,6 @@
 ---
-
 title: 3 right wing reasons for a Basic Citizens' Income
 category: politics
-featured: true
 excerpt: "You may think the right would dislike the idea of giving people money for nothing. But there are some solid reasons for them welcoming a UBI."
 ---
 

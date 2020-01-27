@@ -88,7 +88,7 @@
         <link href="/css/style.css" rel="stylesheet">
         {% endif %}
 
-        <!-- {% include preload.html %} ~ Hullo. I would make this a Liquid include if I wanted to preload some fonts 🦉 -->
+        {% include preload.html %} <!-- ~ Hullo. I would make this a Liquid include if I wanted to preload some fonts 🦉 -->
 
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
@@ -98,82 +98,29 @@
 
         <div class="clip pv1 ph2 f7 c-linky-visited c-linky-underline bb b--light-gray c-no-print">Skip to: <a href="#content">content</a>, <a href="#nav">navigation</a></div>
 
-        <header class="bg-white ph3 ph4-ns pv1 bg-white c-sans-serif c-sticky z-1">
+        <header class="ph3 ph4-ns bg-white c-sticky z-1 c-sans-serif">
 
-            <div class="flex items-center">
+            <div class="flex">
 
-                <div class="w-75"><a title="Go to home page" href="/" class="f6 no-underline dib pv1 black v-mid b">Leon Paternoster</a></div>
+                <div class="pr2 w-20"><a title="Go to home page" href="/" class="f6 no-underline dib pv1 ph2 bg-blue hover-bg-dark-blue white b">L</a></div>
 
-                <div class="w-25 tr">
+                <nav class="pl2 w-80 tr" id="nav">
 
-                    <button class="c-sans-serif has-toggle-button f6 ph0 pv1 bn bg-white black pointer tl dib v-mid" aria-expanded="false" title="Open/close navigation menu">
+                    <ul class="ma0 pa0 f6 list">
 
-                        <span class="clip">Navigation menu</span>
+                        {% assign site_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
 
-                        <svg class="v-mid" aria-hidden="true" version="1.1" stroke="#000" fill="#000" height="1.5em" width="1.5em" viewBox="0 0 36 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        {% for this_page in site_pages %}
 
-                            <rect x="2" y="8" width="2" height="2"></rect>
-                            <path d="M7,10H31a1,1,0,0,0,0-2H7a1,1,0,0,0,0,2Z"></path>
-                            <rect x="2" y="14" width="2" height="2"></rect>
-                            <path d="M31,14H7a1,1,0,0,0,0,2H31a1,1,0,0,0,0-2Z"></path>
-                            <rect x="2" y="20" width="2" height="2"></rect>
-                            <path d="M31,20H7a1,1,0,0,0,0,2H31a1,1,0,0,0,0-2Z"></path>
-                            <rect x="2" y="26" width="2" height="2"></rect>
-                            <path d="M31,26H7a1,1,0,0,0,0,2H31a1,1,0,0,0,0-2Z"></path>
+                        <li class="dib"><a href="{{ this_page.url }}" class="dark-gray hover-blue no-underline db pv1 ml2 ml3-l">{% if this_page.nav-title %}{{ this_page.nav-title %}}{% else %}{{ this_page.title }}{% endif %}</a></li>
 
-                        </svg>
+                        {% endfor %}
 
-                    </button>
+                    </ul>
 
-                </div>
+                </nav>
 
             </div>
-
-            <nav class="toggle-this pt3" hidden>
-
-                <ul class="b ma0 mb2 pa0 f7 f5-ns list bb b--light-gray">
-
-                    {% assign site_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
-
-                    {% for this_page in site_pages %}
-
-                    <li><a href="{{ this_page.url }}" class="dark-gray hover-blue no-underline db pv2 bt b--light-gray">{% if this_page.nav-title %}{{ this_page.nav-title %}}{% else %}{{ this_page.title }}{% endif %}</a></li>
-
-                    {% endfor %}
-
-                </ul>
-
-                <form class="mb4 border-box" method="get" id="ddgSearch" action="https://duckduckgo.com/">
-
-                    <input hidden type="hidden" name="sites" value="https://leonpaternoster.com">
-                    <input hidden type="hidden" name="k7" value="#FFFFFF"/>
-                    <input hidden type="hidden" name="k8" value="#222222"/>
-                    <input hidden type="hidden" name="k9" value="#00278E"/>
-                    <input hidden type="hidden" name="kx" value="#20692B"/>
-                    <input hidden type="hidden" name="kj" value="#FAFAFA"/>
-                    <input hidden type="hidden" name="kt" value="p">
-
-                    <label for="searchterm" class="db c-lh-title mb1 f7 f6-ns">Search site with duckduckgo</label>
-
-                    <div class="flex">
-
-                        <div class="w-75">
-
-                            <input id="searchterm" class="pa1 pv2-ns f6 f4-ns border-box w-100 db ba b--moon-gray mb1 c-sans-serif" type="search" name="q" autocorrect="off" autocapitalize="none">
-
-                        </div>
-
-                        <div class="w-25">
-
-                            <button class="c-webkit-app-none c-sans-serif pointer pa1 pv2-ns f6 f4-ns bg-light-gray hover-bg-near-white dark-gray ba b--moon-gray br2" type="submit">Search</button>
-
-                        </div>
-
-                    </div>
-
-                </form>
-
-            </nav>
 
         </header>
 

@@ -61,11 +61,17 @@
 
 {% else %}
 
-    <ul class="list mb0 mt4 pa0 bb b--light-gray c-sans-serif">
+    <ul class="mb0 mt4">
 
     {% for post in posts limit:include.post-limit | default:500 %}
 
-        <li><a class="db pv2 bt b--light-gray" href="{{ post.url }}">{{ post.title }}</a><!-- <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time>--></li>
+        <li class="mb1">
+
+            <a class="db" href="{{ post.url }}">{{ post.title }}</a>
+
+            <time class="db f6 gray">{{ post.date | date: "%d-%m-%y" }}</time>
+
+        </li>
 
     {% endfor %}
 

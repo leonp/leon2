@@ -15,9 +15,9 @@
 
     <header class="mb4 tc c-sans-serif">
 
-        <p class="mt0 mb2 c-linky-underline c-linky-visited f6"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d %Y" }}</time></p>
+        <h1 class="f3 f2-ns tc c-lh-title p-name">{{ page.title }}</h1>
 
-        <h1 class="f3 f2-ns mt0 tc c-lh-title p-name">{{ page.title }}</h1>
+        <p class="mt0 c-linky-underline c-linky-visited f6"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d %Y" }}</time></p>
 
         <!-- <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p> -->
 

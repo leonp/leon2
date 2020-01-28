@@ -103,7 +103,7 @@
 
             <div class="flex">
 
-                <div class="pr2 w-20"><a title="Go to home page" href="/" class="f6 no-underline dib pv1 ph2 bg-blue hover-bg-dark-blue white b">L</a></div>
+                <div class="pr2 w-20"><a title="Go to home page" href="/" class="f6 no-underline dib pv2 ph3 bg-blue hover-bg-dark-blue white b">L</a></div>
 
                 <nav class="pl2 w-80 tr" id="nav">
 
@@ -113,7 +113,7 @@
 
                         {% for this_page in site_pages %}
 
-                        <li class="dib"><a href="{{ this_page.url }}" class="black hover-blue no-underline db pv1 ml2 ml3-l">{% if this_page.nav-title %}{{ this_page.nav-title %}}{% else %}{{ this_page.title }}{% endif %}</a></li>
+                        <li class="dib"><a href="{{ this_page.url }}" class="black hover-blue no-underline db pv2 ml2 ml3-l">{% if this_page.nav-title %}{{ this_page.nav-title %}}{% else %}{{ this_page.title }}{% endif %}</a></li>
 
                         {% endfor %}
 
@@ -125,6 +125,6 @@
 
         </header>
 
-        <main id="content" class="pa3 ph4-ns pv4-ns pt5-l">
+        <main id="content" class="ph3 pv4 pa4-ns pt5-l">
 
             <div class="{% if page.wide %}c-wrapper-wide{% else %}c-wrapper{% endif %} center">

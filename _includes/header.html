@@ -92,13 +92,14 @@
 
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
+
     </head>
 
     <body class="ma0 pa0 bg-white dark-gray c-serif c-lh-copy">
 
         <div class="clip pv1 ph2 f7 c-linky-visited c-linky-underline bb b--light-gray c-no-print">Skip to: <a href="#content">content</a>, <a href="#nav">navigation</a></div>
 
-        <header class="ph3 ph4-ns bg-white c-sticky z-1 c-sans-serif">
+        <header class="ph3 ph4-ns pb2 bg-white c-sticky z-1 c-sans-serif">
 
             <div class="flex">
 
@@ -106,13 +107,13 @@
 
                 <nav class="pl2 w-80 tr" id="nav">
 
-                    <ul class="ma0 pa0 f6 list">
+                    <ul class="ma0 pa0 f6 list ttl tracked small-caps">
 
                         {% assign site_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
 
                         {% for this_page in site_pages %}
 
-                        <li class="dib"><a href="{{ this_page.url }}" class="dark-gray hover-blue no-underline db pv1 ml2 ml3-l">{% if this_page.nav-title %}{{ this_page.nav-title %}}{% else %}{{ this_page.title }}{% endif %}</a></li>
+                        <li class="dib"><a href="{{ this_page.url }}" class="black hover-blue no-underline db pv1 ml2 ml3-l">{% if this_page.nav-title %}{{ this_page.nav-title %}}{% else %}{{ this_page.title }}{% endif %}</a></li>
 
                         {% endfor %}
 

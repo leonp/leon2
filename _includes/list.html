@@ -61,13 +61,13 @@
 
 {% else %}
 
-    <ul class="mb0 mt4">
+    <ul class="list pa0 ma0 mt4 c-sans-serif">
 
     {% for post in posts limit:include.post-limit | default:500 %}
 
-        <li class="mb1">
+        <li class="mb4">
 
-            <a class="db" href="{{ post.url }}">{{ post.title }}</a>
+            <a class="db f4 mb1 b c-lh-title" href="{{ post.url }}">{{ post.title }}</a>
 
             <time class="db f6 gray">{{ post.date | date: "%d-%m-%y" }}</time>
 

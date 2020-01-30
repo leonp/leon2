@@ -13,6 +13,8 @@ underlined-links: true
 wide: true
 ---
 
+<p class="c-wrapper center">I’m Leon, head of Digital and Marketing at <a href="https://www.suffolklibraries.co.uk">Suffolk Libraries</a>, the not-for-profit that runs the library service in Suffolk. I conceived and developed <a href="https://dootrix.com/verso">Verso</a>, a lightweight, portable self-service system for Libraries.</p>
+
 <ul class="list pa0 tc">
 
     <li class="dib mr2 mr3-ns"><a href="https://uk.linkedin.com/in/leonpaternoster">LinkedIn</a></li>
@@ -20,6 +22,4 @@ wide: true
 
 </ul>
 
-{% include figure.html url="felixstowe-gulls.jpg" alt="Seagulls sat on a wooden fence in the sea." caption="Felixstowe, Suffolk" %}
-
-{% include figure.html url="ipswich.jpg" alt="Street map of Ipswich." caption="My home town, Ipswich, from <a href='https://anvaka.github.io/city-roads/'>city roads</a>" %}
+{% include figure.html url="felixstowe-gulls.jpg" alt="Two seagulls sat on a wooden fence in the sea." caption="The North Sea from Felixstowe beach, Suffolk" %}

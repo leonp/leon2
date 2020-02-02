@@ -6,11 +6,11 @@
 
 $c-sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
 
-$c-serif: "Libre Baskerville", "Palatino Linotype", palatino, georgia, serif;
+$c-serif: Literata, "Libre Baskerville", "Palatino Linotype", palatino, georgia, serif;
 
-$c-font-size: 112.5%;
-$c-font-size-m: 118.75%;
-$c-font-size-l: 118.75%;
+$c-font-size: 125%;
+$c-font-size-m: 131.25%;
+$c-font-size-l: 137.5%;
 
 $c-lh-title: 1.25;
 
@@ -18,7 +18,7 @@ $c-lh-copy: 1.4;
 $c-lh-copy-m: 1.5;
 $c-lh-copy-l: 1.5;
 
-$c-wrapper: 32rem;
+$c-wrapper: 30rem;
 $c-wrapper-wide: 48rem;
 
 $highlight: #357EDD; // blue

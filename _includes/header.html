@@ -116,7 +116,7 @@
 
                         {% for this_page in site_pages %}
 
-                        <li class="dib"><a href="{{ this_page.url }}" class="blue hover-black no-underline db pv2 ml2 ml3-l{% if this_page.title == page.title %} bw2 bb b--black{% endif %}">{% if this_page.nav-title %}{{ this_page.nav-title %}}{% else %}{{ this_page.title }}{% endif %}</a></li>
+                        <li class="dib ml2 ml3-ns"><a href="{{ this_page.url }}" class="{% if this_page.title == page.title %}black {% else %}blue hover-black {% endif %}no-underline db pv2">{% if this_page.nav-title %}{{ this_page.nav-title %}}{% else %}{{ this_page.title }}{% endif %}</a></li>
 
                         {% endfor %}
 

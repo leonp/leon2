@@ -102,7 +102,7 @@
 
         <div class="clip pv1 ph2 f7 c-linky-visited c-linky-underline bb b--light-gray c-no-print">Skip to: <a href="#content">content</a>, <a href="#nav">navigation</a></div>
 
-        <header class="ph3 ph4-ns pb2 bg-white c-sticky z-1 c-sans-serif">
+        <header class="ph3 ph4-ns pb2 bg-white c-sans-serif">
 
             <div class="flex">
 
@@ -116,7 +116,7 @@
 
                         {% for this_page in site_pages %}
 
-                        <li class="dib"><a href="{{ this_page.url }}" class="black hover-blue no-underline db pv2 ml2 ml3-l">{% if this_page.nav-title %}{{ this_page.nav-title %}}{% else %}{{ this_page.title }}{% endif %}</a></li>
+                        <li class="dib"><a href="{{ this_page.url }}" class="blue hover-black no-underline db pv2 ml2 ml3-l{% if this_page.title == page.title %} bw2 bb b--black{% endif %}">{% if this_page.nav-title %}{{ this_page.nav-title %}}{% else %}{{ this_page.title }}{% endif %}</a></li>
 
                         {% endfor %}
 

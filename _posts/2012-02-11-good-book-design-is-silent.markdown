@@ -8,7 +8,7 @@ The job of book design is to make a text as easy to read as possible. Once it's 
 
 What is it with designers and the physical form of books?
 
-Take [A Craft Of Consequences: Reader, Writer And Emotional Design](http://designinformer.smashingmagazine.com/2012/02/08/the-journey-from-writer-to-reader/). Note the hushed tones, pseudo–scientific language and camp imperatives (_must_ be pieced together indeed.)
+Take [A Craft Of Consequences: Reader, Writer And Emotional Design](https://smashingmagazine.com/2012/02/08/the-journey-from-writer-to-reader/). Note the hushed tones, pseudo–scientific language and camp imperatives (_must_ be pieced together indeed.)
 
 As in so many of these articles, the author affords an absurd degree of importance to the role of design in conveying the meaning of a text:
 

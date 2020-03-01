@@ -23,6 +23,6 @@ But for all the _Things can only get better_ rhetoric, Blair and Brown shared my
 
 I’m 45 years old. I guess I just don’t know enough people who didn’t grow up in the 1980s, for whom Thatcher is just history, rather than something lived through and overcome only after a long, careful battle. Without this history I guess you can be more optimistic, less inclined to be so defensive.
 
-I only finally went over to Corbyn when the [Labour manifesto](http://www.labour.org.uk/page/-/Images/manifesto-2017/Labour%20Manifesto%202017.pdf) (PDF) was published. A clear, radical set of policies for a post-neoliberal world. How could anyone in the Labour party not love this? Who wouldn’t willingly get behind it?
+I only finally went over to Corbyn when the [Labour manifesto](/assets/labour-manifesto-2017.pdf) (PDF) was published. A clear, radical set of policies for a post-neoliberal world. How could anyone in the Labour party not love this? Who wouldn’t willingly get behind it?
 
 So here we are: and what an opportunity! Not only can we defeat the Tories, but also our own pessimism. Ideas like universal benefits, free education, nationalising the railways and, erm, banning hospital carparking fees are back in play. 40% of the voting public, despite Brexit, a mutinous parliamentary Labour party, a braying, rabidly rightwing press and defensive supporters like me, have already said “yes” to them. This is not the time to start triangulating again: it’s Jeremy or nothing.

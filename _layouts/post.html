@@ -11,25 +11,19 @@
 
 {% endfor %}
 
-<article class="h-entry">
+<article class="measure center h-entry">
 
-    <header class="mb4 tc c-sans-serif">
+    <h1 class="f2 mb4 p-name">{{ page.title }}</h1>
 
-        <h1 class="f3 f2-ns tc c-lh-title p-name">{{ page.title }}</h1>
+    <!-- <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p> -->
 
-        <p class="mt0 c-linky-underline c-linky-visited f6"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d %Y" }}</time></p>
+    {{ content }}
 
-        <!-- <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p> -->
+    <footer class="f7 mt4 c-sans-serif">
 
-    </header>
+        <p>– <time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %b, %Y" }}</time></p>
 
-    <div class="e-content c-prose-headings c-hyphens c-linky-visited c-linky-underline entry-content c-body-text">
-
-        {{ content }}
-
-        <p class="mt4 f6 tc c-sans-serif c-linky-underline c-linky-visited">{% if site.author %}<a href="/" class="p-author" rel="author">{{ site.author }}</a>{% endif %}{% if page.category %}. A <a href="/posts/">post</a> filed under <a href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>{% endif %}.</p>
-
-    </div>
+    </footer>
 
     <!-- {% unless page.disable_comments %}
 

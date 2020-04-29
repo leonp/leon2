@@ -33,13 +33,13 @@ body {
 }
 
 a {
-    color: #357EDD;
+    color: #00449E;
     text-decoration: none;
 }
 
 a:hover,
 a:active {
-    color: #D5008F;
+    color: #00449E;
 }
 
 h1,
@@ -104,7 +104,7 @@ article a {
 }
 
 article a:visited {
-    color: #555;
+    color: #357EDD;
 }
 
 .c-ph {
@@ -218,11 +218,15 @@ td {
 }
 
 blockquote {
-    font-size: 0.875em;
+    font-family: $c-sans-serif;
 }
 
 *:focus {
     outline: 3px solid #FFB700;
+}
+
+.top-0 {
+    top: 0;
 }
 
 

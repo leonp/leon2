@@ -18,204 +18,115 @@
     font-family: $c-serif;
 }
 
-.c-lh-copy {
-    line-height: $c-lh-copy;
-    @media #{$breakpoint-medium} {
-        line-height: $c-lh-copy-m;
-    }
-    @media #{$breakpoint-large} {
-        line-height: $c-lh-copy-l;
-    }
+:root {
+    --ph: 7.5vw;
 }
 
-.c-font-size {
-    font-size: $c-font-size;
-    @media #{$breakpoint-medium} {
-        font-size: $c-font-size-m;
-    }
-    @media #{$breakpoint-large} {
-        font-size: $c-font-size-l;
-    }
+html {
+    font-size: 118.75%;
+    font-size: clamp(112.5%, 2.2vw, 125%);
 }
 
-.c-lh-title {
-    line-height: $c-lh-title;
+body {
+    line-height: 1.45;
+    line-height: clamp(1.375rem, 2.8vw, 1.45rem);
 }
 
-.c-wrapper {
-    max-width: $c-wrapper;
+a {
+    color: #357EDD;
+    text-decoration: none;
 }
 
-.c-wrapper-wide {
-    max-width: $c-wrapper-wide;
+a:hover,
+a:active {
+    color: #D5008F;
 }
 
-.c-icon {
-	color: transparent;
-	text-shadow: 0 0 $highlight;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "segoe ui", "helvetica neue", helvetica, ubuntu, roboto, noto, sans-serif;
+    line-height: 1.2;
+    line-height: clamp(1.15em, 2.5vw, 1.25em);
 }
 
-.c-highlight {
-    color: $highlight;
+figure {
+    margin: 0;
 }
 
-.c-link {
-    color: $link;
+figcaption {
+    font-size: 0.875rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "segoe ui", "helvetica neue", helvetica, ubuntu, roboto, noto, sans-serif;
 }
 
-.c-clip-path {
-    clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 30px 100%, 0 50%);
+img {
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.c-hover-turn:hover {
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
+article h2,
+article h3,
+article h4,
+article h5,
+article h6,
+article dt {
+    margin-top: 2.25rem;
+    margin-bottom: 0;
+}
+
+article h2 {
+    font-size: 1.5rem;
+}
+
+article h3 {
+    font-size: 1.25rem;
+}
+
+article h4 {
+    font-size: 1rem;
+}
+
+article h5 {
+    font-size: 0.875rem;
+}
+
+article p,
+article li {
+    hyphens: auto;
+}
+
+article a {
+    text-decoration: underline;
+    text-decoration: solid underline 2px;
+}
+
+article a:visited {
+    color: #555;
+}
+
+.c-ph {
+    padding-left: var(--ph);
+    padding-right: var(--ph);
+}
+
+.c-bleed {
+    max-width: calc(100% + var(--ph) * 2);
+    margin-left: calc(var(--ph) - (var(--ph) * 2));
 }
 
 .c-sticky {
     position: sticky;
-    top: 0;
-    left: 0;
 }
 
-.c-webkit-app-none {
-    -webkit-appearance: none;
+.c-sans-serif {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "segoe ui", "helvetica neue", helvetica, ubuntu, roboto, noto, sans-serif;
 }
 
-li.c-li-dash::before,
-.c-li-dash li::before {
-    content: '— ';
-}
-
-@media #{$breakpoint-not-small} {
-    li.c-li-dash::before,
-    .c-li-dash li::before {
-        margin-left: -1.5rem;
-    }
-}
-
-
-// Body text
-
-/* .c-body-text p,
-.c-body-text ul,
-.c-body-text ol {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.c-body-text li {
-    margin-left: 0;
-} */
-
-.c-body-text blockquote {
-    font-size: 0.875em;
-    margin: 2rem 0 2rem 2rem;
-}
-
-.c-body-text figure,
-.c-body-text img {
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-.c-body-text img {
-    display: block;
-    margin: 0.5rem 0;
-}
-
-.c-body-text figcaption {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 0.875em;
-}
-
-
-// Prose styling
-
-.c-prose-headings h1,
-.c-prose-headings h2,
-.c-prose-headings h3,
-.c-prose-headings h4,
-.c-prose-headings h5,
-.c-prose-headings h6,
-.c-prose-headings dt {
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-    line-height: $c-lh-title;
-    color: $link;
-    font-family: $c-sans-serif;
-    text-align: center;
-}
-
-.c-prose-headings h1 + *,
-.c-prose-headings h2 + *,
-.c-prose-headings h3 + *,
-.c-prose-headings h4 + *,
-.c-prose-headings h5 + *,
-.c-prose-headings h6 + *,
-.c-prose-headings dt + * {
-    margin-top: 0;
-}
-
-.c-prose-headings h1,
-.c-prose-headings h2 {
-    font-size: 1.25rem;
-}
-
-@media #{$breakpoint-not-small} {
-  font-size: 1.5rem;
-}
-
-.c-prose-headings h3 {
-    font-size: 1rem;
-}
-
-@media #{$breakpoint-not-small} {
-  font-size: 1.25rem;
-}
-
-.c-prose-headings h4,
-.c-prose-headings h5,
-.c-prose-headings h6 {
-    font-size: 1rem;
-    font-weight: normal;
-    font-style: normal;
-    text-transform: lowercase;
-    font-variant: small-caps;
-    letter-spacing: 0.1em;
-}
-
-.c-hyphens {
-    hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-}
-
-.c-box-decoration-break-clone {
-    box-decoration-break: clone;
-}
-
-.c-linky-underline a {
-    text-decoration: underline;
-    text-decoration: solid underline $highlight 2px;
-}
-
-.c-linky-visited a:link {
-    color: $link;
-}
-
-.c-linky-visited a:visited {
-    color: $visited;
-}
-
-.c-linky-visited a:hover,
-.c-linky-visited a:active {
-    color: $highlight;
-}
-
-.c-no-top-margin * {
-    margin-top: 0 !important;
+.c-serif {
+    font-family: "IBM Plex Serif", georgia, serif;
 }
 
 .vid,
@@ -287,6 +198,7 @@ table {
     overflow: auto;
     border-collapse: collapse;
     table-layout: fixed;
+    font-family: $c-sans-serif;
 }
 
 thead {
@@ -311,20 +223,6 @@ blockquote {
 
 *:focus {
     outline: 3px solid #FFB700;
-}
-
-
-
-// Some empty media queries
-// Use these if you want to make responsive custom classes
-
-@media #{$breakpoint-not-small} {
-}
-
-@media #{$breakpoint-medium} {
-}
-
-@media #{$breakpoint-large} {
 }
 
 

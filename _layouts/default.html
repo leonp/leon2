@@ -1,19 +1,15 @@
 {% include header.html %}
 
-<article class="h-entry">
+<div class="measure center">
 
     {% unless page.hide-title %}
 
-        <h1 class="f3 f2-ns tc c-sans-serif mb4 c-lh-title p-name">{{ page.title }}</h1>
+        <h1 class="f2 mb4 p-name">{{ page.title }}</h1>
 
     {% endunless %}
 
-     <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}c-body-text">
+    {{ content}}
 
-        {{ content}}
-
-    </div>
-
-</article>
+</div>
 
 {% include footer.html %}

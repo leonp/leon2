@@ -10,7 +10,7 @@ prose-headings: true
 hyphens: true
 visited-links: true
 underlined-links: true
-nav-title: "<span class='c-icon dib f4' role='image' aria-label='Star logo'>✪</span>"
+nav-title: "<span class='c-icon dib f3 v-btm' role='image' aria-label='Star logo'>✪</span>"
 ---
 
 I’m Leon, head of Digital and Marketing at <a href="https://www.suffolklibraries.co.uk">Suffolk Libraries</a>, the not-for-profit that runs the library service in Suffolk. I conceived and developed <a href="https://dootrix.com/verso">Verso</a>, a lightweight, portable self-service system for Libraries.

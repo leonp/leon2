@@ -33,11 +33,11 @@
 
         <h2>{{ this_year }}</h2>
 
-        <ul class="list mb0 mt4 pa0 bb b--light-gray c-sans-serif">
+        <ul class="list mb0 pa0 c-sans-serif">
 
         {% endif %}
 
-            <li><a class="db pv2 bt b--light-gray" href="{{ post.url }}">{{ post.title }}</a><!-- <time class="mv1 f6 silver c-lh-copy">{{ post.date | date: "%b %d, %Y" }}</time> --></li>
+            <li><a class="db b" href="{{ post.url }}">{{ post.title }}</a><time class="db mb3 silver f6">{{ post.date | date: "%-d %b, %Y" }}</time></li>
 
         {% if forloop.last %}
 
@@ -51,7 +51,7 @@
 
             <h2>{{next_year}}</h2>
 
-            <ul class="list mb0 mt4 pa0 bb b--light-gray c-sans-serif">
+            <ul class="list mb0 pa0 c-sans-serif">
 
             {% endif %}
 
@@ -61,17 +61,11 @@
 
 {% else %}
 
-    <ul class="list pa0 ma0 mt4 c-sans-serif">
+    <ul class="list mb0 pa0 c-sans-serif">
 
     {% for post in posts limit:include.post-limit | default:500 %}
 
-        <li class="mb4">
-
-            <a class="db f4 mb1 b c-lh-title" href="{{ post.url }}">{{ post.title }}</a>
-
-            <time class="db f6 gray">{{ post.date | date: "%d-%m-%y" }}</time>
-
-        </li>
+        <li><a class="db b" href="{{ post.url }}">{{ post.title }}</a><time class="db mb3 silver f6">{{ post.date | date: "%-d %b, %Y" }}</time></li>
 
     {% endfor %}
 

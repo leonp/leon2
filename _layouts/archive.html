@@ -1,16 +1,14 @@
 {% include header.html %}
 
-<article class="h-entry">
+<div class="measure center">
 
     {% unless page.hide-title %}
 
-    <h1 class="f3 f2-ns mb4 c-lh-title p-name tc c-sans-serif">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+    <h1 class="f2 mb4">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
 
     {% endunless %}
 
-     <div class="{% if page.visited-links %}c-linky-visited {% endif %}{% if page.prose-headings %}c-prose-headings {% endif %}{% if page.underlined-links %}c-linky-underline {% endif %}{% if page.hyphens %}c-hyphens {% endif %}c-body-text">
-
-        {{ content}}
+    {{ content}}
 
     {% if page.pagination %}
 
@@ -22,8 +20,6 @@
 
     {% endif %}
 
-    </div>
-
-</article>
+</div>
 
 {% include footer.html %}

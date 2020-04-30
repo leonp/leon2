@@ -155,10 +155,6 @@ article a:visited {
 
 // More defaults
 
-a {
-    text-decoration: none;
-}
-
 abbr {
     cursor: help;
 }
@@ -219,6 +215,7 @@ td {
 
 blockquote {
     font-family: $c-sans-serif;
+    font-size: 0.875rem;
 }
 
 *:focus {
@@ -227,6 +224,11 @@ blockquote {
 
 .top-0 {
     top: 0;
+}
+
+.c-icon {
+  color: transparent;
+  text-shadow: 0 0 #00449E;
 }
 
 

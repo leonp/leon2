@@ -14,13 +14,13 @@
 
 <footer class="pt3">
 
-    <div class="flex justify-between mb3">
+    <div class="flex justify-between mb3 c-sans-serif">
 
         {% if paginator.next_page %}
 
             <div>
 
-              <a class="f6 b" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older &rarr;</a>
+              <a class="f6 b" href="{{ paginator.next_page_path | prepend: site.baseurl }}">&larr; Older</a>
 
             </div>
 
@@ -30,7 +30,7 @@
 
           <div>
 
-            <a class="f6 b" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer</a>
+            <a class="f6 b" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer &rarr;</a>
 
           </div>
 

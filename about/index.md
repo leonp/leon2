@@ -10,11 +10,11 @@ underlined-links: true
 hyphens: true
 ---
 
-I'm Leon, head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). I live and work in [Ipswich](https://en.wikipedia.org/wiki/Ipswich), Suffolk in the UK. I'm responsible for lots of things, including our website and apps we develop. Perhaps most interestingly, I conceived and led the development of Verso, our own <a href="/posts/managing-self-service-project/">library self-service system</a>, a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_applications) now sold by software developers [Dootrix](https://dootrix.com/verso/) to other library services.
+I'm Leon, head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). I live and work in [Ipswich](https://en.wikipedia.org/wiki/Ipswich), Suffolk in the UK. I'm responsible for lots of things, including our website and apps we develop. Perhaps most interestingly, I conceived and led the development of Verso, our own library self-service system, a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_applications) now sold by software developers [Dootrix](https://dootrix.com/verso/) to other library services.
 
 I've worked in web and, to a lesser extent, IT, since 2008. Before that, I taught secondary English for a few years, and before that I worked as an <abbr title="Network Operations Centre">NOC</abbr> engineer for a telecoms company. My first jobs involved trying to flog ad space.
 
-{% include figure.html url="leon-zone.jpg" alt="Leon Paternoster looking to the right underneath a sign saying zone" caption="Me on my good side" %}
+{% include figure.html url="leon-zone.jpg" alt="Leon Paternoster looking to the right underneath a sign saying ‘zone’" %}
 
 ## What I do
 

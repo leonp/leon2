@@ -9,6 +9,13 @@
 // Then create a c-sans-serif class here
 // Like so:
 
+:root {
+    --ph: 7.5vw;
+    --accent: #0000EE;
+    --link: #0000EE;
+    --hover: #0000EE;
+    --visited: #357EDD;
+}
 
 .c-sans-serif {
     font-family: $c-sans-serif;
@@ -16,11 +23,6 @@
 
 .c-serif {
     font-family: $c-serif;
-}
-
-:root {
-    --ph: 7.5vw;
-    --accent: #FF6300;
 }
 
 html {
@@ -34,13 +36,13 @@ body {
 }
 
 a {
-    color: #00449E;
+    color: var(--link);
     text-decoration: none;
 }
 
 a:hover,
 a:active {
-    color: #00449E;
+    color: var(--hover);
 }
 
 h1,
@@ -105,7 +107,13 @@ article a {
 }
 
 article a:visited {
-    color: #357EDD;
+    color: var(--visited);
+}
+
+article a:hover,
+article a:active,
+article a:focus {
+    color: var(--hover);
 }
 
 .c-ph {
@@ -227,9 +235,10 @@ blockquote {
     top: 0;
 }
 
-.c-icon {
+.c-icon,
+.c-icon:hover {
   color: transparent;
-  text-shadow: 0 0 var(--accent);
+  text-shadow: 0 0 var(--link);
 }
 
 .c-bar::before {

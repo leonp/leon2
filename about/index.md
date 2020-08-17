@@ -10,17 +10,19 @@ underlined-links: true
 hyphens: true
 ---
 
-I'm Leon, head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). I live and work in [Ipswich](https://en.wikipedia.org/wiki/Ipswich), Suffolk in the UK. I'm responsible for lots of things, including our website and apps we develop. Perhaps most interestingly, I conceived and led the development of Verso, our own library self-service system, a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_applications) now sold by software developers [Dootrix](https://dootrix.com/verso/) to other library services.
+I'm Leon, head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). I've worked in digital and, to a lesser extent, IT, since 2008.
 
-I've worked in web and, to a lesser extent, IT, since 2008. Before that, I taught secondary English for a few years, and before that I worked as an <abbr title="Network Operations Centre">NOC</abbr> engineer for a telecoms company. My first jobs involved trying to flog ad space.
+I live in [Ipswich](https://en.wikipedia.org/wiki/Ipswich), Suffolk in the UK. In my current role, I'm responsible for lots of things, including our website and apps we develop. Perhaps most interestingly, **I conceived and led the development of [Verso](https://dootrix.com/verso/), our own library self-service system**, a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_applications) now sold by software developers [Dootrix](https://dootrix.com/) to other library services.
 
 {% include figure.html url="leon-zone.jpg" alt="Leon Paternoster looking to the right underneath a sign saying ‘zone’" %}
 
 ## What I do
 
-My background is in planning, building and running websites, apps and online marketing for not-for-profit organisations. This has expanded recently to include all forms of marketing, on and offline -- I formulate and deliver digital and marketing strategies.
+My background is in **planning, building and running websites, apps and online marketing**. This has expanded to include all forms of marketing, on and offline -- I formulate and deliver digital and marketing strategies.
 
-I've got some technical experience:
+I've also got extensive experience of **managing complex digital projects**. I work with stakeholders, customers and agencies, balancing time and financial constraints. I normally work using an agile framework, and have facilitated several **design sprints**.
+
+I've got some technical experience too:
 
 - Simple, accessible web design that uses javascript defensively
 - Focusing on performance and security, mainly through using [static websites](https://en.wikipedia.org/wiki/Static_web_page). I developed the Suffolk Libraries website using this method -- it was probably the first non-profit/governmental website of its type in the UK.
@@ -36,12 +38,14 @@ If appropriate, I can use WordPress or [Kirby](https://getkirby.com) to create s
 
 <ul>
 
-<li><a href="https://mobile.twitter.com/leonpaternoster/">Twitter</a></li>
+<li><a href="https://mobile.twitter.com/leonpaternoster/">Twitter</a> (protected account)</li>
 <li><a href="https://micro.blog/leonp/">micro.blog</a></li>
 <li><a href="https://uk.linkedin.com/in/leonpaternoster">LinkedIn</a></li>
 <li>leon.paternoster@zoho.com</li>
 
 </ul>
+
+I blog at [This day’s portion](https://www.thisdaysportion.com).
 
 ## Colophon
 

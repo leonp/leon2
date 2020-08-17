@@ -15,6 +15,8 @@ I’m Leon, head of Digital and Marketing at <a href="https://www.suffolklibrari
 
 I’ve been managing websites, projects and apps in the public and not-for-profit sectors since 2008. I’m interested in prioritising user requirements, accessibility and simple, clear and resilient design.
 
+**[Find out more &rarr;](/about/)**
+
 ## Contact me
 
 <ul>
@@ -23,5 +25,19 @@ I’ve been managing websites, projects and apps in the public and not-for-profi
 <li><a href="https://micro.blog/leonp/">micro.blog</a></li>
 <li><a href="https://uk.linkedin.com/in/leonpaternoster">LinkedIn</a></li>
 <li>leon.paternoster@zoho.com</li>
+
+</ul>
+
+## Writing
+
+<ul class="mv3 pa0 list">
+
+{% assign posts = site.posts | where: "featured", "true" %}
+
+{% for post in posts %}
+
+    <li class="lh-title"><a class="db pv2 no-underline" href="{{ post.url }}">{{ post.title }}</a></li>
+
+{% endfor %}
 
 </ul>

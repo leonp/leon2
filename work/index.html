@@ -1,0 +1,14 @@
+---
+title: Work
+in_nav: true
+order: 3
+layout: default
+---
+
+{% for project in site.work %}
+
+	<p><a href="{{ project.url }}">{{ project.title }}</a></p>
+
+	<a href="{{ project.url }}"><img class="db pa0 mt3 mb4" alt="{{ project.alt }}" src="/images/{{ project.image }}"></a>
+
+{% endfor %}

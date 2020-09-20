@@ -81,6 +81,14 @@ defaults:
       layout: 'link'
       is_link: 'true'
 
+-
+    scope:
+      path: ''
+      type: 'work'
+    values:
+      layout: 'work'
+      is_work: 'true'
+
 
 collections:
     notes:
@@ -88,6 +96,10 @@ collections:
       permalink: /:collection/:name
 
     links:
+        output: true
+        permalink: /:collection/:name
+
+    work:
         output: true
         permalink: /:collection/:name
 

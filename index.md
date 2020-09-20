@@ -14,6 +14,18 @@ in_nav: true
 
 Digital strategy and project management since 2008. Head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk).
 
+## Work
+
+<ul>
+
+{% for project in site.work %}
+
+	<li><a href="{{ project.url }}">{{ project.title }}</a></li>
+
+{% endfor %}
+
+</ul>
+
 ## Qualifications
 
 - BA (Hons) Literature and Philosophy
@@ -27,16 +39,3 @@ Digital strategy and project management since 2008. Head of digital and marketin
 - [LinkedIn](https://uk.linkedin.com/in/leonpaternoster)
 - leon.paternoster@zoho.com
 
-## Writing
-
-<ul class="mv3 pa0 list">
-
-{% assign posts = site.posts | where: "featured", "true" %}
-
-{% for post in posts %}
-
-    <li class="mb3"><a href="{{ post.url }}">{{ post.title }}</a></li>
-
-{% endfor %}
-
-</ul>

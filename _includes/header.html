@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="min-vh-100" lang="{{ site.lang }}">
+<html lang="{{ site.lang }}">
 
     <head>
 
@@ -90,32 +90,30 @@
 
         <!-- {% include preload.html %} ~ Hullo. I would make this a Liquid include if I wanted to preload some fonts 🦉 -->
 
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     </head>
 
-    <body class="ma0 pa0 bg-white dark-gray c-serif min-vh-100">
+    <body class="ma0 pa0 bg-dark-gray moon-gray c-monospace c-ph">
 
-        <a class="c-no-print pv2 c-ph clip dib" href="#content">Skip to content &rarr;</a>
+        <a class="c-no-print pv2 clip" href="#content">Skip to content &rarr;</a>
 
-        <nav class="c-no-print bg-white bb b--light-gray c-sticky z-1 top-0">
+        <div class="c-wrapper pt3">
 
-            <div class="c-sans-serif flex justify-between b">
+            <nav class="c-no-print flex items-center ttl small-caps tracked">
 
-                {% if site.logomark %}<a class="c-icon rotate-90" href="/" rel="index"><span class="dib pv2 c-ph" role="image" aria-label="{{ logoalt }}">{{ site.logomark }}</span></a>{% endif %}
+                {% if site.logomark %}<a class="c-icon pv2 pr2" href="/" rel="index"><span class="dib" role="image" aria-label="{{ logoalt }}">{{ site.logomark }}</span></a>{% endif %}
 
                 {% assign site_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
 
                 {% for this_page in site_pages %}
 
-                <a href="{{ this_page.url }}" class="f7 pv2 c-ph">{% if this_page.nav-title %}{{ this_page.nav-title }}{% else %}{{ this_page.title }}{% endif %}</a>
+                <a href="{{ this_page.url }}" class="pv2 ph2">{% if this_page.nav-title %}{{ this_page.nav-title }}{% else %}{{ this_page.title }}{% endif %}</a>
 
                 {% endfor %}
 
-            </div>
+            </nav>
 
-        </nav>
-
-        <main id="content" class="pt4 pt5-ns pb3 c-ph min-vh-100">
+            <main id="content" class="pt4 pt5-ns pb3">

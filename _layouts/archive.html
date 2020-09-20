@@ -1,25 +1,21 @@
 {% include header.html %}
 
-<div class="measure center">
+{% unless page.hide-title %}
 
-    {% unless page.hide-title %}
+<h1 class="f5 mb4 p-name c-accent">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
 
-    <h1 class="f3 mb4">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+{% endunless %}
 
-    {% endunless %}
+{{ content}}
 
-    {{ content}}
+{% if page.pagination %}
 
-    {% if page.pagination %}
+    {% include paginated-list.html %}
 
-        {% include paginated-list.html %}
+{% else %}
 
-    {% else %}
+    {% include list.html %}
 
-        {% include list.html %}
-
-    {% endif %}
-
-</div>
+{% endif %}
 
 {% include footer.html %}

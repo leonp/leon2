@@ -9,24 +9,23 @@ prose-headings: true
 hyphens: true
 visited-links: true
 underlined-links: true
+in_nav: true
 ---
 
-I’m Leon, head of Digital and Marketing at <a href="https://www.suffolklibraries.co.uk">Suffolk Libraries</a>, the not-for-profit that runs the library service in Suffolk. I conceived and developed <a href="https://dootrix.com/verso">Verso</a>, a lightweight, portable self-service system for Libraries.
+Digital strategy and project management since 2008. Head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk).
 
-I’ve been managing websites, projects and apps in the public and not-for-profit sectors since 2008. I’m interested in prioritising user requirements, accessibility and simple, clear and resilient design.
+## Qualifications
 
-**[Find out more &rarr;](/about/)**
+- BA (Hons) Literature and Philosophy
+- PGCE (English, secondary) — Qualified Teacher Status
+- [Open University Project Management short course BG007](https://www.open.ac.uk/courses/short-courses/bg007)
 
-## Contact me
+## Contact
 
-<ul>
-
-<li><a href="https://mobile.twitter.com/leonpaternoster/">Twitter</a></li>
-<li><a href="https://micro.blog/leonp/">micro.blog</a></li>
-<li><a href="https://uk.linkedin.com/in/leonpaternoster">LinkedIn</a></li>
-<li>leon.paternoster@zoho.com</li>
-
-</ul>
+- [Twitter](https://mobile.twitter.com/leonpaternoster/)
+- [micro.blog](https://micro.blog/leonp/)
+- [LinkedIn](https://uk.linkedin.com/in/leonpaternoster)
+- leon.paternoster@zoho.com
 
 ## Writing
 
@@ -36,7 +35,7 @@ I’ve been managing websites, projects and apps in the public and not-for-profi
 
 {% for post in posts %}
 
-    <li class="lh-title"><a class="db pv2 no-underline" href="{{ post.url }}">{{ post.title }}</a></li>
+    <li class="mb3"><a href="{{ post.url }}">{{ post.title }}</a></li>
 
 {% endfor %}
 

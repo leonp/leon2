@@ -104,13 +104,13 @@
 
             <nav class="c-no-print flex items-center ttl small-caps tracked">
 
-                {% if site.logomark %}<a class="c-icon pv2 pr2" href="/" rel="index"><span class="dib" role="image" aria-label="{{ logoalt }}">{{ site.logomark }}</span></a>{% endif %}
+                {% if site.logomark %}<a class="c-icon pv2 pr1 pr2-ns" href="/" rel="index"><span class="dib" role="image" aria-label="{{ logoalt }}">{{ site.logomark }}</span></a>{% endif %}
 
                 {% assign site_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
 
                 {% for this_page in site_pages %}
 
-                <a href="{{ this_page.url }}" class="pv2 ph2">{% if this_page.nav-title %}{{ this_page.nav-title }}{% else %}{{ this_page.title }}{% endif %}</a>
+                <a href="{{ this_page.url }}" class="pv2 ph1 ph2-ns">{% if this_page.nav-title %}{{ this_page.nav-title }}{% else %}{{ this_page.title }}{% endif %}</a>
 
                 {% endfor %}
 

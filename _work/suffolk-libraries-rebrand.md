@@ -9,9 +9,9 @@ partners: Silk Pearce
 
 ## Background
 
-Suffolk Libraries is the not-for-profit that has run Suffolk’s library service since 2012. It’s an independent organisation contracted, and largely funded, by Suffolk County Council. Its current contract expires in 2022.
+[Suffolk Libraries](https://www.suffolklibraries.co.uk/) is the not-for-profit that has run Suffolk’s library service since 2012. It’s an independent organisation contracted, and largely funded, by Suffolk County Council. Its current contract expires in 2022.
 
-Before 2019, Suffolk Libraries had no marketing department. Consequently, its brand had been developed in an ad hoc way, consisting of a very loosely defined set of styles, colours and a typeface. Consequently, it had little impact and was applied rarely by individual libraries.
+Before 2019, Suffolk Libraries had no marketing department. Consequently, its brand had been developed in an ad hoc way, consisting of a very loosely defined set of styles, colours and an everyday typeface. Consequently, it had little impact and was applied rarely by individual libraries.
 
 ## Aims
 
@@ -43,8 +43,3 @@ The use of just three core elements allows staff to use the branding without hav
 <img class="db pa0 mv3" alt="The Suffolk Libraries website." src="/images/sl-website.jpg">
 
 <img class="db pa0 mv3" alt="The Discovereads promotion." src="/images/sl-discovereads.jpg">
-
-
-
-
-

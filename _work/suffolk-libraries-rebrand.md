@@ -36,10 +36,10 @@ The use of just three core elements allows staff to use the branding without hav
 
 ## In use
 
+<img class="db pa0 mv3" alt="The Discovereads promotion." src="/images/sl-discovereads.jpg">
+
 <img class="db pa0 mv3" alt="A test and trace poster." src="/images/test-and-trace.jpg">
 
 <img class="db pa0 mv3" alt="The Suffolk Libraries Twitter page." src="/images/sl-twitter.jpg">
 
 <img class="db pa0 mv3" alt="The Suffolk Libraries website." src="/images/sl-website.jpg">
-
-<img class="db pa0 mv3" alt="The Discovereads promotion." src="/images/sl-discovereads.jpg">

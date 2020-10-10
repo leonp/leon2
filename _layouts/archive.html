@@ -2,7 +2,7 @@
 
 {% unless page.hide-title %}
 
-<h1 class="f5 mb4 p-name c-accent">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+{% include page-header.html %}
 
 {% endunless %}
 

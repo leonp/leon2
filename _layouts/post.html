@@ -13,7 +13,7 @@
 
 <article class="h-entry">
 
-    <h1 class="f5 mb4 p-name c-accent">{{ page.title }}</h1>
+    {% include page-header.html %}
 
     <!-- <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p> -->
 

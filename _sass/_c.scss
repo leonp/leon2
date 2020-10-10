@@ -18,7 +18,9 @@
     --sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
     --serif: "IBM Plex Serif", georgia, serif;
     --monospace: "IBM Plex Mono", monospace;
-    --wrapper: 40rem;
+    --wrapper: 32rem;
+    --lh-copy: 1.4;
+    --lh-title: 1.2;
 }
 
 .c-sans-serif {
@@ -33,6 +35,14 @@
     font-family: var(--monospace);
 }
 
+.c-lh-copy {
+    line-height: var(--lh-copy);
+}
+
+.c-lh-title {
+    line-height: var(--lh-title);
+}
+
 .c-wrapper {
     max-width: var(--wrapper);
 }
@@ -43,12 +53,7 @@
 
 html {
     font-size: 118.75%;
-    font-size: clamp(118.75%, 2.2vw, 125%);
-}
-
-body {
-    line-height: 1.5;
-    /* line-height: clamp(1.375rem, 2.8vw, 1.5rem); */
+    font-size: clamp(106.75%, 2.2vw, 118.75%);
 }
 
 a {
@@ -61,24 +66,8 @@ a:active {
     color: var(--hover);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: normal;
-    font-size: 1rem;
-}
-
 figure {
     margin: 0;
-}
-
-strong,
-b {
-    font-weight: normal;
-    color: #FFF;
 }
 
 img {
@@ -100,20 +89,22 @@ article dt,
 .article dt {
     margin-top: 2.25rem;
     margin-bottom: 0;
-    font-size: 1rem;
-    font-weight: normal;
     color: var(--accent);
+}
+
+article h1 + p {
+    font-size: 1.25rem;
 }
 
 article h2,
 .article h2 {
-    text-transform: lowercase;
-    font-variant: small-caps;
-    letter-spacing: 1px;
+    font-size: 1.25rem;
 }
 
 article p,
 article li {
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
     hyphens: auto;
 }
 
@@ -149,10 +140,6 @@ article a:focus,
 
 .c-sticky {
     position: sticky;
-}
-
-.c-sans-serif {
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "segoe ui", "helvetica neue", helvetica, ubuntu, roboto, noto, sans-serif;
 }
 
 .vid,

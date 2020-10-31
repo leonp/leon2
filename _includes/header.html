@@ -88,17 +88,19 @@
         <link href="/css/style.css" rel="stylesheet">
         {% endif %}
 
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
     </head>
 
-    <body class="ma0 pa0 bg-dark-gray moon-gray c-sans-serif c-ph c-lh-copy">
+    <body class="ma0 pa0 bg-white dark-gray c-serif c-ph c-lh-copy">
 
         <a class="c-no-print pv2 clip" href="#content">Skip to content &rarr;</a>
 
         <div class="c-wrapper pt3 center">
 
-            <nav class="c-no-print flex items-center">
+            <nav class="c-no-print flex items-center c-sans-serif f6">
 
-                {% if site.logomark %}<a class="c-icon pv2 pr1 pr2-ns" href="/" rel="index"><span class="dib" role="image" aria-label="{{ logoalt }}">{{ site.logomark }}</span></a>{% endif %}
+                {% if site.logomark %}<a class="c-icon pv2 pr1 pr2-ns dark-pink" href="/" rel="index"><span class="dib" role="image" aria-label="{{ logoalt }}">{{ site.logomark }}</span></a>{% endif %}
 
                 {% assign site_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
 

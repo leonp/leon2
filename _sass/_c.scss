@@ -11,15 +11,16 @@
 
 :root {
     --ph: 5vw;
-    --accent: #FFFF00;
-    --link: #FFF;
-    --hover: #FFFF00;
-    --visited: #EEE;
+    --accent: #000;
+    --icon-color: #D5008F;
+    --link: #00449E;
+    --hover: #D5008F;
+    --visited: #357EDD;
     --sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-    --serif: "IBM Plex Serif", georgia, serif;
+    --serif: "Source Serif Pro", georgia, serif;
     --monospace: "IBM Plex Mono", monospace;
-    --wrapper: 32rem;
-    --lh-copy: 1.4;
+    --wrapper: 34rem;
+    --lh-copy: 1.4375;
     --lh-title: 1.2;
 }
 
@@ -53,7 +54,7 @@
 
 html {
     font-size: 118.75%;
-    font-size: clamp(106.75%, 2.2vw, 118.75%);
+    font-size: clamp(118.75%, 2.2vw, 137.5%);
 }
 
 a {
@@ -90,6 +91,8 @@ article dt,
     margin-top: 2.25rem;
     margin-bottom: 0;
     color: var(--accent);
+    line-height: var(--lh-title);
+    font-family: var(--sans-serif);
 }
 
 article h1 + p {
@@ -242,7 +245,7 @@ blockquote {
 .c-icon,
 .c-icon:hover {
   color: transparent;
-  text-shadow: 0 0 var(--accent);
+  text-shadow: 0 0 var(--icon-color);
 }
 
 .c-bar::before {

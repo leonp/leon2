@@ -16,10 +16,10 @@
     --link: #00449E;
     --hover: #D5008F;
     --visited: #357EDD;
-    --sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+    --sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
     --serif: "Source Serif Pro", georgia, serif;
     --monospace: "IBM Plex Mono", monospace;
-    --wrapper: 34rem;
+    --wrapper: 30rem;
     --lh-copy: 1.4375;
     --lh-title: 1.2;
 }
@@ -93,10 +93,6 @@ article dt,
     color: var(--accent);
     line-height: var(--lh-title);
     font-family: var(--sans-serif);
-}
-
-article h1 + p {
-    font-size: 1.25rem;
 }
 
 article h2,

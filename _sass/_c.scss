@@ -11,17 +11,38 @@
 
 :root {
     --ph: 5vw;
-    --accent: #000;
+    --accent: #D5008F; // Tachyons dark-pink
     --icon-color: #D5008F;
     --link: #00449E;
     --hover: #D5008F;
     --visited: #357EDD;
+    --background: #FFF;
+    --foreground: #333;
     --sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
     --serif: "Source Serif Pro", georgia, serif;
     --monospace: "IBM Plex Mono", monospace;
     --wrapper: 30rem;
     --lh-copy: 1.4375;
     --lh-title: 1.2;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --accent: #FFB700;  // Tachyons gold
+        --link: #FFF;
+        --hover: #FFB700; // Tachyons gold
+        --visited: #AAA; // Tachyons gray
+        --focus: #FFB700; // Tachyons gold
+        --background: #333; // Tachyons dark-gray
+        --foreground: #CCC; // Tachyons moon-gray
+        --icon-color: #FFB700;
+    }
+
+    html {
+        -moz-osx-font-smoothing: grayscale;
+        osx-font-smoothing: grayscale;
+    }
 }
 
 .c-sans-serif {
@@ -34,6 +55,14 @@
 
 .c-monospace {
     font-family: var(--monospace);
+}
+
+.c-background {
+    background-color: var(--background);
+}
+
+.c-foreground {
+    color: var(--foreground);
 }
 
 .c-lh-copy {
@@ -50,6 +79,11 @@
 
 .c-accent {
     color: var(--accent);
+}
+
+.c-overflow-wrap,
+.c-overflow-wrap * {
+    overflow-wrap: break-word;
 }
 
 html {

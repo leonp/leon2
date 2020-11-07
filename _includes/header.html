@@ -92,7 +92,7 @@
 
     </head>
 
-    <body class="ma0 pa0 bg-white dark-gray c-sans-serif c-ph c-lh-copy">
+    <body class="ma0 pa0 c-background c-foreground c-sans-serif c-ph c-lh-copy">
 
         <a class="c-no-print pv2 clip" href="#content">Skip to content &rarr;</a>
 
@@ -100,7 +100,7 @@
 
             <nav class="c-no-print flex items-center c-sans-serif f6">
 
-                {% if site.logomark %}<a class="c-icon pv2 pr1 pr2-ns dark-pink" href="/" rel="index"><span class="dib" role="image" aria-label="{{ logoalt }}">{{ site.logomark }}</span></a>{% endif %}
+                {% if site.logomark %}<a class="c-icon pv2 pr1 pr2-ns c-accent" href="/" rel="index"><span class="dib" role="image" aria-label="{{ logoalt }}">{{ site.logomark }}</span></a>{% endif %}
 
                 {% assign site_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
 

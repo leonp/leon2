@@ -7,8 +7,8 @@ layout: default
 
 {% for project in site.work %}
 
-	<h2 class="f4 c-lh-title"><a href="{{ project.url }}">{{ project.title }}</a></h2>
+	<h2 class="f4 c-lh-title"><a class="no-underline db" href="{{ project.url }}">{{ project.title }}</a></h2>
 
-	<a href="{{ project.url }}"><img class="db pa0 mt3 mb4" alt="{{ project.alt }}" src="/images/{{ project.image }}"></a>
+	<a href="{{ project.url }}"><img class="db pa0 mt3 mb4 mb5-ns" alt="{{ project.alt }}" src="/images/{{ project.image }}"></a>
 
 {% endfor %}

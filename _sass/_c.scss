@@ -18,6 +18,7 @@
     --visited: #357EDD;
     --background: #FFF;
     --foreground: #333;
+    --h-color: #000;
     --sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
     --serif: "Source Serif Pro", georgia, serif;
     --monospace: "IBM Plex Mono", monospace;
@@ -37,6 +38,7 @@
         --background: #333; // Tachyons dark-gray
         --foreground: #CCC; // Tachyons moon-gray
         --icon-color: #FFB700;
+        --h-color: #FFF;
     }
 
     html {
@@ -81,6 +83,10 @@
     color: var(--accent);
 }
 
+.c-h-color {
+    color: var(--h-color);
+}
+
 .c-overflow-wrap,
 .c-overflow-wrap * {
     overflow-wrap: break-word;
@@ -88,7 +94,7 @@
 
 html {
     font-size: 118.75%;
-    font-size: clamp(118.75%, 2.2vw, 137.5%);
+    font-size: clamp(118.75%, 2.2vw, 150%);
 }
 
 a {
@@ -124,7 +130,7 @@ article dt,
 .article dt {
     margin-top: 2.25rem;
     margin-bottom: 0;
-    color: var(--accent);
+    color: var(--h-color);
     line-height: var(--lh-title);
     font-family: var(--sans-serif);
 }

@@ -5,7 +5,9 @@ order: 3
 layout: default
 ---
 
-{% for project in site.work %}
+{% assign projects = site.work | sort: "work-order" %}
+
+{% for project in projects %}
 
 	<h2 class="f4 c-lh-title"><a class="no-underline db" href="{{ project.url }}">{{ project.title }}</a></h2>
 

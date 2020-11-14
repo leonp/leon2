@@ -18,7 +18,9 @@ Digital strategy and project management since 2008. Head of digital and marketin
 
 <ul>
 
-{% for project in site.work %}
+{% assign projects = site.work | sort: "work-order" %}
+
+{% for project in projects %}
 
 	<li><a href="{{ project.url }}">{{ project.title }}</a></li>
 

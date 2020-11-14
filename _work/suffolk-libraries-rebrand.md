@@ -5,6 +5,7 @@ image: branding.png
 alt: "Screenshot of a page from the branding guidelines explaining the logo."
 year: 2019-2020
 partners: Silk Pearce
+work-order: 2
 ---
 
 ## Background

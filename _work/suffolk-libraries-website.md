@@ -7,6 +7,23 @@ year: 2019-2020
 partners: Clearleft
 ---
 
+<details>
+
+	<summary class="pointer c-link b">Table of contents</summary>
+
+	<ul>
+
+		<li><a href="#background">Background</a></li>
+		<li><a href="#aims">Aims</a></li>
+		<li><a href="#information-architecture-research">Information architecture</a></li>
+		<li><a href="#choosing-a-cms">Choosing a CMS</a></li>
+		<li><a href="#content-strategy-or-what-we-publish">Content strategy</a></li>
+		<li><a href="#summary">Summary</a></li>
+
+	</ul>
+
+</details>
+
 ## Background
 
 Pre-2019 the Suffolk Libraries website was designed, coded and maintained by me. We updated the site by compiling it locally and pushing changes to Github, which in turn fired a site build. If you’re wondering what most these terms mean, you’re probably not alone – we were using a fairly technical, arcane set of tools to publish content.
@@ -54,7 +71,7 @@ In the end we plumped for [Statamic](https://statamic.com/), a flat file CMS. We
 
 With a CMS in place we could start deciding on what components and types of data we could publish in order to meet our communications aims.
 
-Firstly, we have a flexible set of graphical components that can cobine to create pages. These include:
+Firstly, we have a flexible set of graphical components that can combine to create pages. These include:
 
 - a “promo picker”, i.e. graphic, text and link to something, in three different sizes
 - accordions to handle content that can be hidden and disclosed when required
@@ -72,3 +89,17 @@ By combining these elements, we can create complex pages that are flexible enoug
 	{% include figure.html url="sl-home-page-2.jpg" alt="Screenshot of the Suffolk Libraries home." caption="These components can be easily edited and shifted around the page." %}
 
 </details>
+
+Secondly, we have a set of “collections” and taxonomies that allow us to create things like recommendations, events and the means to group these thematically.
+
+For example, we can create a festival, a collection of related events displayed on a page where we can use the Bard editor. This means we can automatically generate the event listing and then add a set of recommendations around the event, as well as any other graphical components we want. See our [Unfinished Business](https://www.suffolklibraries.co.uk/whats-on/festival/unfinished-business) page for an example.
+
+Both of these features serve our strategic aims of communicating what we do beyond the transactional, day-to-day business of finding, collecting and returning books.
+
+## Summary
+
+The Suffolk Libraries website now allows editors to create engaging pages that meet our strategic needs. Users can also find what they’re looking for quickly, while we introduce them to a broader range of services and demonstrate what we can offer beyond providing books.
+
+Measuring this difference in lockdown is difficult. However, we can see that broad engagement stats such as visits per session have increased dramatically since we launched the new site, while attendance to online events has been really healthy too.
+
+We also have a fast, stable site that has had 100% uptime in 3 months out of 4. Two more editors are confident creating pages, events and other more interesting, engaging experiences for visitors.

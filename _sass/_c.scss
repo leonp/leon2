@@ -18,11 +18,12 @@
     --visited: #357EDD;
     --background: #FFF;
     --foreground: #333;
+    --border: #CCC; // Tachyons moon-gray
     --h-color: #000;
     --sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
     --serif: "Source Serif Pro", georgia, serif;
     --monospace: "IBM Plex Mono", monospace;
-    --wrapper: 30rem;
+    --wrapper: 34rem;
     --lh-copy: 1.4375;
     --lh-title: 1.2;
 }
@@ -39,6 +40,7 @@
         --foreground: #CCC; // Tachyons moon-gray
         --icon-color: #FFB700;
         --h-color: #FFF;
+        --border: #555; // Tachyons mid-gray
     }
 
     html {
@@ -90,6 +92,10 @@
 .c-overflow-wrap,
 .c-overflow-wrap * {
     overflow-wrap: break-word;
+}
+
+.c-bg-border {
+    background-color: var(--border);
 }
 
 html {

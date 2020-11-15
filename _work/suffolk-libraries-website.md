@@ -52,7 +52,7 @@ We therefore came up with a website structure that focused on user actions, such
 
 {% include figure.html url="sl-nav.jpg" alt="Screenshot of the Suffolk Libraries website navigation bar consisting of short verbs and nouns such as “Visit” and “Borrow”." caption="The Suffolk Libraries website navigation bar" %}
 
-This use of verbs and customer-friendly nouns also made sure we resisted the tempatation to simply reflect the organisation’s structure in the website. For example, the _Advice_ section contains information from the Health and Wellbeing and Stock and Content teams.
+This use of verbs and customer-friendly nouns also made sure we resisted the temptation to simply reflect the organisation’s structure in the website. For example, the _Advice_ section contains information from the Health and Wellbeing and Stock and Content teams.
 
 ### Choosing a CMS
 

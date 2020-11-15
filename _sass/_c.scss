@@ -98,6 +98,13 @@
     background-color: var(--border);
 }
 
+.c-reveal:focus {
+    position: relative !important;
+    _position: relative !important;
+    clip: 0;
+    clip: 0;
+}
+
 html {
     font-size: 118.75%;
     font-size: clamp(118.75%, 2.2vw, 150%);

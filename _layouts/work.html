@@ -19,6 +19,9 @@
     	{% if page.partners %}
     	<li>Partners: <strong>{{ page.partners }}</strong></li>
     	{% endif %}
+        {% if page.project-link %}
+        <li>Link: <a href="{{ page.project-link }}">{{ page.project-link }}</a></li>
+        {% endif %}
 
     </ul>
 

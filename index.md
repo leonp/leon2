@@ -38,6 +38,7 @@ Digital strategy and project management since 2008. Head of digital and marketin
 
 - [Twitter](https://mobile.twitter.com/leonpaternoster/)
 - [micro.blog](https://micro.blog/leonp/)
-- [LinkedIn](https://uk.linkedin.com/in/leonpaternoster)
+- [LinkedIn](https://uk.linkedin.com/in/leonpaternoster/)
+- [Github](https://github.com/leonp/)
 - leon.paternoster@zoho.com
 

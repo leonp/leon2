@@ -5,6 +5,7 @@ image: verso.png
 alt: "A small self-service unit."
 year: 2017
 partners: Clearleft, Dootrix
+project-link: https://dootrix.com/verso
 work-order: 3
 ---
 

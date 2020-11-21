@@ -107,7 +107,7 @@
 
                 {% for this_page in site_pages %}
 
-                <a href="{{ this_page.url }}" class="pv2 ph1 ph2-ns">{% if this_page.nav-title %}{{ this_page.nav-title }}{% else %}{{ this_page.title }}{% endif %}</a>
+                <a href="{{ this_page.url }}" class="{% if this_page.url == page.url %}c-accent {% endif %}pv2 ph1 ph2-ns">{% if this_page.nav-title %}{{ this_page.nav-title }}{% else %}{{ this_page.title }}{% endif %}</a>
 
                 {% endfor %}
 

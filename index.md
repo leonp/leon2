@@ -12,7 +12,7 @@ underlined-links: true
 in_nav: true
 ---
 
-Digital strategy and project management since 2008. Head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk).
+Digital development, strategy and project management since 2008. Head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk).
 
 ## Work
 

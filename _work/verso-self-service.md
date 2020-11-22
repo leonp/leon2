@@ -41,10 +41,10 @@ I therefore thought about what we’d want from an ideal system:
 The obvious solution to our problem was a website. This offers several advantages over a client:
 
 - It can run on any device and any OS with a web browser
-- You don’t have to update any client software: update the website and all instances are update
+- You don’t have to update any client software: update the website and all kiosks are updated
 - Responsive design means it’s easy to scale your software to any screen
 
-I felt strongly this was a good idea, but would it be viable? If so, what form would it take? What should we be looking for? I decided to run a sprint to find out.
+I felt strongly this was a good idea, but would it be viable? If so, what form would it take? What should we be looking for? I decided to run a design sprint to find out.
 
 ## Research phase: A feasibility study and design sprint
 

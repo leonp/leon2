@@ -34,6 +34,8 @@ I've got some technical experience too:
 
 If appropriate, I can use WordPress or [Kirby](https://getkirby.com) to create sites that require a back end.
 
+I’ve also blogged about working on the web since 2008. My blog post about [how TechRadar attempt to get round GDPR through using dark design patterns](/posts/techradar-gdpr/) was cited by the California Office of Law when formulating the [California Consumer Privacy Act (CCPA)](https://oag.ca.gov/privacy/ccpa/regs) (scroll to the bottom of the page to <cite>Appendix C, 15 day period</cite>).
+
 ## Contact
 
 <ul>
@@ -50,5 +52,7 @@ I blog at [This day’s portion](https://www.thisdaysportion.com).
 ## Colophon
 
 <p>This site is built using <a href="https://jekyllrb.com">Jekyll</a>, a <a href="https://en.wikipedia.org/wiki/Static_web_page">static site</a> generator, and hosted by <a href="https://www.netlify.com">Netlify</a>, who specialise in hosting static sites. Netlify connects to Git (well, Github, Gitlab and Bitbucket), which means that when I push a change to my repo, the website is updated. This is a very good way to work. I recommend Netlify &#8212; they also offer forms, redirects and even AWS services integration.</p>
+
+At the time of writing, I'm using the [Atkinson Hyperlegible typeface](https://www.brailleinstitute.org/freefont), freely available from the American Braille Institute in web-friendly WOFF2 format.
 
 <p>I use my own Jekyll &#8220;framework&#8221; called <a href="https://github.com/leonp/jekyll-tachyons">Jekyll Tachyons</a>, as it makes building a Jekyll site on the <a href="http://tachyons.io">Tachyons CSS framework</a> quick and easy. I like <span role="img" aria-label="lightning fast">⚡️</span>.</p>

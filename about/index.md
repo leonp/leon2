@@ -53,6 +53,8 @@ I blog at [This day’s portion](https://www.thisdaysportion.com).
 
 <p>This site is built using <a href="https://jekyllrb.com">Jekyll</a>, a <a href="https://en.wikipedia.org/wiki/Static_web_page">static site</a> generator, and hosted by <a href="https://www.netlify.com">Netlify</a>, who specialise in hosting static sites. Netlify connects to Git (well, Github, Gitlab and Bitbucket), which means that when I push a change to my repo, the website is updated. This is a very good way to work. I recommend Netlify &#8212; they also offer forms, redirects and even AWS services integration.</p>
 
+<p>There's also <a href="/api">a basic API</a> you can use to get the site content in <code>json</code>.</p>
+
 At the time of writing, I'm using the [Atkinson Hyperlegible typeface](https://www.brailleinstitute.org/freefont), freely available from the American Braille Institute in web-friendly WOFF2 format.
 
 <p>I use my own Jekyll &#8220;framework&#8221; called <a href="https://github.com/leonp/jekyll-tachyons">Jekyll Tachyons</a>, as it makes building a Jekyll site on the <a href="http://tachyons.io">Tachyons CSS framework</a> quick and easy. I like <span role="img" aria-label="lightning fast">⚡️</span>.</p>

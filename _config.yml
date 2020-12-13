@@ -10,6 +10,7 @@ github: https://github.com/leonp/
 microblog: https://micro.blog/leonp/
 webmention-pingback: https://webmention.io/www.leonpaternoster.com/xmlrpc
 webmention-mention: https://webmention.io/www.leonpaternoster.com/webmention
+webmention-api: https://webmention.io/api/mentions?token=OXK_ckbT6Mfi3blN_i0V5w
 me: https://micro.blog/leonp/
 logomark: ⚡️
 logoalt: "Lightning bolt logo"

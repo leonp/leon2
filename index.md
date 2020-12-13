@@ -36,9 +36,9 @@ Digital development, strategy and project management since 2008. Head of digital
 
 ## Contact
 
-- [Twitter](https://mobile.twitter.com/leonpaternoster/)
+- <a href="https://twitter.com/leonpaternoster" rel="me">Twitter</a>
 - [micro.blog](https://micro.blog/leonp/)
 - [LinkedIn](https://uk.linkedin.com/in/leonpaternoster/)
-- <a href="https://github.com/leonp/" rel="me">Github</a>
+- <a href="https://github.com/leonp/">Github</a>
 - leon.paternoster@zoho.com
 

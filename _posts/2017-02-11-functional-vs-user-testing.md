@@ -1,8 +1,7 @@
 ---
 title: "Build user requirements into your requests for proposal and avoid long functional check lists"
-
 category: web
-description: "Anything people use needs to be tested by users. This is in addition to functional <em>does it work?</em> testing. Product commissioners can procure better products by avoiding long, functional check list requests for proposal and doing some user research first. Make providers demonstrate their ability to meet user needs."
+sub: "Anything people use needs to be tested by users. This is in addition to functional <em>does it work?</em> testing. Product commissioners can procure better products by avoiding long, functional check list requests for proposal and doing some user research first. Make providers demonstrate their ability to meet user needs."
 cache: true
 article: true
 excerpt: "Anything people use needs to be tested by users. This is in addition to functional <em>does it work?</em> testing. Product commissioners can procure better products by avoiding long, functional check list requests for proposal and doing some user research first. Make providers demonstrate their ability to meet user needs."

@@ -3,7 +3,7 @@ title: 'The Adventures of Sherlock Holmes in HTML'
 layout: post
 category: work
 featured: true
-excerpt: "Read the twelve classic Sherlock Holmes stories in perfectly formatted, quick-loading HTML on any device with a web browser. You can also bookmark your place in the text."
+sub: "Read the twelve classic Sherlock Holmes stories in perfectly formatted, quick-loading HTML on any device with a web browser. You can also bookmark your place in the text."
 ---
 
 {% include figure.html url="twisted-lip.jpg" alt="Black and white pen sketch of Holmes sat on some cushions smoking a pipe." caption="Original Sidney Paget illustration from <cite>The Man with the Twisted Lip</cite>" %}

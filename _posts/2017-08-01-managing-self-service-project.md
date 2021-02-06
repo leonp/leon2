@@ -3,7 +3,7 @@ title: Managing a project to design and install library self-service software
 img: kiosks.jpg
 alt: 2 self-service kiosks
 excerpt: "I conceived a new library self-service system, commissioned and helped run a feasibility and design sprint, and managed the project from start to finish."
-summary: "I conceived a new library self-service system, commissioned and helped run a feasibility and design sprint, and managed the project from start to finish."
+sub: "I conceived a new library self-service system, commissioned and helped run a feasibility and design sprint, and managed the project from start to finish."
 category: work
 description: "Suffolk Libraries is the only library service in the UK to develop its own self-service software, saving money and making it easier to install and manage self-service kiosks wherever it likes. It can also sell the service to other libraries."
 featured: true

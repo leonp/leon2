@@ -1,7 +1,7 @@
 ---
 
 title: Libraries should invest millions in search engines
-excerpt: Miserable and clunky search and discovery don't really cut it in the age of Google and Amazon. Without good UX, basic relevance, suggestion and discovery, libraries will lose customers.
+sub: Miserable and clunky search and discovery don't really cut it in the age of Google and Amazon. Without good UX, basic relevance, suggestion and discovery, libraries will lose customers.
 article: true
 category: libraries
 featured: true

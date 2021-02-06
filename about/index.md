@@ -12,7 +12,7 @@ hyphens: true
 
 I'm Leon, head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). I've worked in digital and, to a lesser extent, IT, since 2008.
 
-I live in [Ipswich](https://en.wikipedia.org/wiki/Ipswich), Suffolk in the UK. In my current role, I'm responsible for lots of things, including our website and apps we develop. Perhaps most interestingly, **I conceived and led the development of [Verso](https://dootrix.com/verso/), our own library self-service system**, a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_applications) now sold by software developers [Dootrix](https://dootrix.com/) to other library services.
+I live in [Ipswich](https://en.wikipedia.org/wiki/Ipswich), Suffolk in the UK. In my current role, I'm responsible for lots of things, including marketing, our website and the apps we develop. **I conceived and led the development of [Verso](https://dootrix.com/verso/), our own library self-service system**, a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_applications) now sold by software developers [Dootrix](https://dootrix.com/) to other library services.
 
 {% include figure.html url="leon-zone.jpg" alt="Leon Paternoster looking to the right underneath a sign saying ‘zone’" %}
 
@@ -46,8 +46,6 @@ I’ve also blogged about working on the web since 2008. My blog post about [how
 <li>leon.paternoster@zoho.com</li>
 
 </ul>
-
-I blog at [This day’s portion](https://www.thisdaysportion.com).
 
 ## Colophon
 

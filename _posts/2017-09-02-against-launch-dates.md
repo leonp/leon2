@@ -1,7 +1,7 @@
 ---
 title: "Lessons learned from developing library self-service software: The launch date shouldn&#8217;t be the real launch date"
 category: web
-description: "Because by far the best feedback comes from real life usage, you should look at reserving project development money for after your product &#8220;officially&#8221; launches."
+sub: "Because by far the best feedback comes from real life usage, you should look at reserving project development money for after your product &#8220;officially&#8221; launches."
 article: true
 img: ship-launch.jpg
 alt: An old image of a ship launch

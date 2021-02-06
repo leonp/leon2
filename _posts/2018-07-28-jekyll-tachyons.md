@@ -2,7 +2,7 @@
 title: 'Jekyll Tachyons starter theme for Jekyll'
 layout: post
 category: work
-excerpt: "Jekyll Tachyons is a skeleton theme for Jekyll that makes it easy to get up and running with the Tachyons CSS framework. Prototype layouts quickly while minimising, inlining and selecting the CSS you use."
+sub: "Jekyll Tachyons is a skeleton theme for Jekyll that makes it easy to get up and running with the Tachyons CSS framework. Prototype layouts quickly while minimising, inlining and selecting the CSS you use."
 featured: true
 ---
 

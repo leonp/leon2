@@ -1,7 +1,7 @@
 ---
 title: Measuring success on library websites
 category: web
-description: "Lots of visitors doesn't equal success. The only real measure of whether your website is doing well is if it helps people do what they want to do."
+sub: "Lots of website visitors doesn't necessarily equal success. The only real measure of whether your website is doing well is if it helps people do what they want to do. Website visits, impressions and user numbers aren't outcomes. Measure customer actions instead."
 article: true
 excerpt: "Website visits, impressions and user numbers aren't outcomes. Measure customer actions instead."
 featured: true

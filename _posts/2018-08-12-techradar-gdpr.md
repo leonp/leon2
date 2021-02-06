@@ -4,6 +4,7 @@ layout: post
 category: web
 article: true
 featured: true
+sub: "GDPR is clear: Users have to explicitly opt-in to be tracked by advertising cookies. Tehradar provides an example of how organisations get round this “problem” through using shady design techniques. (Note: this article was sited by the <a href='https://oag.ca.gov/privacy/ccpa/regs'>California Consumer Privacy Act (CCPA)</a>"
 ---
 
 Many news and big blog sites have introduced onerous and confusing popovers since the introduction of [GDPR](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/) in May. Unfortunately, this will no doubt result in GDPR [banner blindness](https://www.nngroup.com/articles/banner-blindness-old-and-new-findings/), where users will simply click 'Accept', thereby allowing websites to install tracking javascript, just as they did before 25 May 2018.

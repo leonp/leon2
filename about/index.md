@@ -40,8 +40,6 @@ I’ve also blogged about working on the web since 2008. My blog post about [how
 
 <ul>
 
-<li><a href="https://mobile.twitter.com/leonpaternoster/">Twitter</a> (protected account)</li>
-<li><a href="https://micro.blog/leonp/">micro.blog</a></li>
 <li><a href="https://uk.linkedin.com/in/leonpaternoster">LinkedIn</a></li>
 <li>leon.paternoster@zoho.com</li>
 

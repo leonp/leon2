@@ -17,6 +17,9 @@ logoalt: "Lightning bolt logo"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.leonpaternoster.com" # the base hostname & protocol for your site
+# Enter URL without protocol or www subdomain for webmention code
+# Important: Add trailing slash
+webmention-url: leonpaternoster.com/posts/
 
 hide-skip-link: true
 
@@ -105,16 +108,13 @@ collections:
         permalink: /:collection/:name
 
 
+plugins:
+  - jekyll-get-json
 
-
-# webmentions
-
-# webmentions:
-  # username: www.leonpaternoster.com
-  # cache_folder: _data/webmentions
-  # legacy_domains:
-    # - http://leonpaternoster.com
-    # - http://www.leonpaternoster.com
+jekyll_get_json:
+  - data: wm
+    json: 'https://webmention.io/api/mentions?token=OXK_ckbT6Mfi3blN_i0V5w'
+    cache: true
 
 
 # Exclude from processing.
@@ -186,18 +186,6 @@ pagination:
   # Optional, the default name of the index file for generated pages (e.g. 'index.html')
   # Without file extension
   indexpage: 'index'
-
-webmentions:
-  username: https://www.leonpaternoster.com
-  # Use my own cache folder
-  cache_folder: .cache
-  # skip bad URLs for 5 days
-  cache_bad_uris_for: 5
-  # I moved to www and then to https, so…
-  legacy_domains:
-    - http://leonpaternoster.com
-    - http://www.leonpaternoster.com
-
 
 # This is a Netlify file, feel free to delete unless you need it
 include: [_redirects]

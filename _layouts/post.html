@@ -23,31 +23,45 @@
 
         <p>&rarr; <time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %b, %Y" }}</time> / <a href="/">{{ site.author }}</a></p>
 
-        <div id="webmentions"></div>
+        {% assign webmentions = "" | split: "," %}
 
-    </footer>
+        {% assign webmention_dump = site.data.wm.links %}
 
-    <!-- {% unless page.disable_comments %}
+        {% assign slug_eval = page.slug | append: "/" %}
 
-    <footer class="pt3">
+        {% assign url_eval = slug_eval | prepend: site.webmention-url %}
 
-        <div class="mb4">
+        {% for item in webmention_dump %}
 
-            {% include comment-form.html %}
+            {% if item.target contains url_eval %}
 
-            {% assign all_comments = site.data.comments | where: "slug", page.slug %}
-
-            {% if all_comments.size > 0 %}
-
-            {% include comments.html %}
+                {% assign webmentions = webmentions | push: item %}
 
             {% endif %}
 
-        </div>
+        {% endfor %}
+
+        {% if webmentions.size > 0 %}
+
+            {% for webmention in webmentions %}
+
+                {% if forloop.first == true %}
+
+                <h2 class="f4 mb1">{{ webmentions.size }} Website mentions</h2>
+
+                <ul>
+
+                {% endif %}
+
+                <li class="pv1">{% if webmention.data.author.name %}{{ webmention.data.author.name }} posted {% endif %}<a href="{{ webmention.source }}">{{ webmention.source }}</a></li>
+
+            {% endfor %}
+
+            </ul>
+
+        {% endif %}
 
     </footer>
-
-    {% endunless %} -->
 
 </article>
 

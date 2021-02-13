@@ -53,7 +53,7 @@
 
                 {% endif %}
 
-                <li class="pv1">{% if webmention.data.author.name %}{{ webmention.data.author.name }} posted {% endif %}<a href="{{ webmention.source }}">{{ webmention.source }}</a></li>
+                <li class="pv1">{% if webmention.data.author.name %}{{ webmention.data.author.name }} posted {% endif %}<a rel="nofollow" href="{{ webmention.source }}">{{ webmention.source }}</a></li>
 
             {% endfor %}
 

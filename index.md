@@ -40,5 +40,10 @@ I’ve got 13 years’ experience of leading web and app projects, copywriting a
 
 {% endfor %}
 
+<h2 class="c-lh-title mb3">Contact</h2>
+
+**leon.paternoster@zoho.com** / [LinkedIn](https://uk.linkedin.com/in/leonpaternoster/)
+
+
 
 

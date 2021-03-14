@@ -6,6 +6,8 @@
 
 {% endunless %}
 
+<div class="c-body">
+
 {{ content}}
 
 {% if page.pagination %}
@@ -17,5 +19,7 @@
     {% include list.html %}
 
 {% endif %}
+
+</div>
 
 {% include footer.html %}

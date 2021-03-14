@@ -6,6 +6,7 @@ alt: "Screenshot of a page from the branding guidelines explaining the logo."
 year: 2019-2020
 partners: Silk Pearce
 work-order: 2
+summary: "How do you create a strong, coherent visual brand for 44 branches, numerous projects and lots of online and printed materials?"
 ---
 
 ## Background

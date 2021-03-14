@@ -1,12 +1,13 @@
 ---
-title: Developing the Suffolk Libraries website (v3)
+title: Suffolk Libraries website
 roles: project management, strategy, information architecture
-image: sl-website-v3.jpg
+image: sl.jpg
 alt: "Themed history of women’s rights events listed on the Suffolk Libraries website."
 year: 2019-2020
 partners: Clearleft
 project-link: https://www.suffolklibraries.co.uk
 work-order: 1
+summary: A flexible, fast website that lets editors build conplex pages using simple modules.
 ---
 
 <details>

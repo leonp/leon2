@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="{{ site.lang }}" class="pa3-l c-bg-border">
+<html lang="{{ site.lang }}">
 
     <head>
 
@@ -96,24 +96,12 @@
 
     </head>
 
-    <body class="ma0 pa0 c-background c-foreground c-sans-serif c-ph c-lh-copy">
+    <body class="ma0 pv3 pv4-ns c-background c-foreground c-sans-serif c-ph c-lh-copy">
 
         <a class="c-no-print pv1 ph3 f7 clip c-reveal" href="#content">Skip to content &rarr;</a>
 
         <div class="c-wrapper center">
 
-            <nav class="pt3 c-no-print flex items-center c-sans-serif f6">
-
-                {% if site.logomark %}<a class="c-icon pv2 pr1 pr2-ns c-accent" href="/" rel="index"><span class="dib" role="image" aria-label="{{ logoalt }}">{{ site.logomark }}</span></a>{% endif %}
-
-                {% assign site_pages = site.pages | where: "in_nav", "true" | sort: "order" %}
-
-                {% for this_page in site_pages %}
-
-                <a href="{{ this_page.url }}" class="{% if this_page.url == page.url %}c-accent {% endif %}pv2 ph1 ph2-ns">{% if this_page.nav-title %}{{ this_page.nav-title }}{% else %}{{ this_page.title }}{% endif %}</a>
-
-                {% endfor %}
-
-            </nav>
+            <a class="flex items-center pv2 lh-solid fw9" href="/" rel="index"><span class="f3 dib c-icon pr2" role="image" aria-label="{{ logoalt }}">{{ site.logomark }}</span><span>{{ site.title }}</span></a>
 
             <main id="content" class="pt4 pt5-ns pb3">

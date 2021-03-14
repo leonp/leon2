@@ -12,8 +12,8 @@ webmention-pingback: https://webmention.io/www.leonpaternoster.com/xmlrpc
 webmention-mention: https://webmention.io/www.leonpaternoster.com/webmention
 webmention-api: https://webmention.io/api/mentions?token=OXK_ckbT6Mfi3blN_i0V5w
 me: "mailto:leon.paternoster@zoho.com"
-logomark: ⚡️
-logoalt: "Lightning bolt logo"
+logomark: ☞
+logoalt: "Index figure pointing right"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.leonpaternoster.com" # the base hostname & protocol for your site

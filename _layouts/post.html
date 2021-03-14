@@ -13,11 +13,21 @@
 
 <article class="h-entry c-overflow-wrap">
 
-    {% include page-header.html %}
+    <header class="flex flex-column flex-column-reverse">
 
-    <!-- <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p> -->
+        {% include page-header.html %}
+
+        <p class="f6 mv2"><a href="/">Home</a> → <a href="/posts">Posts</a></p> 
+
+        <!-- <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p> -->
+
+    </header>
+
+    <div class="c-body">
 
     {{ content }}
+
+    </div>
 
     <footer class="mt4 c-sans-serif f6">
 

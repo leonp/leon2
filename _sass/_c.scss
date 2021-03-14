@@ -20,12 +20,12 @@
     --foreground: #333;
     --border: #CCC; // Tachyons moon-gray
     --h-color: #000;
-    --sans-serif: "Atkinson Hyperlegible", "Public Sans", -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+    --sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
     --serif: "Source Serif Pro", georgia, serif;
     --monospace: "IBM Plex Mono", monospace;
-    --wrapper: 32rem;
-    --lh-copy: 1.5;
-    --lh-title: 1.2;
+    --wrapper: 46rem;
+    --lh-copy: 1.4375;
+    --lh-title: 1.1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -107,7 +107,7 @@
 
 html {
     font-size: 118.75%;
-    font-size: clamp(118.75%, 2.2vw, 137.5%);
+    font-size: clamp(112.5%, 2.2vw, 118.75%);
     scroll-behavior: smooth;
 }
 
@@ -147,6 +147,7 @@ article dt,
     color: var(--h-color);
     line-height: var(--lh-title);
     font-family: var(--sans-serif);
+    font-weight: 900;
 }
 
 article h2,
@@ -193,6 +194,20 @@ article a:focus,
 
 .c-sticky {
     position: sticky;
+}
+
+.c-body * {
+    max-width: 30rem;
+}
+
+.c-body figure,
+.c-body figure div  {
+    max-width: 100% !important;
+}
+
+.c-body img {
+    max-width: 100% !important;
+    height: auto !important;
 }
 
 .vid,

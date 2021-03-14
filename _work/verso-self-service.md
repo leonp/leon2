@@ -1,5 +1,5 @@
 ---
-title: Developing a self-service system for libraries
+title: Self-service for libraries
 roles: project management, strategy, sales
 image: verso.png
 alt: "A small self-service unit."
@@ -7,6 +7,7 @@ year: 2017
 partners: Clearleft, Dootrix
 project-link: https://dootrix.com/verso
 work-order: 3
+summary: "Building an innovative, lightweight, web based self-service system using the latest offline techniques."
 ---
 
 ## Overview

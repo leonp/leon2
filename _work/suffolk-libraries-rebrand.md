@@ -38,12 +38,18 @@ The use of just three core elements allows staff to use the branding without hav
 
 ## In use
 
-<img class="db pa0 mv3 center" alt="A Suffolk Libraries advert for its elibrary services." src="/images/branding-advert.jpg">
+<figure class="flex-ns flex-wrap-ns items-center-ns">
 
-<img class="db pa0 mv3 center" alt="The Discovereads promotion." src="/images/sl-discovereads.jpg">
+	<div class="w-50-ns ph2-ns w-third-l"><img class="db pa0 mv3 center" alt="A Suffolk Libraries advert for its elibrary services." src="/images/branding-advert.jpg"></div>
 
-<img class="db pa0 mv3 center" alt="A test and trace poster." src="/images/test-and-trace.jpg">
+	<div class="w-50-ns ph2-ns w-third-l"><img class="db pa0 mv3 center" alt="The Discovereads promotion." src="/images/sl-discovereads.jpg"></div>
 
-<img class="db pa0 mv3 center" alt="The Suffolk Libraries Twitter page." src="/images/sl-twitter.jpg">
+	<div class="w-50-ns ph2-ns w-third-l"><img class="db pa0 mv3 center" alt="A test and trace poster." src="/images/test-and-trace.jpg"></div>
 
-<img class="db pa0 mv3 center" alt="The Suffolk Libraries website." src="/images/sl-website.jpg">
+	<div class="w-50-ns ph2-ns w-third-l"><img class="db pa0 mv3 center" alt="The Suffolk Libraries Twitter page." src="/images/sl-twitter.jpg"></div>
+
+	<div class="w-50-ns ph2-ns w-third-l"><img class="db pa0 mv3 center" alt="The Suffolk Libraries website." src="/images/sl-website.jpg"></div>
+
+	<div class="w-50-ns ph2-ns w-third-l"><img class="db pa0 mv3 center" alt="Jumpstart January advert." src="/images/jj.jpg"></div>
+
+</figure>

@@ -26,6 +26,7 @@
     --wrapper: 46rem;
     --lh-copy: 1.4375;
     --lh-title: 1.1;
+    --bg-secondary: #EEE; // Tachyons light-gray
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,6 +42,7 @@
         --icon-color: #FFB700;
         --h-color: #FFF;
         --border: #555; // Tachyons mid-gray
+        --bg-secondary: #555; // Tachyons mid-gray
     }
 
     html {
@@ -67,6 +69,10 @@
 
 .c-foreground {
     color: var(--foreground);
+}
+
+.c-bg-secondary {
+    background-color: var(--bg-secondary);
 }
 
 .c-lh-copy {

@@ -14,6 +14,8 @@ in_nav: true
 
 I’ve got 13 years’ experience of leading web and app projects, copywriting and managing marcomms teams. I’m interested in making responsive, accessible, easy-to-use interfaces on and offline, so users get a great experience.
 
+**leon.paternoster@zoho.com** / [LinkedIn](https://uk.linkedin.com/in/leonpaternoster/)
+
 <h2 class="c-lh-title mb3">Work</h2>
 
 {% assign projects = site.work | sort: "work-order" %}
@@ -39,10 +41,6 @@ I’ve got 13 years’ experience of leading web and app projects, copywriting a
 </figure>
 
 {% endfor %}
-
-<h2 class="c-lh-title mb3">Contact</h2>
-
-**leon.paternoster@zoho.com** / [LinkedIn](https://uk.linkedin.com/in/leonpaternoster/)
 
 
 

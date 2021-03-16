@@ -7,7 +7,7 @@ year: 2019-2020
 partners: Clearleft
 project-link: https://www.suffolklibraries.co.uk
 work-order: 2
-summary: A flexible, fast website that lets editors build conplex pages using simple modules.
+summary: A flexible, fast website that lets editors build complex pages using simple modules.
 ---
 
 <details>

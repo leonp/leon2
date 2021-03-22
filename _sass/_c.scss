@@ -301,8 +301,10 @@ td {
 }
 
 blockquote {
-    margin-top: 2.25rem;
-    margin-bottom: 2.25rem;
+    margin: 2.25rem 0;
+    padding: 0 1.5rem;
+    font-size: 0.875em;
+    box-sizing: border-box;
 }
 
 *:focus {

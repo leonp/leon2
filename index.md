@@ -34,14 +34,10 @@ I’ve got 13 years’ experience of leading web and app projects, copywriting a
 
 	<div class="w-50-l">
 
-		<a href="{{ project.url }}"><img class="db ma0 pa0" src="/images/{{ project.image }}" alt="{{ project.alt }}"></a>
+		<a href="{{ project.url }}"><img class="db ma0 pa0 shadow-1" src="/images/{{ project.image }}" alt="{{ project.alt }}"></a>
 
 	</div>
 
 </figure>
 
 {% endfor %}
-
-
-
-

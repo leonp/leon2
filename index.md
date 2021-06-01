@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Leon Paternoster
-display-title: "Clear, accessible writing and design. Because your interface is your brand."
+display-title: "13 years (and counting) of building websites, managing digital and marketing teams and project managing complex digital projects."
 nav-title: "Home"
 is_home: true
 order: 1
@@ -11,8 +11,6 @@ visited-links: true
 underlined-links: true
 in_nav: true
 ---
-
-I’ve got 13 years’ experience of leading web and app projects, copywriting and managing marcomms teams. I’m interested in making responsive, accessible, easy-to-use interfaces on and offline, so users get a great experience.
 
 **leon.paternoster@zoho.com** / [LinkedIn](https://uk.linkedin.com/in/leonpaternoster/)
 

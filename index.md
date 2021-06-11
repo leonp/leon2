@@ -9,33 +9,20 @@ prose-headings: true
 hyphens: true
 visited-links: true
 underlined-links: true
-in_nav: true
+hide-title: true
+image: leon-zone.jpg
+alt: "Leon Paternoster underneath a “Zone” sign."
 ---
 
-**leon.paternoster@zoho.com** / [LinkedIn](https://uk.linkedin.com/in/leonpaternoster/)
+- *leon.paternoster@zoho.com*
+- [LinkedIn](https://uk.linkedin.com/in/leonpaternoster/)
 
-<h2 class="c-lh-title mb3">Work</h2>
+Head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). 13 years’ experience of:
 
-{% assign projects = site.work | sort: "work-order" %}
+- Digital strategy
+- Forming and managing marcomms and digital teams
+- Building and managing websites
+- Writing for the web
+- Managing complex digital projects
 
-{% for project in projects %}
-
-<figure class="pb4 flex-l flex-wrap-l items-center{% if forloop.index == 1 or forloop.index == 3 %} flex-row-reverse-l{% endif %}">
-
-	<div class="w-50-l{% if forloop.index == 1 or forloop.index == 3 %} pl4-l{% else %} pr4-l{% endif %}">
-
-		<h3 class="ma0 c-lh-title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
-
-		<p class="mv2 measure">{{ project.summary }}</p>
-
-	</div>
-
-	<div class="w-50-l">
-
-		<a href="{{ project.url }}"><img class="db ma0 pa0" src="/images/{{ project.image }}" alt="{{ project.alt }}"></a>
-
-	</div>
-
-</figure>
-
-{% endfor %}
+Likes accessible, open design that helps people do things.

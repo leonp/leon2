@@ -88,14 +88,33 @@
         <link href="/css/style.css" rel="stylesheet">
         {% endif %}
 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
     </head>
 
-    <body class="ma0 pv3 pv4-ns c-background c-foreground c-sans-serif c-ph c-lh-copy">
+    <body class="ma0 pt0 pb3 c-ph c-background c-foreground c-serif c-lh-copy">
 
         <a class="c-no-print pv1 ph3 f7 clip c-reveal" href="#content">Skip to content &rarr;</a>
 
         <div class="c-wrapper center">
 
-            <a class="pv2 lh-solid b f7 db" href="/" rel="index">{{ site.title }}</a>
+            <header class="bb c-border mv3 mb5-ns flex justify-between f6">
 
-            <main id="content" class="pt4 pt5-ns pb3">
+                <a class="dib pv2" href="/" rel="index">{{ site.title }}</a>
+
+                <nav class="flex tr">
+
+                    {% assign pages = site.pages | where: "in_nav", "true" | sort: "order" %}
+
+                    {% for this_page in pages %}
+
+                    <a href="{{ this_page.url }}" class="ml2 ml3-ns dib pv2">{{ this_page.title }}</a>
+
+                    {% endfor %}
+
+                </nav>
+
+            </header>
+
+            <main id="content">

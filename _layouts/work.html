@@ -2,34 +2,7 @@
 
 <article class="c-overflow-wrap">
 
-    {% unless page.hide-title %}
-
-        {% include page-header.html %}
-
-    {% endunless %}
-
-    <div class="pa3 c-bg-secondary mb4">
-
-        <ul class="list pa0 mv0 c-sans-serif">
-
-        	{% if page.roles %}
-        	<li>Roles: <strong>{{ page.roles }}</strong></li>
-        	{% endif %}
-        	{% if page.year %}
-        	<li>When: <strong>{{ page.year }}</strong></li>
-        	{% endif %}
-        	{% if page.partners %}
-        	<li>Partners: <strong>{{ page.partners }}</strong></li>
-        	{% endif %}
-            {% if page.project-link %}
-            <li>Link: <a href="{{ page.project-link }}">{{ page.project-link }}</a></li>
-            {% endif %}
-
-        </ul>
-
-    </div>
-
-    {% if page.image %}<img class="db mt3 mb4 pa0 shadow-1" alt="{{ page.alt }}" src="/images/{{ page.image }}">{% endif %}
+    {% include page-header.html %}
 
     <div class="c-body">
 

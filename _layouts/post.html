@@ -11,15 +11,13 @@
 
 {% endfor %}
 
-<article class="h-entry c-overflow-wrap">
+<article class="h-entry">
 
-    <header class="flex flex-column flex-column-reverse">
+    <header class="flex flex-column flex-column-reverse bb c-border mb3 mb4-ns">
 
-        {% include page-header.html %}
+        <h1 class="normal f2 c-lh-title p-name c-h-color mt0">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
 
-        <p class="f6 mv2"><a href="/">Home</a> → <a href="/posts">Posts</a></p> 
-
-        <!-- <p class="gray f6 mb0 mt1 c-linky-underline c-linky-visited">{% if page.category %}Filed under <a class="pv1" href="/posts/{{ page.category }}/">{{ page.category | capitalize }}</a>. {% endif %}{% unless page.disable_comments %}<a class="pv1" href="#comment-form">{% if site.data.comments[page.slug] %}Comments{% else %}Add a comment{% endif %}</a>.{% endunless %}</p> -->
+        <p class="f6 mv2"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %b, %Y" }}</time></p>
 
     </header>
 
@@ -28,50 +26,6 @@
     {{ content }}
 
     </div>
-
-    <footer class="mt4 c-sans-serif f6">
-
-        <p>&rarr; <time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %b, %Y" }}</time> / <a href="/">{{ site.author }}</a></p>
-
-        {% assign webmentions = "" | split: "," %}
-
-        {% assign webmention_dump = site.data.wm.links %}
-
-        {% assign slug_eval = page.slug | append: "/" %}
-
-        {% assign url_eval = slug_eval | prepend: site.webmention-url %}
-
-        {% for item in webmention_dump %}
-
-            {% if item.target contains url_eval %}
-
-                {% assign webmentions = webmentions | push: item %}
-
-            {% endif %}
-
-        {% endfor %}
-
-        {% if webmentions.size > 0 %}
-
-            {% for webmention in webmentions %}
-
-                {% if forloop.first == true %}
-
-                <h2 class="f4 mb1">{{ webmentions.size }} Website mentions</h2>
-
-                <ul>
-
-                {% endif %}
-
-                <li class="pv1">{% if webmention.data.author.name %}{{ webmention.data.author.name }} posted {% endif %}<a rel="nofollow" href="{{ webmention.source }}">{{ webmention.source }}</a></li>
-
-            {% endfor %}
-
-            </ul>
-
-        {% endif %}
-
-    </footer>
 
 </article>
 

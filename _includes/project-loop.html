@@ -1,0 +1,23 @@
+{% assign projects = site.work | sort: "work-order" %}
+
+{% for project in projects %}
+
+<figure class="pb4 flex-l flex-wrap-l items-center{% if forloop.index == 1 or forloop.index == 3 %} flex-row-reverse-l{% endif %}">
+
+	<div class="w-50-l{% if forloop.index == 1 or forloop.index == 3 %} pl4-l{% else %} pr4-l{% endif %}">
+
+		<h3 class="ma0 c-lh-title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
+
+		<p class="mv2 measure">{{ project.summary }}</p>
+
+	</div>
+
+	<div class="w-50-l">
+
+		<a href="{{ project.url }}"><img class="db ma0 pa0" src="/images/{{ project.image }}" alt="{{ project.alt }}"></a>
+
+	</div>
+
+</figure>
+
+{% endfor %}

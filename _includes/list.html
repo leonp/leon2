@@ -73,13 +73,13 @@
 
         {% for post in posts limit:include.post-limit | default:500 %}
 
-            <article class="mb4">
+        <div class="mb3 mb2-l flex-l">
 
-                <h2 class="f4 c-lh-title mt0"><a class="db" href="{{ post.url }}">{{ post.title }}</a></h2>
+            <div class="f5 normal w-75-l pr2-l mt0 mb1 mb0-l"><a href="{{ post.url }}">{{ post.title }}</a></div>
 
-                {% if post.sub %}<p class="mt2">{{ post.sub }}</p>{% endif %}
+            <div class="w-25-l pl2-l tr-l">{{ post.date | date: "%-d %b, %Y" }}</div>
 
-            </article>
+        </div>
 
         {% endfor %}
 

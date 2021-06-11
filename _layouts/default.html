@@ -2,13 +2,9 @@
 
 <article class="c-overflow-wrap">
 
-    {% unless page.hide-title %}
+    {% include page-header.html %}
 
-        {% include page-header.html %}
-
-    {% endunless %}
-
-    <div class="c-body">
+    <div class="c-hyphens">
 
     {{ content }}
 

@@ -21,9 +21,9 @@
     --border: #EEE;
     --h-color: #000;
     --sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-    --serif: Newsreader, georgia, serif;
+    --serif: "EB Garamond", georgia, serif;
     --monospace: "IBM Plex Mono", monospace;
-    --wrapper: 36rem;
+    --wrapper: 30rem;
     --lh-copy: 1.5;
     --lh-title: 1.2;
     --bg-secondary: #EEE;
@@ -116,7 +116,7 @@
 }
 
 html {
-    font-size: 125%;
+    font-size: 137.5%;
     scroll-behavior: smooth;
 }
 
@@ -160,6 +160,15 @@ article dt,
 article h2,
 .article h2 {
     font-size: 1.25rem;
+}
+
+article h3,
+.article h3 {
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-size: 1rem;
 }
 
 article p,
@@ -268,7 +277,6 @@ table {
     overflow: auto;
     border-collapse: collapse;
     table-layout: fixed;
-    font-family: $c-sans-serif;
 }
 
 thead {

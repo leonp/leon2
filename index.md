@@ -19,10 +19,10 @@ alt: "Leon Paternoster underneath a “Zone” sign."
 
 Head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). 13 years’ experience of:
 
+- Managing complex digital projects
 - Digital strategy
-- Forming and managing marcomms and digital teams
+- Building and managing marcomms and digital teams
 - Building and managing websites
 - Writing for the web
-- Managing complex digital projects
 
 Likes accessible, open design that helps people do things.

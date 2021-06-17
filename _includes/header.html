@@ -88,6 +88,11 @@
         <link href="/css/style.css" rel="stylesheet">
         {% endif %}
 
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
     </head>
 
     <body class="ma0 pt0 pb3 pb5-ns c-ph c-background c-foreground c-sans-serif c-lh-copy">
@@ -98,7 +103,7 @@
 
             <header class="mv3 mb5-ns flex justify-between f7">
 
-                <a class="db pv2 b w-100" href="/" rel="index">{{ site.title }}</a>
+                <a class="db pv2 b w-100" href="/" rel="index">{% unless page.is_home %}↑ {% endunless %}{{ site.title }}</a>
 
                 <!-- <nav class="flex tr">
 

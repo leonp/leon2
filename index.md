@@ -33,7 +33,7 @@ I’m Leon, head of digital and marketing at Suffolk Libraries, the not-for-prof
 
 {% for project in projects %}
 
-	<div class="mb2 mb0-l flex-l items-center-l">
+	<div class="mb2 mb0-l flex-l">
 
 		<div class="w-75-l pr2-l"><a class="db" href="{{ project.url }}">{{ project.title }}</a></div>
 
@@ -53,7 +53,7 @@ I’m Leon, head of digital and marketing at Suffolk Libraries, the not-for-prof
 
 {% for post in posts limit:3 %}
 
-	<div class="mb2 mb0-l flex-l items-center-l">
+	<div class="mb2 mb0-l flex-l">
 
 		<div class="w-75-l pr2-l"><a class="db" href="{{ post.url }}">{{ post.title }}</a></div>
 

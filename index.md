@@ -10,19 +10,59 @@ hyphens: true
 visited-links: true
 underlined-links: true
 hide-title: true
-image: leon-zone.jpg
-alt: "Leon Paternoster underneath a “Zone” sign."
 ---
 
-- *leon.paternoster@zoho.com*
-- [LinkedIn](https://uk.linkedin.com/in/leonpaternoster/)
+## About
 
-Head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). 13 years’ experience of:
+I’m Leon, head of digital and marketing at Suffolk Libraries, the not-for-profit that runs Suffolk’s library service. I’ve got 13 years’ experience of digital strategy, project management and branding. [Read more about me](/about).
 
-- Managing complex digital projects
-- Digital strategy
-- Building and managing marcomms and digital teams
-- Building and managing websites
-- Writing for the web
+## Contact
 
-Likes accessible, open design that helps people do things.
+<ul class="list ph0">
+
+	<li>leon.paternoster@zoho.com</li>
+	<li><a href="https://uk.linkedin.com/in/leonpaternoster/">LinkedIn</a></li>
+
+</ul>
+
+## Work
+
+<div class="mt3">
+
+{% assign projects = site.work | sort: "work-order" %}
+
+{% for project in projects %}
+
+	<div class="mb2 mb0-l flex-l items-center-l">
+
+		<div class="w-75-l pr2-l"><a class="db" href="{{ project.url }}">{{ project.title }}</a></div>
+
+		<div class="w-25-l pl2-l tr-l f6">{{ project.year }}</div>
+
+	</div>
+
+{% endfor %}
+
+</div>
+
+## Writing
+
+<div class="mt3">
+
+{% assign posts = site.posts | where: "featured", "true" %}
+
+{% for post in posts limit:3 %}
+
+	<div class="mb2 mb0-l flex-l items-center-l">
+
+		<div class="w-75-l pr2-l"><a class="db" href="{{ post.url }}">{{ post.title }}</a></div>
+
+		<div class="w-25-l pl2-l tr-l f6">{{ post.date | date: "%Y" }}</div>
+
+	</div>
+
+{% endfor %}
+
+</div>
+
+[More articles](/posts).

@@ -23,7 +23,8 @@
     --sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
     --serif: georgia, serif;
     --monospace: "IBM Plex Mono", monospace;
-    --wrapper: 36rem;
+    --wrapper: 40rem;
+    --font-size: 118.75%;
     --lh-copy: 1.5;
     --lh-title: 1.2;
     --bg-secondary: #EEE;
@@ -116,7 +117,7 @@
 }
 
 html {
-    font-size: 118.75%;
+    font-size: var(--font-size);
     scroll-behavior: smooth;
 }
 
@@ -159,7 +160,7 @@ article dt,
 
 article h2,
 .article h2 {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 article h3,

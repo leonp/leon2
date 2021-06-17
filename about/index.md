@@ -12,6 +12,8 @@ hyphens: true
 
 I'm Leon, head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). I've worked in digital and, to a lesser extent, IT, since 2008.
 
+{% include figure.html url="leon-zone.jpg" alt="Leon Paternoster underneath a sign saying “Zone”." %}
+
 I live in [Ipswich](https://en.wikipedia.org/wiki/Ipswich), Suffolk in the UK. In my current role, I'm responsible for lots of things, including marketing, our website and the apps we develop. **I conceived and led the development of [Verso](https://dootrix.com/verso/), our own library self-service system**, a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_applications) now sold by software developers [Dootrix](https://dootrix.com/) to other library services.
 
 ## What I do

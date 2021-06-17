@@ -9,12 +9,12 @@ layout: default
 
 {% for project in projects %}
 
-<article class="mb3 mb2-l flex-l">
+<div class="mb2 mb0-l flex-l items-center-l">
 
-	<h2 class="f5 normal w-75-l pr2-l mt0 mb1 mb0-l"><a href="{{ project.url }}">{{ project.title }}</a></h2>
+	<div class="w-75-l pr2-l"><a class="db" href="{{ project.url }}">{{ project.title }}</a></div>
 
-	<div class="w-25-l pl2-l tr-l">{{ project.year }}</div>
+	<div class="w-25-l pl2-l tr-l f6">{{ project.year }}</div>
 
-</article>
+</div>
 
 {% endfor %}

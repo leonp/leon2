@@ -73,11 +73,11 @@
 
         {% for post in posts limit:include.post-limit | default:500 %}
 
-        <div class="mb2 mb1-l flex-l">
+        <div class="mb2 mb1-l flex-l items-center-l">
 
             <div class="w-75-l pr2-l"><a class="db pv1" href="{{ post.url }}">{{ post.title }}</a></div>
 
-            <div class="w-25-l pl2-l tr-l pv1">{{ post.date | date: "%Y" }}</div>
+            <div class="w-25-l pl2-l tr-l pv1 f6">{{ post.date | date: "%Y" }}</div>
 
         </div>
 

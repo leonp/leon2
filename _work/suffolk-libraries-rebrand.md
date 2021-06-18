@@ -1,7 +1,7 @@
 ---
 title: Rebranding Suffolk Libraries
 roles: project management, strategy
-image: sl-branding.jpg
+image: guidelines.jpg
 alt: "Screenshot of a page from the branding guidelines explaining the logo."
 year: 2019-2020
 partners: Silk Pearce

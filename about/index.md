@@ -12,15 +12,15 @@ hyphens: true
 
 I'm Leon, head of digital and marketing at [Suffolk Libraries](https://www.suffolklibraries.co.uk). I've worked in digital and, to a lesser extent, IT, since 2008.
 
-I live in [Ipswich](https://en.wikipedia.org/wiki/Ipswich), Suffolk in the UK. In my current role, I'm responsible for lots of things, including marketing, our website and the apps we develop. **I conceived and led the development of [Verso](https://dootrix.com/verso/), our own library self-service system**, a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_applications) now sold by software developers [Dootrix](https://dootrix.com/) to other library services.
+{% include figure.html url="leon-zone.jpg" alt="Leon Paternoster underneath a sign saying “Zone”." %}
 
-{% include figure.html url="leon-zone.jpg" alt="Leon Paternoster looking to the right underneath a sign saying ‘zone’" %}
+I live in [Ipswich](https://en.wikipedia.org/wiki/Ipswich), Suffolk in the UK. In my current role, I'm responsible for lots of things, including marketing, our website and the apps we develop. **I conceived and led the development of [Verso](https://dootrix.com/verso/), our own library self-service system**, a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_applications) now sold by software developers [Dootrix](https://dootrix.com/) to other library services.
 
 ## What I do
 
-My background is in **planning, building and running websites, apps and online marketing**. This has expanded to include all forms of marketing, on and offline -- I formulate and deliver digital and marketing strategies.
+My background is in planning, building and running websites, apps and online marketing. This has expanded to include all forms of marketing, on and offline -- I formulate and deliver digital and marketing strategies.
 
-I've also got extensive experience of **managing complex digital projects**. I work with stakeholders, customers and agencies, balancing time and financial constraints. I normally work using an agile framework, and have facilitated several **design sprints**.
+I've also got extensive experience of managing complex digital projects. I work with stakeholders, customers and agencies, balancing time and financial constraints. I normally work using an agile framework, and have facilitated several design sprints.
 
 I've got some technical experience too:
 
@@ -50,7 +50,5 @@ I’ve also blogged about working on the web since 2008. My blog post about [how
 <p>This site is built using <a href="https://jekyllrb.com">Jekyll</a>, a <a href="https://en.wikipedia.org/wiki/Static_web_page">static site</a> generator, and hosted by <a href="https://www.netlify.com">Netlify</a>, who specialise in hosting static sites. Netlify connects to Git (well, Github, Gitlab and Bitbucket), which means that when I push a change to my repo, the website is updated. This is a very good way to work. I recommend Netlify &#8212; they also offer forms, redirects and even AWS services integration.</p>
 
 <p>There's also <a href="/api">a basic API</a> you can use to get the site content in <code>json</code>.</p>
-
-At the time of writing, I'm using the [Atkinson Hyperlegible typeface](https://www.brailleinstitute.org/freefont), freely available from the American Braille Institute in web-friendly WOFF2 format.
 
 <p>I use my own Jekyll &#8220;framework&#8221; called <a href="https://github.com/leonp/jekyll-tachyons">Jekyll Tachyons</a>, as it makes building a Jekyll site on the <a href="http://tachyons.io">Tachyons CSS framework</a> quick and easy. I like <span role="img" aria-label="lightning fast">⚡️</span>.</p>

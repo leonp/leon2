@@ -11,22 +11,23 @@
 
 :root {
     --ph: 5vw;
-    --accent: #D5008F; // Tachyons dark-pink
+    --accent: #FFB700;
     --icon-color: #D5008F;
-    --link: #00449E;
-    --hover: #D5008F;
-    --visited: #357EDD;
+    --link: #000;
+    --hover: #000;
+    --visited: #555;
     --background: #FFF;
     --foreground: #333;
-    --border: #CCC; // Tachyons moon-gray
+    --border: #EEE;
     --h-color: #000;
     --sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-    --serif: "Source Serif Pro", georgia, serif;
+    --serif: georgia, serif;
     --monospace: "IBM Plex Mono", monospace;
-    --wrapper: 46rem;
-    --lh-copy: 1.4375;
-    --lh-title: 1.1;
-    --bg-secondary: #EEE; // Tachyons light-gray
+    --wrapper: 40rem;
+    --font-size: 118.75%;
+    --lh-copy: 1.5;
+    --lh-title: 1.2;
+    --bg-secondary: #EEE;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -100,6 +101,10 @@
     overflow-wrap: break-word;
 }
 
+.c-border {
+    border-color: var(--border);
+}
+
 .c-bg-border {
     background-color: var(--border);
 }
@@ -112,7 +117,7 @@
 }
 
 html {
-    font-size: 118.75%;
+    font-size: var(--font-size);
     scroll-behavior: smooth;
 }
 
@@ -151,13 +156,20 @@ article dt,
     margin-bottom: 0;
     color: var(--h-color);
     line-height: var(--lh-title);
-    font-family: var(--sans-serif);
-    font-weight: 900;
 }
 
 article h2,
 .article h2 {
-    font-size: 1.25rem;
+    font-size: 1rem;
+}
+
+article h3,
+.article h3 {
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-size: 1rem;
 }
 
 article p,
@@ -199,20 +211,6 @@ article a:focus,
 
 .c-sticky {
     position: sticky;
-}
-
-.c-body * {
-    max-width: 30rem;
-}
-
-.c-body figure,
-.c-body figure div  {
-    max-width: 100% !important;
-}
-
-.c-body img {
-    max-width: 100% !important;
-    height: auto !important;
 }
 
 .vid,
@@ -280,7 +278,6 @@ table {
     overflow: auto;
     border-collapse: collapse;
     table-layout: fixed;
-    font-family: $c-sans-serif;
 }
 
 thead {

@@ -9,8 +9,12 @@ layout: default
 
 {% for project in projects %}
 
-	<h2 class="f4 c-lh-title"><a class="no-underline db" href="{{ project.url }}">{{ project.title }}</a></h2>
+<div class="mb2 mb0-l flex-l items-center-l">
 
-	<a href="{{ project.url }}"><img class="db pa0 mt3 mb4 mb5-ns" alt="{{ project.alt }}" src="/images/{{ project.image }}"></a>
+	<div class="w-75-l pr2-l"><a class="db" href="{{ project.url }}">{{ project.title }}</a></div>
+
+	<div class="w-25-l pl2-l tr-l f6">{{ project.year }}</div>
+
+</div>
 
 {% endfor %}

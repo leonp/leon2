@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Leon Paternoster
-display-title: "Clear, accessible writing and design. Because your interface is your brand."
+display-title: "13 years (and counting) of building websites, managing digital and marketing teams and project managing complex digital projects."
 nav-title: "Home"
 is_home: true
 order: 1
@@ -9,35 +9,60 @@ prose-headings: true
 hyphens: true
 visited-links: true
 underlined-links: true
-in_nav: true
+hide-title: true
 ---
 
-I’ve got 13 years’ experience of leading web and app projects, copywriting and managing marcomms teams. I’m interested in making responsive, accessible, easy-to-use interfaces on and offline, so users get a great experience.
+## About
 
-**leon.paternoster@zoho.com** / [LinkedIn](https://uk.linkedin.com/in/leonpaternoster/)
+I’m Leon, head of digital and marketing at Suffolk Libraries, the not-for-profit that runs Suffolk’s library service. I’ve got 13 years’ experience of digital strategy, project management and branding. [Read more about me](/about).
 
-<h2 class="c-lh-title mb3">Work</h2>
+## Contact
+
+<ul class="list ph0">
+
+	<li>leon.paternoster@zoho.com</li>
+	<li><a href="https://uk.linkedin.com/in/leonpaternoster/">LinkedIn</a></li>
+
+</ul>
+
+## Work
+
+<div class="mt3">
 
 {% assign projects = site.work | sort: "work-order" %}
 
 {% for project in projects %}
 
-<figure class="pb4 flex-l flex-wrap-l items-center{% if forloop.index == 1 or forloop.index == 3 %} flex-row-reverse-l{% endif %}">
+	<div class="mb2 mb0-l flex-l">
 
-	<div class="w-50-l{% if forloop.index == 1 or forloop.index == 3 %} pl4-l{% else %} pr4-l{% endif %}">
+		<div class="w-75-l pr2-l"><a class="db" href="{{ project.url }}">{{ project.title }}</a></div>
 
-		<h3 class="ma0 c-lh-title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
-
-		<p class="mv2 measure">{{ project.summary }}</p>
+		<div class="w-25-l pl2-l tr-l f6">{{ project.year }}</div>
 
 	</div>
-
-	<div class="w-50-l">
-
-		<a href="{{ project.url }}"><img class="db ma0 pa0 shadow-1" src="/images/{{ project.image }}" alt="{{ project.alt }}"></a>
-
-	</div>
-
-</figure>
 
 {% endfor %}
+
+</div>
+
+## Writing
+
+<div class="mt3">
+
+{% assign posts = site.posts | where: "featured", "true" %}
+
+{% for post in posts limit:3 %}
+
+	<div class="mb2 mb0-l flex-l">
+
+		<div class="w-75-l pr2-l"><a class="db" href="{{ post.url }}">{{ post.title }}</a></div>
+
+		<div class="w-25-l pl2-l tr-l f6">{{ post.date | date: "%Y" }}</div>
+
+	</div>
+
+{% endfor %}
+
+</div>
+
+[More articles](/posts).

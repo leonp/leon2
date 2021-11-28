@@ -51,7 +51,7 @@ I’m Leon, head of digital and marketing at Suffolk Libraries, the not-for-prof
 
 {% assign posts = site.posts | where: "featured", "true" %}
 
-{% for post in posts limit:3 %}
+{% for post in posts limit:5 %}
 
 	<div class="mb2 mb0-l flex-l">
 

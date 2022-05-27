@@ -14,7 +14,7 @@ hide-title: true
 
 ## About
 
-I’m Leon, head of digital and marketing at Suffolk Libraries, the not-for-profit that runs Suffolk’s library service. I’ve got 13 years’ experience of digital strategy, project management and branding. [Read more about me](/about).
+I’m Leon, web manager at Anglia Ruskin University. I’ve got 14 years’ experience of digital strategy, project management and branding. [Read more about me](/about).
 
 ## Contact
 

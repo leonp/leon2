@@ -14,7 +14,7 @@ I'm Leon, web manager at [Anglia Ruskin University](https://aru.ac.uk/). I've wo
 
 {% include figure.html url="leon-zone.jpg" alt="Leon Paternoster underneath a sign saying “Zone”." %}
 
-I live in [Ipswich](https://en.wikipedia.org/wiki/Ipswich), During my career, I've been responsible for lots of things, including managing and developing websites and apps. **I conceived and led the development of [Verso](https://dootrix.com/verso/), a library self-service system** – a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_applications) now sold by software developers [Dootrix](https://dootrix.com/) to library services.
+I live in [Ipswich](https://en.wikipedia.org/wiki/Ipswich). During my career, I've been responsible for lots of things, including branding, copywriting and managing and developing websites and apps. **I conceived and led the development of [Verso](https://dootrix.com/verso/), a library self-service system** – a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_applications) now sold by software developers [Dootrix](https://dootrix.com/) to library services.
 
 ## What I do
 
@@ -22,7 +22,7 @@ My background is in planning, building and running websites, apps and online mar
 
 I've also got extensive experience of managing complex digital projects. I work with stakeholders, customers and agencies, balancing time and financial constraints. I normally work using an agile framework, and have facilitated several design sprints.
 
-I’m interested in accessible, genuinely usable design and online ethics. I write about how that works in a traditional marketing world led by online organisations whose business models rely on collecting and using as much customer data as possible.
+I’m interested in accessible, genuinely usable design and online ethics. I write about how that works in a traditional marketing world led by organisations whose business models rely on collecting, processing and selling as much customer data as possible.
 
 I've got some technical experience too:
 

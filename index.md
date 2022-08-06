@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Leon Paternoster
-display-title: "13 years (and counting) of building websites, managing digital and marketing teams and project managing complex digital projects."
+display-title: "Building websites, managing digital and marketing teams and project managing complex digital projects since 2008."
 nav-title: "Home"
 is_home: true
 order: 1
@@ -14,7 +14,7 @@ hide-title: true
 
 ## About
 
-I’m Leon, web manager at Anglia Ruskin University. I’ve got 14 years’ experience of digital strategy, project management and branding. [Read more about me](/about).
+I’m Leon, web manager at Anglia Ruskin University. I’ve been building websites, managing digital and marketing teams and project managing complex digital projects since 2008. [Read more about me](/about).
 
 ## Contact
 

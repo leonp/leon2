@@ -23,9 +23,9 @@
     --sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
     --serif: georgia, serif;
     --monospace: "IBM Plex Mono", monospace;
-    --wrapper: 40rem;
+    --wrapper: 31.66667rem;
     --font-size: 118.75%;
-    --lh-copy: 1.5;
+    --lh-copy: 1.4375;
     --lh-title: 1.2;
     --bg-secondary: #EEE;
 }
@@ -117,7 +117,7 @@
 }
 
 html {
-    font-size: var(--font-size);
+    font-size: clamp(125%, 1.9vw, 150%);
     scroll-behavior: smooth;
 }
 

@@ -14,7 +14,7 @@ hide-title: true
 
 ## About
 
-<div class="flex items-center mv3 pa3 bg-lightest-blue">
+<div class="flex items-center mv3">
 
 	<div class="w-third w-25-ns w-20-l pr3">
 

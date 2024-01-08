@@ -14,13 +14,27 @@ hide-title: true
 
 ## About
 
-I’m Leon, web manager at Anglia Ruskin University. I’ve been building websites, managing digital and marketing teams and project managing complex digital projects since 2008. [Read more about me](/about).
+<div class="flex items-center mv3 pa3 bg-lightest-blue">
+
+	<div class="w-third w-25-ns w-20-l pr3">
+
+		<img class="db ma0 pa0 br-100" src="/images/lp-2024-01.jpg">
+
+	</div>
+
+	<div class="w-two-thirds w-75-ns w-80-l pl3">
+
+		<p class="f6 f5-l">I’m Leon, web manager at Anglia Ruskin University. I’ve been building websites, managing digital and marketing teams and project managing complex digital projects since 2008. <a class="white" href="/about">Read more about me</a>.</p>
+
+	</div>
+
+</div>
 
 ## Contact
 
 <ul class="list ph0">
 
-	<li>leon.paternoster@zoho.com</li>
+	<li>leon.paternoster@gmail.com</li>
 	<li><a href="https://uk.linkedin.com/in/leonpaternoster/">LinkedIn</a></li>
 
 </ul>
@@ -44,25 +58,3 @@ I’m Leon, web manager at Anglia Ruskin University. I’ve been building websit
 {% endfor %}
 
 </div>
-
-## Writing
-
-<div class="mt3">
-
-{% assign posts = site.posts | where: "featured", "true" %}
-
-{% for post in posts limit:5 %}
-
-	<div class="mb2 mb0-l flex-l">
-
-		<div class="w-75-l pr2-l"><a class="db" href="{{ post.url }}">{{ post.title }}</a></div>
-
-		<div class="w-25-l pl2-l tr-l f6">{{ post.date | date: "%Y" }}</div>
-
-	</div>
-
-{% endfor %}
-
-</div>
-
-[More articles](/posts).

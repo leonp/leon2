@@ -12,7 +12,7 @@ hyphens: true
 
 I'm Leon, web manager at [Anglia Ruskin University](https://aru.ac.uk/). I've worked in digital and, to a lesser extent, IT, since 2008.
 
-{% include figure.html url="leon-zone.jpg" alt="Leon Paternoster underneath a sign saying “Zone”." %}
+{% include figure.html url="leon-2024-02.jpg" alt="Leon Paternoster in front of a bookcase." %}
 
 I live in [Ipswich](https://en.wikipedia.org/wiki/Ipswich). During my career, I've been responsible for lots of things, including branding, copywriting and managing and developing websites and apps. **I conceived and led the development of [Verso](https://dootrix.com/verso/), a library self-service system** – a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_applications) now sold by software developers [Dootrix](https://dootrix.com/) to library services.
 
@@ -43,7 +43,7 @@ I’ve also blogged about working on the web since 2008. My blog post about [how
 <ul>
 
 <li><a href="https://uk.linkedin.com/in/leonpaternoster">LinkedIn</a></li>
-<li>leon.paternoster@zoho.com</li>
+<li>leon.paternoster@gmail.com</li>
 
 </ul>
 

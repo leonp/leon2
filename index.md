@@ -14,9 +14,9 @@ hide-title: true
 
 <section class="pb4 bb b--blue">
 
-	<h2 class="lh-title f2 c-text-wrap-balance white">Hi, I’m Leon, a digital manager with 16 years’ experience</h2>
+	<h2 class="lh-title f3 f2-ns c-text-wrap-balance white">Hi, I’m Leon, a digital manager with 16 years’ experience</h2>
 
-		<p class="f3 lh-title c-text-wrap-balance light-blue mb0">I help build digital services that make people’s lives easier and get not-for-profits working online.</p>
+		<p class="f4 f3-ns lh-title c-text-wrap-balance light-blue mb0">I help build digital services that make people’s lives easier and get not-for-profits working online.</p>
 
 		<p class="c-hyphens flex items-center f6 f3-ns lh-title c-text-wrap-balance lightest-blue"><svg aria-hidden="true" class="c-inline-svg c-width-1 pr1" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>mail@leonpaternoster.com</p>
 

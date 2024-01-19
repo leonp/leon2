@@ -13,6 +13,10 @@
     --sans-serif: Molde, -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .c-sans-serif {
     font-family: var(--sans-serif);
 }
@@ -253,6 +257,14 @@ article :is(h1, h2, h3, h4, h5, h6) {
 
 .e-content :is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
     margin-top: 1rem;
+}
+
+.e-content h2 {
+    font-size: 1.25rem;
+}
+
+.e-content h3 {
+    font-size: 1rem;
 }
 
 .e-content :not(figure, img) {

@@ -13,15 +13,15 @@
 
 <article class="h-entry">
 
-    <header class="flex flex-column flex-column-reverse mb3 mb4-ns">
+    <header class="flex flex-column flex-column-reverse pb4 mb4 bb b--blue">
 
-        <h1 class="f4 c-lh-title p-name c-h-color mt0">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+        <h1 class="f2 white lh-title p-name mt0">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
 
         <p class="f7 mv2"><time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %b, %Y" }}</time></p>
 
     </header>
 
-    <div class="c-body">
+    <div class="e-content">
 
     {{ content }}
 

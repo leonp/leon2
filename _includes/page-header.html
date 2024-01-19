@@ -1,31 +1,33 @@
-<header class="mb3 mb4-ns">
+<header class="pb4 mb4 bb b--blue">
 
-	<h1 class="{% if page.hide-title %}clip {% endif %}f4 c-lh-title p-name c-h-color">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+	<h1 class="{% if page.hide-title %}clip {% endif %}f2 white lh-title p-name">{% if page.display-title %}{{ page.display-title }}{% else %}{{ page.title }}{% endif %}</h1>
+
+	{% if page.summary %}
+
+	<p class="f3 lh-title c-text-wrap-balance light-blue mb0">{{ page.summary }}</p>
+
+	{% endif %}
 
 	{% if page.is_work %}
 
-	<ul class="list pa0 mh0">
+	<dl class="mv3">
 
     	{% if page.roles %}
-    	<li>Roles: <strong>{{ page.roles }}</strong></li>
-    	{% endif %}
-    	{% if page.year %}
-    	<li>When: <strong>{{ page.year }}</strong></li>
+    	<dt class="ma0">Roles</dt>
+    	<dd class="b mh0 mb3">{{ page.roles }}</dd>
     	{% endif %}
     	{% if page.partners %}
-    	<li>Partners: <strong>{{ page.partners }}</strong></li>
+    	<dt class="mb0">Partners</dt>
+    	<dd class="b mh0 mb3">{{ page.partners }}</dd>
     	{% endif %}
-        {% if page.project-link %}
-        <li>Link: <strong><a href="{{ page.project-link }}">{{ page.project-link }}</a></strong></li>
-        {% endif %}
 
-    </ul>
+    </dl>
 
 	{% endif %}
 
 	{% if page.image %}
 
-	<img class="db mv3" alt="{{ page.alt }}" src="/images/{{ page.image }}">
+	<img class="db mv4" alt="{{ page.alt }}" src="/images/{{ page.image }}">
 
 	{% endif %}
 

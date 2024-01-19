@@ -1,15 +1,15 @@
 {% include header.html %}
 
-<article class="c-overflow-wrap">
+<div class="c-overflow-wrap">
 
-    {% include page-header.html %}
+    {% unless page.is_home %}{% include page-header.html %}{% endunless %}
 
-    <div class="c-hyphens">
+    <div>
 
     {{ content }}
 
 	</div>
 
-</article>
+</div>
 
 {% include footer.html %}

@@ -1,6 +1,6 @@
 ---
 title: The Adventures of Sherlock Holmes in HTML
-roles: HTML, CSS, javascript, Github integration, Jekyll
+roles: HTML, CSS, javascript, Github integration, Jekyll development
 image: twisted-lip.jpg
 alt: "Black and white pen sketch of Holmes sat on some cushions smoking a pipe."
 year: 2018

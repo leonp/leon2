@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="{{ site.lang }}">
+<html class="c-sans-serif ph3 pt3 pt5-ns bg-navy lightest-blue f4 lh-copy" lang="{{ site.lang }}">
 
     <head>
 
@@ -93,30 +93,17 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
 
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,400i,700" rel="stylesheet" />
+
     </head>
 
-    <body class="ma0 pt0 pb3 pb5-ns c-ph c-background c-foreground c-sans-serif c-lh-copy">
+    <body class="ma0 c-page center">
 
-        <a class="c-no-print pv1 ph3 f7 clip c-reveal" href="#content">Skip to content &rarr;</a>
-
-        <div class="c-wrapper center">
-
-            <header class="mv3 mb5-ns flex justify-between f7">
-
-                <a class="db pv2 b w-100" href="/" rel="index">{% unless page.is_home %}↑ {% endunless %}{{ site.title }}</a>
-
-                <!-- <nav class="flex tr">
-
-                    {% assign pages = site.pages | where: "in_nav", "true" | sort: "order" %}
-
-                    {% for this_page in pages %}
-
-                    <a href="{{ this_page.url }}" class="ml2 ml3-ns dib pv2">{{ this_page.title }}</a>
-
-                    {% endfor %}
-
-                </nav> -->
-
-            </header>
-
-            <main id="content">
+        <header class="flex c-nav-gap align-center justify-between f7 f6-ns mb3 mb5-ns">
+    
+            {% if page.is_home %}<h1 class="f3 ma0">{% else %}<div class="f3 lh-title b ma0">{% endif %}<a class="flex items-center lightest-blue pv2 b no-underline hover-white c-nav-gap" href="/" rel="index"><span>Leon Paternoster</span><svg aria-hidden="true" class="c-inline-svg c-rotate-25 c-width-15" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h420v-140H160v140Zm500 0h140v-360H660v360ZM160-460h420v-140H160v140Z"/></svg></a>{% if page.is_home %}</h1>{% else %}</div>{% endif %}
+            
+        </header>
+        
+        <main>

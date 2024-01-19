@@ -43,7 +43,7 @@ I’ve also blogged about working on the web since 2008. My blog post about [how
 <ul>
 
 <li><a href="https://uk.linkedin.com/in/leonpaternoster">LinkedIn</a></li>
-<li>leon.paternoster@gmail.com</li>
+<li>mail@leonpaternoster.com</li>
 
 </ul>
 

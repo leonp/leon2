@@ -4,7 +4,7 @@
 
     {% unless page.is_home %}{% include page-header.html %}{% endunless %}
 
-    <div>
+    <div{% unless page.is_home %} class="e-content"{% endunless %}>
 
     {{ content }}
 

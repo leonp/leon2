@@ -81,7 +81,7 @@ hide-title: true
 
 	<article>
 
-		<h3 class="f5 lh-title ma0"><a href="/work/verso-self-service" class="flex items-center pv1 white no-underline underline-hover"><svg class="c-inline-svg c-width-1 pr1" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-120v-80h200v-120H160q-33 0-56.5-23.5T80-400v-360q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v360q0 33-23.5 56.5T800-320H520v120h200v80H240Zm-80-280h640v-360H160v360Zm0 0v-360 360Z"/></svg>Self-service for libraries</a></h3>
+		<h3 class="f5 lh-title ma0"><a href="/work/verso-self-service" class="flex items-center pv1 white no-underline underline-hover"><svg class="c-inline-svg c-width-1 pr1" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M40-120v-200h80v120h120v80H40Zm680 0v-80h120v-120h80v200H720ZM160-240v-480h80v480h-80Zm120 0v-480h40v480h-40Zm120 0v-480h80v480h-80Zm120 0v-480h120v480H520Zm160 0v-480h40v480h-40Zm80 0v-480h40v480h-40ZM40-640v-200h200v80H120v120H40Zm800 0v-120H720v-80h200v200h-80Z"/></svg>Self-service for libraries</a></h3>
 
 		<p class="mt0 c-text-wrap-pretty">Project lead for procuring hardware and developing self-service kiosk software. It was small and flexible enough to deploy anywhere and saved the service £00,000s.</p>
 

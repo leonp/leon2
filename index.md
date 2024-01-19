@@ -75,7 +75,7 @@ hide-title: true
 
 		<h3 class="f5 lh-title ma0"><a href="/work/sherlock-holmes" class="flex items-center pv1 white no-underline underline-hover"><svg class="c-inline-svg c-width-1 pr1" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>The Adventures of Sherlock Holmes in HTML</a></h3>
 
-		<p class="mt0 c-text-wrap-pretty">The ten original classics from <cite>The Strand</cite> magazines in fast, view anywhere on any device HTML. Includes javascript to generate bookmarks throughout the text.</p>
+		<p class="mt0 c-text-wrap-pretty">The ten original classics from <cite>The Strand</cite> magazine in fast, view-anywhere-on-any-device HTML. Includes javascript to generate bookmarks throughout the text.</p>
 
 	</article>
 

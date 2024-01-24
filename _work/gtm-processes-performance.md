@@ -49,7 +49,7 @@ This comes to a total of 1.3MB and takes 2 and a half seconds to load on a mobil
 
 ## 1. Set up a process for adding new scripts to your GTM container (and document it)
 
-Only one person or team should be responsible for adding scripts to the website, and that should be an employee, not an agency. In ARU’s case, that’s me or, if I’m not avaialble, a member of the web team.
+Only one person or team should be responsible for adding scripts to the website, and that should be an employee, not an agency. In ARU’s case, that’s me or, if I’m not available, a member of the web team.
 
 GTM allows changes to be tested, staged and merged before being committed to the website, so agencies can still create tags, triggers and events. However, the container manager should be the only person who commits those changes to the default workspace.
 

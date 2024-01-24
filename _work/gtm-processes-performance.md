@@ -90,7 +90,7 @@ By default, a trigger and its associated script will load when the page loads an
 
 For example, your chatbot probably doesn’t need to load in your _Policies and documents_ section. Hotjar – a service that records visits and activity on your site – probably only needs to load on key pages, or anywhere you’re troubleshooting.
 
-GTM offers a set of trigger filters that help determine whether a script loads. The easiest to use is the _Page path_ filter. Let’s say you’re only interested in analysing a directory on your site. You could set the filter value to contain `/path/to/your/directory`. Conversely, you can tell a trigger to fire when it _doesn’t_ a particular directory path.
+GTM offers a set of trigger filters that help determine whether a script loads. The easiest to use is the _Page path_ filter. Let’s say you’re only interested in analysing a directory on your site. You could set the filter value to contain `/path/to/your/directory`. Conversely, you can tell a trigger to fire when it _doesn’t_ contain a particular directory path.
 
 {% include figure.html url="hj-afterLoad-contains-subject-areas.jpg" alt="The trigger editing screen showing a selected directory." caption="Setting a page path restricts where tags are triggered." %}
 
@@ -110,11 +110,11 @@ Web pages load in a specific order. GTM allows us to fire tags at any stage duri
 
 By default, scripts will load at the Page view stage. While this ensures they’re loaded even if, say, another script or image doesn’t load, this can have a dramatic effect on the visitor’s experience. Recall how long third-party javascript can take to load. If you choose to fire a tag at this stage, it will _completely_ block the page loading. The visitor will literally see nothing until it’s done.
 
-You could choose to trigger a script at the Window loaded stage, but this would block the images, scripts and embeds rendering and running. Instead, we can create a custom event that runs 1.5s after the Window loaded stage, and tell triggers to fire after this custom.
+You could choose to trigger a script at the Window loaded stage, but this would block the downloaded images, scripts and embeds rendering and running. Instead, we can create a custom event that runs 1.5s after the Window loaded stage, and tell triggers to fire after this custom event.
 
 Don’t worry if that sounds complicated. There are quite a few [how-to guides](https://adigital.agency/blog/pagespeed-tricks-for-loading-third-party-scripts-via-gtm) out there, and it’s a trivial piece of work for an agency with any GTM exprience.
 
-Oncee we have our custom event, we can set up a new _Custom event_ type trigger that:
+Once we have our custom event (which we don’t have to name _afterLoad_, but it should be descriptive), we can set up a new _Custom event_ type trigger that:
 
 - Only fires in certain conditions, such as when a visitor goes to a spcified page path
 - Fires 1.5s after the Window loaded event

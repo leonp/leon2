@@ -8,7 +8,7 @@ project-link: https://adler.netlify.app
 work-order: 4
 ---
 
-I made a website from the 1892 Sherlock Holmes collection <cite><a href="https://adler.netlify.com">The Adventures of Sherlock Holmes</a></cite>. 12 stories, some of which you may well recognise, originally published in serial form in <cite>The Strand</cite> magazine.
+I made a website from the 1892 Sherlock Holmes collection <cite><a href="https://sherlock.leonpaternoster.com">The Adventures of Sherlock Holmes</a></cite>. 12 stories, some of which you may well recognise, originally published in serial form in <cite>The Strand</cite> magazine.
 
 ## HTML is the best format for online books
 
@@ -28,6 +28,6 @@ I've also been using a very simple "framework" I made a few months back. [Jekyll
 
 There are lots of possibilities here. I could index the text with Algolia to make it searchable and somehow categorised. If only I had the time to look into the potential of plain HTML and text.
 
-- [The Adventures of Sherlock Holmes](https://adler.netlify.com)
+- [The Adventures of Sherlock Holmes](https://sherlock.leonpaternoster.com)
 - [Github repo](https://github.com/leonp/sherlock-holmes)
 - [Jekyll Tachyons framework](https://github.com/leonp/jekyll-tachyons)

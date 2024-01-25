@@ -108,8 +108,8 @@ collections:
         permalink: /:collection/:name
 
 
-plugins:
-  - jekyll-get-json
+# plugins:
+  # - jekyll-get-json
 
 jekyll_get_json:
   - data: wm
